@@ -10,4 +10,4 @@ if (publicKey) {
   }
   if (!isPublic) throw new Error('NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY must be a Supabase publishable key or legacy anon key. Never use a secret or service-role key.');
 }
-export default {};
+export default { images: { qualities: [75, 95] } };

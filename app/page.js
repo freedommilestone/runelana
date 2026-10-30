@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { initialState, gear, tiers, rewards, settle, restore } from "../lib/game.mjs";
 
 import Account from "../components/account";
@@ -154,7 +155,7 @@ export default function Home() {
     </header>
     <main>
       <section className="hero">
-        <div className="hero-art"><svg viewBox="0 68 1536 414" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="/assets/hero-clean.png" width="1536" height="1024" /></svg></div>
+        <div className="hero-art"><Image src="/assets/marketplace-hd.png" alt="" fill sizes="(max-width: 700px) 1200px, 100vw" quality={95} preload /></div>
         <div className="hero-copy">
           <div className="eyebrow">FOR THE $GP HOLDERS</div>
           <h1><img src="/assets/hero-wordmark.png" alt="Runelana" /></h1>
@@ -169,7 +170,7 @@ export default function Home() {
       <div className="dashboard">
         <section className="panel featured" ref={player}><Ornament/>
           <div className="panel-title"><h2>FEATURED PLAYER</h2></div>
-          <div className="featured-body"><div className="character"><Art box="39 641 191 314" label="GP Legend in dragon armor"/></div><div className="player-details">
+          <div className="featured-body"><div className="character"><Image src="/assets/featured-warrior-hd.png" alt="GP Legend in green and red armor, carrying a sword and blue shield" width={1024} height={1536} sizes="(max-width: 700px) 160px, (max-width: 1180px) 220px, 240px" quality={95}/></div><div className="player-details">
             <h3><span className="crown">♛</span> GP Legend</h3><strong>Level 87</strong><p>2,341 days holding $GP</p><div className="meter"><span style={{width:'81%'}}/></div>
             <h4>Active Rune Earnings</h4><div className="player-runes">{[[3,"12.4K"],[2,"10.1K"],[5,"8.7K"],[7,"6.3K"]].map(([i,count]) => <div key={i}><Art box={`${runeX[i]} 646 48 48`}/><span>{count}</span></div>)}</div>
             <h4>Equipped Gear</h4><div className="equipped">{["254 896 44 55","304 896 44 55","355 896 44 55","406 896 44 55","456 896 44 55"].map((box,i)=><button key={box} aria-label={`View featured equipment ${i+1}`} onClick={()=>{setFilter('All');document.getElementById('shop').scrollIntoView({behavior:'smooth'});}}><Art box={box}/></button>)}</div>
