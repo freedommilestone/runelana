@@ -23,6 +23,16 @@ function Ornament({ dark = false }) {
     {patches.map(([side,box]) => <Art key={side} className={`edge edge-${side}`} box={box} stretch/>)}
   </div>;
 }
+function AccountIcon() {
+  return <svg className="account-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h22v18H5a3 3 0 0 1-3-3V10a4 4 0 0 1 4-4h15v4" fill="currentColor" stroke="#131910" strokeWidth="1.5"/><path d="M22 15h8v8h-8a4 4 0 0 1 0-8Z" fill="currentColor" stroke="#131910" strokeWidth="2"/><circle cx="24" cy="19" r="1.4" fill="#131910"/><path d="M7 6V3h13v3" stroke="currentColor" fill="none" strokeWidth="2"/></svg>;
+}
+function ButtonTrim({green=false}) {
+  const x=green?74:382, y=406, w=green?272:201, h=58, c=10;
+  return <span className="button-trim" aria-hidden="true">{[
+    ['tl',x,y,c,c],['tr',x+w-c,y,c,c],['bl',x,y+h-c,c,c],['br',x+w-c,y+h-c,c,c],
+    ['top',x+c,y,w-2*c,5],['bottom',x+c,y+h-5,w-2*c,5],['left',x,y+c,5,h-2*c],['right',x+w-5,y+c,5,h-2*c]
+  ].map(([side,...box])=><Art key={side} className={`trim-${side}`} box={box.join(' ')} stretch/>)}</span>;
+}
 const showcase = [
   {name:"Infernal Cape",type:"Capes",box:"556 835 83 69",level:75,price:"250K",rune:3},
   {name:"Abyssal Helm",type:"Hats",box:"665 835 83 69",level:50,price:"18.5K",rune:2},
@@ -37,12 +47,10 @@ export default function Home() {
   const [ready, setReady] = useState(false);
   const [now, setNow] = useState(0);
   const [period, setPeriod] = useState("All Time");
-  const [following, setFollowing] = useState(false);
   const details = useRef(null);
   const [selectedItem, setSelectedItem] = useState(null);
   const [filter, setFilter] = useState("All");
   const [search, setSearch] = useState("");
-  const [menuOpen, setMenuOpen] = useState(true);
   const achievements = useRef(null);
   const [message, setMessage] = useState("");
   const [user, setUser] = useState(null);
@@ -142,21 +150,18 @@ export default function Home() {
         <button onClick={() => modal.current.showModal()}>Collection</button><button onClick={() => achievements.current.showModal()}>Achievements</button>
       </nav>
       <form className="search" onSubmit={event => { event.preventDefault(); document.getElementById('shop').scrollIntoView({behavior:'smooth'}); }}><span>⌕</span><input aria-label="Search items or players" placeholder="Search items, players…" value={search} onChange={e => setSearch(e.target.value)} /><button aria-label="Search">⌕</button></form>
-      <button className="account-button" disabled={!ready} onClick={() => account.current.open()}><span>▣</span> {user ? "My Account" : "Sign In / Join"}</button>
+      <button className="account-button" disabled={!ready} onClick={() => account.current.open()}><AccountIcon/> {user ? "My Account" : "Sign In / Join"}</button>
     </header>
     <main>
       <section className="hero">
-        <div className="hero-art"><Art box="0 68 1536 414" /></div>
+        <div className="hero-art"><svg viewBox="0 68 1536 414" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="/assets/hero-clean.png" width="1536" height="1024" /></svg></div>
         <div className="hero-copy">
           <div className="eyebrow">FOR THE $GP HOLDERS</div>
-          <h1><Art box="66 113 430 86" label="Runelana" /></h1>
+          <h1><img src="/assets/hero-wordmark.png" alt="Runelana" /></h1>
           <h2>HOLD GP.<br />EARN RUNES.<br />LEVEL UP.<br />BUILD YOUR LEGEND.</h2>
           <p>Runelana is a status and progression platform<br className="desktop-break" /> for $GP holders. The longer you hold, the more runes<br className="desktop-break" /> you earn, the higher your level, and the more you can unlock.</p>
-          <div className="hero-actions"><button className="primary" onClick={() => account.current.open()}><span>▣</span>{user ? "My Account" : "Create Account"}</button><a className="button" href="#how">Learn More</a></div>
+          <div className="hero-actions"><button className="primary" onClick={() => account.current.open()}><ButtonTrim green/><AccountIcon/>{user ? "My Account" : "Create Account"}</button><a className="button" href="#how"><ButtonTrim/>Learn More</a></div>
         </div>
-        <div className="world-menu"><button className="menu-heading" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Choose Option</button>{menuOpen && <div>
-          <a href="#shop">View Equipment</a><button onClick={() => modal.current.showModal()}>View Collection</button><button onClick={() => achievements.current.showModal()}>View Achievements</button><button onClick={() => account.current.open()}>View Profile</button><button onClick={() => {setFollowing(!following);toast(following ? "Removed from your local follows." : "GP Legend followed on this browser session.");}}>{following ? "Unfollow" : "Follow"}</button><button onClick={() => {setSearch("GP Legend");document.getElementById('holders').scrollIntoView({behavior:'smooth'});}}>Lookup</button><button onClick={() => toast("This is a demonstration profile. Reporting will be available when live player profiles launch.")}>Report</button><button onClick={() => setMenuOpen(false)}>Cancel</button>
-        </div>}</div>
       </section>
       <section className="steps" id="how">
         {[["55 500 76 71","1. CREATE AN ACCOUNT","Sign in and establish your adventurer. No wallet required."],["419 499 62 76","2. EARN RUNES HOURLY","Build your legend over time. Earn runes, advance your level, and discover higher rune tiers."],["796 501 70 69","3. LEVEL UP","Unlock new rune types and equipment as your adventure progresses."],["1164 497 69 82","4. COLLECT & CUSTOMIZE","Earn and unlock rare equipment, capes, and cosmetics to show your status."]].map(([box,title,text]) => <article key={title}><Ornament dark/><Art box={box}/><div><h3>{title}</h3><p>{text}</p></div></article>)}
