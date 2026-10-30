@@ -135,7 +135,7 @@ export default function Home() {
   const pending = rewards(state, now);
   const matches = showcase.filter(item => (filter === "All" || item.type === filter) && item.name.toLowerCase().includes(search.toLowerCase()));
   return <>
-    <header className="site-header"><Art className="header-stone" box="0 0 1536 10" stretch/>
+    <header className="site-header">
       <a className="brand" href="#" aria-label="Runelana home"><Art box="28 5 288 55" /></a>
       <nav aria-label="Main navigation">
         <a className="active" href="#">Home</a><a href="#holders">Leaderboard</a><a href="#how">How It Works</a><a href="#runes">Runes</a><a href="#shop">Equipment</a>
@@ -161,7 +161,7 @@ export default function Home() {
       <section className="steps" id="how">
         {[["55 500 76 71","1. CREATE AN ACCOUNT","Sign in and establish your adventurer. No wallet required."],["419 499 62 76","2. EARN RUNES HOURLY","Build your legend over time. Earn runes, advance your level, and discover higher rune tiers."],["796 501 70 69","3. LEVEL UP","Unlock new rune types and equipment as your adventure progresses."],["1164 497 69 82","4. COLLECT & CUSTOMIZE","Earn and unlock rare equipment, capes, and cosmetics to show your status."]].map(([box,title,text]) => <article key={title}><Ornament dark/><Art box={box}/><div><h3>{title}</h3><p>{text}</p></div></article>)}
       </section>
-      <div className="dashboard"><Art className="dashboard-stone" box="0 1000 1536 24" stretch/>
+      <div className="dashboard">
         <section className="panel featured" ref={player}><Ornament/>
           <div className="panel-title"><h2>FEATURED PLAYER</h2></div>
           <div className="featured-body"><div className="character"><Art box="39 641 191 314" label="GP Legend in dragon armor"/></div><div className="player-details">
