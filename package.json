@@ -4,7 +4,17 @@
   "private": true,
   "description": "A fantasy idle strategy browser game prototype",
   "scripts": {
-    "start": "python3 -m http.server 3000 --directory dist",
-    "check": "node --check dist/app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test lib/game.test.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }
