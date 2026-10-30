@@ -4,7 +4,7 @@ A fantasy idle strategy game prototype built with Next.js App Router and React, 
 
 ## Local development
 
-Requires Node.js 20.9 or newer and npm.
+Requires Node.js 22 or newer and npm.
 
 ```sh
 npm ci
@@ -21,7 +21,7 @@ npm start
 
 ## Vercel
 
-Connect `freedommilestone/runelana`, use `main` as the production branch, and leave Root Directory at the repository root. `vercel.json` selects Next.js, installs using `npm ci`, builds with `npm run build`, and uses `.next` output. No environment variables are required. Pushes to the connected production branch trigger Vercel deployments.
+Connect `freedommilestone/runelana`, use `main` as the production branch, and leave Root Directory at the repository root. `vercel.json` selects Next.js, installs using `npm ci`, builds with `npm run build`, and uses `.next` output. Supabase environment variables are required for player accounts (see below). Pushes to the connected production branch trigger Vercel deployments.
 
 If the project was previously configured for the static prototype, remove any old `dist` root-directory override in Vercel settings.
 
@@ -42,3 +42,18 @@ Progress uses browser localStorage under the existing `runelana-demo-v1` key. Sa
 - `vercel.json`: deployment configuration
 
 Wallet connections, GP token verification, real multiplayer rankings, blockchain transactions, and server-side accounts are not implemented. Rankings are illustrative. The supplied reference image is reused for the marketplace backdrop and adventurer portrait. Google Fonts is optional with system-font fallbacks.
+
+## Supabase player accounts
+
+Use Node.js 22 or newer for the Supabase SDK. Copy `.env.example` to `.env.local` for local development. Set the same public variables in Vercel Production and Preview before building:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (legacy `NEXT_PUBLIC_SUPABASE_ANON_KEY` also supported)
+
+Do not use a service-role or secret key in these browser variables.
+
+In Supabase Authentication, enable the Email provider and email confirmation. Set Site URL to `https://www.runelana.com`; allow `https://www.runelana.com` and `https://www.runelana.com/?recovery=1` as redirect URLs. For local tests also allow `http://localhost:3000` and `http://localhost:3000/?recovery=1`. Add explicit preview URLs when needed. Configure production email delivery in Supabase before opening registration widely.
+
+The browser Supabase client handles sessions, email confirmation callbacks, password reset links, and sign-out. There are no protected server routes or cloud game-save tables yet. Game progression remains a client-side prototype; account-specific saves use `runelana-player-<user-id>` on this browser. Previous guest demo saves are left untouched, and not automatically assigned to an account. Accounts do not yet synchronize game progress across devices.
+
+Before merging the accounts branch, configure Supabase and verify: sign-up, confirmation email, sign-in, reload session restoration, password reset, sign-out, and switching between two accounts with separate saves. Those integration checks require a live Supabase project.
