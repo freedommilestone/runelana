@@ -1,0 +1,10 @@
+{
+  "name": "runelana",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A fantasy idle strategy browser game prototype",
+  "scripts": {
+    "start": "python3 -m http.server 3000 --directory dist",
+    "check": "node --check dist/app.js"
+  }
+}
