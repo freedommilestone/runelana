@@ -6,8 +6,22 @@ import { initialState, gear, tiers, rewards, settle, restore } from "../lib/game
 import Account from "../components/account";
 import { getSupabase } from "../lib/supabase";
 
-function Art({ box, className = "", label }) {
-  return <svg className={`art ${className}`} viewBox={box} preserveAspectRatio="xMidYMid slice" role={label ? "img" : undefined} aria-label={label} aria-hidden={label ? undefined : true}><image href="/assets/reference.png" width="1536" height="1024" /></svg>;
+function Art({ box, className = "", label, stretch = false }) {
+  return <svg className={`art ${className}`} viewBox={box} preserveAspectRatio={stretch ? "none" : "xMidYMid slice"} role={label ? "img" : undefined} aria-label={label} aria-hidden={label ? undefined : true}><image href="/assets/reference.png" width="1536" height="1024" /></svg>;
+}
+// Nine-slice artwork windows preserve the supplied frame's corners at any size.
+function Ornament({ dark = false }) {
+  const patches = dark ? [
+    ['tl','31 486 14 15'],['tr','372 486 14 15'],['bl','31 576 14 15'],['br','372 576 14 15'],
+    ['top','48 486 320 8'],['bottom','48 584 320 8'],['left','31 504 8 68'],['right','379 504 8 68']
+  ] : [
+    ['tl','20 599 20 20'],['tr','506 599 20 20'],['bl','20 980 20 20'],['br','506 980 20 20'],
+    ['top','45 599 455 8'],['bottom','45 991 455 9'],['left','20 624 10 350'],['right','516 624 10 350']
+  ];
+  return <div className={`ornament ${dark ? 'dark-frame' : ''}`} aria-hidden="true">
+    {!dark && <Art className="parchment" box="55 961 140 18" stretch/>}
+    {patches.map(([side,box]) => <Art key={side} className={`edge edge-${side}`} box={box} stretch/>)}
+  </div>;
 }
 const showcase = [
   {name:"Infernal Cape",type:"Capes",box:"556 835 83 69",level:75,price:"250K",rune:3},
@@ -121,7 +135,7 @@ export default function Home() {
   const pending = rewards(state, now);
   const matches = showcase.filter(item => (filter === "All" || item.type === filter) && item.name.toLowerCase().includes(search.toLowerCase()));
   return <>
-    <header className="site-header">
+    <header className="site-header"><Art className="header-stone" box="0 0 1536 10" stretch/>
       <a className="brand" href="#" aria-label="Runelana home"><Art box="28 5 288 55" /></a>
       <nav aria-label="Main navigation">
         <a className="active" href="#">Home</a><a href="#holders">Leaderboard</a><a href="#how">How It Works</a><a href="#runes">Runes</a><a href="#shop">Equipment</a>
@@ -145,10 +159,10 @@ export default function Home() {
         </div>}</div>
       </section>
       <section className="steps" id="how">
-        {[["55 500 76 71","1. CREATE AN ACCOUNT","Sign in and establish your adventurer. No wallet required."],["419 499 62 76","2. EARN RUNES HOURLY","Build your legend over time. Earn runes, advance your level, and discover higher rune tiers."],["796 501 70 69","3. LEVEL UP","Unlock new rune types and equipment as your adventure progresses."],["1164 497 69 82","4. COLLECT & CUSTOMIZE","Earn and unlock rare equipment, capes, and cosmetics to show your status."]].map(([box,title,text]) => <article key={title}><Art box={box}/><div><h3>{title}</h3><p>{text}</p></div></article>)}
+        {[["55 500 76 71","1. CREATE AN ACCOUNT","Sign in and establish your adventurer. No wallet required."],["419 499 62 76","2. EARN RUNES HOURLY","Build your legend over time. Earn runes, advance your level, and discover higher rune tiers."],["796 501 70 69","3. LEVEL UP","Unlock new rune types and equipment as your adventure progresses."],["1164 497 69 82","4. COLLECT & CUSTOMIZE","Earn and unlock rare equipment, capes, and cosmetics to show your status."]].map(([box,title,text]) => <article key={title}><Ornament dark/><Art box={box}/><div><h3>{title}</h3><p>{text}</p></div></article>)}
       </section>
-      <div className="dashboard">
-        <section className="panel featured" ref={player}>
+      <div className="dashboard"><Art className="dashboard-stone" box="0 1000 1536 24" stretch/>
+        <section className="panel featured" ref={player}><Ornament/>
           <div className="panel-title"><h2>FEATURED PLAYER</h2></div>
           <div className="featured-body"><div className="character"><Art box="39 641 191 314" label="GP Legend in dragon armor"/></div><div className="player-details">
             <h3><span className="crown">♛</span> GP Legend</h3><strong>Level 87</strong><p>2,341 days holding $GP</p><div className="meter"><span style={{width:'81%'}}/></div>
@@ -157,16 +171,16 @@ export default function Home() {
           </div></div>
         </section>
         <div className="middle">
-          <section className="panel progression" id="runes"><div className="panel-title"><h2>RUNE PROGRESSION</h2><button onClick={() => achievements.current.showModal()}>View All →</button></div><div className="rune-track">{tiers.map(([name,l],i)=><div className="tier" key={name}><Art box={`${runeX[i]} 646 48 48`}/><small>Lv. {l}</small><span>{name}</span>{i<7 && <b>→</b>}</div>)}</div></section>
-          <section className="panel shop" id="shop"><div className="panel-title"><h2>EQUIPMENT SHOP <small>(Cosmetic)</small></h2><button onClick={()=>{setFilter('All');setSearch('');}}>View All →</button></div>
+          <section className="panel progression" id="runes"><Ornament/><div className="panel-title"><h2>RUNE PROGRESSION</h2><button onClick={() => achievements.current.showModal()}>View All →</button></div><div className="rune-track">{tiers.map(([name,l],i)=><div className="tier" key={name}><Art box={`${runeX[i]} 646 48 48`}/><small>Lv. {l}</small><span>{name}</span>{i<7 && <b>→</b>}</div>)}</div></section>
+          <section className="panel shop" id="shop"><Ornament/><div className="panel-title"><h2>EQUIPMENT SHOP <small>(Cosmetic)</small></h2><button onClick={()=>{setFilter('All');setSearch('');}}>View All →</button></div>
             <div className="filters">{['All','Weapons','Armor','Capes','Hats','Accessories'].map(type=><button className={type===filter?'selected':''} key={type} onClick={()=>setFilter(type)}>{type}</button>)}</div>
             <div className="items">{matches.map(item=><button className="item" key={item.name} onClick={()=>{setSelectedItem(item);details.current.showModal();}}><Art box={item.box}/><span>{item.name}</span><small>Lv. {item.level}</small><div className="price"><Art box={`${runeX[item.rune]} 646 48 48`}/>{item.price}</div></button>)}</div>
             {!matches.length && <p className="empty">No matching equipment. Try another category or search.</p>}
           </section>
         </div>
         <aside>
-          <section className="panel earnings"><div className="panel-title"><h2>LIVE RUNE EARNINGS</h2><a href="#how">How It Works →</a></div><div className="earnings-body"><Art box="757 646 48 48"/><div><p>{user ? `Your expedition: ${state.path === 'gather' ? 'Gathering' : 'Exploring'}` : 'Current Tier: Fire Runes (Lv. 20)'}</p><strong>{user ? `${state.path === 'gather' ? 6 : 3} runes / minute` : '4 runes / hour'}</strong><div className="meter"><span style={{width:user?`${state.xp%60/60*100}%`:'44%'}}/></div><div className="next-tier"><span>{user ? `Level ${level} · ${Math.floor(pending.runes)} unclaimed runes` : 'Next Tier: Nature Runes (Lv. 35)'}</span><b>{user ? `${Math.floor(state.runes)} runes` : '180 / 180 days'}</b></div></div></div></section>
-          <section className="panel holders" id="holders"><div className="panel-title"><h2>TOP HOLDERS</h2></div><div className="leader-tabs">{['All Time','This Month','This Week'].map(p=><button key={p} className={period===p?'selected':''} onClick={()=>setPeriod(p)}>{p}</button>)}</div><table><thead><tr><th>#</th><th>Player</th><th>Days Holding</th><th>Level</th><th>Runes Earned</th></tr></thead><tbody>{leaders.filter(row=>!search || row[0].toLowerCase().includes(search.toLowerCase()) || showcase.some(item=>item.name.toLowerCase().includes(search.toLowerCase()))).map(([name,days,l,total],i)=><tr key={name}><td>{i+1}</td><td><Art box={`1170 ${848+i*27} 24 28`}/>{name}</td><td>{days.toLocaleString('en-US')}</td><td>{l}</td><td>{period==='All Time'?total:period==='This Month'?`${(12-i*1.6).toFixed(1)}K`:`${(2.8-i*.4).toFixed(1)}K`}</td></tr>)}</tbody></table></section>
+          <section className="panel earnings"><Ornament/><div className="panel-title"><h2>LIVE RUNE EARNINGS</h2><a href="#how">How It Works →</a></div><div className="earnings-body"><Art box="757 646 48 48"/><div><p>{user ? `Your expedition: ${state.path === 'gather' ? 'Gathering' : 'Exploring'}` : 'Current Tier: Fire Runes (Lv. 20)'}</p><strong>{user ? `${state.path === 'gather' ? 6 : 3} runes / minute` : '4 runes / hour'}</strong><div className="meter"><span style={{width:user?`${state.xp%60/60*100}%`:'44%'}}/></div><div className="next-tier"><span>{user ? `Level ${level} · ${Math.floor(pending.runes)} unclaimed runes` : 'Next Tier: Nature Runes (Lv. 35)'}</span><b>{user ? `${Math.floor(state.runes)} runes` : '180 / 180 days'}</b></div></div></div></section>
+          <section className="panel holders" id="holders"><Ornament/><div className="panel-title"><h2>TOP HOLDERS</h2></div><div className="leader-tabs">{['All Time','This Month','This Week'].map(p=><button key={p} className={period===p?'selected':''} onClick={()=>setPeriod(p)}>{p}</button>)}</div><table><thead><tr><th>#</th><th>Player</th><th>Days Holding</th><th>Level</th><th>Runes Earned</th></tr></thead><tbody>{leaders.filter(row=>!search || row[0].toLowerCase().includes(search.toLowerCase()) || showcase.some(item=>item.name.toLowerCase().includes(search.toLowerCase()))).map(([name,days,l,total],i)=><tr key={name}><td>{i+1}</td><td><Art box={`1170 ${848+i*27} 24 28`}/>{name}</td><td>{days.toLocaleString('en-US')}</td><td>{l}</td><td>{period==='All Time'?total:period==='This Month'?`${(12-i*1.6).toFixed(1)}K`:`${(2.8-i*.4).toFixed(1)}K`}</td></tr>)}</tbody></table></section>
         </aside>
       </div>
       <footer>Preview marketplace · Featured players, holding statistics, and equipment prices are illustrative. Supabase accounts are live; GP verification is not connected.</footer>
