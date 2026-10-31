@@ -30,7 +30,7 @@ References: [Solana RPC](https://solana.com/docs/rpc/http/gettokenaccountsbyowne
 
 ## Database-backed tracking
 
-Apply `supabase/migrations/202610310001_wallet_holdings.sql` to the linked Supabase project, then configure Vercel Production:
+Apply `supabase/migrations/20261031050202_wallet_holdings.sql` to the linked Supabase project, then configure Vercel Production:
 
 - `SUPABASE_SECRET_KEY`: Supabase server secret key. Legacy `SUPABASE_SERVICE_ROLE_KEY` is supported. Never use a browser-prefixed variable.
 - `WALLET_DATABASE_ENABLED=true`: enable after the migration and server key are ready.
@@ -45,7 +45,7 @@ Deploy to register `/api/cron/gp-scans` with schedule `0 6 * * *` (daily at 06:0
 - `wallet_verification_proofs`: consumed proof hashes. Link creation and proof consumption are one transaction; a replay cannot restore an old link.
 - `gp_scan_runs`: start/end time, result, successful/failed attempt counts and unscanned-wallet count. Admin-only.
 
-RLS permits players to read only their own wallet and snapshot rows. Players cannot write balances, dates, proofs or job records. Mutation RPC functions are revoked from PUBLIC, anon and authenticated; only service_role can execute them. The application validates the Supabase session and signature before invoking link RPC. No table is exposed for anonymous reads. Database writes use bound RPC arguments, and definer functions have an empty search path.
+RLS permits players to read only their own wallet and snapshot rows. Players cannot write balances, dates, proofs or job records. Mutation RPC functions are revoked from PUBLIC, anon and authenticated; only service_role can execute them. The application validates the Supabase session and signature before invoking link RPC. No table is exposed for anonymous reads. Database writes use bound RPC arguments, and mutation functions run as the caller with an empty search path. Only the narrow legacy Auth lookup uses a definer helper, in the non-exposed runelana_private schema with service-only execution.
 
 ### Holding-period rules
 
@@ -66,3 +66,7 @@ Do not switch back to legacy mode after database links change: old receipts are 
 ### Verification
 
 `npm test` runs the migration against embedded PostgreSQL (PGlite), tests actual RLS/grants, proof replay, wallet uniqueness, holding resets, gaps, failed and out-of-order scans, wallet changes, stale leases and daily deduplication. Additional tests cover cron authentication and accounting, precision, and stale display behavior.
+
+## Live schema verification
+
+Migration `20261031050202_wallet_holdings` was applied to the Runelana project. Live checks confirmed RLS on all four tables, no anonymous reads, no player writes, and service-only execution of mutation RPCs. Supabase's security advisor reported no new database findings. The existing Auth setting for [leaked password protection](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection) remains disabled; this change does not modify account-password policy. Newly created indexes may initially appear as [unused indexes](https://supabase.com/docs/guides/database/database-linter?lint=0005_unused_index) before production traffic uses them.

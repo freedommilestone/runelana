@@ -42,6 +42,7 @@ create table public.wallet_verification_proofs (
   user_id uuid not null references auth.users(id) on delete cascade,
   consumed_at timestamptz not null default now()
 );
+create index wallet_verification_proofs_user on public.wallet_verification_proofs(user_id);
 create table public.gp_scan_runs (
   id uuid primary key default gen_random_uuid(),
   started_at timestamptz not null default now(),
@@ -60,12 +61,14 @@ alter table public.gp_scan_runs enable row level security;
 revoke all on public.player_wallets, public.wallet_gp_snapshots, public.wallet_verification_proofs, public.gp_scan_runs from public, anon, authenticated;
 grant select on public.player_wallets, public.wallet_gp_snapshots to authenticated;
 grant all on public.player_wallets, public.wallet_gp_snapshots, public.wallet_verification_proofs, public.gp_scan_runs to service_role;
+create policy proofs_service_only on public.wallet_verification_proofs for all to service_role using (true) with check (true);
+create policy runs_service_only on public.gp_scan_runs for all to service_role using (true) with check (true);
 create policy wallet_owner_read on public.player_wallets for select to authenticated using ((select auth.uid()) = user_id);
 create policy snapshot_owner_read on public.wallet_gp_snapshots for select to authenticated using ((select auth.uid()) = user_id);
 
 -- Only the server calls this after verifying the Ed25519 signature or a legacy HMAC receipt.
 create function public.link_player_wallet(p_user_id uuid, p_address text, p_verified_at timestamptz, p_proof_hash text, p_legacy boolean default false)
-returns public.player_wallets language plpgsql security definer set search_path = '' as $$
+returns public.player_wallets language plpgsql security invoker set search_path = '' as $$
 declare w public.player_wallets;
 begin
   -- A tombstone prevents old user-editable metadata from restoring an unlinked wallet.
@@ -88,7 +91,7 @@ begin
 end $$;
 
 create function public.unlink_player_wallet(p_user_id uuid)
-returns void language plpgsql security definer set search_path = '' as $$
+returns void language plpgsql security invoker set search_path = '' as $$
 begin
   insert into public.player_wallets(user_id,unlinked_at) values(p_user_id,clock_timestamp()) on conflict(user_id) do update
   set wallet_address=null, link_version=gen_random_uuid(), unlinked_at=clock_timestamp(),
@@ -100,7 +103,7 @@ end $$;
 -- rejects scans that finish after the player changes or removes their wallet.
 create function public.record_gp_scan(p_user_id uuid, p_version uuid, p_raw text, p_slot bigint,
   p_checked_at timestamptz, p_error text default null, p_lease uuid default null)
-returns jsonb language plpgsql security definer set search_path = '' as $$
+returns jsonb language plpgsql security invoker set search_path = '' as $$
 declare w public.player_wallets; period_start timestamptz;
 begin
   select * into w from public.player_wallets where user_id=p_user_id for update;
@@ -158,7 +161,7 @@ end $$;
 -- SKIP LOCKED and short leases make overlapping cron invocations safe. Failed wallets
 -- get two attempts per UTC day; successful scans are not repeated by a duplicate cron.
 create function public.claim_daily_gp_scans(p_limit integer default 5)
-returns setof public.player_wallets language sql security definer set search_path = '' as $$
+returns setof public.player_wallets language sql security invoker set search_path = '' as $$
   with eligible as (
     select user_id from public.player_wallets
     where wallet_address is not null
@@ -176,7 +179,10 @@ $$;
 
 -- Migrate only cryptographically valid legacy links, checked by the application.
 -- This function returns only candidate IDs and receipts, never other Auth data.
-create function public.legacy_wallet_candidates(p_after uuid default '00000000-0000-0000-0000-000000000000',p_limit integer default 100)
+create schema if not exists runelana_private;
+revoke all on schema runelana_private from public,anon,authenticated;
+grant usage on schema runelana_private to service_role;
+create function runelana_private.legacy_wallet_candidates(p_after uuid default '00000000-0000-0000-0000-000000000000',p_limit integer default 100)
 returns table(user_id uuid,receipt text) language sql security definer set search_path = '' as $$
   select u.id,u.raw_user_meta_data->>'runelana_wallet_receipt' from auth.users u
   where u.id>p_after and u.raw_user_meta_data->>'runelana_wallet_receipt' is not null
@@ -184,8 +190,15 @@ returns table(user_id uuid,receipt text) language sql security definer set searc
   order by u.id limit greatest(1,least(p_limit,100));
 $$;
 
+revoke all on function runelana_private.legacy_wallet_candidates(uuid,integer) from public,anon,authenticated;
+grant execute on function runelana_private.legacy_wallet_candidates(uuid,integer) to service_role;
+create function public.legacy_wallet_candidates(p_after uuid default '00000000-0000-0000-0000-000000000000',p_limit integer default 100)
+returns table(user_id uuid,receipt text) language sql security invoker set search_path = '' as $$
+ select * from runelana_private.legacy_wallet_candidates(p_after,p_limit);
+$$;
+
 create function public.remaining_daily_gp_scans()
-returns bigint language sql security definer set search_path = '' as $$
+returns bigint language sql security invoker set search_path = '' as $$
  select count(*) from public.player_wallets where wallet_address is not null
  and (daily_scanned_on is null or daily_scanned_on < (clock_timestamp() at time zone 'UTC')::date);
 $$;
