@@ -27,7 +27,7 @@ If the project was previously configured for the static prototype, remove any ol
 
 ## Gameplay
 
-Signing in opens the marketplace game dashboard. Home returns to the public homepage; Play returns to the game. New accounts start with 120 runes. Choose gathering (6 runes and 2 XP per minute) or exploration (3 runes and 5 XP per minute). Every 60 XP grants a level. Away earnings are capped at eight hours; changing paths settles previous rewards.
+Signing in opens the marketplace game dashboard at `/play`. Home returns to `/`; Play returns to `/play`. Direct visits to `/play` restore the account session or show a sign-in screen. Older `/#shop` bookmarks redirect to `/play`. New accounts start with 120 runes. Choose gathering (6 runes and 2 XP per minute) or exploration (3 runes and 5 XP per minute). Every 60 XP grants a level. Away earnings are capped at eight hours; changing paths settles previous rewards.
 
 The dashboard supports one timed activity at a time: smithing costs 20 runes and produces 10 steel bars plus 10 XP after two minutes; merchant services award 40 GP and 5 XP after 90 seconds. Collect finished activities to claim rewards. Cancelling refunds the recipe cost. Purchase/equip cosmetics in Marketplace and inspect Inventory, Collection, Profile, and Bank.
 
@@ -35,7 +35,9 @@ Progress is saved per account in this browser, including active timers. It does 
 
 ## Structure
 
-- `app/page.js`: public homepage, authentication session and account save switching
+- `app/page.js`: public homepage and legacy bookmark redirect
+- `app/play/page.js`: player dashboard route and signed-out entry screen
+- `components/game-session.js`: shared authentication, account dialog, and account save switching
 - `components/landing-page.js` and `.css`: public fantasy landing page
 - `docs/landing-page.md`: homepage artwork sources, prompts, and verification
 - `components/game-dashboard.js` and `.css`: signed-in game dashboard

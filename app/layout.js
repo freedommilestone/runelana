@@ -1,4 +1,5 @@
 import './globals.css';
+import GameSessionProvider from '../components/game-session';
 
 export const metadata = {
   title: 'Runelana — Build your legend',
@@ -6,5 +7,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en" data-scroll-behavior="smooth"><body><GameSessionProvider>{children}</GameSessionProvider></body></html>;
 }
