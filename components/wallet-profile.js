@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { walletRequest } from '../lib/wallet-client';
 import { GP_MINT } from '../lib/gp-token.mjs';
+import HoldingHistory from './holding-history';
 import './wallet-profile.css';
 
 function providers() {
@@ -31,8 +32,23 @@ export default function WalletProfile({ userId, onSnapshot }) {
   const mounted = useRef(false);
   const locked = useRef(false);
   const cooldown = useRef(null);
+  const historyPolls = useRef(0);
 
   useEffect(() => { if (snapshot) onSnapshot?.(snapshot); }, [snapshot, onSnapshot]);
+
+  useEffect(() => {
+    if (snapshot?.holdingHistory?.status !== 'pending' || busy || historyPolls.current >= 12) return;
+    const timer = setTimeout(async () => {
+      if (locked.current || !mounted.current) return;
+      const op = ++revision.current;
+      historyPolls.current++;
+      try {
+        const result = await requestWallet();
+        if (mounted.current && op === revision.current) setSnapshot(result);
+      } catch {} // Retain the last result; manual refresh remains available.
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, [snapshot, busy]);
 
   function detectWallets() {
     const wallets = providers();
@@ -131,6 +147,7 @@ export default function WalletProfile({ userId, onSnapshot }) {
       <div className="g-wallet-balance"><span>{balance?.isStale ? 'Last known GP balance' : 'GP in your verified wallet'}</span><strong>{balance ? `${balance.amount} GP` : 'Balance unavailable'}</strong><small>{balance ? balance.hasGP ? (balance.isStale ? 'GP was present at the last successful scan.' : 'This wallet holds GP.') : (balance.isStale ? 'The last successful scan found no GP.' : 'No GP found in this wallet.') : 'Refresh to check the latest balance.'}</small>{balance && <time dateTime={balance.checkedAt}>Checked {new Date(balance.checkedAt).toLocaleTimeString()} · confirmed on Solana</time>}</div>
       <div className="g-wallet-actions"><button disabled={!!busy || !canRefresh} onClick={refresh}>Refresh GP balance</button><button disabled={!!busy} onClick={unlink}>Unlink wallet</button></div>
     </>}
+    {wallet && <HoldingHistory history={snapshot?.holdingHistory}/>}
     {wallet && snapshot?.tracking && <div className="g-wallet-holding">
       <h4>Observed GP holding period</h4>
       <strong>{snapshot.tracking.holdingSince ? `${snapshot.tracking.observedDays} completed days` : 'No positive holding period recorded'}</strong>

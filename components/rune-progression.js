@@ -13,6 +13,6 @@ export default function RuneProgression() {
         <td>{tier.characterLevel}</td><td>{tier.holdingDays} {tier.holdingDays === 1 ? 'day' : 'days'}</td><td>{tier.status}</td>
       </tr>)}</tbody>
     </table>
-    <p className="g-rune-proposal-note">Your holding-based character level is not assigned yet. Historical wallet scans and the holding-time rules still need to be finalized.</p>
+    <p className="g-rune-proposal-note">Your holding-based character level is not assigned yet. The proposed unlocks use your longest uninterrupted GP holding streak, including GP received by transfer. Historical scans are required to assign this status.</p>
   </section>;
 }

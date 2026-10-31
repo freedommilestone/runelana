@@ -44,4 +44,14 @@ The Profile and Runes panels display the proposal stored in `lib/rune-progressio
 
 These are **proposed design thresholds**, not active production rules. Character level is a holding-based status, separate from profession levels. Existing aggregate XP is labeled Adventure level; it is not used to grant holding status. No level interpolation between milestones has been specified.
 
-The table does not mark player unlocks or derive historical holding from daily observations. The holding-time metric (cumulative duration, current streak, or longest streak), treatment of incoming transfers, and indexed historical data source are still pending. Existing game rewards remain unchanged until production rules are finalized.
+The table does not mark player unlocks or derive historical holding from daily observations. The selected metric is the longest uninterrupted positive-GP streak. Purchases and incoming transfers both count. Empty-wallet gaps end a streak without erasing the historical record. Helius is the selected indexed history provider; its production endpoint is supplied through the server-only SOLANA_HISTORY_RPC_URL setting. Existing game rewards remain unchanged until production rules are finalized.
+
+## Historical GP holdings
+
+Profile displays the longest uninterrupted positive-GP streak, first GP receipt, current streak at the historical checkpoint, cumulative positive duration, and recent zero-balance gaps. Incoming transfers count. Selling or transferring only part of the GP does not reset a streak; reaching zero across the wallet does. A later empty balance never erases the longest record. Completed days are elapsed 24-hour periods, not calendar-date counts.
+
+Historical scanning uses Helius getTransactionsForAddress with all owned token accounts, finalized transactions, ascending slot/transaction ordering and persistent pagination. It includes closed accounts, uses actual pre/post token balances (including transfer fees), and reconciles the complete ledger against a finalized balance snapshot. The mint must have no activity before the provider's reliable owner-index cutoff. Missing data and failed reconciliation retain the previous verified result and never invent zero balances.
+
+Supabase wallet_gp_history stores checkpoints with server-only writes, leases, per-user reads, and verified-link version checks. Profile requests schedule a bounded scan after responding; the profile polls pending results for up to two minutes. Larger histories resume on subsequent requests or the daily cron. Completed history is refreshed at most every six hours from profile visits, and on the daily scan. Pending/error jobs resume at their saved page. Unlinking or changing wallets invalidates in-flight writes and hides the old history.
+
+The existing daily observation counter remains separately labeled. Historical holding stats do not activate the proposed rune thresholds or assign a character level yet.

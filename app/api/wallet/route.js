@@ -1,19 +1,24 @@
-import { NextResponse } from 'next/server';
+import { historyConfigured, scanGPHistory } from '../../../lib/gp-history-server.mjs';
+import { NextResponse, after } from 'next/server';
 import { walletDatabaseEnabled, loadPlayerWallet, linkWallet, rpc } from '../../../lib/wallet-database.mjs';
 import { playerTrackingSnapshot } from '../../../lib/wallet-tracking.mjs';
 import { createChallenge, createReceipt, digest, verifyChallenge, CHALLENGE_TTL } from '../../../lib/wallet-proof.mjs';
 import { authenticatedPlayer, appOrigin, requireSameOrigin, saveReceipt, walletSecret, walletSnapshot, WalletError } from '../../../lib/wallet-server.mjs';
 
 export const runtime = 'nodejs';
+export const maxDuration = 120;
 export const dynamic = 'force-dynamic';
 const cookieName = 'runelana-wallet-challenge';
 const cookieOptions = { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/wallet' };
 function json(body, status = 200) { return NextResponse.json(body, { status, headers: { 'Cache-Control': 'private, no-store, max-age=0', Vary: 'Authorization, Cookie' } }); }
+function scheduleHistory(uid) { if (walletDatabaseEnabled() && historyConfigured()) after(() => scanGPHistory(uid).catch(()=>{})); }
 function failure(error) { return json({ error: error instanceof WalletError ? error.message : 'Wallet request failed. Please try again.' }, error instanceof WalletError ? error.status : 500); }
 export async function GET(request) {
   try {
     const { user } = await authenticatedPlayer(request);
-    return json(walletDatabaseEnabled() ? await playerTrackingSnapshot(await loadPlayerWallet(user, walletSecret())) : await walletSnapshot(user, walletSecret()));
+    const result = walletDatabaseEnabled() ? await playerTrackingSnapshot(await loadPlayerWallet(user, walletSecret())) : await walletSnapshot(user, walletSecret());
+    scheduleHistory(user.id);
+    return json(result);
   } catch (error) { return failure(error); }
 }
 export async function POST(request) {
@@ -47,6 +52,7 @@ export async function POST(request) {
         const savedUser = await saveReceipt(accessToken, receipt);
         result = await walletSnapshot(savedUser, secret);
       }
+      scheduleHistory(user.id);
       const response = json(result);
       response.cookies.set(cookieName, '', { ...cookieOptions, maxAge: 0 });
       return response;
