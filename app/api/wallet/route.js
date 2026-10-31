@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import { walletDatabaseEnabled, loadPlayerWallet, linkWallet, rpc } from '../../../lib/wallet-database.mjs';
+import { playerTrackingSnapshot } from '../../../lib/wallet-tracking.mjs';
 import { createChallenge, createReceipt, digest, verifyChallenge, CHALLENGE_TTL } from '../../../lib/wallet-proof.mjs';
 import { authenticatedPlayer, appOrigin, requireSameOrigin, saveReceipt, walletSecret, walletSnapshot, WalletError } from '../../../lib/wallet-server.mjs';
 
@@ -11,7 +13,7 @@ function failure(error) { return json({ error: error instanceof WalletError ? er
 export async function GET(request) {
   try {
     const { user } = await authenticatedPlayer(request);
-    return json(await walletSnapshot(user, walletSecret()));
+    return json(walletDatabaseEnabled() ? await playerTrackingSnapshot(await loadPlayerWallet(user, walletSecret())) : await walletSnapshot(user, walletSecret()));
   } catch (error) { return failure(error); }
 }
 export async function POST(request) {
@@ -36,14 +38,22 @@ export async function POST(request) {
       let wallet;
       try { wallet = verifyChallenge({ token: body.token, signature: body.signature, cookie: request.cookies.get(cookieName)?.value, uid: user.id, accessToken, origin: appOrigin(request), secret }); }
       catch (error) { throw new WalletError(error.message); }
-      const receipt = createReceipt({ uid: user.id, ...wallet, secret });
-      const savedUser = await saveReceipt(accessToken, receipt);
-      const response = json(await walletSnapshot(savedUser, secret));
+      let result;
+      if (walletDatabaseEnabled()) {
+        const row = await linkWallet(user.id, wallet, body.token);
+        result = await playerTrackingSnapshot(row);
+      } else {
+        const receipt = createReceipt({ uid: user.id, ...wallet, secret });
+        const savedUser = await saveReceipt(accessToken, receipt);
+        result = await walletSnapshot(savedUser, secret);
+      }
+      const response = json(result);
       response.cookies.set(cookieName, '', { ...cookieOptions, maxAge: 0 });
       return response;
     }
     if (body?.action === 'unlink') {
-      await saveReceipt(accessToken, null);
+      if (walletDatabaseEnabled()) await rpc('unlink_player_wallet', { p_user_id: user.id });
+      else await saveReceipt(accessToken, null);
       const response = json({ wallet: null, balance: null, balanceError: null });
       response.cookies.set(cookieName, '', { ...cookieOptions, maxAge: 0 });
       return response;
