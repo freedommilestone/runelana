@@ -37,7 +37,7 @@ export default forwardRef(function Account({ user }, ref) {
     finally { setBusy(false); }
   }
   useImperativeHandle(ref, () => ({
-    open() { setMode('signup'); setMessage(''); dialog.current.showModal(); },
+    open(initialMode = 'signup') { setMode(initialMode); setMessage(''); dialog.current.showModal(); },
     recover() { setMode('update'); setMessage('Choose a new password.'); dialog.current.showModal(); }
   }));
   return <dialog ref={dialog} className="account-dialog">

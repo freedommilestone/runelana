@@ -36,6 +36,8 @@ Progress is saved per account in this browser, including active timers. It does 
 ## Structure
 
 - `app/page.js`: public homepage, authentication session and account save switching
+- `components/landing-page.js` and `.css`: public fantasy landing page
+- `docs/landing-page.md`: homepage artwork sources, prompts, and verification
 - `components/game-dashboard.js` and `.css`: signed-in game dashboard
 - `lib/activity.mjs`: timed crafting and service rewards
 - `lib/activity.test.mjs`: activity lifecycle and save compatibility tests
