@@ -17,3 +17,5 @@
 /* Keep the legacy homepage's generic aside grid rules out of this workspace. */
 .g-shell .sk-sidebar{display:block;grid-column:auto}
 @media(min-width:701px){.g-skills-open>.g-left{display:block;grid-column:auto}}
+
+@media(min-width:701px){.g-shell .sk-reading .sk-sidebar{align-self:start}.g-shell .sk-reading .sk-sidebar nav{height:auto;grid-template-rows:repeat(7,103px)}}

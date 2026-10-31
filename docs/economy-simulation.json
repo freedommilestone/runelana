@@ -1,0 +1,481 @@
+{
+  "status": "draft",
+  "assumptions": [
+    "Seven days unless specified; 10 capacity units/hour after the first unlock using proposed costs 1/2/8/20/120. Flat production is included for comparison only. No rune trading.",
+    "Holding tiers and skill levels stay fixed per scenario; profession level is 99 except the new-player scenario.",
+    "Materials are assumed available, so upstream gathering and material market costs are not simulated.",
+    "Production is evaluated in daily batches with rune carryover, a single 24-hour activity slot, and the stated recipe priority. Intraday scheduling is not modeled.",
+    "Requested batches are synthetic demand targets, not sales forecasts. No GP prices, market clearing, or profit guarantees are modeled."
+  ],
+  "results": [
+    {
+      "name": "New player without GP or runes",
+      "days": 7,
+      "holdingDays": 0,
+      "professionLevel": 0,
+      "productionModel": "proposed-weighted",
+      "allocation": {},
+      "capacityUnits": 0,
+      "producedRunes": 0,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 21,
+      "requestedBatches": 840,
+      "completedBatches": 840,
+      "recipes": [
+        {
+          "id": "catch-shrimp",
+          "requested": 280,
+          "completed": 280,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        },
+        {
+          "id": "grow-wheat",
+          "requested": 280,
+          "completed": 280,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        },
+        {
+          "id": "mine-copper",
+          "requested": 280,
+          "completed": 280,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        }
+      ]
+    },
+    {
+      "name": "Day-30 Fire focus",
+      "days": 7,
+      "holdingDays": 30,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 840,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 35,
+      "requestedBatches": 840,
+      "completedBatches": 420,
+      "recipes": [
+        {
+          "id": "smith-steel-bars",
+          "requested": 420,
+          "completed": 420,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        },
+        {
+          "id": "cook-specialty-stew",
+          "requested": 210,
+          "completed": 0,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 210
+        },
+        {
+          "id": "irrigate-berries",
+          "requested": 210,
+          "completed": 0,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 210
+        }
+      ]
+    },
+    {
+      "name": "Day-30 common/uncommon mix",
+      "days": 7,
+      "holdingDays": 30,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 6,
+        "water": 3,
+        "mind": 1
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 1176,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 336,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 35,
+      "requestedBatches": 840,
+      "completedBatches": 420,
+      "recipes": [
+        {
+          "id": "smith-steel-bars",
+          "requested": 420,
+          "completed": 252,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 168
+        },
+        {
+          "id": "cook-specialty-stew",
+          "requested": 210,
+          "completed": 0,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 210
+        },
+        {
+          "id": "irrigate-berries",
+          "requested": 210,
+          "completed": 168,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 42
+        }
+      ]
+    },
+    {
+      "name": "Day-60 Fire focus",
+      "days": 7,
+      "holdingDays": 60,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 840,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 35,
+      "requestedBatches": 700,
+      "completedBatches": 420,
+      "recipes": [
+        {
+          "id": "prepare-harvest-meal",
+          "requested": 70,
+          "completed": 0,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 70
+        },
+        {
+          "id": "smith-steel-bars",
+          "requested": 420,
+          "completed": 420,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        },
+        {
+          "id": "irrigate-berries",
+          "requested": 210,
+          "completed": 0,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 210
+        }
+      ]
+    },
+    {
+      "name": "Day-60 Nature diversification",
+      "days": 7,
+      "holdingDays": 60,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 5,
+        "water": 2,
+        "mind": 1,
+        "nature": 2
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 1092,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 168,
+        "fire": 0,
+        "nature": 98,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 30.92,
+      "requestedBatches": 700,
+      "completedBatches": 343,
+      "recipes": [
+        {
+          "id": "prepare-harvest-meal",
+          "requested": 70,
+          "completed": 70,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        },
+        {
+          "id": "smith-steel-bars",
+          "requested": 420,
+          "completed": 175,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 245
+        },
+        {
+          "id": "irrigate-berries",
+          "requested": 210,
+          "completed": 98,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 112
+        }
+      ]
+    },
+    {
+      "name": "Low requested production",
+      "days": 7,
+      "holdingDays": 30,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 840,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 700,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 5.83,
+      "requestedBatches": 70,
+      "completedBatches": 70,
+      "recipes": [
+        {
+          "id": "smith-steel-bars",
+          "requested": 70,
+          "completed": 70,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 0
+        }
+      ]
+    },
+    {
+      "name": "High requested production",
+      "days": 7,
+      "holdingDays": 30,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "fire": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 840,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 35,
+      "requestedBatches": 1050,
+      "completedBatches": 420,
+      "recipes": [
+        {
+          "id": "smith-steel-bars",
+          "requested": 1050,
+          "completed": 420,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 630
+        }
+      ]
+    },
+    {
+      "name": "Soul focus under current flat production",
+      "days": 7,
+      "holdingDays": 365,
+      "professionLevel": 99,
+      "productionModel": "flat",
+      "allocation": {
+        "soul": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 1680,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 1680
+      },
+      "activityHours": 0,
+      "requestedBatches": 0,
+      "completedBatches": 0,
+      "recipes": []
+    },
+    {
+      "name": "Soul focus under proposed capacity costs",
+      "days": 7,
+      "holdingDays": 365,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "soul": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 14,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 14
+      },
+      "activityHours": 0,
+      "requestedBatches": 0,
+      "completedBatches": 0,
+      "recipes": []
+    },
+    {
+      "name": "Death focus with fractional hourly output",
+      "days": 7,
+      "holdingDays": 120,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "death": 10
+      },
+      "capacityUnits": 1680,
+      "producedRunes": 210,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 210,
+        "blood": 0,
+        "soul": 0
+      },
+      "activityHours": 0,
+      "requestedBatches": 0,
+      "completedBatches": 0,
+      "recipes": []
+    },
+    {
+      "name": "Legendary resource accumulation over 30 days",
+      "days": 30,
+      "holdingDays": 365,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "soul": 10
+      },
+      "capacityUnits": 7200,
+      "producedRunes": 60,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 0,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 0,
+        "soul": 60
+      },
+      "activityHours": 0,
+      "requestedBatches": 0,
+      "completedBatches": 0,
+      "recipes": []
+    },
+    {
+      "name": "Mixed legendary crafting over 30 days",
+      "days": 30,
+      "holdingDays": 365,
+      "professionLevel": 99,
+      "productionModel": "proposed-weighted",
+      "allocation": {
+        "soul": 8,
+        "blood": 1,
+        "mind": 1
+      },
+      "capacityUnits": 7200,
+      "producedRunes": 804,
+      "remainingRunes": {
+        "air": 0,
+        "mind": 712,
+        "water": 0,
+        "fire": 0,
+        "nature": 0,
+        "death": 0,
+        "blood": 32,
+        "soul": 8
+      },
+      "activityHours": 96,
+      "requestedBatches": 30,
+      "completedBatches": 4,
+      "recipes": [
+        {
+          "id": "seasonal-enchantment",
+          "requested": 30,
+          "completed": 4,
+          "blockedByUnlock": 0,
+          "blockedByTime": 0,
+          "blockedByRunes": 26
+        }
+      ]
+    }
+  ]
+}
