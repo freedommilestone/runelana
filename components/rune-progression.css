@@ -1,0 +1,14 @@
+.g-rune-proposal{margin-top:24px;padding-top:8px;border-top:1px solid #78633b}
+.g-rune-proposal h3{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.g-rune-proposal h3>span{padding:2px 7px;border:1px solid #9b8047;border-radius:3px;color:#f3d997;font:12px/1.5 Arial,sans-serif}
+.g-rune-proposal>p{font-size:14px}
+.g-rune-proposal table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.g-rune-proposal caption{text-align:left;font-size:12px;color:#d0c3a2;padding:6px 0}
+.g-rune-proposal th,.g-rune-proposal td{padding:8px 5px;border-bottom:1px solid #655535;text-align:left}
+.g-rune-proposal thead th{font-size:12px;line-height:1.4;color:#efcf83;background:#0b100a}
+.g-rune-proposal tbody th{font-weight:400}
+.g-rune-proposal td:nth-child(2),.g-rune-proposal td:nth-child(3){text-align:center}
+.g-rune-proposal thead th:nth-child(2),.g-rune-proposal thead th:nth-child(3){text-align:center}
+.g-rune-symbol{display:inline-block;width:22px;text-align:center;margin-right:4px;text-shadow:0 1px 3px #000}
+.g-rune-proposal .g-rune-proposal-note{color:#c9bea3;font-size:13px}
+@media(max-width:450px){.g-rune-proposal table{font-size:12px}.g-rune-proposal th,.g-rune-proposal td{padding:7px 3px}.g-rune-symbol{display:none}.g-rune-proposal thead th{font-size:11px}}

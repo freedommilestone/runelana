@@ -26,3 +26,22 @@ Eight Node tests cover passive rewards, save validation, timed activity completi
 The dashboard is served at `/play`; the public landing page is `/`. A layout-level session provider preserves authentication, the account dialog, and browser-saved progress across route changes. Successful sign-in and email confirmation navigate to `/play`. Password recovery stays on its callback page with the password-update dialog. Sign-out returns to `/`. Legacy `/#shop` bookmarks redirect to `/play`, where signed-out visitors receive a sign-in screen.
 
 Browser checks with mock auth cover direct signed-out access, sign-in URL, Home/Play navigation, active crafting saved across navigation and reloads, legacy bookmark migration, sign-out, and confirmation/recovery callbacks.
+
+## Proposed holding-based rune progression
+
+The Profile and Runes panels display the proposal stored in `lib/rune-progression.mjs`:
+
+| Rune | Holding-based character level | Required holding time | Status |
+| --- | ---: | ---: | --- |
+| Air | 1 | 1 day | Starting rune |
+| Mind | 5 | 7 days | Unlock |
+| Water | 10 | 14 days | Unlock |
+| Fire | 20 | 30 days | Unlock |
+| Nature | 35 | 60 days | Unlock |
+| Death | 50 | 120 days | Unlock |
+| Blood | 75 | 240 days | Unlock |
+| Soul | 100 | 365 days | Highest tier |
+
+These are **proposed design thresholds**, not active production rules. Character level is a holding-based status, separate from profession levels. Existing aggregate XP is labeled Adventure level; it is not used to grant holding status. No level interpolation between milestones has been specified.
+
+The table does not mark player unlocks or derive historical holding from daily observations. The holding-time metric (cumulative duration, current streak, or longest streak), treatment of incoming transfers, and indexed historical data source are still pending. Existing game rewards remain unchanged until production rules are finalized.

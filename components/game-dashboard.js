@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import WalletProfile from './wallet-profile';
+import RuneProgression from './rune-progression';
 import { useWalletBalance } from './use-wallet-balance';
 import { gear, rewards, settle } from '../lib/game.mjs';
 import { activities, startActivity, finishActivity, cancelActivity } from '../lib/activity.mjs';
@@ -33,7 +34,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
   const [navOpen,setNavOpen] = useState(false);
   const panel = useRef(null);
   const name = user.user_metadata?.display_name || 'Rune Traveler';
-  const level = 1 + Math.floor(state.xp / 60);
+  const adventureLevel = 1 + Math.floor(state.xp / 60);
   const task = state.activity;
   const recipe = task ? activities[task.type] : null;
   const pending = rewards(state,now);
@@ -77,7 +78,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       <button className="g-menu-toggle" onClick={()=>setNavOpen(!navOpen)} aria-expanded={navOpen}>☰ Menu</button>
     </header>
     <aside className={`g-left g-frame ${navOpen?'g-nav-open':''}`}>
-      <Frame/><div className="g-player"><Sprite box="20 112 53 54"/><div><strong>{name}</strong><span>♛ Level {level}</span></div></div>
+      <Frame/><div className="g-player"><Sprite box="20 112 53 54"/><div><strong>{name}</strong><span>Adventure Lv. {adventureLevel}</span></div></div>
       <nav aria-label="Player navigation">{navigation.map(([title,box])=><button key={title} className={section===title?'g-active':''} onClick={()=>open(title)}><Sprite box={box}/>{title}</button>)}</nav>
       <small className="g-save-note">Progress saved on this browser</small>
     </aside>
@@ -91,16 +92,16 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       <p className="g-notice" role="status">{notice}</p>
     </aside>
     <dialog ref={panel} className="g-dialog"><button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button><h2>{section}</h2>
-      {section==='Runes' && <><p>Available: <strong>{Math.floor(state.runes)} runes</strong> · Pending: {Math.floor(pending.runes)}</p><div className="g-options"><button className={state.path==='gather'?'g-active':''} onClick={()=>choosePath('gather')}>Gather<br/><small>6 runes + 2 XP / minute</small></button><button className={state.path==='explore'?'g-active':''} onClick={()=>choosePath('explore')}>Explore<br/><small>3 runes + 5 XP / minute</small></button></div><p>Expeditions continue while you are away, up to 8 hours.</p><button className="g-green" onClick={claimRunes}>{state.started?'Collect runes':'Start gathering'}</button></>}
+      {section==='Runes' && <><p>Available: <strong>{Math.floor(state.runes)} runes</strong> · Pending: {Math.floor(pending.runes)}</p><div className="g-options"><button className={state.path==='gather'?'g-active':''} onClick={()=>choosePath('gather')}>Gather<br/><small>6 runes + 2 XP / minute</small></button><button className={state.path==='explore'?'g-active':''} onClick={()=>choosePath('explore')}>Explore<br/><small>3 runes + 5 XP / minute</small></button></div><p>Expeditions continue while you are away, up to 8 hours.</p><button className="g-green" onClick={claimRunes}>{state.started?'Collect runes':'Start gathering'}</button><RuneProgression/></>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 runes. Takes 2 minutes. Earn 10 XP.</p><button disabled={!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <><p><strong>{name}</strong> · Level {level}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/></>}
+      {section==='My Profile' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/></>}
       {section==='Inventory' && <><p>Steel Bars: {state.steelBars||0}</p><p>Runes: {Math.floor(state.runes)}</p><p>Equipment: {state.owned.length} items</p><p>Equipped: {state.equipped}</p></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} runes`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Earn runes and visit the marketplace.</p>}</div>}
-      {section==='Leaderboard' && <p>Live player rankings will appear when shared game saves are connected. Your current level is {level}.</p>}
+      {section==='Leaderboard' && <p>Live player rankings will appear when shared game saves are connected. Your adventure level is {adventureLevel}.</p>}
       {section==='Friends' && <p>Friends and multiplayer messaging are not connected yet. Your local game log and notes are available below.</p>}
-      {section==='How It Works' && <><p>1. Start an expedition in Rune Production to earn runes and XP.</p><p>2. Spend runes to craft items or purchase equipment.</p><p>3. Complete services to earn game gold.</p><p>Each 60 XP gains a level. Complete activities by collecting their rewards. Progress is currently stored on this browser for your account.</p></>}
+      {section==='How It Works' && <><p>1. Start an expedition in Rune Production to earn runes and XP.</p><p>2. Spend runes to craft items or purchase equipment.</p><p>3. Complete services to earn game gold.</p><p>Each 60 XP gains an adventure level. Holding-based character status and profession levels are separate progression systems. Complete activities by collecting their rewards. Progress is currently stored on this browser for your account.</p></>}
     </dialog>
   </div>;
 }
