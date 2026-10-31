@@ -14,7 +14,7 @@ export default function HoldingHistory({history}) {
         <dt>History verified through</dt><dd>{date(summary.throughTime)}</dd></dl>
       {history.isStale && <p>The latest historical scan is incomplete or unavailable. These are the last verified results.</p>}
       {summary.zeroPeriods?.length > 0 && <details><summary>Recent zero-balance gaps</summary><ul>{summary.zeroPeriods.slice(-10).map((gap,i)=><li key={`${gap.start}-${i}`}>{date(gap.start)} – {date(gap.end)}<br/>{duration(gap.end-gap.start)}</li>)}</ul></details>}
-      <p>Measured across all indexed GP accounts in this wallet, using finalized transactions. Rune thresholds are still proposed.</p>
+      <p>Measured across all indexed GP accounts in this wallet, using finalized transactions. Your longest verified streak determines rune unlocks.</p>
     </> : <p>{history?.status === 'error' ? 'Historical scanning is temporarily unavailable. Refresh to try again; no holding days have been assigned.' : history?.status === 'pending' ? 'Scanning past GP transactions. Your balance is available while history is being checked. Large histories may take several scans.' : 'Historical holding time is not available yet. Daily observations below are a separate counter.'}</p>}
   </section>;
 }

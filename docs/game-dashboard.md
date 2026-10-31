@@ -13,7 +13,7 @@ The background was generated with the built-in ImageGen tool using this prompt:
 
 ## Data and limits
 
-Supabase handles account sessions. Gameplay remains a local prototype stored under `runelana-player-<user-id>`, with new fields for GP, steel bars, and the active task. Existing saves receive defaults for these fields. Timers use timestamps, survive reloads, and require collection before rewards are granted. Client-side progress is editable by the player and is not suitable for a trusted multiplayer economy.
+Supabase handles account sessions. Item activities, game gold and adventure XP remain a local prototype stored under `runelana-player-<user-id>`, with new fields for GP, steel bars, and the active task. Existing saves receive defaults for these fields. Timers use timestamps, survive reloads, and require collection before rewards are granted. Client-side progress is editable by the player and is not suitable for a trusted multiplayer economy.
 
 The local log and notes reset when the dashboard unmounts. Friends and rankings show their unconnected state. No chat messages are transmitted.
 
@@ -27,9 +27,9 @@ The dashboard is served at `/play`; the public landing page is `/`. A layout-lev
 
 Browser checks with mock auth cover direct signed-out access, sign-in URL, Home/Play navigation, active crafting saved across navigation and reloads, legacy bookmark migration, sign-out, and confirmation/recovery callbacks.
 
-## Proposed holding-based rune progression
+## Holding-based rune progression
 
-The Profile and Runes panels display the proposal stored in `lib/rune-progression.mjs`:
+The Profile and Runes panels display the progression stored in `lib/rune-progression.mjs`:
 
 | Rune | Holding-based character level | Required holding time | Status |
 | --- | ---: | ---: | --- |
@@ -42,9 +42,9 @@ The Profile and Runes panels display the proposal stored in `lib/rune-progressio
 | Blood | 75 | 240 days | Unlock |
 | Soul | 100 | 365 days | Highest tier |
 
-These are **proposed design thresholds**, not active production rules. Character level is a holding-based status, separate from profession levels. Existing aggregate XP is labeled Adventure level; it is not used to grant holding status. No level interpolation between milestones has been specified.
+These thresholds govern server-validated rune unlocks. Character level is a holding-based status, separate from profession levels. Existing aggregate XP is labeled Adventure level; it is not used to grant holding status. Character status uses the highest unlocked milestone, with no interpolation between milestones.
 
-The table does not mark player unlocks or derive historical holding from daily observations. The selected metric is the longest uninterrupted positive-GP streak. Purchases and incoming transfers both count. Empty-wallet gaps end a streak without erasing the historical record. Helius is the selected indexed history provider; its production endpoint is supplied through the server-only SOLANA_HISTORY_RPC_URL setting. Existing game rewards remain unchanged until production rules are finalized.
+The table does not mark player unlocks or derive historical holding from daily observations. The selected metric is the longest uninterrupted positive-GP streak. Purchases and incoming transfers both count. Empty-wallet gaps end a streak without erasing the historical record. Helius is the selected indexed history provider; its production endpoint is supplied through the server-only SOLANA_HISTORY_RPC_URL setting. Automatic typed-rune production replaces the manual Gather/Collect controls.
 
 ## Historical GP holdings
 
@@ -54,4 +54,16 @@ Historical scanning uses Helius getTransactionsForAddress with all owned token a
 
 Supabase wallet_gp_history stores checkpoints with server-only writes, leases, per-user reads, and verified-link version checks. Profile requests schedule a bounded scan after responding; the profile polls pending results for up to two minutes. Larger histories resume on subsequent requests or the daily cron. Completed history is refreshed at most every six hours from profile visits, and on the daily scan. Pending/error jobs resume at their saved page. Unlinking or changing wallets invalidates in-flight writes and hides the old history.
 
-The existing daily observation counter remains separately labeled. Historical holding stats do not activate the proposed rune thresholds or assign a character level yet.
+The existing daily observation counter remains separately labeled. Historical holding stats determine rune unlocks and character status.
+
+## Automatic rune production
+
+`/api/runes` validates the signed-in player and uses server-only RPCs. `rune_types` stores the eight unlock thresholds, `player_rune_production` stores the allocation/checkpoint/revision, `player_rune_inventory` stores a separate balance for every rune, and `rune_allocation_events` records allocation changes. RLS permits only owner reads; balance and allocation writes require the trusted server.
+
+Production capacity is 10 total runes per hour, allocated in whole rates across unlocked types. It starts automatically at 10 Air/hour when verified GP history first reaches one completed day. Existing eligible accounts start at feature activation, without retroactive rewards. The longest verified streak controls unlocks, including GP received by transfer. Because production is always on after unlocking, a later zero GP balance does not revoke those unlocks. Unlinking or changing wallets settles the old allocation at that moment and requires eligibility from the current verified link. Stored inventory is preserved.
+
+Accrual uses database timestamps and integer microsecond-rate ticks: 3,600,000,000 ticks equal one rune. There is no offline cap and fractional progress carries forward. Reads, allocation changes and the daily job settle elapsed earnings automatically. There is no collect/start/stop button. Row locks prevent double-credit; revision checks prevent a stale browser tab from overwriting another allocation. All 10 units must be allocated to save. Reset restores the saved allocation without stopping production.
+
+The decision card opens the allocation popup, and the Runes navigation opens Rune Inventory. Item Inventory contains equipment, steel bars, and the old prototype crafting supplies; its browser-local supply balance is not converted into trusted server runes. Existing item crafting and shop purchases still use those supplies. Example uses are illustrative; live rune market prices and typed-rune crafting recipes are not implemented.
+
+Popup icons, examples and forge illustration use viewports of the supplied `rune-production-reference.png`; text and controls are live HTML. Desktop/mobile browser checks cover locked controls, invalid totals, saving, and separate inventories. Database tests cover automatic enrollment, 48-hour offline earnings, fractions, allocation transitions, retries, RLS, unlinking and wallet changes.

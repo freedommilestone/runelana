@@ -22,6 +22,9 @@ export async function GET(request) {
         await database(`gp_scan_runs?id=eq.${result.runId}`,{method:'PATCH',body:{status:'partial',error_code:'history_pending',finished_at:new Date().toISOString()}});
       }
     }
+    let settled=0;
+    while(Date.now()-started<240000){const count=await rpc('settle_rune_batch',{p_limit:200});settled+=count;if(count<200)break;}
+    result.runeAccountsSettled=settled;
     return response(result, result.status === 'completed' ? 200 : 503);
   } catch { return response({ error: 'Daily GP scanning failed. Check the scan run and retry.' }, 503); }
 }
