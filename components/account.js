@@ -2,7 +2,7 @@
 import { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import { getSupabase } from '../lib/supabase';
 
-export default forwardRef(function Account({ user }, ref) {
+export default forwardRef(function Account({ user, onSignedIn }, ref) {
   const dialog = useRef(null);
   const [mode, setMode] = useState('signup');
   const [busy, setBusy] = useState(false);
@@ -26,7 +26,11 @@ export default forwardRef(function Account({ user }, ref) {
       form.reset();
       if (mode === 'reset') setMessage('If this address has an account, a password reset link will arrive shortly.');
       else if (mode === 'signup' && !result.data.session) setMessage('Check your email to confirm your account, then sign in.');
-      else { setMessage(mode === 'update' ? 'Password updated.' : 'You are signed in. Your adventure awaits.'); if (mode !== 'update') dialog.current.close(); }
+      else if (mode === 'update') setMessage('Password updated.');
+      else if (result.data.session) {
+        dialog.current.close();
+        onSignedIn?.(result.data.session);
+      }
     } catch { setMessage('Unable to reach the account service. Please try again.'); }
     finally { setBusy(false); }
   }
