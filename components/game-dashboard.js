@@ -6,6 +6,7 @@ import RuneProgression from './rune-progression';
 import { useWalletBalance } from './use-wallet-balance';
 import {useRunes} from './use-runes';
 import RuneProduction, {RuneInventory} from './rune-production';
+import SkillsPanel, {SkillArt} from './skills-panel';
 import { gear } from '../lib/game.mjs';
 import { activities, startActivity, finishActivity, cancelActivity } from '../lib/activity.mjs';
 import './game-dashboard.css';
@@ -19,7 +20,7 @@ function Frame() {
     ['top','1170 323 340 9'],['bottom','1170 914 340 9'],['left','1154 340 9 550'],['right','1527 340 9 550']
   ].map(([side,box])=><Sprite key={side} className={`g-edge-${side}`} box={box} stretch/>)}</span>;
 }
-const navigation = [['Game','23 180 51 43'],['My Profile','25 233 48 47'],['Inventory','25 289 48 47'],['Runes','25 342 48 47'],['Collection','25 397 48 47'],['Marketplace','25 450 48 47'],['Bank','25 506 48 47'],['Leaderboard','25 559 48 47'],['Friends','25 614 48 47'],['Settings','25 667 48 47']];
+const navigation = [['Game','23 180 51 43'],['My Profile','25 233 48 47'],['Skills','219 428 67 70'],['Inventory','25 289 48 47'],['Runes','25 342 48 47'],['Collection','25 397 48 47'],['Marketplace','25 450 48 47'],['Bank','25 506 48 47'],['Leaderboard','25 559 48 47'],['Friends','25 614 48 47'],['Settings','25 667 48 47']];
 const decisions = [['Rune Production','1. Rune Production','Allocate your passive rune production.','1182 375 290 87'],['Produce','2. Produce Items','Use a skill to craft items.','1182 551 290 87'],['Service','3. Provide Service','Use a skill to offer a service.','1182 730 290 93']];
 
 export default function GameDashboard({user,state,setState,onHome,onAccount}) {
@@ -46,7 +47,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
   useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close')?.focus({preventScroll:true});}},[section]);
   function open(value) {
     setSection(value); setNavOpen(false);
-    if(value==='Game') { panel.current?.close(); return; }
+    if(value==='Game'||value==='Skills') { panel.current?.close(); return; }
     if(value==='Settings') { onAccount(); return; }
     panel.current.showModal();
     panel.current.scrollTop=0;
@@ -62,7 +63,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
     if(!state.owned.includes(item.id)&&state.runes<item.cost){log('Not enough crafting supplies for this equipment.');return;}
     setState(current=>{const owned=current.owned.includes(item.id);if(!owned&&current.runes<item.cost)return current;return {...current,runes:current.runes-(owned?0:item.cost),owned:owned?current.owned:[...current.owned,item.id],equipped:item.name};});log(`${item.name} equipped.`);
   }
-  return <div className="g-shell">
+  return <div className={`g-shell ${section==='Skills'?'g-skills-open':''}`}>
     <div className="g-backdrop"><Image src="/assets/play-world.png" alt="" fill sizes="(max-width: 700px) 150vh, (max-width: 1180px) 1650px, 100vw" quality={95} preload/></div>
     <header className="g-topbar">
       <button className="g-logo" onClick={onHome} aria-label="Runelana home"><img src="/assets/hero-wordmark.png" alt="Runelana"/></button>
@@ -73,9 +74,10 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
     </header>
     <aside className={`g-left g-frame ${navOpen?'g-nav-open':''}`}>
       <Frame/><div className="g-player"><Sprite box="20 112 53 54"/><div><strong>{name}</strong><span>♛ Character Lv. {runes.data?.characterLevel || '—'}</span></div></div>
-      <nav aria-label="Player navigation">{navigation.map(([title,box])=><button key={title} className={section===title?'g-active':''} onClick={()=>open(title)}><Sprite box={box}/>{title}</button>)}</nav>
+      <nav aria-label="Player navigation">{navigation.map(([title,box])=><button key={title} className={section===title?'g-active':''} aria-expanded={title==='Skills'?section==='Skills':undefined} aria-controls={title==='Skills'?'player-skills':undefined} onClick={()=>open(title==='Skills'&&section==='Skills'?'Game':title)}>{title==='Skills'?<SkillArt box={box} className="sk-nav-icon"/>:<Sprite box={box}/>}<span>{title}</span></button>)}</nav>
       <small className="g-save-note">Progress saved on this browser</small>
     </aside>
+    {section==='Skills'&&<SkillsPanel onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
       <div className="g-chat-paper"><div className="g-chat-lines" aria-live="polite">{tab!=='Notes' && <><p><em>[Game]</em> <b>Guide:</b> Welcome, {name}. Your next decision shapes your legend.</p><p><em>[Game]</em> <b>Guide:</b> Allocate rune production, craft steel bars, or offer a service.</p></>}{notes.filter(n=>tab==='All'||(tab==='Notes'?n.channel==='Notes':n.channel==='Game')).map((n,i)=><p key={i}><em>[{n.channel}]</em> <b>{n.name}:</b> {n.text}</p>)}</div><form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;setNotes(rows=>[...rows.slice(-39),{channel:'Notes',name,text:draft.trim()}]);setDraft('');}}><label htmlFor="game-note">{name}:</label><input id="game-note" value={draft} maxLength={240} onChange={e=>setDraft(e.target.value)} placeholder="Enter a private note…"/><button>Save</button></form></div>

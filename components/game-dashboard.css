@@ -9,3 +9,7 @@
 .g-bank-label{display:block;font:10px/1.2 Arial,sans-serif;color:#b8ad8b;text-align:left}.g-balance>span{line-height:1.05}
 
 .g-wallet-header{min-width:180px;max-width:360px;height:auto;min-height:50px;font-size:clamp(15px,1.4vw,21px)!important}.g-wallet-header>span{min-width:0;white-space:normal}.g-wallet-amount{display:block;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.g-wallet-header .g-sprite{flex-shrink:0}.g-wallet-header .g-bank-label{margin-top:3px}@media(max-width:700px){.g-wallet-header{min-width:0;max-width:calc(100% - 165px);font-size:14px!important;min-height:43px}.g-wallet-header .g-sprite{width:30px;height:32px}.g-wallet-header{gap:5px}.g-wallet-header .g-bank-label{font-size:9px}}
+
+/* Keep the added Skills entry above the game log on desktop. */
+.g-shell:not(.g-skills-open) .g-left nav button{height:46px}
+.g-shell:not(.g-skills-open) .g-left nav .g-sprite,.g-shell:not(.g-skills-open) .g-left nav .sk-nav-icon{width:39px;height:38px}
