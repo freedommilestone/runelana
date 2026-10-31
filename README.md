@@ -27,13 +27,18 @@ If the project was previously configured for the static prototype, remove any ol
 
 ## Gameplay
 
-Enter the demo to receive 120 runes. Choose gathering (6 runes and 2 XP per minute) or exploration (3 runes and 5 XP per minute). Claim passive rewards, purchase and equip cosmetics, and inspect your collection. Every 60 XP grants a level. Away earnings are capped at eight hours; changing paths settles previous rewards.
+Signing in opens the marketplace game dashboard. Home returns to the public homepage; Play returns to the game. New accounts start with 120 runes. Choose gathering (6 runes and 2 XP per minute) or exploration (3 runes and 5 XP per minute). Every 60 XP grants a level. Away earnings are capped at eight hours; changing paths settles previous rewards.
 
-Progress uses browser localStorage under the existing `runelana-demo-v1` key. Saves persist on the same origin, but do not automatically transfer between a local file, the prior Sites URL, and Vercel.
+The dashboard supports one timed activity at a time: smithing costs 20 runes and produces 10 steel bars plus 10 XP after two minutes; merchant services award 40 GP and 5 XP after 90 seconds. Collect finished activities to claim rewards. Cancelling refunds the recipe cost. Purchase/equip cosmetics in Marketplace and inspect Inventory, Collection, Profile, and Bank.
+
+Progress is saved per account in this browser, including active timers. It does not synchronize across devices. The parchment panel contains a session-only local game log and private notes; multiplayer chat, friends, and shared rankings are not connected.
 
 ## Structure
 
-- `app/page.js`: React homepage and interactions
+- `app/page.js`: public homepage, authentication session and account save switching
+- `components/game-dashboard.js` and `.css`: signed-in game dashboard
+- `lib/activity.mjs`: timed crafting and service rewards
+- `lib/activity.test.mjs`: activity lifecycle and save compatibility tests
 - `app/layout.js`: document layout and metadata
 - `app/globals.css`: responsive fantasy dashboard styling
 - `lib/game.mjs`: reward calculations and saved-state validation
@@ -41,7 +46,7 @@ Progress uses browser localStorage under the existing `runelana-demo-v1` key. Sa
 - `public/assets/reference.png`: supplied design reference used for artwork
 - `vercel.json`: deployment configuration
 
-Wallet connections, GP token verification, real multiplayer rankings, blockchain transactions, and server-side accounts are not implemented. Rankings are illustrative. The supplied reference image is reused for the marketplace backdrop and adventurer portrait. Google Fonts is optional with system-font fallbacks.
+Supabase provides account authentication. Wallet connections, GP token verification, real multiplayer rankings, and blockchain transactions are not implemented. Public-homepage rankings are illustrative. Game gold has no real-money value. Dedicated generated artwork supplies the marketplace and adventurer, while reference artwork supplies decorative frames and icons. Google Fonts is optional with system-font fallbacks.
 
 ## Supabase player accounts
 

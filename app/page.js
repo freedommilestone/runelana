@@ -5,6 +5,7 @@ import Image from "next/image";
 import { initialState, gear, tiers, rewards, settle, restore } from "../lib/game.mjs";
 
 import Account from "../components/account";
+import GameDashboard from "../components/game-dashboard";
 import { getSupabase } from "../lib/supabase";
 
 function Art({ box, className = "", label, stretch = false }) {
@@ -44,6 +45,7 @@ const showcase = [
 const runeX = [553,620,688,757,825,893,961,1030];
 const leaders = [["GP Legend",2341,87,"12.4M"],["Rune Whale",1905,82,"9.8M"],["Bank Stand",1488,76,"7.6M"],["Gielinor King",1201,71,"6.2M"],["Shadow Pure",987,68,"5.1M"]];
 export default function Home() {
+  const [showHome, setShowHome] = useState(false);
   const [state, setState] = useState(initialState);
   const [ready, setReady] = useState(false);
   const [now, setNow] = useState(0);
@@ -79,6 +81,7 @@ export default function Home() {
           try { saved = restore(localStorage.getItem(`runelana-player-${nextUser.id}`)); } catch {}
         }
         userId.current = nextUser?.id;
+        setShowHome(false);
         setState(saved);
       }
       setUser(nextUser);
@@ -143,11 +146,12 @@ export default function Home() {
   const level = 1 + Math.floor(state.xp / 60);
   const pending = rewards(state, now);
   const matches = showcase.filter(item => (filter === "All" || item.type === filter) && item.name.toLowerCase().includes(search.toLowerCase()));
+  if (ready && user && !showHome) return <><GameDashboard user={user} state={state} setState={setState} onHome={() => setShowHome(true)} onAccount={() => account.current.open()}/><Account key="account" ref={account} user={user}/></>;
   return <>
     <header className="site-header">
       <a className="brand" href="#" aria-label="Runelana home"><Art box="28 5 288 55" /></a>
       <nav aria-label="Main navigation">
-        <a className="active" href="#">Home</a><a href="#holders">Leaderboard</a><a href="#how">How It Works</a><a href="#runes">Runes</a><a href="#shop">Equipment</a>
+        <a className="active" href="#">Home</a>{user && <button onClick={() => setShowHome(false)}>Play</button>}<a href="#holders">Leaderboard</a><a href="#how">How It Works</a><a href="#runes">Runes</a><a href="#shop">Equipment</a>
         <button onClick={() => modal.current.showModal()}>Collection</button><button onClick={() => achievements.current.showModal()}>Achievements</button>
       </nav>
       <form className="search" onSubmit={event => { event.preventDefault(); document.getElementById('shop').scrollIntoView({behavior:'smooth'}); }}><span>⌕</span><input aria-label="Search items or players" placeholder="Search items, players…" value={search} onChange={e => setSearch(e.target.value)} /><button aria-label="Search">⌕</button></form>
@@ -195,6 +199,6 @@ export default function Home() {
     <dialog ref={details}><button className="close" onClick={()=>details.current.close()} aria-label="Close equipment details">×</button><h2>{selectedItem?.name}</h2>{selectedItem && <><Art className="detail-art" box={selectedItem.box}/><p>Level {selectedItem.level} · {selectedItem.price} runes</p><p className="hint">Preview cosmetic. Sign in to start your expedition and visit the playable equipment shop below the dashboard.</p><button className="primary" onClick={()=>{details.current.close();start();}}>Begin your journey</button></>}</dialog>
     <dialog ref={modal}><button className="close" onClick={()=>modal.current.close()} aria-label="Close collection">×</button><h2>Your Collection</h2>{state.owned.length?gear.filter(g=>state.owned.includes(g.id)).map(g=><p key={g.id}>{g.name}{state.equipped===g.name?' — Equipped':''}</p>):<p>Your collection awaits. Begin your journey to earn equipment.</p>}</dialog>
     <dialog ref={achievements}><button className="close" onClick={()=>achievements.current.close()} aria-label="Close achievements">×</button><h2>Achievements</h2>{[['First Steps',state.started],['Collector',state.owned.length>0],['Apprentice',level>=5],['Seasoned Adventurer',level>=20]].map(([name,done])=><p className="achievement" key={name}>{done?'✦':'◇'} {name}<span>{done?'Unlocked':'Locked'}</span></p>)}</dialog>
-    <Account ref={account} user={user}/><div id="toast" role="status" hidden={!message}>{message}</div>
+    <Account key="account" ref={account} user={user}/><div id="toast" role="status" hidden={!message}>{message}</div>
   </>;
 }
