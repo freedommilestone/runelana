@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import WalletProfile from './wallet-profile';
 import { gear, rewards, settle } from '../lib/game.mjs';
 import { activities, startActivity, finishActivity, cancelActivity } from '../lib/activity.mjs';
 import './game-dashboard.css';
@@ -66,7 +67,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
     <header className="g-topbar">
       <button className="g-logo" onClick={onHome} aria-label="Runelana home"><img src="/assets/hero-wordmark.png" alt="Runelana"/></button>
       <nav aria-label="Game navigation"><button onClick={onHome}>Home</button><button className="g-active" onClick={()=>open('Game')}>Play</button><button onClick={()=>open('Marketplace')}>Marketplace</button><button onClick={()=>open('Leaderboard')}>Leaderboard</button><button onClick={()=>open('How It Works')}>How It Works</button></nav>
-      <button className="g-balance" onClick={()=>open('Bank')}><Sprite box="1000 9 66 50"/>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</button>
+      <button className="g-balance" title="Game gold earned from activities" onClick={()=>open('Bank')}><Sprite box="1000 9 66 50"/><span>{Math.floor(state.gp||0).toLocaleString('en-US')} GP<small className="g-bank-label">Game gold</small></span></button>
       <div className="g-shortcuts"><button aria-label="Friends" onClick={()=>open('Friends')}><Sprite box="1288 17 47 42"/></button><button aria-label="Inventory" onClick={()=>open('Inventory')}><Sprite box="1355 17 43 42"/></button><button aria-label="My Profile" onClick={()=>open('My Profile')}><Sprite box="1418 17 40 42"/></button><button aria-label="Account settings" onClick={onAccount}><Sprite box="1480 17 42 42"/></button></div>
       <button className="g-menu-toggle" onClick={()=>setNavOpen(!navOpen)} aria-expanded={navOpen}>☰ Menu</button>
     </header>
@@ -88,7 +89,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       {section==='Runes' && <><p>Available: <strong>{Math.floor(state.runes)} runes</strong> · Pending: {Math.floor(pending.runes)}</p><div className="g-options"><button className={state.path==='gather'?'g-active':''} onClick={()=>choosePath('gather')}>Gather<br/><small>6 runes + 2 XP / minute</small></button><button className={state.path==='explore'?'g-active':''} onClick={()=>choosePath('explore')}>Explore<br/><small>3 runes + 5 XP / minute</small></button></div><p>Expeditions continue while you are away, up to 8 hours.</p><button className="g-green" onClick={claimRunes}>{state.started?'Collect runes':'Start gathering'}</button></>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 runes. Takes 2 minutes. Earn 10 XP.</p><button disabled={!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <><p><strong>{name}</strong> · Level {level}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button></>}
+      {section==='My Profile' && <><p><strong>{name}</strong> · Level {level}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id}/></>}
       {section==='Inventory' && <><p>Steel Bars: {state.steelBars||0}</p><p>Runes: {Math.floor(state.runes)}</p><p>Equipment: {state.owned.length} items</p><p>Equipped: {state.equipped}</p></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} runes`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Earn runes and visit the marketplace.</p>}</div>}

@@ -50,7 +50,7 @@ Progress is saved per account in this browser, including active timers. It does 
 - `public/assets/reference.png`: supplied design reference used for artwork
 - `vercel.json`: deployment configuration
 
-Supabase provides account authentication. Wallet connections, GP token verification, real multiplayer rankings, and blockchain transactions are not implemented. Public-homepage rankings are illustrative. Game gold has no real-money value. Dedicated generated artwork supplies the marketplace and adventurer, while reference artwork supplies decorative frames and icons. Google Fonts is optional with system-font fallbacks.
+Supabase provides account authentication. My Profile supports Phantom/Solflare wallet ownership verification and a live Solana GP balance. Real multiplayer rankings and blockchain transactions are not implemented. Public-homepage rankings are illustrative. Game gold has no real-money value. Dedicated generated artwork supplies the marketplace and adventurer, while reference artwork supplies decorative frames and icons. Google Fonts is optional with system-font fallbacks.
 
 ## Supabase player accounts
 
@@ -63,6 +63,12 @@ Do not use a service-role or secret key in these browser variables.
 
 In Supabase Authentication, enable the Email provider and email confirmation. Set Site URL to `https://www.runelana.com`; allow `https://www.runelana.com` and `https://www.runelana.com/?recovery=1` as redirect URLs. For local tests also allow `http://localhost:3000` and `http://localhost:3000/?recovery=1`. Add explicit preview URLs when needed. Configure production email delivery in Supabase before opening registration widely.
 
-The browser Supabase client handles sessions, email confirmation callbacks, password reset links, and sign-out. There are no protected server routes or cloud game-save tables yet. Game progression remains a client-side prototype; account-specific saves use `runelana-player-<user-id>` on this browser. Previous guest demo saves are left untouched, and not automatically assigned to an account. Accounts do not yet synchronize game progress across devices.
+The browser Supabase client handles sessions, email confirmation callbacks, password reset links, and sign-out. The authenticated `/api/wallet` route verifies wallet ownership and reads balances. There are no cloud game-save tables yet. Game progression remains a client-side prototype; account-specific saves use `runelana-player-<user-id>` on this browser. Previous guest demo saves are left untouched, and not automatically assigned to an account. Accounts do not yet synchronize game progress across devices.
 
 Before merging the accounts branch, configure Supabase and verify: sign-up, confirmation email, sign-in, reload session restoration, password reset, sign-out, and switching between two accounts with separate saves. Those integration checks require a live Supabase project.
+
+## Wallet verification and GP
+
+In **My Profile**, connect Phantom or Solflare and sign the ownership message. The profile saves the verified address to the Supabase account and shows the exact GP balance, a checked timestamp, refresh, and unlink controls. Mobile users can open `/play` inside their wallet browser. Game gold remains separate from the on-chain token.
+
+Set `WALLET_VERIFICATION_SECRET` in Vercel as a sensitive, server-only environment variable before deploying. Generate 32 random bytes as hex; never prefix this variable with `NEXT_PUBLIC_`. Keep it stable across deployments. `SOLANA_RPC_URL` optionally selects a dedicated **Solana mainnet** provider; otherwise Solana's public mainnet endpoint and PublicNode are tried. See [wallet implementation notes](docs/wallet-verification.md) for token details, verification rules, and operating limits.
