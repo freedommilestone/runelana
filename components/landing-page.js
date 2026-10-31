@@ -1,6 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import RuneIcon from './rune-icon';
+import PlayerGuide from './player-guide';
 import {runeProgression} from '../lib/rune-progression.mjs';
 import './landing-page.css';
 
@@ -32,12 +33,13 @@ const features=[
 export default function LandingPage({onPlay,onAccount,user,ready}) {
   const explore=useRef(null);
   const details=useRef(null);
+  const guide=useRef(null);
   function jump(id){if(explore.current)explore.current.open=false;document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
   return <div className="l-page" id="home">
     <svg className="l-stone" aria-hidden="true"><defs><pattern id="landing-stone" width="220" height="62" patternUnits="userSpaceOnUse"><svg viewBox="0 0 220 62" width="220" height="62"><image href="/assets/landing-reference.png" width="1774" height="887"/></svg></pattern></defs><rect width="100%" height="100%" fill="url(#landing-stone)"/></svg>
     <header className="l-header"><div className="l-header-inner">
       <a className="l-brand" href="#home" aria-label="Runelana home"><Art box="287 2 271 82" label="Runelana"/></a>
-      <nav aria-label="Main navigation"><a className="l-active" href="#home" aria-current="page">Home</a><a href="#how-it-works">How It Works</a><a href="#adventurers">Leaderboard</a><details ref={explore} className="l-explore"><summary>Explore <span aria-hidden="true">⌄</span></summary><div><button onClick={()=>jump('how-it-works')}>Runes & Skills</button><button onClick={()=>jump('world')}>Discover the World</button><button onClick={onPlay}>Enter the Game</button>{user&&<button onClick={onAccount}>My Account</button>}</div></details></nav>
+      <nav aria-label="Main navigation"><a className="l-active" href="#home" aria-current="page">Home</a><a href="#how-it-works" aria-haspopup="dialog" onClick={e=>{e.preventDefault();guide.current.open();}}>How It Works</a><a href="#adventurers">Leaderboard</a><details ref={explore} className="l-explore"><summary>Explore <span aria-hidden="true">⌄</span></summary><div><button onClick={()=>{explore.current.open=false;guide.current.open();}}>Runes & Skills</button><button onClick={()=>jump('world')}>Discover the World</button><button onClick={onPlay}>Enter the Game</button>{user&&<button onClick={onAccount}>My Account</button>}</div></details></nav>
       <GoldButton className="l-header-play" onClick={onPlay} disabled={!ready}/>
     </div></header>
     <main>
@@ -58,5 +60,6 @@ export default function LandingPage({onPlay,onAccount,user,ready}) {
       </div>
     </main>
     <dialog ref={details} className="l-ranking-dialog"><button className="l-dialog-close" aria-label="Close leaderboard" onClick={()=>details.current.close()}>×</button><h2>Top Adventurers</h2><p>The adventurers on this page illustrate the leaderboard design. Live rankings will be available when shared game saves are connected.</p><p>Start your own journey to earn runes, gain levels, and build your collection.</p><GoldButton onClick={()=>{details.current.close();onPlay();}} disabled={!ready}/></dialog>
+    <PlayerGuide ref={guide}/>
   </div>;
 }

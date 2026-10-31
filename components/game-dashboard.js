@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import WalletProfile from './wallet-profile';
+import PlayerGuide from './player-guide';
 import RuneProgression from './rune-progression';
 import { useWalletBalance } from './use-wallet-balance';
 import {useRunes} from './use-runes';
@@ -40,6 +41,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
   const [notice,setNotice] = useState('Welcome to the Grand Exchange. Choose a decision to begin.');
   const [navOpen,setNavOpen] = useState(false);
   const panel = useRef(null);
+  const guide = useRef(null);
   const name = user.user_metadata?.display_name || 'Rune Traveler';
   const adventureLevel = 1 + Math.floor(state.xp / 60);
   const task = state.activity;
@@ -49,6 +51,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
   useEffect(()=>{setNow(Date.now());const timer=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(timer);},[]);
   useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close')?.focus({preventScroll:true});}},[section]);
   function open(value) {
+    if(value==='How It Works'){setNavOpen(false);guide.current.open();return;}
     setSection(value); setNavOpen(false);
     if(value==='Game'||value==='Skills') { panel.current?.close(); return; }
     if(value==='Settings') { onAccount(); return; }
@@ -101,7 +104,8 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
       {section==='Leaderboard' && <p>Live player rankings will appear when shared game saves are connected. Your adventure level is {adventureLevel}.</p>}
       {section==='Friends' && <p>Friends and multiplayer messaging are not connected yet. Your local game log and notes are available below.</p>}
-      {section==='How It Works' && <><p>1. Rune Production runs automatically at 10 runes per hour after your first verified holding-day unlock. Allocate it among unlocked types.</p><p>2. Produced runes accumulate in Rune Inventory, separate from items. Existing crafting activities use crafting supplies.</p><p>3. Complete services to earn game gold.</p><p>Each 60 XP gains an adventure level. Holding-based character status and profession levels are separate progression systems. Complete activities by collecting their rewards. Runes and allocations are saved to your account. Item activities and adventure XP are currently saved on this browser.</p></>}
+
     </dialog>
+    <PlayerGuide ref={guide} onNavigate={open}/>
   </div>;
 }
