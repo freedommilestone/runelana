@@ -9,6 +9,6 @@
 .g-rune-proposal tbody th{font-weight:400}
 .g-rune-proposal td:nth-child(2),.g-rune-proposal td:nth-child(3){text-align:center}
 .g-rune-proposal thead th:nth-child(2),.g-rune-proposal thead th:nth-child(3){text-align:center}
-.g-rune-symbol{display:inline-block;width:22px;text-align:center;margin-right:4px;text-shadow:0 1px 3px #000}
+.g-rune-symbol{display:inline-block;width:24px;height:24px;margin-right:5px}
 .g-rune-proposal .g-rune-proposal-note{color:#c9bea3;font-size:13px}
-@media(max-width:450px){.g-rune-proposal table{font-size:12px}.g-rune-proposal th,.g-rune-proposal td{padding:7px 3px}.g-rune-symbol{display:none}.g-rune-proposal thead th{font-size:11px}}
+@media(max-width:450px){.g-rune-proposal table{font-size:12px}.g-rune-proposal th,.g-rune-proposal td{padding:7px 3px}.g-rune-symbol{width:18px;height:18px;margin-right:3px}.g-rune-proposal thead th{font-size:11px}}

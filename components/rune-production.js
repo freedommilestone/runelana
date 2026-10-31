@@ -1,10 +1,10 @@
 'use client';
 import {useEffect,useState} from 'react';
 import {runeProgression} from '../lib/rune-progression.mjs';
+import RuneIcon from './rune-icon';
 import './rune-production.css';
 const tiers=runeProgression.tiers;
-const positions={air:'425 456 39 39',mind:'425 501 39 39',water:'424 546 40 43',fire:'424 596 40 43',nature:'424 647 40 44',death:'424 698 40 43',blood:'424 747 40 43',soul:'424 801 40 43'};
-export function RuneArt({id,box,className='',stretch=false}){return <svg preserveAspectRatio={stretch?'none':'xMidYMid meet'} viewBox={box||positions[id]} className={`rp-art ${className}`} aria-hidden="true"><image href="/assets/rune-production-reference.png" width="1536" height="1024"/></svg>}
+export function RuneArt({id,box,className='',stretch=false}){if(id)return <RuneIcon id={id} className={`rp-art ${className}`}/>;return <svg preserveAspectRatio={stretch?'none':'xMidYMid meet'} viewBox={box} className={`rp-art ${className}`} aria-hidden="true"><image href="/assets/rune-production-reference.png" width="1536" height="1024"/></svg>}
 const uses={air:['Wind magic','Light enchantments'],mind:['Focus spells','Mind enchantments'],water:['Water magic','Frost crafting'],fire:['Fire weapons','Dragon gear','Fire resistance','Advanced dishes'],nature:['Nature magic','Resource crafting'],death:['Death magic','Dark enchantments'],blood:['Blood magic','Advanced equipment'],soul:['Soul magic','Prestige equipment']};
 export default function RuneProduction({runes,onInventory,onProfile}){
  const {data,error,save,refresh}=runes;
@@ -29,7 +29,7 @@ export default function RuneProduction({runes,onInventory,onProfile}){
    <p>{selected==='fire'?'A powerful rune used in high-level smithing, enchanting, and crafting recipes.':`A ${tier.name.toLowerCase()} rune for your growing collection and future crafting recipes.`}</p>
    <dl><div><dt>Holding Requirement</dt><dd>{tier.holdingDays} days</dd></div><div><dt>Character Level</dt><dd>Level {tier.characterLevel}</dd></div><div><dt>Current Allocation</dt><dd>{data.allocations[selected]} / hr</dd></div><div><dt>Draft Allocation</dt><dd>{draft[selected]} / hr</dd></div></dl>
    <h3>Example Uses</h3><div className="rp-uses">{uses[selected].map((label,i)=><div key={label}>{selected==='fire'?<RuneArt box={`${1035+i*76} 540 65 63`}/>:<RuneArt id={selected}/>}<small>{label}</small></div>)}</div>
-   <div className="rp-market"><h3>Market Value</h3><p>Market pricing coming soon</p></div><RuneArt className="rp-forge" box="1035 724 313 197"/>
+   <div className="rp-market"><h3>Market Value</h3><p>Market pricing coming soon</p></div><div className="rp-rune-preview"><RuneIcon id={selected}/><span>{tier.name} Rune</span></div>
   </aside></div>
   <div className="rp-bottom"><span role="status">{message||'Production continues using your saved allocation until you confirm.'}</span><button onClick={onInventory}>Rune Inventory →</button></div></>}
  </div>;

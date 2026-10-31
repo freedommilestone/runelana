@@ -1,0 +1,70 @@
+{
+  "copyright": "RuneScape artwork © Jagex Ltd.",
+  "source": "Official Old School RuneScape Grand Exchange item catalogue",
+  "runes": [
+    {
+      "id": "air",
+      "item": 556,
+      "name": "Air rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Air%2Brune/viewitem?obj=556",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=556",
+      "file": "air.gif"
+    },
+    {
+      "id": "mind",
+      "item": 558,
+      "name": "Mind rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Mind%2Brune/viewitem?obj=558",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=558",
+      "file": "mind.gif"
+    },
+    {
+      "id": "water",
+      "item": 555,
+      "name": "Water rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Water%2Brune/viewitem?obj=555",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=555",
+      "file": "water.gif"
+    },
+    {
+      "id": "fire",
+      "item": 554,
+      "name": "Fire rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Fire%2Brune/viewitem?obj=554",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=554",
+      "file": "fire.gif"
+    },
+    {
+      "id": "nature",
+      "item": 561,
+      "name": "Nature rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Nature%2Brune/viewitem?obj=561",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=561",
+      "file": "nature.gif"
+    },
+    {
+      "id": "death",
+      "item": 560,
+      "name": "Death rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Death%2Brune/viewitem?obj=560",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=560",
+      "file": "death.gif"
+    },
+    {
+      "id": "blood",
+      "item": 565,
+      "name": "Blood rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Blood%2Brune/viewitem?obj=565",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=565",
+      "file": "blood.gif"
+    },
+    {
+      "id": "soul",
+      "item": 566,
+      "name": "Soul rune",
+      "page": "https://secure.runescape.com/m=itemdb_oldschool/Soul%2Brune/viewitem?obj=566",
+      "source": "https://secure.runescape.com/m=itemdb_oldschool/1793186957510_obj_big.gif?id=566",
+      "file": "soul.gif"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 'use client';
 import { useRef } from 'react';
+import RuneIcon from './rune-icon';
+import {runeProgression} from '../lib/rune-progression.mjs';
 import './landing-page.css';
 
 function Art({box,className='',label,stretch=false,contain=false,source='landing-reference.png'}) {
@@ -22,7 +24,7 @@ function GoldButton({onClick,children='Play Now',className='',swords=false,icon=
 const adventurers=[['RuneMaster','742 days','2,184'],['GP_Titan','618 days','2,037'],['ArcaneFish','590 days','1,982'],['SmithKing','551 days','1,845'],['NatureBorn','498 days','1,776']];
 const features=[
   {title:'Start Playing',text:'Create an account and start building your legend.',box:'98 508 100 78'},
-  {title:'Earn Runes',text:'Gather or explore to earn runes while you are away.',box:'424 505 313 36',runes:true},
+  {title:'Earn Runes',text:'Produce runes automatically, even while you are away.',box:'424 505 313 36',runes:true},
   {title:'Train Skills',text:'Gather, craft and gain experience with every decision.',box:'798 505 85 81'},
   {title:'Craft Items',text:'Turn your resources into steel bars and rare equipment.',box:'1090 508 92 76'},
   {title:'Collect & Explore',text:'Discover equipment, build your collection and level up.',box:'1403 505 94 82'}
@@ -44,7 +46,7 @@ export default function LandingPage({onPlay,onAccount,user,ready}) {
         <div className="l-hero-inner"><div className="l-hero-copy"><h1 id="landing-title">Your Holding<br/>Has Purpose.</h1><p>Turn your time into runes, train skills,<br className="l-desktop-break"/> craft rare items, and build your legacy<br className="l-desktop-break"/> in a world of collectors and adventurers.</p><GoldButton className="l-hero-play" onClick={onPlay} disabled={!ready} swords/></div></div>
       </section>
       <div className="l-content">
-        <section className="l-features" id="how-it-works" aria-label="How Runelana works">{features.map(f=><article className={`l-feature l-frame ${f.runes?'l-runes':''}`} key={f.title}><Frame dark/><Art className="l-feature-icon" box={f.box} contain/><div><h2>{f.title}</h2><p>{f.text}</p></div></article>)}</section>
+        <section className="l-features" id="how-it-works" aria-label="How Runelana works">{features.map(f=><article className={`l-feature l-frame ${f.runes?'l-runes':''}`} key={f.title}><Frame dark/>{f.runes?<span className="l-feature-icon l-rune-icons">{runeProgression.tiers.map(t=><RuneIcon key={t.id} id={t.id}/>)}</span>:<Art className="l-feature-icon" box={f.box} contain/>}<div><h2>{f.title}</h2><p>{f.text}</p></div></article>)}</section>
         <div className="l-bottom">
           <section className="l-leaderboard l-frame" id="adventurers" aria-labelledby="adventurers-title"><Frame/><div className="l-panel-heading"><h2 id="adventurers-title"><Art box="100 613 37 37"/>Top Adventurers</h2><button onClick={()=>details.current.showModal()}>View Full Leaderboard <span aria-hidden="true">→</span></button></div>
             <table><caption className="l-sr-only">Illustrative adventurer rankings; live rankings are not connected.</caption><thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Adventure Time</th><th scope="col">Total Level</th></tr></thead><tbody>{adventurers.map(([name,time,level],i)=><tr key={name}><td>{i<3?<Art className="l-medal" label={`Rank ${i+1}`} box={`101 ${680+i*34} 31 31`}/>:i+1}</td><td><Art className="l-avatar" box={`157 ${677+i*35} 33 34`}/>{name}</td><td>{time}</td><td>{level}</td></tr>)}</tbody></table>

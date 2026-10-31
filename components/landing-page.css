@@ -9,3 +9,5 @@
 
 .l-gold>.l-sword{width:39px;height:40px;flex-shrink:0}.l-join .l-gold{gap:12px;padding:6px 18px}.l-join .l-sword{width:31px;height:34px}.l-hero-play>span{font-size:30px!important;color:#191303!important}.l-hero p{font-size:22px}
 @media(max-width:850px){.l-hero p{font-size:19px}.l-hero-play>span{font-size:26px!important}.l-gold>.l-sword{width:31px;height:34px}}
+
+.l-runes .l-rune-icons{display:flex;align-items:center;justify-content:center;gap:3px}.l-rune-icons .rune-icon{width:calc((100% - 21px)/8);height:100%;min-width:0}

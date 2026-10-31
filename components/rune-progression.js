@@ -1,4 +1,5 @@
 import { runeProgression } from '../lib/rune-progression.mjs';
+import RuneIcon from './rune-icon';
 import './rune-progression.css';
 
 export default function RuneProgression() {
@@ -9,7 +10,7 @@ export default function RuneProgression() {
       <caption>Rune unlock milestones</caption>
       <thead><tr><th scope="col">Rune</th><th scope="col">Character<br/>level</th><th scope="col">Holding<br/>time</th><th scope="col">Status</th></tr></thead>
       <tbody>{runeProgression.tiers.map(tier => <tr key={tier.id}>
-        <th scope="row"><span className="g-rune-symbol" style={{ color: tier.color }} aria-hidden="true">{tier.symbol}</span>{tier.name} Rune</th>
+        <th scope="row"><RuneIcon id={tier.id} className="g-rune-symbol"/>{tier.name} Rune</th>
         <td>{tier.characterLevel}</td><td>{tier.holdingDays} {tier.holdingDays === 1 ? 'day' : 'days'}</td><td>{tier.status}</td>
       </tr>)}</tbody>
     </table>
