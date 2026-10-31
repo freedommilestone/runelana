@@ -1,19 +1,9 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { getSupabase } from '../lib/supabase';
+import { walletRequest } from '../lib/wallet-client';
 import { GP_MINT } from '../lib/gp-token.mjs';
 import './wallet-profile.css';
 
-async function walletRequest(body) {
-  const client = getSupabase();
-  const { data, error } = client ? await client.auth.getSession() : { data: {}, error: true };
-  if (error || !data.session?.access_token) throw new Error('Please sign in again to manage your wallet.');
-  const response = await fetch('/api/wallet', { method: body ? 'POST' : 'GET', credentials: 'same-origin', cache: 'no-store', headers: { Authorization: `Bearer ${data.session.access_token}`, ...(body ? { 'Content-Type': 'application/json' } : {}) }, ...(body ? { body: JSON.stringify(body) } : {}) });
-  let result;
-  try { result = await response.json(); } catch { throw new Error('Unable to reach the wallet service. Please try again.'); }
-  if (!response.ok) throw new Error(result.error || 'Unable to reach the wallet service. Please try again.');
-  return result;
-}
 function providers() {
   const list = [];
   const phantom = window.phantom?.solana || (window.solana?.isPhantom ? window.solana : null);
@@ -26,7 +16,8 @@ function friendlyError(error) {
   return error?.message || 'Unable to verify this wallet. Please try again.';
 }
 
-export default function WalletProfile() {
+export default function WalletProfile({ userId, onSnapshot }) {
+  const requestWallet = body => walletRequest(body, userId);
   const [available, setAvailable] = useState([]);
   const [selected, setSelected] = useState('');
   const [provider, setProvider] = useState(null);
@@ -41,6 +32,8 @@ export default function WalletProfile() {
   const locked = useRef(false);
   const cooldown = useRef(null);
 
+  useEffect(() => { if (snapshot) onSnapshot?.(snapshot); }, [snapshot, onSnapshot]);
+
   function detectWallets() {
     const wallets = providers();
     setAvailable(wallets);
@@ -51,7 +44,7 @@ export default function WalletProfile() {
     detectWallets();
     setPhantomLink(`https://phantom.app/ul/browse/${encodeURIComponent(`${window.location.origin}/play`)}?ref=${encodeURIComponent(window.location.origin)}`);
     const op = ++revision.current;
-    walletRequest().then(value => { if (mounted.current && op === revision.current) setSnapshot(value); }).catch(error => { if (mounted.current && op === revision.current) setMessage(error.message); }).finally(() => { if (mounted.current && op === revision.current) setBusy(''); });
+    requestWallet().then(value => { if (mounted.current && op === revision.current) setSnapshot(value); }).catch(error => { if (mounted.current && op === revision.current) setMessage(error.message); }).finally(() => { if (mounted.current && op === revision.current) setBusy(''); });
     const detectTimer = setTimeout(detectWallets, 1000);
     return () => { mounted.current = false; revision.current++; clearTimeout(detectTimer); clearTimeout(cooldown.current); };
   }, []);
@@ -84,7 +77,7 @@ export default function WalletProfile() {
       const address = (connection?.publicKey || chosen.publicKey)?.toString();
       if (!address) throw new Error('The wallet did not share a Solana address. Please try again.');
       setProvider(chosen); setConnected(address); setBusy('Preparing verification…');
-      const challenge = await walletRequest({ action: 'challenge', address });
+      const challenge = await requestWallet({ action: 'challenge', address });
       if (!current()) return;
       setBusy('Sign the verification message in your wallet…');
       const signed = await chosen.signMessage(new TextEncoder().encode(challenge.message), 'utf8');
@@ -94,7 +87,7 @@ export default function WalletProfile() {
       if (!(bytes instanceof Uint8Array) || bytes.length !== 64) throw new Error('This wallet did not return a valid message signature.');
       const signature = btoa(String.fromCharCode(...bytes));
       setBusy('Verifying ownership and checking GP…');
-      const result = await walletRequest({ action: 'verify', token: challenge.token, signature });
+      const result = await requestWallet({ action: 'verify', token: challenge.token, signature });
       if (!current()) return;
       setSnapshot(result);
       setMessage(result.balanceError || 'Wallet verified and linked to your player account.');
@@ -107,7 +100,7 @@ export default function WalletProfile() {
     const op = ++revision.current;
     setBusy('Refreshing GP balance…'); setMessage('');
     try {
-      const result = await walletRequest();
+      const result = await requestWallet();
       if (mounted.current && op === revision.current) { setSnapshot(result); setMessage(result.balanceError || 'GP balance updated.'); }
     } catch (error) {
       if (mounted.current && op === revision.current) { setMessage(error.message); setSnapshot(value => value ? { ...value, balance: null, balanceError: error.message } : null); }
@@ -124,7 +117,7 @@ export default function WalletProfile() {
     const op = ++revision.current;
     setBusy('Removing wallet link…'); setMessage('');
     try {
-      const result = await walletRequest({ action: 'unlink' });
+      const result = await requestWallet({ action: 'unlink' });
       if (mounted.current && op === revision.current) { setSnapshot(result); setConnected(''); setMessage('Wallet removed from your player profile.'); }
     } catch (error) { if (mounted.current && op === revision.current) setMessage(error.message); }
     finally { if (mounted.current && op === revision.current) { locked.current = false; setBusy(''); } }

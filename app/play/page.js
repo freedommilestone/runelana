@@ -15,5 +15,5 @@ export default function Play() {
     <div><button className="primary" onClick={() => openAccount('signin')}>Sign In</button><button onClick={() => openAccount('signup')}>Create Account</button></div>
     <Link href="/">← Back to Home</Link>
   </section></main>;
-  return <GameDashboard user={user} state={state} setState={setState} onHome={() => router.push('/')} onAccount={() => openAccount()}/>;
+  return <GameDashboard key={user.id} user={user} state={state} setState={setState} onHome={() => router.push('/')} onAccount={() => openAccount()}/>;
 }
