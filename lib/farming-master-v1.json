@@ -1,0 +1,1590 @@
+[
+  {
+    "id": "farming-v1-wheat",
+    "name": "Wheat",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {},
+    "equipment": "Basic Hoe",
+    "materials": [
+      {
+        "id": "farming-item-wheat-seed",
+        "name": "Wheat Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-wheat",
+        "name": "Wheat",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 720,
+    "yieldQuantity": 3,
+    "xpReward": 45,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-potatoes",
+    "name": "Potatoes",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1
+    },
+    "equipment": "Basic Hoe",
+    "materials": [
+      {
+        "id": "farming-item-potato-seed",
+        "name": "Potato Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-potatoes",
+        "name": "Potatoes",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 900,
+    "yieldQuantity": 3,
+    "xpReward": 55,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-plant-fiber",
+    "name": "Plant Fiber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 8,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Fiber Sickle",
+    "materials": [
+      {
+        "id": "farming-item-fiber-seed",
+        "name": "Fiber Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 1080,
+    "yieldQuantity": 3,
+    "xpReward": 60,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-onions",
+    "name": "Onions",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1
+    },
+    "equipment": "Basic Hoe",
+    "materials": [
+      {
+        "id": "farming-item-onion-seed",
+        "name": "Onion Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-onions",
+        "name": "Onions",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 1200,
+    "yieldQuantity": 3,
+    "xpReward": 70,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-tomatoes",
+    "name": "Tomatoes",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Basic Hoe",
+    "materials": [
+      {
+        "id": "farming-item-tomato-seed",
+        "name": "Tomato Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-tomatoes",
+        "name": "Tomatoes",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 1500,
+    "yieldQuantity": 3,
+    "xpReward": 80,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-cabbage",
+    "name": "Cabbage",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Iron Hoe",
+    "materials": [
+      {
+        "id": "farming-item-cabbage-seed",
+        "name": "Cabbage Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-cabbage",
+        "name": "Cabbage",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 1800,
+    "yieldQuantity": 3,
+    "xpReward": 95,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-crop-waste",
+    "name": "Crop Waste",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 1
+    },
+    "equipment": "Iron Hoe",
+    "materials": [
+      {
+        "id": "farming-item-compost-crop-seed",
+        "name": "Compost Crop Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-crop-waste",
+        "name": "Crop Waste",
+        "quantity": 4
+      }
+    ],
+    "durationSeconds": 2100,
+    "yieldQuantity": 4,
+    "xpReward": 110,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-sea-reed",
+    "name": "Sea Reed",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Fiber Sickle",
+    "materials": [
+      {
+        "id": "farming-item-sea-reed-seed",
+        "name": "Sea Reed Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-sea-reed",
+        "name": "Sea Reed",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 2400,
+    "yieldQuantity": 3,
+    "xpReward": 125,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-flax",
+    "name": "Flax",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "air": 1
+    },
+    "equipment": "Fiber Sickle",
+    "materials": [
+      {
+        "id": "farming-item-flax-seed",
+        "name": "Flax Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-flax",
+        "name": "Flax",
+        "quantity": 4
+      }
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 4,
+    "xpReward": 140,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-sweetcorn",
+    "name": "Sweetcorn",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Steel Hoe",
+    "materials": [
+      {
+        "id": "farming-item-sweetcorn-seed",
+        "name": "Sweetcorn Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-sweetcorn",
+        "name": "Sweetcorn",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 3300,
+    "yieldQuantity": 3,
+    "xpReward": 160,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-strawberries",
+    "name": "Strawberries",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3,
+      "nature": 1
+    },
+    "equipment": "Steel Hoe",
+    "materials": [
+      {
+        "id": "farming-item-strawberry-seed",
+        "name": "Strawberry Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-strawberries",
+        "name": "Strawberries",
+        "quantity": 4
+      }
+    ],
+    "durationSeconds": 3900,
+    "yieldQuantity": 4,
+    "xpReward": 185,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-basic-timber",
+    "name": "Basic Timber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3
+    },
+    "equipment": "Pruning Shears",
+    "materials": [
+      {
+        "id": "farming-item-timber-sapling",
+        "name": "Timber Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-basic-timber",
+        "name": "Basic Timber",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 4500,
+    "yieldQuantity": 3,
+    "xpReward": 210,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-hardwood",
+    "name": "Hardwood",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "water": 2
+    },
+    "equipment": "Pruning Shears",
+    "materials": [
+      {
+        "id": "farming-item-hardwood-sapling",
+        "name": "Hardwood Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 5400,
+    "yieldQuantity": 2,
+    "xpReward": 245,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-herb-garden-yield",
+    "name": "Herb Garden Yield",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "water": 2
+    },
+    "equipment": "Herb Sickle",
+    "materials": [
+      {
+        "id": "farming-item-herb-seed",
+        "name": "Herb Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-herb-garden-yield",
+        "name": "Herb Garden Yield",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 6300,
+    "yieldQuantity": 3,
+    "xpReward": 280,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-fruit-harvest",
+    "name": "Fruit Harvest",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "water": 2
+    },
+    "equipment": "Orchard Shears",
+    "materials": [
+      {
+        "id": "farming-item-fruit-sapling",
+        "name": "Fruit Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-fruit-harvest",
+        "name": "Fruit Harvest",
+        "quantity": 4
+      }
+    ],
+    "durationSeconds": 7200,
+    "yieldQuantity": 4,
+    "xpReward": 310,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-rare-herb",
+    "name": "Rare Herb",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 70,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "death": 1
+    },
+    "equipment": "Herb Sickle",
+    "materials": [
+      {
+        "id": "farming-item-rare-herb-seed",
+        "name": "Rare Herb Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 9000,
+    "yieldQuantity": 2,
+    "xpReward": 375,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-rare-timber",
+    "name": "Rare Timber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 75,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "death": 2
+    },
+    "equipment": "Reinforced Shears",
+    "materials": [
+      {
+        "id": "farming-item-rare-tree-sapling",
+        "name": "Rare Tree Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 10800,
+    "yieldQuantity": 2,
+    "xpReward": 440,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-moonflower",
+    "name": "Moonflower",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "blood": 1
+    },
+    "equipment": "Enchanted Sickle",
+    "materials": [
+      {
+        "id": "farming-item-moonflower-seed",
+        "name": "Moonflower Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-moonflower",
+        "name": "Moonflower",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 12600,
+    "yieldQuantity": 1,
+    "xpReward": 505,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-ancient-root",
+    "name": "Ancient Root",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "blood": 2
+    },
+    "equipment": "Enchanted Spade",
+    "materials": [
+      {
+        "id": "farming-item-ancient-root-seed",
+        "name": "Ancient Root Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-ancient-root",
+        "name": "Ancient Root",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 16200,
+    "yieldQuantity": 1,
+    "xpReward": 630,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-elderwood",
+    "name": "Elderwood",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 99,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Master Pruning Shears",
+    "materials": [
+      {
+        "id": "farming-item-elderwood-sapling",
+        "name": "Elderwood Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-elderwood",
+        "name": "Elderwood",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 21600,
+    "yieldQuantity": 1,
+    "xpReward": 820,
+    "branchXpReward": 0
+  },
+  {
+    "id": "farming-v1-bulk-wheat",
+    "name": "Bulk Wheat",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Iron Hoe",
+    "materials": [
+      {
+        "id": "farming-item-wheat-seed",
+        "name": "Wheat Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-bulk-wheat",
+        "name": "Bulk Wheat",
+        "quantity": 12
+      }
+    ],
+    "durationSeconds": 2100,
+    "yieldQuantity": 12,
+    "xpReward": 100,
+    "branchXpReward": 60
+  },
+  {
+    "id": "farming-v1-bulk-potatoes",
+    "name": "Bulk Potatoes",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 15,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "air": 1
+    },
+    "equipment": "Iron Hoe",
+    "materials": [
+      {
+        "id": "farming-item-potato-seed",
+        "name": "Potato Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-bulk-potatoes",
+        "name": "Bulk Potatoes",
+        "quantity": 12
+      }
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 12,
+    "xpReward": 120,
+    "branchXpReward": 70
+  },
+  {
+    "id": "farming-v1-compost-batch",
+    "name": "Compost Batch",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "nature": 1
+    },
+    "equipment": "Compost Bin",
+    "materials": [
+      {
+        "id": "farming-item-crop-waste",
+        "name": "Crop Waste",
+        "quantity": 6
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-compost-batch",
+        "name": "Compost Batch",
+        "quantity": 6
+      }
+    ],
+    "durationSeconds": 3000,
+    "yieldQuantity": 6,
+    "xpReward": 135,
+    "branchXpReward": 80
+  },
+  {
+    "id": "farming-v1-bulk-flax",
+    "name": "Bulk Flax",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 3,
+      "nature": 1
+    },
+    "equipment": "Fiber Sickle",
+    "materials": [
+      {
+        "id": "farming-item-flax-seed",
+        "name": "Flax Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-bulk-flax",
+        "name": "Bulk Flax",
+        "quantity": 12
+      }
+    ],
+    "durationSeconds": 3900,
+    "yieldQuantity": 12,
+    "xpReward": 175,
+    "branchXpReward": 105
+  },
+  {
+    "id": "farming-v1-bulk-sweetcorn",
+    "name": "Bulk Sweetcorn",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "water": 4,
+      "nature": 1
+    },
+    "equipment": "Steel Hoe",
+    "materials": [
+      {
+        "id": "farming-item-sweetcorn-seed",
+        "name": "Sweetcorn Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-bulk-sweetcorn",
+        "name": "Bulk Sweetcorn",
+        "quantity": 12
+      }
+    ],
+    "durationSeconds": 4800,
+    "yieldQuantity": 12,
+    "xpReward": 210,
+    "branchXpReward": 125
+  },
+  {
+    "id": "farming-v1-feather-harvest",
+    "name": "Feather Harvest",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 2,
+      "air": 2
+    },
+    "equipment": "Poultry Coop",
+    "materials": [
+      {
+        "id": "farming-item-poultry-feed",
+        "name": "Poultry Feed",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-feather-harvest",
+        "name": "Feather Harvest",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 6000,
+    "yieldQuantity": 8,
+    "xpReward": 260,
+    "branchXpReward": 155
+  },
+  {
+    "id": "farming-v1-wild-grub-cultivation",
+    "name": "Wild Grub Cultivation",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 4,
+      "water": 2
+    },
+    "equipment": "Compost Bed",
+    "materials": [
+      {
+        "id": "farming-item-compost",
+        "name": "Compost",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-wild-grub-cultivation",
+        "name": "Wild Grub Cultivation",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 7200,
+    "yieldQuantity": 8,
+    "xpReward": 310,
+    "branchXpReward": 185
+  },
+  {
+    "id": "farming-v1-commercial-fruit-crate",
+    "name": "Commercial Fruit Crate",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 5,
+      "water": 2
+    },
+    "equipment": "Orchard Shears",
+    "materials": [
+      {
+        "id": "farming-item-fruit-sapling",
+        "name": "Fruit Sapling",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-commercial-fruit-crate",
+        "name": "Commercial Fruit Crate",
+        "quantity": 10
+      }
+    ],
+    "durationSeconds": 9000,
+    "yieldQuantity": 10,
+    "xpReward": 380,
+    "branchXpReward": 230
+  },
+  {
+    "id": "farming-v1-royal-crop-crate",
+    "name": "Royal Crop Crate",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "nature": 4,
+      "blood": 2
+    },
+    "equipment": "Master Hoe",
+    "materials": [
+      {
+        "id": "farming-item-royal-crop-seed",
+        "name": "Royal Crop Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-royal-crop-crate",
+        "name": "Royal Crop Crate",
+        "quantity": 12
+      }
+    ],
+    "durationSeconds": 12600,
+    "yieldQuantity": 12,
+    "xpReward": 510,
+    "branchXpReward": 305
+  },
+  {
+    "id": "farming-v1-grand-harvest-crate",
+    "name": "Grand Harvest Crate",
+    "category": "crop",
+    "specializationId": "crop-farming",
+    "branchName": "Crop Farming",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Master Hoe",
+    "materials": [
+      {
+        "id": "farming-item-grand-harvest-seed",
+        "name": "Grand Harvest Seed",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-grand-harvest-crate",
+        "name": "Grand Harvest Crate",
+        "quantity": 20
+      }
+    ],
+    "durationSeconds": 18000,
+    "yieldQuantity": 20,
+    "xpReward": 700,
+    "branchXpReward": 420
+  },
+  {
+    "id": "farming-v1-mint",
+    "name": "Mint",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Herb Sickle",
+    "materials": [
+      {
+        "id": "farming-item-mint-seed",
+        "name": "Mint Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-mint",
+        "name": "Mint",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 2100,
+    "yieldQuantity": 3,
+    "xpReward": 115,
+    "branchXpReward": 70
+  },
+  {
+    "id": "farming-v1-lavender",
+    "name": "Lavender",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Herb Sickle",
+    "materials": [
+      {
+        "id": "farming-item-lavender-seed",
+        "name": "Lavender Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-lavender",
+        "name": "Lavender",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 3,
+    "xpReward": 140,
+    "branchXpReward": 85
+  },
+  {
+    "id": "farming-v1-sage",
+    "name": "Sage",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 3,
+      "water": 1
+    },
+    "equipment": "Herb Sickle",
+    "materials": [
+      {
+        "id": "farming-item-sage-seed",
+        "name": "Sage Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-sage",
+        "name": "Sage",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 3300,
+    "yieldQuantity": 3,
+    "xpReward": 160,
+    "branchXpReward": 95
+  },
+  {
+    "id": "farming-v1-healing-herb",
+    "name": "Healing Herb",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 3,
+      "water": 2
+    },
+    "equipment": "Steel Sickle",
+    "materials": [
+      {
+        "id": "farming-item-healing-herb-seed",
+        "name": "Healing Herb Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-healing-herb",
+        "name": "Healing Herb",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 4200,
+    "yieldQuantity": 2,
+    "xpReward": 195,
+    "branchXpReward": 115
+  },
+  {
+    "id": "farming-v1-glowleaf",
+    "name": "Glowleaf",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 3,
+      "death": 1
+    },
+    "equipment": "Steel Sickle",
+    "materials": [
+      {
+        "id": "farming-item-glowleaf-seed",
+        "name": "Glowleaf Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-glowleaf",
+        "name": "Glowleaf",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 5100,
+    "yieldQuantity": 2,
+    "xpReward": 230,
+    "branchXpReward": 140
+  },
+  {
+    "id": "farming-v1-rare-herb-concentrate",
+    "name": "Rare Herb Concentrate",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 4,
+      "death": 1
+    },
+    "equipment": "Herb Press",
+    "materials": [
+      {
+        "id": "farming-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-rare-herb-concentrate",
+        "name": "Rare Herb Concentrate",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 6600,
+    "yieldQuantity": 2,
+    "xpReward": 290,
+    "branchXpReward": 175
+  },
+  {
+    "id": "farming-v1-nightshade",
+    "name": "Nightshade",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 3,
+      "death": 2
+    },
+    "equipment": "Enchanted Sickle",
+    "materials": [
+      {
+        "id": "farming-item-nightshade-seed",
+        "name": "Nightshade Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-nightshade",
+        "name": "Nightshade",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 8400,
+    "yieldQuantity": 2,
+    "xpReward": 355,
+    "branchXpReward": 215
+  },
+  {
+    "id": "farming-v1-starlight-herb",
+    "name": "Starlight Herb",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "nature": 3,
+      "blood": 1
+    },
+    "equipment": "Enchanted Sickle",
+    "materials": [
+      {
+        "id": "farming-item-starlight-seed",
+        "name": "Starlight Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-starlight-herb",
+        "name": "Starlight Herb",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 10800,
+    "yieldQuantity": 1,
+    "xpReward": 445,
+    "branchXpReward": 265
+  },
+  {
+    "id": "farming-v1-ancient-elixir-herb",
+    "name": "Ancient Elixir Herb",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Master Sickle",
+    "materials": [
+      {
+        "id": "farming-item-ancient-herb-seed",
+        "name": "Ancient Herb Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-ancient-elixir-herb",
+        "name": "Ancient Elixir Herb",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 14400,
+    "yieldQuantity": 1,
+    "xpReward": 570,
+    "branchXpReward": 340
+  },
+  {
+    "id": "farming-v1-eternal-bloom-herb",
+    "name": "Eternal Bloom Herb",
+    "category": "herbalism",
+    "specializationId": "herbalism",
+    "branchName": "Herbalism",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 2,
+      "soul": 2
+    },
+    "equipment": "Master Sickle",
+    "materials": [
+      {
+        "id": "farming-item-eternal-herb-seed",
+        "name": "Eternal Herb Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-eternal-bloom-herb",
+        "name": "Eternal Bloom Herb",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 19800,
+    "yieldQuantity": 1,
+    "xpReward": 760,
+    "branchXpReward": 455
+  },
+  {
+    "id": "farming-v1-rare-orchid",
+    "name": "Rare Orchid",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Orchid Shears",
+    "materials": [
+      {
+        "id": "farming-item-orchid-seed",
+        "name": "Orchid Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-rare-orchid",
+        "name": "Rare Orchid",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 1,
+    "xpReward": 135,
+    "branchXpReward": 80
+  },
+  {
+    "id": "farming-v1-silver-fern",
+    "name": "Silver Fern",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "nature": 3,
+      "water": 1
+    },
+    "equipment": "Orchid Shears",
+    "materials": [
+      {
+        "id": "farming-item-silver-fern-seed",
+        "name": "Silver Fern Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-silver-fern",
+        "name": "Silver Fern",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 3600,
+    "yieldQuantity": 1,
+    "xpReward": 170,
+    "branchXpReward": 100
+  },
+  {
+    "id": "farming-v1-crystal-moss",
+    "name": "Crystal Moss",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 3,
+      "death": 1
+    },
+    "equipment": "Enchanted Spade",
+    "materials": [
+      {
+        "id": "farming-item-crystal-moss-spore",
+        "name": "Crystal Moss Spore",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-crystal-moss",
+        "name": "Crystal Moss",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 4800,
+    "yieldQuantity": 1,
+    "xpReward": 215,
+    "branchXpReward": 130
+  },
+  {
+    "id": "farming-v1-golden-rose",
+    "name": "Golden Rose",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 55,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 4,
+      "death": 1
+    },
+    "equipment": "Orchid Shears",
+    "materials": [
+      {
+        "id": "farming-item-golden-rose-seed",
+        "name": "Golden Rose Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-golden-rose",
+        "name": "Golden Rose",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 6300,
+    "yieldQuantity": 1,
+    "xpReward": 275,
+    "branchXpReward": 165
+  },
+  {
+    "id": "farming-v1-spirit-blossom",
+    "name": "Spirit Blossom",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 4,
+      "death": 1
+    },
+    "equipment": "Enchanted Shears",
+    "materials": [
+      {
+        "id": "farming-item-spirit-blossom-seed",
+        "name": "Spirit Blossom Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-spirit-blossom",
+        "name": "Spirit Blossom",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 7500,
+    "yieldQuantity": 1,
+    "xpReward": 320,
+    "branchXpReward": 190
+  },
+  {
+    "id": "farming-v1-ancient-bonsai",
+    "name": "Ancient Bonsai",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 3,
+      "blood": 1
+    },
+    "equipment": "Bonsai Tools",
+    "materials": [
+      {
+        "id": "farming-item-ancient-bonsai-sapling",
+        "name": "Ancient Bonsai Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-ancient-bonsai",
+        "name": "Ancient Bonsai",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 9600,
+    "yieldQuantity": 1,
+    "xpReward": 395,
+    "branchXpReward": 235
+  },
+  {
+    "id": "farming-v1-abyssal-lily",
+    "name": "Abyssal Lily",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 3,
+      "blood": 2
+    },
+    "equipment": "Enchanted Shears",
+    "materials": [
+      {
+        "id": "farming-item-abyssal-lily-seed",
+        "name": "Abyssal Lily Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-abyssal-lily",
+        "name": "Abyssal Lily",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 12600,
+    "yieldQuantity": 1,
+    "xpReward": 505,
+    "branchXpReward": 305
+  },
+  {
+    "id": "farming-v1-celestial-orchid",
+    "name": "Celestial Orchid",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Master Shears",
+    "materials": [
+      {
+        "id": "farming-item-celestial-orchid-seed",
+        "name": "Celestial Orchid Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-celestial-orchid",
+        "name": "Celestial Orchid",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 15600,
+    "yieldQuantity": 1,
+    "xpReward": 610,
+    "branchXpReward": 365
+  },
+  {
+    "id": "farming-v1-royal-moon-tree",
+    "name": "Royal Moon Tree",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": "Master Pruning Shears",
+    "materials": [
+      {
+        "id": "farming-item-royal-moon-sapling",
+        "name": "Royal Moon Sapling",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-royal-moon-tree",
+        "name": "Royal Moon Tree",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 19200,
+    "yieldQuantity": 1,
+    "xpReward": 735,
+    "branchXpReward": 440
+  },
+  {
+    "id": "farming-v1-world-tree-seedling",
+    "name": "World Tree Seedling",
+    "category": "rare-plant",
+    "specializationId": "rare-plant-cultivation",
+    "branchName": "Rare Plant Cultivation",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 2,
+      "soul": 2
+    },
+    "equipment": "Legendary Gardening Kit",
+    "materials": [
+      {
+        "id": "farming-item-world-tree-seed",
+        "name": "World Tree Seed",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "farming-item-world-tree-seedling",
+        "name": "World Tree Seedling",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 25200,
+    "yieldQuantity": 1,
+    "xpReward": 940,
+    "branchXpReward": 565
+  }
+]

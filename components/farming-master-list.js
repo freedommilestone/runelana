@@ -1,0 +1,13 @@
+'use client';
+import {useState} from 'react';
+import {farmingCategories} from '../lib/farming-catalog.mjs';
+import RuneIcon from './rune-icon';
+import './fishing-master-list.css';
+export default function FarmingMasterList({activities=[],initialCategory='all'}){
+ const [category,setCategory]=useState(initialCategory),[query,setQuery]=useState('');
+ const rows=activities.filter(r=>(category==='all'||r.category===category)&&`${r.name} ${r.equipment.join(' ')} ${r.materials.map(x=>x.name).join(' ')} ${r.runes.map(x=>x.name).join(' ')}`.toLowerCase().includes(query.toLowerCase().trim()));
+ return <section className="fm-list" aria-label="Farming V1 master list"><h3>Farming Master List V1</h3><p>50 draft activities. Inputs, yields, rune costs, and both XP rewards are per completed batch. XP is not multiplied by yield. Wheat requires no runes.</p>
+ <div className="fm-controls"><label>Branch<select aria-label="Filter Farming branch" value={category} onChange={e=>setCategory(e.target.value)}><option value="all">All activities</option>{farmingCategories.map(([id,name])=><option key={id} value={id}>{name}</option>)}</select></label><label>Search<input aria-label="Search Farming master list" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Crop, seed, equipment, or rune…"/></label><span role="status">{rows.length} activities</span></div>
+ <div className="fm-scroll" role="region" aria-label="Farming master requirements" tabIndex={0}><table><thead><tr>{['Activity','Farming Lv.','Branch Lv.','Runes','Equipment','Inputs','Time','Yield','Farming XP','Branch XP'].map(h=><th scope="col" key={h}>{h}</th>)}</tr></thead><tbody>{rows.map(r=><tr key={r.id}><th scope="row">{r.name}<small>{r.branchName||'Standard Farming'}</small></th><td>{r.requiredLevel}</td><td>{r.requiredBranchLevel??'—'}</td><td><div className="fm-runes">{r.runes.length?r.runes.map(x=><span key={x.id}><RuneIcon id={x.id}/>{x.quantity} {x.name}</span>):'None'}</div></td><td>{r.equipment.join(', ')}</td><td>{r.materials.map(x=>`${x.name} ×${x.quantity}`).join(', ')}</td><td>{r.durationSeconds/60} min</td><td>{r.yieldQuantity}</td><td>{r.xpReward}</td><td>{r.branchXpReward}</td></tr>)}</tbody></table></div>
+ {!rows.length&&<p>No activities match this search.</p>}<p>Crop Farming opens at overall level 10; Herbalism and Rare Plant Cultivation at level 30. Each branch has independent XP, starting at level 1. Switching preserves all progress.</p><p>Seed, sapling, tool, and ingredient acquisition recipes and artwork are pending. Yield refers to the listed activity; crate contents and output conversions are not defined. Tradeability, rarity, seasonal availability, and randomized yields remain undecided. Training is a preview.</p></section>;
+}
