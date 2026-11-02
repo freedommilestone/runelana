@@ -57,7 +57,7 @@
     "level": 10,
     "totalXp": 184,
     "xpToNext": 29,
-    "milestone": "First specialization"
+    "milestone": "Commercial Fisher available"
   },
   {
     "level": 11,
@@ -177,7 +177,7 @@
     "level": 30,
     "totalXp": 1428,
     "xpToNext": 122,
-    "milestone": ""
+    "milestone": "Treasure & Trophy Fisher available"
   },
   {
     "level": 31,
@@ -591,6 +591,6 @@
     "level": 99,
     "totalXp": 239164,
     "xpToNext": null,
-    "milestone": "Fishing mastery"
+    "milestone": ""
   }
 ]
