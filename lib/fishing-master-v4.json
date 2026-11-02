@@ -1,0 +1,886 @@
+[
+  {
+    "id": "fishing-v4-shrimp",
+    "name": "Shrimp",
+    "category": "standard",
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Small Net",
+    "durationSeconds": 360,
+    "xpReward": 25,
+    "branchXpReward": null,
+    "reference": "Raw shrimps",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_shrimps",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-sardine",
+    "name": "Sardine",
+    "category": "standard",
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Fishing Rod + Bait",
+    "durationSeconds": 360,
+    "xpReward": 25,
+    "branchXpReward": null,
+    "reference": "Raw sardine",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_sardine",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-herring",
+    "name": "Herring",
+    "category": "standard",
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": "Fishing Rod + Bait",
+    "durationSeconds": 480,
+    "xpReward": 35,
+    "branchXpReward": null,
+    "reference": "Raw herring",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_herring",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-anchovies",
+    "name": "Anchovies",
+    "category": "standard",
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 2
+    },
+    "equipment": "Small Net",
+    "durationSeconds": 600,
+    "xpReward": 40,
+    "branchXpReward": null,
+    "reference": "Raw anchovies",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_anchovies",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-mackerel",
+    "name": "Mackerel",
+    "category": "standard",
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Big Net",
+    "durationSeconds": 720,
+    "xpReward": 50,
+    "branchXpReward": null,
+    "reference": "Raw mackerel",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_mackerel",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-trout",
+    "name": "Trout",
+    "category": "standard",
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Fly Rod",
+    "durationSeconds": 720,
+    "xpReward": 55,
+    "branchXpReward": null,
+    "reference": "Raw trout",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_trout",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-salmon",
+    "name": "Salmon",
+    "category": "standard",
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3
+    },
+    "equipment": "Fly Rod",
+    "durationSeconds": 900,
+    "xpReward": 65,
+    "branchXpReward": null,
+    "reference": "Raw salmon",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_salmon",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-pike",
+    "name": "Pike",
+    "category": "standard",
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "mind": 1
+    },
+    "equipment": "Fishing Rod",
+    "durationSeconds": 1080,
+    "xpReward": 75,
+    "branchXpReward": null,
+    "reference": "Raw pike",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_pike",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-tuna",
+    "name": "Tuna",
+    "category": "standard",
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3
+    },
+    "equipment": "Harpoon",
+    "durationSeconds": 1200,
+    "xpReward": 80,
+    "branchXpReward": null,
+    "reference": "Raw tuna",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_tuna",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-lobster",
+    "name": "Lobster",
+    "category": "standard",
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3,
+      "fire": 1
+    },
+    "equipment": "Lobster Pot",
+    "durationSeconds": 1500,
+    "xpReward": 95,
+    "branchXpReward": null,
+    "reference": "Raw lobster",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_lobster",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-bass",
+    "name": "Bass",
+    "category": "standard",
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 4
+    },
+    "equipment": "Big Net",
+    "durationSeconds": 1500,
+    "xpReward": 100,
+    "branchXpReward": null,
+    "reference": "Raw bass",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_bass",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-swordfish",
+    "name": "Swordfish",
+    "category": "standard",
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3,
+      "air": 2
+    },
+    "equipment": "Harpoon",
+    "durationSeconds": 1800,
+    "xpReward": 115,
+    "branchXpReward": null,
+    "reference": "Raw swordfish",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_swordfish",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-monkfish",
+    "name": "Monkfish",
+    "category": "standard",
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 4,
+      "nature": 1
+    },
+    "equipment": "Big Net",
+    "durationSeconds": 2100,
+    "xpReward": 130,
+    "branchXpReward": null,
+    "reference": "Raw monkfish",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_monkfish",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-shark",
+    "name": "Shark",
+    "category": "standard",
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 5,
+      "nature": 2
+    },
+    "equipment": "Harpoon",
+    "durationSeconds": 2400,
+    "xpReward": 140,
+    "branchXpReward": null,
+    "reference": "Raw shark",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_shark",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-sea-turtle",
+    "name": "Sea Turtle",
+    "category": "standard",
+    "requiredLevel": 70,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 4,
+      "nature": 2
+    },
+    "equipment": "Heavy Net",
+    "durationSeconds": 2700,
+    "xpReward": 155,
+    "branchXpReward": null,
+    "reference": "Raw sea turtle",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_sea_turtle",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-manta-ray",
+    "name": "Manta Ray",
+    "category": "standard",
+    "requiredLevel": 75,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 5,
+      "nature": 2
+    },
+    "equipment": "Deep Sea Net",
+    "durationSeconds": 3000,
+    "xpReward": 170,
+    "branchXpReward": null,
+    "reference": "Raw manta ray",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_manta_ray",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-anglerfish",
+    "name": "Anglerfish",
+    "category": "standard",
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 5,
+      "death": 2
+    },
+    "equipment": "Deep Sea Rod",
+    "durationSeconds": 3600,
+    "xpReward": 195,
+    "branchXpReward": null,
+    "reference": "Raw anglerfish",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_anglerfish",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-dark-crab",
+    "name": "Dark Crab",
+    "category": "standard",
+    "requiredLevel": 85,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 4,
+      "death": 3
+    },
+    "equipment": "Reinforced Crab Trap",
+    "durationSeconds": 4200,
+    "xpReward": 220,
+    "branchXpReward": null,
+    "reference": "Raw dark crab",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_dark_crab",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-sacred-eel",
+    "name": "Sacred Eel",
+    "category": "standard",
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 4,
+      "blood": 2
+    },
+    "equipment": "Enchanted Rod",
+    "durationSeconds": 5400,
+    "xpReward": 260,
+    "branchXpReward": null,
+    "reference": "Sacred eel",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Sacred_eel",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-ancient-sea-serpent",
+    "name": "Ancient Sea Serpent",
+    "category": "standard",
+    "requiredLevel": 95,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": "Master Harpoon",
+    "durationSeconds": 7200,
+    "xpReward": 325,
+    "branchXpReward": null,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-shrimp-bundle-x5",
+    "name": "Shrimp Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 4
+    },
+    "equipment": "Small Net",
+    "durationSeconds": 1500,
+    "xpReward": 90,
+    "branchXpReward": 55,
+    "reference": "Raw shrimps",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_shrimps",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-sardine-bundle-x5",
+    "name": "Sardine Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 15,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "air": 4,
+      "mind": 1
+    },
+    "equipment": "Big Net",
+    "durationSeconds": 1800,
+    "xpReward": 105,
+    "branchXpReward": 60,
+    "reference": "Raw sardine",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_sardine",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-herring-bundle-x5",
+    "name": "Herring Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "mind": 5
+    },
+    "equipment": "Big Net",
+    "durationSeconds": 2100,
+    "xpReward": 120,
+    "branchXpReward": 70,
+    "reference": "Raw herring",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_herring",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-trout-bundle-x5",
+    "name": "Trout Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 6
+    },
+    "equipment": "River Net",
+    "durationSeconds": 2700,
+    "xpReward": 150,
+    "branchXpReward": 90,
+    "reference": "Raw trout",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_trout",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-salmon-bundle-x5",
+    "name": "Salmon Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "water": 8
+    },
+    "equipment": "Reinforced Net",
+    "durationSeconds": 3600,
+    "xpReward": 195,
+    "branchXpReward": 115,
+    "reference": "Raw salmon",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_salmon",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-lobster-bundle-x5",
+    "name": "Lobster Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "water": 6,
+      "fire": 2
+    },
+    "equipment": "Lobster Pot",
+    "durationSeconds": 4500,
+    "xpReward": 240,
+    "branchXpReward": 145,
+    "reference": "Raw lobster",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_lobster",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-tuna-bundle-x5",
+    "name": "Tuna Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "water": 8,
+      "nature": 2
+    },
+    "equipment": "Ocean Net",
+    "durationSeconds": 5400,
+    "xpReward": 280,
+    "branchXpReward": 170,
+    "reference": "Raw tuna",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_tuna",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-shark-bundle-x5",
+    "name": "Shark Bundle x5",
+    "category": "commercial",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "water": 10,
+      "nature": 3
+    },
+    "equipment": "Heavy Ocean Net",
+    "durationSeconds": 7200,
+    "xpReward": 360,
+    "branchXpReward": 215,
+    "reference": "Raw shark",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Raw_shark",
+    "batchSize": 5
+  },
+  {
+    "id": "fishing-v4-royal-seafood-crate",
+    "name": "Royal Seafood Crate",
+    "category": "commercial",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "water": 10,
+      "blood": 3
+    },
+    "equipment": "Master Net",
+    "durationSeconds": 10800,
+    "xpReward": 500,
+    "branchXpReward": 300,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-grand-ocean-crate",
+    "name": "Grand Ocean Crate",
+    "category": "commercial",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "nature": 10,
+      "soul": 2
+    },
+    "equipment": "Legendary Net",
+    "durationSeconds": 14400,
+    "xpReward": 640,
+    "branchXpReward": 385,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-common-shell",
+    "name": "Common Shell",
+    "category": "treasure",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 1
+    },
+    "equipment": "Small Net",
+    "durationSeconds": 600,
+    "xpReward": 60,
+    "branchXpReward": 35,
+    "reference": "Shell",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Shell",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-oyster",
+    "name": "Oyster",
+    "category": "treasure",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Oyster Net",
+    "durationSeconds": 900,
+    "xpReward": 85,
+    "branchXpReward": 50,
+    "reference": "Oyster",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Oyster",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-freshwater-pearl",
+    "name": "Freshwater Pearl",
+    "category": "treasure",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 3,
+      "mind": 1
+    },
+    "equipment": "Pearl Net",
+    "durationSeconds": 1500,
+    "xpReward": 120,
+    "branchXpReward": 75,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-giant-clam",
+    "name": "Giant Clam",
+    "category": "treasure",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "water": 4,
+      "nature": 1
+    },
+    "equipment": "Clam Trap",
+    "durationSeconds": 2100,
+    "xpReward": 160,
+    "branchXpReward": 95,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-ancient-coral",
+    "name": "Ancient Coral",
+    "category": "treasure",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "water": 3,
+      "nature": 2
+    },
+    "equipment": "Diving Net",
+    "durationSeconds": 2700,
+    "xpReward": 195,
+    "branchXpReward": 120,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-black-pearl",
+    "name": "Black Pearl",
+    "category": "treasure",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "water": 4,
+      "death": 2
+    },
+    "equipment": "Deep Sea Net",
+    "durationSeconds": 3600,
+    "xpReward": 250,
+    "branchXpReward": 150,
+    "reference": "Black pearl",
+    "referenceUrl": "https://oldschool.runescape.wiki/w/Black_pearl",
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-sunken-relic",
+    "name": "Sunken Relic",
+    "category": "treasure",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 3,
+      "death": 2
+    },
+    "equipment": "Relic Net",
+    "durationSeconds": 5400,
+    "xpReward": 345,
+    "branchXpReward": 205,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-abyssal-pearl",
+    "name": "Abyssal Pearl",
+    "category": "treasure",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 3,
+      "water": 2
+    },
+    "equipment": "Abyssal Net",
+    "durationSeconds": 7200,
+    "xpReward": 435,
+    "branchXpReward": 260,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-ancient-treasure-chest",
+    "name": "Ancient Treasure Chest",
+    "category": "treasure",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": "Master Salvage Net",
+    "durationSeconds": 10800,
+    "xpReward": 600,
+    "branchXpReward": 360,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-legendary-ocean-relic",
+    "name": "Legendary Ocean Relic",
+    "category": "treasure",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 2,
+      "soul": 2
+    },
+    "equipment": "Legendary Salvage Net",
+    "durationSeconds": 14400,
+    "xpReward": 765,
+    "branchXpReward": 460,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-trophy-trout",
+    "name": "Trophy Trout",
+    "category": "trophy",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Trophy Rod",
+    "durationSeconds": 1200,
+    "xpReward": 100,
+    "branchXpReward": 60,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-golden-carp",
+    "name": "Golden Carp",
+    "category": "trophy",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "mind": 1
+    },
+    "equipment": "Trophy Rod",
+    "durationSeconds": 1800,
+    "xpReward": 145,
+    "branchXpReward": 85,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-giant-salmon",
+    "name": "Giant Salmon",
+    "category": "trophy",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 3,
+      "nature": 1
+    },
+    "equipment": "Heavy Rod",
+    "durationSeconds": 2400,
+    "xpReward": 185,
+    "branchXpReward": 110,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-giant-swordfish",
+    "name": "Giant Swordfish",
+    "category": "trophy",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "water": 4,
+      "nature": 1
+    },
+    "equipment": "Harpoon",
+    "durationSeconds": 3600,
+    "xpReward": 265,
+    "branchXpReward": 160,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-golden-lobster",
+    "name": "Golden Lobster",
+    "category": "trophy",
+    "requiredLevel": 55,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "water": 3,
+      "nature": 2
+    },
+    "equipment": "Trophy Trap",
+    "durationSeconds": 4500,
+    "xpReward": 320,
+    "branchXpReward": 195,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-albino-shark",
+    "name": "Albino Shark",
+    "category": "trophy",
+    "requiredLevel": 65,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 3,
+      "death": 2
+    },
+    "equipment": "Deep Sea Harpoon",
+    "durationSeconds": 5400,
+    "xpReward": 380,
+    "branchXpReward": 230,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-ancient-manta-ray",
+    "name": "Ancient Manta Ray",
+    "category": "trophy",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 4,
+      "death": 2
+    },
+    "equipment": "Master Net",
+    "durationSeconds": 7200,
+    "xpReward": 480,
+    "branchXpReward": 285,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-leviathan",
+    "name": "Leviathan",
+    "category": "trophy",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": "Legendary Harpoon",
+    "durationSeconds": 10800,
+    "xpReward": 660,
+    "branchXpReward": 395,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-crimson-sea-dragon",
+    "name": "Crimson Sea Dragon",
+    "category": "trophy",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 4,
+      "soul": 1
+    },
+    "equipment": "Dragon Harpoon",
+    "durationSeconds": 14400,
+    "xpReward": 845,
+    "branchXpReward": 505,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  },
+  {
+    "id": "fishing-v4-mythical-ocean-guardian",
+    "name": "Mythical Ocean Guardian",
+    "category": "trophy",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": "Mythic Harpoon",
+    "durationSeconds": 21600,
+    "xpReward": 1185,
+    "branchXpReward": 710,
+    "reference": "Runelana original",
+    "referenceUrl": null,
+    "batchSize": null
+  }
+]
