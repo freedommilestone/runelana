@@ -156,7 +156,7 @@ Validation covers every threshold, migrated XP preservation, future-account init
 
 Production checks confirmed 99 rows and exact formula parity, then exercised level derivation inside a rolled-back transaction. Supabase's default service-role table grants required an explicit follow-up read-only grant migration; tests now emulate those defaults. Security advisors reported no new database findings. The existing Auth configuration still has [leaked-password protection disabled](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection); that setting was not changed by this update.
 
-## Fishing Master List V4
+## Fishing Master List V4 (superseded by V7 below)
 
 The supplied `Runelana_Fishing_Master_List_V4_with_XP (2).pdf` replaces the five earlier Fishing recipe drafts with 50 activities: 20 Standard, 10 Commercial, 10 Treasure, and 10 Trophy. `lib/fishing-master-v4.json` preserves every name, Fishing level, branch level, rune cost, equipment requirement, duration, main XP reward, branch XP reward, batch marker, and source-item reference. Values remain balancing previews; no training engine or resource settlement was enabled.
 
@@ -169,3 +169,14 @@ Use Skill includes branch filtering, equipment/rune search, pagination, Fishing 
 No output quantities are invented: only explicitly named x5 bundles receive a batch-size field. V4 leaves locations, branch XP thresholds, equipment acquisition, bait consumption quantities, catch probabilities, and crate contents unspecified. Reference links are copied from the PDF; no external artwork was downloaded. The previous 35-recipe simulator remains a labeled legacy snapshot and should not be used to predict V4 Fishing balance until these missing mechanics are settled.
 
 Validation compares every field in all 50 database rows and the server snapshot against the source JSON; exercises branch initialization, legacy progress preservation, constraints, client/server catalog write denial, and RLS; and verifies guide-table equality. SQL-backed browser checks cover pagination, filters, search, per-batch rewards, active branch names, mobile overflow, and zero resource/XP mutations from browsing. The deployed catalog is compared field-for-field with the source before release. Security advisors reported no new findings; the existing leaked-password-protection setting is unchanged.
+
+
+## Fishing Master List V7
+
+`Runelana_Fishing_Master_List_V7_Item_Links.pdf` supersedes V4. The canonical UI/guide source is now `lib/fishing-master-v7.json`. All 50 names, costs, equipment requirements, durations, Fishing XP, and branch XP amounts are retained. Standard activities explicitly show 0 branch XP. Commercial requires Fishing level 10; Treasure and Trophy require level 30. Common Shell, Oyster, Trophy Trout, and Golden Carp now require Fishing 30. Branch levels and the Fishing XP curve remain unchanged.
+
+The migration updates existing catalog rows in place, retaining their original IDs and all player progress. It tightens category level constraints, sets the V7 source version, and preserves the existing read-only grants and RLS. Neither training nor a branch XP curve is activated.
+
+V7 supplies 39 OSRS item-page links (nine newly linked activities) and labels eleven entries “Original Runelana artwork needed.” Links are available in activity previews, the full Items/Guide catalog, and searchable How It Works tables. Bundle components and base-fish trophy links are visual references, not identical finished items; marine material matches remain tentative. No art is downloaded or invented. The V4 JSON is retained as a historical snapshot.
+
+Validation compares the migrated API catalog to all 50 source rows, tests the changed branch gates and nine new references, checks player/branch/rune preservation across the V7 migration, and denies catalog mutation by clients and the application service role. Browser checks cover item links, guide links, branch labels, search, and mobile overflow.
