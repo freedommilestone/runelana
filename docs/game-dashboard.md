@@ -195,3 +195,9 @@ Validation covers all branch boundaries, PDF milestone totals and step changes, 
 ### V2 progress in Use Skill
 
 The Use Skill Fishing popup now reads the existing server-saved branch snapshots directly. Commercial, Treasure, and Trophy cards show independent levels, within-level XP, mastery, and entry requirements; clicking a card filters the existing V7 catalog without changing saved progress. Activity rows and previews compare the player's overall and branch levels with each activity's requirements. “Level requirements met” is distinct from playable availability and ownership of runes/equipment. Standard rows show only overall XP; specialized rewards name the receiving branch. Other skills retain their existing behavior. Browser checks cover partial XP, mastery, branch switching, locked entry and item requirements, live refresh, 320–768px layouts, Smithing, and unchanged XP/runes.
+
+### Dedicated Fishing skill tree
+
+Fishing now has its own progression view instead of using generic Cooking milestones and artwork. The harbor header leads into actual overall milestones (1, 10, 30, 99), a Standard track and three independent branch tracks. Saved API progress drives levels and XP bars. Each track lists its V7 activities in progression order; selecting one shows overall/branch requirements, exact remaining XP from the V2 curves, rune costs, equipment, time, per-batch rewards, and the source item link. Meeting level requirements is labeled separately from playable availability. Standard and branch item buttons open the matching catalog filter; the leveling guide shows both full curves. Branch browsing is local UI state and does not mutate progress or resources. The other six profession trees keep their existing layout.
+
+Browser validation covers all four tracks and 50 activities, separate overall/branch locks, partial XP and mastery, item and guide navigation, 320/390/768/1280px layouts, Cooking regression, and unchanged XP/runes.
