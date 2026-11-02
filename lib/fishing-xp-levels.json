@@ -1,0 +1,596 @@
+[
+  {
+    "level": 1,
+    "totalXp": 0,
+    "xpToNext": 15,
+    "milestone": ""
+  },
+  {
+    "level": 2,
+    "totalXp": 15,
+    "xpToNext": 16,
+    "milestone": ""
+  },
+  {
+    "level": 3,
+    "totalXp": 31,
+    "xpToNext": 17,
+    "milestone": ""
+  },
+  {
+    "level": 4,
+    "totalXp": 48,
+    "xpToNext": 19,
+    "milestone": ""
+  },
+  {
+    "level": 5,
+    "totalXp": 67,
+    "xpToNext": 20,
+    "milestone": ""
+  },
+  {
+    "level": 6,
+    "totalXp": 87,
+    "xpToNext": 22,
+    "milestone": ""
+  },
+  {
+    "level": 7,
+    "totalXp": 109,
+    "xpToNext": 23,
+    "milestone": ""
+  },
+  {
+    "level": 8,
+    "totalXp": 132,
+    "xpToNext": 25,
+    "milestone": ""
+  },
+  {
+    "level": 9,
+    "totalXp": 157,
+    "xpToNext": 27,
+    "milestone": ""
+  },
+  {
+    "level": 10,
+    "totalXp": 184,
+    "xpToNext": 29,
+    "milestone": "First specialization"
+  },
+  {
+    "level": 11,
+    "totalXp": 213,
+    "xpToNext": 31,
+    "milestone": ""
+  },
+  {
+    "level": 12,
+    "totalXp": 244,
+    "xpToNext": 33,
+    "milestone": ""
+  },
+  {
+    "level": 13,
+    "totalXp": 277,
+    "xpToNext": 36,
+    "milestone": ""
+  },
+  {
+    "level": 14,
+    "totalXp": 313,
+    "xpToNext": 38,
+    "milestone": ""
+  },
+  {
+    "level": 15,
+    "totalXp": 351,
+    "xpToNext": 41,
+    "milestone": ""
+  },
+  {
+    "level": 16,
+    "totalXp": 392,
+    "xpToNext": 44,
+    "milestone": ""
+  },
+  {
+    "level": 17,
+    "totalXp": 436,
+    "xpToNext": 48,
+    "milestone": ""
+  },
+  {
+    "level": 18,
+    "totalXp": 484,
+    "xpToNext": 51,
+    "milestone": ""
+  },
+  {
+    "level": 19,
+    "totalXp": 535,
+    "xpToNext": 55,
+    "milestone": ""
+  },
+  {
+    "level": 20,
+    "totalXp": 590,
+    "xpToNext": 59,
+    "milestone": ""
+  },
+  {
+    "level": 21,
+    "totalXp": 649,
+    "xpToNext": 64,
+    "milestone": ""
+  },
+  {
+    "level": 22,
+    "totalXp": 713,
+    "xpToNext": 68,
+    "milestone": ""
+  },
+  {
+    "level": 23,
+    "totalXp": 781,
+    "xpToNext": 74,
+    "milestone": ""
+  },
+  {
+    "level": 24,
+    "totalXp": 855,
+    "xpToNext": 79,
+    "milestone": ""
+  },
+  {
+    "level": 25,
+    "totalXp": 934,
+    "xpToNext": 85,
+    "milestone": ""
+  },
+  {
+    "level": 26,
+    "totalXp": 1019,
+    "xpToNext": 91,
+    "milestone": ""
+  },
+  {
+    "level": 27,
+    "totalXp": 1110,
+    "xpToNext": 98,
+    "milestone": ""
+  },
+  {
+    "level": 28,
+    "totalXp": 1208,
+    "xpToNext": 106,
+    "milestone": ""
+  },
+  {
+    "level": 29,
+    "totalXp": 1314,
+    "xpToNext": 114,
+    "milestone": ""
+  },
+  {
+    "level": 30,
+    "totalXp": 1428,
+    "xpToNext": 122,
+    "milestone": ""
+  },
+  {
+    "level": 31,
+    "totalXp": 1550,
+    "xpToNext": 131,
+    "milestone": ""
+  },
+  {
+    "level": 32,
+    "totalXp": 1681,
+    "xpToNext": 141,
+    "milestone": ""
+  },
+  {
+    "level": 33,
+    "totalXp": 1822,
+    "xpToNext": 152,
+    "milestone": ""
+  },
+  {
+    "level": 34,
+    "totalXp": 1974,
+    "xpToNext": 163,
+    "milestone": ""
+  },
+  {
+    "level": 35,
+    "totalXp": 2137,
+    "xpToNext": 175,
+    "milestone": ""
+  },
+  {
+    "level": 36,
+    "totalXp": 2312,
+    "xpToNext": 189,
+    "milestone": ""
+  },
+  {
+    "level": 37,
+    "totalXp": 2501,
+    "xpToNext": 203,
+    "milestone": ""
+  },
+  {
+    "level": 38,
+    "totalXp": 2704,
+    "xpToNext": 218,
+    "milestone": ""
+  },
+  {
+    "level": 39,
+    "totalXp": 2922,
+    "xpToNext": 234,
+    "milestone": ""
+  },
+  {
+    "level": 40,
+    "totalXp": 3156,
+    "xpToNext": 252,
+    "milestone": ""
+  },
+  {
+    "level": 41,
+    "totalXp": 3408,
+    "xpToNext": 271,
+    "milestone": ""
+  },
+  {
+    "level": 42,
+    "totalXp": 3679,
+    "xpToNext": 291,
+    "milestone": ""
+  },
+  {
+    "level": 43,
+    "totalXp": 3970,
+    "xpToNext": 313,
+    "milestone": ""
+  },
+  {
+    "level": 44,
+    "totalXp": 4283,
+    "xpToNext": 336,
+    "milestone": ""
+  },
+  {
+    "level": 45,
+    "totalXp": 4619,
+    "xpToNext": 361,
+    "milestone": ""
+  },
+  {
+    "level": 46,
+    "totalXp": 4980,
+    "xpToNext": 389,
+    "milestone": ""
+  },
+  {
+    "level": 47,
+    "totalXp": 5369,
+    "xpToNext": 418,
+    "milestone": ""
+  },
+  {
+    "level": 48,
+    "totalXp": 5787,
+    "xpToNext": 449,
+    "milestone": ""
+  },
+  {
+    "level": 49,
+    "totalXp": 6236,
+    "xpToNext": 483,
+    "milestone": ""
+  },
+  {
+    "level": 50,
+    "totalXp": 6719,
+    "xpToNext": 519,
+    "milestone": ""
+  },
+  {
+    "level": 51,
+    "totalXp": 7238,
+    "xpToNext": 558,
+    "milestone": ""
+  },
+  {
+    "level": 52,
+    "totalXp": 7796,
+    "xpToNext": 600,
+    "milestone": ""
+  },
+  {
+    "level": 53,
+    "totalXp": 8396,
+    "xpToNext": 645,
+    "milestone": ""
+  },
+  {
+    "level": 54,
+    "totalXp": 9041,
+    "xpToNext": 693,
+    "milestone": ""
+  },
+  {
+    "level": 55,
+    "totalXp": 9734,
+    "xpToNext": 745,
+    "milestone": ""
+  },
+  {
+    "level": 56,
+    "totalXp": 10479,
+    "xpToNext": 801,
+    "milestone": ""
+  },
+  {
+    "level": 57,
+    "totalXp": 11280,
+    "xpToNext": 861,
+    "milestone": ""
+  },
+  {
+    "level": 58,
+    "totalXp": 12141,
+    "xpToNext": 925,
+    "milestone": ""
+  },
+  {
+    "level": 59,
+    "totalXp": 13066,
+    "xpToNext": 995,
+    "milestone": ""
+  },
+  {
+    "level": 60,
+    "totalXp": 14061,
+    "xpToNext": 1070,
+    "milestone": ""
+  },
+  {
+    "level": 61,
+    "totalXp": 15131,
+    "xpToNext": 1150,
+    "milestone": ""
+  },
+  {
+    "level": 62,
+    "totalXp": 16281,
+    "xpToNext": 1236,
+    "milestone": ""
+  },
+  {
+    "level": 63,
+    "totalXp": 17517,
+    "xpToNext": 1329,
+    "milestone": ""
+  },
+  {
+    "level": 64,
+    "totalXp": 18846,
+    "xpToNext": 1428,
+    "milestone": ""
+  },
+  {
+    "level": 65,
+    "totalXp": 20274,
+    "xpToNext": 1535,
+    "milestone": ""
+  },
+  {
+    "level": 66,
+    "totalXp": 21809,
+    "xpToNext": 1651,
+    "milestone": ""
+  },
+  {
+    "level": 67,
+    "totalXp": 23460,
+    "xpToNext": 1774,
+    "milestone": ""
+  },
+  {
+    "level": 68,
+    "totalXp": 25234,
+    "xpToNext": 1907,
+    "milestone": ""
+  },
+  {
+    "level": 69,
+    "totalXp": 27141,
+    "xpToNext": 2051,
+    "milestone": ""
+  },
+  {
+    "level": 70,
+    "totalXp": 29192,
+    "xpToNext": 2204,
+    "milestone": ""
+  },
+  {
+    "level": 71,
+    "totalXp": 31396,
+    "xpToNext": 2370,
+    "milestone": ""
+  },
+  {
+    "level": 72,
+    "totalXp": 33766,
+    "xpToNext": 2547,
+    "milestone": ""
+  },
+  {
+    "level": 73,
+    "totalXp": 36313,
+    "xpToNext": 2738,
+    "milestone": ""
+  },
+  {
+    "level": 74,
+    "totalXp": 39051,
+    "xpToNext": 2944,
+    "milestone": ""
+  },
+  {
+    "level": 75,
+    "totalXp": 41995,
+    "xpToNext": 3165,
+    "milestone": ""
+  },
+  {
+    "level": 76,
+    "totalXp": 45160,
+    "xpToNext": 3402,
+    "milestone": ""
+  },
+  {
+    "level": 77,
+    "totalXp": 48562,
+    "xpToNext": 3657,
+    "milestone": ""
+  },
+  {
+    "level": 78,
+    "totalXp": 52219,
+    "xpToNext": 3931,
+    "milestone": ""
+  },
+  {
+    "level": 79,
+    "totalXp": 56150,
+    "xpToNext": 4226,
+    "milestone": ""
+  },
+  {
+    "level": 80,
+    "totalXp": 60376,
+    "xpToNext": 4543,
+    "milestone": ""
+  },
+  {
+    "level": 81,
+    "totalXp": 64919,
+    "xpToNext": 4884,
+    "milestone": ""
+  },
+  {
+    "level": 82,
+    "totalXp": 69803,
+    "xpToNext": 5250,
+    "milestone": ""
+  },
+  {
+    "level": 83,
+    "totalXp": 75053,
+    "xpToNext": 5644,
+    "milestone": ""
+  },
+  {
+    "level": 84,
+    "totalXp": 80697,
+    "xpToNext": 6067,
+    "milestone": ""
+  },
+  {
+    "level": 85,
+    "totalXp": 86764,
+    "xpToNext": 6522,
+    "milestone": ""
+  },
+  {
+    "level": 86,
+    "totalXp": 93286,
+    "xpToNext": 7011,
+    "milestone": ""
+  },
+  {
+    "level": 87,
+    "totalXp": 100297,
+    "xpToNext": 7537,
+    "milestone": ""
+  },
+  {
+    "level": 88,
+    "totalXp": 107834,
+    "xpToNext": 8103,
+    "milestone": ""
+  },
+  {
+    "level": 89,
+    "totalXp": 115937,
+    "xpToNext": 8710,
+    "milestone": ""
+  },
+  {
+    "level": 90,
+    "totalXp": 124647,
+    "xpToNext": 9364,
+    "milestone": ""
+  },
+  {
+    "level": 91,
+    "totalXp": 134011,
+    "xpToNext": 10066,
+    "milestone": ""
+  },
+  {
+    "level": 92,
+    "totalXp": 144077,
+    "xpToNext": 10821,
+    "milestone": ""
+  },
+  {
+    "level": 93,
+    "totalXp": 154898,
+    "xpToNext": 11632,
+    "milestone": ""
+  },
+  {
+    "level": 94,
+    "totalXp": 166530,
+    "xpToNext": 12505,
+    "milestone": ""
+  },
+  {
+    "level": 95,
+    "totalXp": 179035,
+    "xpToNext": 13443,
+    "milestone": ""
+  },
+  {
+    "level": 96,
+    "totalXp": 192478,
+    "xpToNext": 14451,
+    "milestone": ""
+  },
+  {
+    "level": 97,
+    "totalXp": 206929,
+    "xpToNext": 15535,
+    "milestone": ""
+  },
+  {
+    "level": 98,
+    "totalXp": 222464,
+    "xpToNext": 16700,
+    "milestone": ""
+  },
+  {
+    "level": 99,
+    "totalXp": 239164,
+    "xpToNext": null,
+    "milestone": "Fishing mastery"
+  }
+]
