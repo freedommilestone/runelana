@@ -26,7 +26,7 @@ function Frame() {
   ].map(([side,box])=><Sprite key={side} className={`g-edge-${side}`} box={box} stretch/>)}</span>;
 }
 const navigation = [['Game','23 180 51 43'],['My Profile','25 233 48 47'],['Skills','219 428 67 70'],['Inventory','25 289 48 47'],['Runes','25 342 48 47'],['Collection','25 397 48 47'],['Marketplace','25 450 48 47'],['Bank','25 506 48 47'],['Leaderboard','25 559 48 47'],['Friends','25 614 48 47'],['Settings','25 667 48 47']];
-const decisions = [['Rune Production','1. Rune Production','Allocate your passive rune production.','1182 375 290 87'],['Produce','2. Produce Items','Use a skill to craft items.','1182 551 290 87'],['Service','3. Provide Service','Use a skill to offer a service.','1182 730 290 93']];
+const decisions = [['Rune Production','1. Rune Production','Allocate your passive rune production.','1182 375 290 87'],['Skills','2. Use Skill','Choose a profession and explore its skill tree.','1182 551 290 87'],['Service','3. Provide Service','Use a skill to offer a service.','1182 730 290 93']];
 
 export default function GameDashboard(props){
  const profile=usePlayerProfile(props.user.id);
@@ -85,7 +85,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <nav aria-label="Player navigation">{navigation.map(([title,box])=><button key={title} className={section===title?'g-active':''} aria-expanded={title==='Skills'?section==='Skills':undefined} aria-controls={title==='Skills'?'player-skills':undefined} onClick={()=>open(title==='Skills'&&section==='Skills'?'Game':title)}>{title==='Skills'?<SkillArt box={box} className="sk-nav-icon"/>:<Sprite box={box}/>}<span>{title}</span></button>)}</nav>
       <small className="g-save-note">{profile.busy?'Saving profile…':'Progress saved to account'}</small>
     </aside>
-    {section==='Skills'&&<SkillsPanel skills={skillsStatus} onClose={()=>open('Game')}/>}
+    {section==='Skills'&&<SkillsPanel skills={skillsStatus} onSmithing={()=>open('Produce')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
       <div className="g-chat-paper"><div className="g-chat-lines" aria-live="polite">{tab!=='Notes' && <><p><em>[Game]</em> <b>Guide:</b> Welcome, {name}. Your next decision shapes your legend.</p><p><em>[Game]</em> <b>Guide:</b> Allocate rune production, craft steel bars, or offer a service.</p></>}{notes.filter(n=>tab==='All'||(tab==='Notes'?n.channel==='Notes':n.channel==='Game')).map((n,i)=><p key={i}><em>[{n.channel}]</em> <b>{n.name}:</b> {n.text}</p>)}</div><form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;setNotes(rows=>[...rows.slice(-39),{channel:'Notes',name,text:draft.trim()}]);setDraft('');}}><label htmlFor="game-note">{name}:</label><input id="game-note" value={draft} maxLength={240} onChange={e=>setDraft(e.target.value)} placeholder="Enter a private note…"/><button>Save</button></form></div>
