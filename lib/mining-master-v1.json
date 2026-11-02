@@ -1,0 +1,1289 @@
+[
+  {
+    "id": "MIN-001",
+    "name": "Copper Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Bronze Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 25,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-copper-ore",
+        "name": "Copper Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 360
+  },
+  {
+    "id": "MIN-002",
+    "name": "Tin Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 3,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Bronze Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 30,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-tin-ore",
+        "name": "Tin Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 360
+  },
+  {
+    "id": "MIN-003",
+    "name": "Clay",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": "Bronze Pickaxe",
+    "yieldQuantity": 3,
+    "xpReward": 35,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-clay",
+        "name": "Clay",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 480
+  },
+  {
+    "id": "MIN-004",
+    "name": "Iron Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": "Iron Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 45,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-iron-ore",
+        "name": "Iron Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 600
+  },
+  {
+    "id": "MIN-005",
+    "name": "Coal",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1,
+      "air": 1
+    },
+    "equipment": "Iron Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 55,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-coal",
+        "name": "Coal",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 720
+  },
+  {
+    "id": "MIN-006",
+    "name": "Silver Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 2
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 70,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-silver-ore",
+        "name": "Silver Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 900
+  },
+  {
+    "id": "MIN-007",
+    "name": "Limestone",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 3,
+    "xpReward": 75,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-limestone",
+        "name": "Limestone",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 960
+  },
+  {
+    "id": "MIN-008",
+    "name": "Gold Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 90,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-gold-ore",
+        "name": "Gold Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 1200
+  },
+  {
+    "id": "MIN-009",
+    "name": "Sandstone",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "mind": 1
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 3,
+    "xpReward": 100,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-sandstone",
+        "name": "Sandstone",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 1320
+  },
+  {
+    "id": "MIN-010",
+    "name": "Mithril Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2,
+      "water": 1
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 110,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-mithril-ore",
+        "name": "Mithril Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 1500
+  },
+  {
+    "id": "MIN-011",
+    "name": "Granite",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2,
+      "mind": 1
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 125,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-granite",
+        "name": "Granite",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 1680
+  },
+  {
+    "id": "MIN-012",
+    "name": "Uncut Sapphire",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 2,
+      "water": 1
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 135,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-sapphire",
+        "name": "Uncut Sapphire",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 1800
+  },
+  {
+    "id": "MIN-013",
+    "name": "Adamantite Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 150,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-adamantite-ore",
+        "name": "Adamantite Ore",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 2100
+  },
+  {
+    "id": "MIN-014",
+    "name": "Uncut Emerald",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 165,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-emerald",
+        "name": "Uncut Emerald",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 2280
+  },
+  {
+    "id": "MIN-015",
+    "name": "Uncut Ruby",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "fire": 1
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 180,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-ruby",
+        "name": "Uncut Ruby",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 2520
+  },
+  {
+    "id": "MIN-016",
+    "name": "Runite Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 70,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "death": 1
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 195,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-runite-ore",
+        "name": "Runite Ore",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 2880
+  },
+  {
+    "id": "MIN-017",
+    "name": "Uncut Diamond",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 75,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "nature": 2
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 220,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-diamond",
+        "name": "Uncut Diamond",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 3300
+  },
+  {
+    "id": "MIN-018",
+    "name": "Amethyst",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": "Dragon Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 245,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-amethyst",
+        "name": "Amethyst",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 3900
+  },
+  {
+    "id": "MIN-019",
+    "name": "Dark Crystal Ore",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": "Crystal Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 310,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-dark-crystal-ore",
+        "name": "Dark Crystal Ore",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 5400
+  },
+  {
+    "id": "MIN-020",
+    "name": "Ancient Starstone",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 99,
+    "requiredBranchLevel": null,
+    "runes": {
+      "soul": 1,
+      "blood": 2
+    },
+    "equipment": "Master Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 445,
+    "branchXpReward": 0,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-ancient-starstone",
+        "name": "Ancient Starstone",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 9000
+  },
+  {
+    "id": "MIN-021",
+    "name": "Copper Vein Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 3
+    },
+    "equipment": "Iron Pickaxe",
+    "yieldQuantity": 8,
+    "xpReward": 95,
+    "branchXpReward": 50,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-copper-vein-batch",
+        "name": "Copper Vein Batch",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 1320
+  },
+  {
+    "id": "MIN-022",
+    "name": "Iron Vein Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 15,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "mind": 3,
+      "air": 1
+    },
+    "equipment": "Iron Pickaxe",
+    "yieldQuantity": 8,
+    "xpReward": 120,
+    "branchXpReward": 65,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-iron-vein-batch",
+        "name": "Iron Vein Batch",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 1680
+  },
+  {
+    "id": "MIN-023",
+    "name": "Coal Seam Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "mind": 4
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 8,
+    "xpReward": 150,
+    "branchXpReward": 80,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-coal-seam-batch",
+        "name": "Coal Seam Batch",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 2160
+  },
+  {
+    "id": "MIN-024",
+    "name": "Silver Deposit Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 4,
+      "mind": 1
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 8,
+    "xpReward": 200,
+    "branchXpReward": 110,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-silver-deposit-batch",
+        "name": "Silver Deposit Batch",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 2880
+  },
+  {
+    "id": "MIN-025",
+    "name": "Gold Vein Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "fire": 5
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 8,
+    "xpReward": 250,
+    "branchXpReward": 140,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-gold-vein-batch",
+        "name": "Gold Vein Batch",
+        "quantity": 8
+      }
+    ],
+    "durationSeconds": 3600
+  },
+  {
+    "id": "MIN-026",
+    "name": "Mithril Vein Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 5,
+      "water": 2
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 6,
+    "xpReward": 310,
+    "branchXpReward": 170,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-mithril-vein-batch",
+        "name": "Mithril Vein Batch",
+        "quantity": 6
+      }
+    ],
+    "durationSeconds": 4500
+  },
+  {
+    "id": "MIN-027",
+    "name": "Adamantite Deposit Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "fire": 6,
+      "nature": 2
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 6,
+    "xpReward": 385,
+    "branchXpReward": 210,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-adamantite-deposit-batch",
+        "name": "Adamantite Deposit Batch",
+        "quantity": 6
+      }
+    ],
+    "durationSeconds": 5700
+  },
+  {
+    "id": "MIN-028",
+    "name": "Runite Vein Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 5,
+      "death": 2
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 5,
+    "xpReward": 505,
+    "branchXpReward": 280,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-runite-vein-batch",
+        "name": "Runite Vein Batch",
+        "quantity": 5
+      }
+    ],
+    "durationSeconds": 7800
+  },
+  {
+    "id": "MIN-029",
+    "name": "Rare Metal Ore Batch",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "blood": 4,
+      "death": 2
+    },
+    "equipment": "Dragon Pickaxe",
+    "yieldQuantity": 4,
+    "xpReward": 700,
+    "branchXpReward": 385,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-rare-metal-ore-batch",
+        "name": "Rare Metal Ore Batch",
+        "quantity": 4
+      }
+    ],
+    "durationSeconds": 11400
+  },
+  {
+    "id": "MIN-030",
+    "name": "Masterwork Ore Cache",
+    "category": "ore",
+    "specializationId": "ore-miner",
+    "branchName": "Ore Miner",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 2,
+      "blood": 3
+    },
+    "equipment": "Master Pickaxe",
+    "yieldQuantity": 3,
+    "xpReward": 915,
+    "branchXpReward": 505,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-masterwork-ore-cache",
+        "name": "Masterwork Ore Cache",
+        "quantity": 3
+      }
+    ],
+    "durationSeconds": 15600
+  },
+  {
+    "id": "MIN-031",
+    "name": "Uncut Opal",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 120,
+    "branchXpReward": 65,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-opal",
+        "name": "Uncut Opal",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 1200
+  },
+  {
+    "id": "MIN-032",
+    "name": "Uncut Jade",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "mind": 1
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 80,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-jade",
+        "name": "Uncut Jade",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 1500
+  },
+  {
+    "id": "MIN-033",
+    "name": "Uncut Red Topaz",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "fire": 2,
+      "water": 1
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 165,
+    "branchXpReward": 90,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-red-topaz",
+        "name": "Uncut Red Topaz",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 1800
+  },
+  {
+    "id": "MIN-034",
+    "name": "Uncut Sapphire Cluster",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 3
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 200,
+    "branchXpReward": 110,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-sapphire-cluster",
+        "name": "Uncut Sapphire Cluster",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 2400
+  },
+  {
+    "id": "MIN-035",
+    "name": "Uncut Emerald Cluster",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 3,
+      "water": 1
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 240,
+    "branchXpReward": 130,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-emerald-cluster",
+        "name": "Uncut Emerald Cluster",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 3000
+  },
+  {
+    "id": "MIN-036",
+    "name": "Uncut Ruby Cluster",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 4,
+      "fire": 1
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 300,
+    "branchXpReward": 165,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-ruby-cluster",
+        "name": "Uncut Ruby Cluster",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 3900
+  },
+  {
+    "id": "MIN-037",
+    "name": "Uncut Diamond Cluster",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "death": 3,
+      "nature": 2
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 2,
+    "xpReward": 370,
+    "branchXpReward": 205,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-uncut-diamond-cluster",
+        "name": "Uncut Diamond Cluster",
+        "quantity": 2
+      }
+    ],
+    "durationSeconds": 5100
+  },
+  {
+    "id": "MIN-038",
+    "name": "Star Sapphire",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "blood": 2,
+      "nature": 2
+    },
+    "equipment": "Dragon Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 485,
+    "branchXpReward": 265,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-star-sapphire",
+        "name": "Star Sapphire",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 7200
+  },
+  {
+    "id": "MIN-039",
+    "name": "Royal Prism Gem",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Crystal Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 670,
+    "branchXpReward": 370,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-royal-prism-gem",
+        "name": "Royal Prism Gem",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 10800
+  },
+  {
+    "id": "MIN-040",
+    "name": "Celestial Heart Gem",
+    "category": "gem",
+    "specializationId": "gem-prospector",
+    "branchName": "Gem Prospector",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": "Master Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 940,
+    "branchXpReward": 515,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-celestial-heart-gem",
+        "name": "Celestial Heart Gem",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 16200
+  },
+  {
+    "id": "MIN-041",
+    "name": "Shimmering Quartz",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": "Steel Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 135,
+    "branchXpReward": 75,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-shimmering-quartz",
+        "name": "Shimmering Quartz",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 1500
+  },
+  {
+    "id": "MIN-042",
+    "name": "Charged Crystal Fragment",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "fire": 2,
+      "nature": 2
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 180,
+    "branchXpReward": 100,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-charged-crystal-fragment",
+        "name": "Charged Crystal Fragment",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 2100
+  },
+  {
+    "id": "MIN-043",
+    "name": "Ancient Fossil Stone",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": "Mithril Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 240,
+    "branchXpReward": 130,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-ancient-fossil-stone",
+        "name": "Ancient Fossil Stone",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 3000
+  },
+  {
+    "id": "MIN-044",
+    "name": "Abyssal Mineral",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "death": 3,
+      "nature": 1
+    },
+    "equipment": "Adamant Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 300,
+    "branchXpReward": 165,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-abyssal-mineral",
+        "name": "Abyssal Mineral",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 3900
+  },
+  {
+    "id": "MIN-045",
+    "name": "Obsidian Core",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 3,
+      "death": 2
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 370,
+    "branchXpReward": 205,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-obsidian-core",
+        "name": "Obsidian Core",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 5100
+  },
+  {
+    "id": "MIN-046",
+    "name": "Bloodstone Fragment",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "blood": 2,
+      "death": 2
+    },
+    "equipment": "Rune Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 450,
+    "branchXpReward": 250,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-bloodstone-fragment",
+        "name": "Bloodstone Fragment",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 6600
+  },
+  {
+    "id": "MIN-047",
+    "name": "Astral Crystal",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": "Dragon Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 545,
+    "branchXpReward": 300,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-astral-crystal",
+        "name": "Astral Crystal",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 8400
+  },
+  {
+    "id": "MIN-048",
+    "name": "Void Ore",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": "Crystal Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 700,
+    "branchXpReward": 385,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-void-ore",
+        "name": "Void Ore",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 11400
+  },
+  {
+    "id": "MIN-049",
+    "name": "Ancient Rune Crystal",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": "Master Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 850,
+    "branchXpReward": 470,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-ancient-rune-crystal",
+        "name": "Ancient Rune Crystal",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 14400
+  },
+  {
+    "id": "MIN-050",
+    "name": "Eternal Mineral",
+    "category": "mineral",
+    "specializationId": "rare-mineral-extractor",
+    "branchName": "Rare Mineral Extractor",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 4,
+      "soul": 2
+    },
+    "equipment": "Master Pickaxe",
+    "yieldQuantity": 1,
+    "xpReward": 1195,
+    "branchXpReward": 655,
+    "materials": [],
+    "outputs": [
+      {
+        "id": "mining-item-eternal-mineral",
+        "name": "Eternal Mineral",
+        "quantity": 1
+      }
+    ],
+    "durationSeconds": 21600
+  }
+]
