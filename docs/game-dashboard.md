@@ -48,7 +48,7 @@ The table does not mark player unlocks or derive historical holding from daily o
 
 ## Historical GP holdings
 
-Profile displays the longest uninterrupted positive-GP streak, first GP receipt, current streak at the historical checkpoint, cumulative positive duration, and recent zero-balance gaps. Incoming transfers count. Selling or transferring only part of the GP does not reset a streak; reaching zero across the wallet does. A later empty balance never erases the longest record. Completed days are elapsed 24-hour periods, not calendar-date counts.
+Settings displays the longest uninterrupted positive-GP streak, first GP receipt, current streak at the historical checkpoint, cumulative positive duration, and recent zero-balance gaps. Incoming transfers count. Selling or transferring only part of the GP does not reset a streak; reaching zero across the wallet does. A later empty balance never erases the longest record. Completed days are elapsed 24-hour periods, not calendar-date counts.
 
 Historical scanning uses Helius getTransactionsForAddress with all owned token accounts, finalized transactions, ascending slot/transaction ordering and persistent pagination. It includes closed accounts, uses actual pre/post token balances (including transfer fees), and reconciles the complete ledger against a finalized balance snapshot. The mint must have no activity before the provider's reliable owner-index cutoff. Missing data and failed reconciliation retain the previous verified result and never invent zero balances.
 
@@ -91,8 +91,21 @@ Database tests exercise zero initialization, future-account enrollment, preserva
 
 ### Searchable player handbook
 
-How It Works opens `components/player-guide.js` from both the homepage and dashboard. `lib/player-guide.mjs` owns 25 mechanic topics and 18 FAQs, covering onboarding, wallet verification and GP identity, longest historical streaks versus observed counters, wallet changes, rune thresholds and allocation, offline earnings, separate inventories/currencies/levels, the seven professions and usage matrix, draft recipes, prototype activities, equipment, social placeholders, save scope, and troubleshooting.
+How It Works opens `components/player-guide.js` from both the homepage and dashboard. `lib/player-guide.mjs` owns 26 mechanic topics and 18 FAQs, covering onboarding, wallet verification and GP identity, longest historical streaks versus observed counters, wallet changes, rune thresholds and allocation, offline earnings, separate inventories/currencies/levels, the seven professions and usage matrix, draft recipes, prototype activities, equipment, social placeholders, save scope, and troubleshooting.
 
 Search matches titles, explanations, keywords, and table cells; common question filler is ignored. Category filters and expandable answers work without network calls or account mutations. Rune unlocks and proposed rates use the existing progression/economy catalogs. Active features, browser prototypes, previews, and proposals are labeled explicitly. In particular, slower high-tier rates and profession training remain inactive. Dashboard articles can open the relevant existing panel; anonymous homepage readers can use the full guide without signing in.
 
 The native modal supports search focus on open, keyboard focus wrapping, Escape/close, focus restoration, compact mobile categories, and internally scrolling tables. Search resets on reopening. Unit tests cover search and threshold/rate consistency; browser checks cover both entry points, categories and FAQs, empty results, keyboard navigation, responsive widths, and direct links into Rune Production and Skills without resource mutations.
+
+
+## Character profile and Settings
+
+My Profile now opens a stone-framed character dashboard based on the supplied Character Profile reference. Character, Progression, Skills, and Collection tabs support keyboard navigation and responsive layouts. The Character view shows an appearance preview, actual account name and membership date, verified GP balance, historical holding statistics, holding-based level, milestone badges, and seven account-saved skill levels. Missing reads remain unavailable rather than becoming invented zeroes. Services completed is explicitly untracked; item counts and equipped gear still use the browser prototype save.
+
+Edit Profile saves a 2–30 character display name through Supabase Auth `updateUser`, after checking the active session belongs to the displayed player. The existing auth provider handles the metadata update without resetting progress. No schema change or authorization metadata is involved. Collection lists only owned equipment and supports equipping it without a second purchase.
+
+The previous profile contents—account management, wallet verification/unlinking, GP refresh, detailed holding history, progression reference, and skill summaries—now live in Settings. Both the sidebar Settings entry and header gear open this panel. The profile and Rune Production verification actions link there, as does the searchable player guide.
+
+`public/assets/profile-reference.png` preserves the user-supplied artwork. Explicitly clipped SVG viewports display the character, slots, badges, and icons; text, data, tabs, and controls are live HTML. The wizard and illustrated slots are labeled appearance previews and do not imply those items have been awarded or that the avatar dynamically changes equipment.
+
+Browser checks with mocked authentication and APIs verify actual GP precision and historical statistics, zero-level skills, name-save success/failure, keyboard tabs, owned-item equipping, Settings wallet/account controls, and layouts from 320 to 1536 pixels. These checks do not modify production player data.

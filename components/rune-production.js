@@ -13,7 +13,7 @@ function useInventoryTicks(data,error){
 }
 export function RuneArt({id,box,className='',stretch=false}){if(id)return <RuneIcon id={id} className={`rp-art ${className}`}/>;return <svg preserveAspectRatio={stretch?'none':'xMidYMid meet'} viewBox={box} className={`rp-art ${className}`} aria-hidden="true"><image href="/assets/rune-production-reference.png" width="1536" height="1024"/></svg>}
 const uses={air:['Wind magic','Light enchantments'],mind:['Focus spells','Mind enchantments'],water:['Water magic','Frost crafting'],fire:['Fire weapons','Dragon gear','Fire resistance','Advanced dishes'],nature:['Nature magic','Resource crafting'],death:['Death magic','Dark enchantments'],blood:['Blood magic','Advanced equipment'],soul:['Soul magic','Prestige equipment']};
-export default function RuneProduction({runes,onInventory,onProfile}){
+export default function RuneProduction({runes,onInventory,onSettings}){
  const {data,error,save,refresh}=runes;
  const inventory=useInventoryTicks(data,error);
  const [draft,setDraft]=useState(null),[base,setBase]=useState(null),[selected,setSelected]=useState('air'),[saving,setSaving]=useState(false),[message,setMessage]=useState(''),[guide,setGuide]=useState(false);
@@ -27,7 +27,7 @@ export default function RuneProduction({runes,onInventory,onProfile}){
   {guide&&<div className="rp-guide"><strong>Always on, even while you are away.</strong><p>Split all 10 runes per hour among your unlocked types. Earnings go directly into Rune Inventory, with no collection button or offline cap. Partial progress carries over when allocations change. Unlocks use your longest verified GP holding streak; character status is separate from profession XP. A linked, verified wallet is required for rune production. Air starts automatically after your first confirmed holding day. Basic skill activities are designed to require no runes. Produced runes cannot be traded or gifted; they fuel recipes whose finished goods or services can enter the planned GP marketplace.</p></div>}
   {error&&<p role="alert" className="rp-alert">{error} <button onClick={refresh}>Retry</button></p>}
   {!data||!draft?<p role="status">Loading your rune production…</p>:<>
-  {!data.active&&<div className="rp-alert">{data.walletVerified?'Waiting for verified history of at least one holding day.':'Verify your GP wallet to unlock rune production.'} <button onClick={onProfile}>My Profile</button></div>}
+  {!data.active&&<div className="rp-alert">{data.walletVerified?'Waiting for verified history of at least one holding day.':'Verify your GP wallet to unlock rune production.'} <button onClick={onSettings}>Settings</button></div>}
   <div className="rp-body"><div className="rp-main">
    <section className="rp-capacity"><RuneArt box="413 282 36 73"/><div><h3>Production Capacity</h3><p><strong>10</strong> runes per hour</p><small>{data.active?'● Always on':'Awaiting first unlock'}</small></div><div className="rp-estimates">{[['Daily','240'],['Weekly','1,680'],['30 Days','7,200']].map(([label,amount])=><div key={label}>{label}<br/><b>{amount}</b> runes</div>)}</div></section>
    <h3 className="rp-available">⚒ Available Runes</h3>

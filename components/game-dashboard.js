@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import WalletProfile from './wallet-profile';
+import CharacterProfile from './character-profile';
 import PlayerGuide from './player-guide';
 import RuneProgression from './rune-progression';
 import { useWalletBalance } from './use-wallet-balance';
@@ -49,12 +50,11 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
   const seconds = task ? Math.max(0,Math.ceil((task.endsAt-now)/1000)) : 0;
   const progress = task ? Math.min(100,Math.max(0,(now-task.startedAt)/(task.endsAt-task.startedAt)*100)) : 0;
   useEffect(()=>{setNow(Date.now());const timer=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(timer);},[]);
-  useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close')?.focus({preventScroll:true});}},[section]);
+  useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close, .cp-close')?.focus({preventScroll:true});}},[section]);
   function open(value) {
     if(value==='How It Works'){setNavOpen(false);guide.current.open();return;}
     setSection(value); setNavOpen(false);
     if(value==='Game'||value==='Skills') { panel.current?.close(); return; }
-    if(value==='Settings') { onAccount(); return; }
     panel.current.showModal();
     panel.current.scrollTop=0;
   }
@@ -75,7 +75,7 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       <button className="g-logo" onClick={onHome} aria-label="Runelana home"><img src="/assets/hero-wordmark.png" alt="Runelana"/></button>
       <nav aria-label="Game navigation"><button onClick={onHome}>Home</button><button className="g-active" onClick={()=>open('Game')}>Play</button><button onClick={()=>open('Marketplace')}>Marketplace</button><button onClick={()=>open('Leaderboard')}>Leaderboard</button><button onClick={()=>open('How It Works')}>How It Works</button></nav>
       <button className="g-balance g-wallet-header" title={`${walletAmount} · ${walletLabel}${walletBalance?.checkedAt ? ` · Checked ${new Date(walletBalance.checkedAt).toLocaleString()}` : ''}`} onClick={()=>open('My Profile')} aria-label={`${walletAmount} · ${walletLabel}. Open My Profile`}><Sprite box="1000 9 66 50"/><span><span className="g-wallet-amount">{walletAmount}</span><small className="g-bank-label">{walletLabel}</small></span></button>
-      <div className="g-shortcuts"><button aria-label="Friends" onClick={()=>open('Friends')}><Sprite box="1288 17 47 42"/></button><button aria-label="Inventory" onClick={()=>open('Inventory')}><Sprite box="1355 17 43 42"/></button><button aria-label="My Profile" onClick={()=>open('My Profile')}><Sprite box="1418 17 40 42"/></button><button aria-label="Account settings" onClick={onAccount}><Sprite box="1480 17 42 42"/></button></div>
+      <div className="g-shortcuts"><button aria-label="Friends" onClick={()=>open('Friends')}><Sprite box="1288 17 47 42"/></button><button aria-label="Inventory" onClick={()=>open('Inventory')}><Sprite box="1355 17 43 42"/></button><button aria-label="My Profile" onClick={()=>open('My Profile')}><Sprite box="1418 17 40 42"/></button><button aria-label="Account settings" onClick={()=>open('Settings')}><Sprite box="1480 17 42 42"/></button></div>
       <button className="g-menu-toggle" onClick={()=>setNavOpen(!navOpen)} aria-expanded={navOpen}>☰ Menu</button>
     </header>
     <aside className={`g-left g-frame ${navOpen?'g-nav-open':''}`}>
@@ -93,12 +93,13 @@ export default function GameDashboard({user,state,setState,onHome,onAccount}) {
       <section className="g-decisions g-frame"><Frame/><h2>Your Decisions</h2>{decisions.map(([key,title,description,box])=><button className="g-decision" key={key} onClick={()=>open(key)}><Sprite box={box}/><span className="g-decision-copy"><strong>{title}</strong><small>{description}</small></span><b>›</b></button>)}</section>
       <p className="g-notice" role="status">{notice}</p>
     </aside>
-    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':''}`}><button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>{section!=='Rune Production'&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section}</h2>}
-      {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onProfile={()=>open('My Profile')}/>}
+    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section}</h2>}
+      {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
+      {section==='My Profile' && <CharacterProfile user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} onClose={()=>panel.current.close()}/>}
+      {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Inventory' && <><p>Steel Bars: {state.steelBars||0}</p><p>Crafting supplies: {Math.floor(state.runes)}</p><button onClick={()=>open('Runes')}>Open Rune Inventory</button><p>Equipment: {state.owned.length} items</p><p>Equipped: {state.equipped}</p></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
