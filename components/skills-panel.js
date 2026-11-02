@@ -37,9 +37,9 @@ export function SkillArt({box,className='',stretch=false,cover=false}) {
 function StoneFrame(){return <span className="sk-frame" aria-hidden="true">{[['tl','439 300 21 22'],['tr','1197 300 21 22'],['bl','439 955 21 22'],['br','1197 955 21 22'],['top','463 301 730 9'],['bottom','463 967 730 9'],['left','440 326 9 625'],['right','1208 326 9 625']].map(([side,box])=><SkillArt key={side} box={box} className={`sk-edge-${side}`} stretch/>)}</span>}
 function GoldProgress({value,label}) {return <div className="sk-progress" role="progressbar" aria-label={label} aria-valuenow={value} aria-valuemin={0} aria-valuemax={100}><span style={{width:`${value}%`}}/></div>}
 
-export default function SkillsPanel({onClose,onSmithing,skills:skillStatus}) {
+export default function SkillsPanel({onClose,onSmithing,initialSkill='Cooking',skills:skillStatus}) {
  const {data,error,refresh}=skillStatus;
- const [skillName,setSkillName]=useState('Cooking'),[tab,setTab]=useState('Skill Tree'),[pathIndex,setPathIndex]=useState(2),[milestone,setMilestone]=useState(30),[filter,setFilter]=useState('all');
+ const [skillName,setSkillName]=useState(initialSkill),[tab,setTab]=useState('Skill Tree'),[pathIndex,setPathIndex]=useState(2),[milestone,setMilestone]=useState(30),[filter,setFilter]=useState('all');
  const heading=useRef(null),tabs=useRef(null),skillNav=useRef(null);
  useEffect(()=>{heading.current?.focus({preventScroll:true});},[]);
  useEffect(()=>{const media=window.matchMedia('(max-width:700px)');function reveal(){if(media.matches){const nav=skillNav.current,button=nav?.querySelector('[aria-pressed="true"]');if(nav&&button)nav.scrollLeft=button.offsetLeft-nav.offsetLeft-(nav.clientWidth-button.offsetWidth)/2;}}reveal();media.addEventListener('change',reveal);return()=>media.removeEventListener('change',reveal);},[skillName]);
@@ -53,7 +53,7 @@ export default function SkillsPanel({onClose,onSmithing,skills:skillStatus}) {
  function tabKeys(event,index){let next;if(event.key==='ArrowRight')next=(index+1)%4;else if(event.key==='ArrowLeft')next=(index+3)%4;else if(event.key==='Home')next=0;else if(event.key==='End')next=3;else return;event.preventDefault();setTab(['Skill Tree','Items','Services','Guide'][next]);tabs.current?.children[next]?.focus();}
  return <section className={`sk-workspace ${tab!=='Skill Tree'?'sk-reading':''}`} id="player-skills" aria-label="Player skills">
   {error&&<div className="sk-data-message sk-error-banner" role="alert">{error}<button className="sk-retry" onClick={refresh}>Retry skills</button></div>}
-  <aside className="sk-sidebar sk-framed"><StoneFrame/><button className="sk-close" aria-label="Close skills" onClick={onClose}>×</button><header><h1 ref={heading} tabIndex={-1}>Skills</h1><p>Train skills to craft items, provide services, and build the Runelana economy.</p></header>
+  <aside className="sk-sidebar sk-framed"><StoneFrame/><button className="sk-close" aria-label="Close skills" onClick={onClose}>×</button><header><h1 ref={heading} tabIndex={-1}>Skill Tree</h1><p>Train skills to craft items, provide services, and build the Runelana economy.</p></header>
    <nav ref={skillNav} aria-label="Choose a skill">{skills.map(s=>{const progress=data?.skills.find(row=>row.name===s.name);return <button key={s.name} className={`sk-skill ${skillName===s.name?'sk-selected':''}`} aria-pressed={skillName===s.name} onClick={()=>chooseSkill(s.name)}><SkillArt box={s.icon}/><span><strong>{s.name}</strong><span>Level {progress?.level??'—'}</span><GoldProgress value={(progress?.level??0)/99*100} label={`${s.name} level progress`}/><small>{progress?`${progress.xp.toLocaleString()} XP`:error?'Unavailable':'Loading…'}</small></span><b aria-hidden="true">›</b></button>})}</nav>
   </aside>
   <div className="sk-content">

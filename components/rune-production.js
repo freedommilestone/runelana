@@ -5,7 +5,7 @@ import RuneIcon from './rune-icon';
 import './rune-production.css';
 const tiers=runeProgression.tiers;
 const ticksPerRune=3600000000n;
-function useInventoryTicks(data,error){
+export function useInventoryTicks(data,error){
  const [clock,setClock]=useState(0);
  useEffect(()=>{setClock(performance.now());const timer=setInterval(()=>setClock(performance.now()),1000);return()=>clearInterval(timer)},[]);
  const elapsed=data?.active&&!error&&Number.isFinite(data.receivedAt)?Math.max(0,Math.floor(clock-data.receivedAt)):0;
