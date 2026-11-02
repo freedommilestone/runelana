@@ -1,0 +1,2041 @@
+[
+  {
+    "id": "cook-grilled-shrimp",
+    "name": "Grilled Shrimp",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 720,
+    "yieldQuantity": 2,
+    "xpReward": 40,
+    "branchXpReward": 0,
+    "timeReductionPercent": 3,
+    "materials": [
+      {
+        "id": "cooking-item-shrimp",
+        "name": "Shrimp",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-grilled-shrimp",
+        "name": "Grilled Shrimp",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-sardine-skewers",
+    "name": "Sardine Skewers",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 900,
+    "yieldQuantity": 2,
+    "xpReward": 50,
+    "branchXpReward": 0,
+    "timeReductionPercent": 4,
+    "materials": [
+      {
+        "id": "cooking-item-sardine",
+        "name": "Sardine",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-wild-herb",
+        "name": "Wild Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-sardine-skewers",
+        "name": "Sardine Skewers",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-herb-bread",
+    "name": "Herb Bread",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 8,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1080,
+    "yieldQuantity": 2,
+    "xpReward": 65,
+    "branchXpReward": 0,
+    "timeReductionPercent": 4,
+    "materials": [
+      {
+        "id": "cooking-item-common-herb",
+        "name": "Common Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-herb-bread",
+        "name": "Herb Bread",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-herring-soup",
+    "name": "Herring Soup",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1200,
+    "yieldQuantity": 2,
+    "xpReward": 70,
+    "branchXpReward": 0,
+    "timeReductionPercent": 5,
+    "materials": [
+      {
+        "id": "cooking-item-herring",
+        "name": "Herring",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-herring-soup",
+        "name": "Herring Soup",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-roasted-vegetables",
+    "name": "Roasted Vegetables",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1500,
+    "yieldQuantity": 2,
+    "xpReward": 90,
+    "branchXpReward": 0,
+    "timeReductionPercent": 5,
+    "materials": [
+      {
+        "id": "cooking-item-carrot",
+        "name": "Carrot",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-roasted-vegetables",
+        "name": "Roasted Vegetables",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-trout-fillet",
+    "name": "Trout Fillet",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1800,
+    "yieldQuantity": 2,
+    "xpReward": 105,
+    "branchXpReward": 0,
+    "timeReductionPercent": 6,
+    "materials": [
+      {
+        "id": "cooking-item-sea-salt",
+        "name": "Sea Salt",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-trout",
+        "name": "Trout",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-trout-fillet",
+        "name": "Trout Fillet",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-garden-stew",
+    "name": "Garden Stew",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1,
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 2100,
+    "yieldQuantity": 3,
+    "xpReward": 120,
+    "branchXpReward": 0,
+    "timeReductionPercent": 6,
+    "materials": [
+      {
+        "id": "cooking-item-cabbage",
+        "name": "Cabbage",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-common-herb",
+        "name": "Common Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-garden-stew",
+        "name": "Garden Stew",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-salmon-platter",
+    "name": "Salmon Platter",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 2400,
+    "yieldQuantity": 2,
+    "xpReward": 140,
+    "branchXpReward": 0,
+    "timeReductionPercent": 7,
+    "materials": [
+      {
+        "id": "cooking-item-salmon",
+        "name": "Salmon",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-sea-salt",
+        "name": "Sea Salt",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-salmon-platter",
+        "name": "Salmon Platter",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-tuna-sandwich",
+    "name": "Tuna Sandwich",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1,
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 2700,
+    "yieldQuantity": 2,
+    "xpReward": 160,
+    "branchXpReward": 0,
+    "timeReductionPercent": 7,
+    "materials": [
+      {
+        "id": "cooking-item-common-herb",
+        "name": "Common Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-tuna",
+        "name": "Tuna",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-tuna-sandwich",
+        "name": "Tuna Sandwich",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-lobster-stew",
+    "name": "Lobster Stew",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 3300,
+    "yieldQuantity": 2,
+    "xpReward": 185,
+    "branchXpReward": 0,
+    "timeReductionPercent": 8,
+    "materials": [
+      {
+        "id": "cooking-item-lobster",
+        "name": "Lobster",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-sea-salt",
+        "name": "Sea Salt",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-lobster-stew",
+        "name": "Lobster Stew",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-bass-roast",
+    "name": "Bass Roast",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3600,
+    "yieldQuantity": 2,
+    "xpReward": 200,
+    "branchXpReward": 0,
+    "timeReductionPercent": 8,
+    "materials": [
+      {
+        "id": "cooking-item-bass",
+        "name": "Bass",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-bass-roast",
+        "name": "Bass Roast",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-swordfish-steak",
+    "name": "Swordfish Steak",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 4200,
+    "yieldQuantity": 2,
+    "xpReward": 230,
+    "branchXpReward": 0,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-swordfish",
+        "name": "Swordfish",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-swordfish-steak",
+        "name": "Swordfish Steak",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-monkfish-chowder",
+    "name": "Monkfish Chowder",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 4800,
+    "yieldQuantity": 3,
+    "xpReward": 260,
+    "branchXpReward": 0,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-monkfish",
+        "name": "Monkfish",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-sea-salt",
+        "name": "Sea Salt",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-monkfish-chowder",
+        "name": "Monkfish Chowder",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-shark-feast",
+    "name": "Shark Feast",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 5700,
+    "yieldQuantity": 2,
+    "xpReward": 295,
+    "branchXpReward": 0,
+    "timeReductionPercent": 10,
+    "materials": [
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-shark",
+        "name": "Shark",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-shark-feast",
+        "name": "Shark Feast",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-sea-turtle-hotpot",
+    "name": "Sea Turtle Hotpot",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 3,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 6600,
+    "yieldQuantity": 2,
+    "xpReward": 330,
+    "branchXpReward": 0,
+    "timeReductionPercent": 10,
+    "materials": [
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-sea-turtle",
+        "name": "Sea Turtle",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-sea-turtle-hotpot",
+        "name": "Sea Turtle Hotpot",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-manta-ray-banquet",
+    "name": "Manta Ray Banquet",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 70,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 7800,
+    "yieldQuantity": 3,
+    "xpReward": 380,
+    "branchXpReward": 0,
+    "timeReductionPercent": 11,
+    "materials": [
+      {
+        "id": "cooking-item-manta-ray",
+        "name": "Manta Ray",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-manta-ray-banquet",
+        "name": "Manta Ray Banquet",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-anglerfish-broth",
+    "name": "Anglerfish Broth",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 75,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 9000,
+    "yieldQuantity": 2,
+    "xpReward": 430,
+    "branchXpReward": 0,
+    "timeReductionPercent": 11,
+    "materials": [
+      {
+        "id": "cooking-item-anglerfish",
+        "name": "Anglerfish",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-anglerfish-broth",
+        "name": "Anglerfish Broth",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-dark-crab-feast",
+    "name": "Dark Crab Feast",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 10800,
+    "yieldQuantity": 2,
+    "xpReward": 495,
+    "branchXpReward": 0,
+    "timeReductionPercent": 12,
+    "materials": [
+      {
+        "id": "cooking-item-dark-crab",
+        "name": "Dark Crab",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-dark-crab-feast",
+        "name": "Dark Crab Feast",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-sacred-eel-cuisine",
+    "name": "Sacred Eel Cuisine",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 13800,
+    "yieldQuantity": 2,
+    "xpReward": 610,
+    "branchXpReward": 0,
+    "timeReductionPercent": 13,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-sacred-eel",
+        "name": "Sacred Eel",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-sacred-eel-cuisine",
+        "name": "Sacred Eel Cuisine",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-ocean-king-s-banquet",
+    "name": "Ocean King's Banquet",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 99,
+    "requiredBranchLevel": null,
+    "runes": {
+      "soul": 1,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 21600,
+    "yieldQuantity": 4,
+    "xpReward": 885,
+    "branchXpReward": 0,
+    "timeReductionPercent": 15,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-ancient-sea-serpent",
+        "name": "Ancient Sea Serpent",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-legendary-spice",
+        "name": "Legendary Spice",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-ocean-king-s-banquet",
+        "name": "Ocean King's Banquet",
+        "quantity": 4
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-fisherman-s-lunchbox",
+    "name": "Fisherman's Lunchbox",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1320,
+    "yieldQuantity": 3,
+    "xpReward": 90,
+    "branchXpReward": 50,
+    "timeReductionPercent": 4,
+    "materials": [
+      {
+        "id": "cooking-item-shrimp",
+        "name": "Shrimp",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-fisherman-s-lunchbox",
+        "name": "Fisherman's Lunchbox",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-river-fish-wrap",
+    "name": "River Fish Wrap",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 15,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1800,
+    "yieldQuantity": 3,
+    "xpReward": 120,
+    "branchXpReward": 65,
+    "timeReductionPercent": 5,
+    "materials": [
+      {
+        "id": "cooking-item-trout",
+        "name": "Trout",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-river-fish-wrap",
+        "name": "River Fish Wrap",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-farmhand-s-stew",
+    "name": "Farmhand's Stew",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 2400,
+    "yieldQuantity": 3,
+    "xpReward": 155,
+    "branchXpReward": 85,
+    "timeReductionPercent": 5,
+    "materials": [
+      {
+        "id": "cooking-item-carrot",
+        "name": "Carrot",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-farmhand-s-stew",
+        "name": "Farmhand's Stew",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-sailor-s-rations",
+    "name": "Sailor's Rations",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 1,
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3000,
+    "yieldQuantity": 4,
+    "xpReward": 200,
+    "branchXpReward": 110,
+    "timeReductionPercent": 6,
+    "materials": [
+      {
+        "id": "cooking-item-sardine",
+        "name": "Sardine",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-sea-salt",
+        "name": "Sea Salt",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-sailor-s-rations",
+        "name": "Sailor's Rations",
+        "quantity": 4
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-salmon-meal-pack",
+    "name": "Salmon Meal Pack",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 3900,
+    "yieldQuantity": 4,
+    "xpReward": 255,
+    "branchXpReward": 140,
+    "timeReductionPercent": 7,
+    "materials": [
+      {
+        "id": "cooking-item-cabbage",
+        "name": "Cabbage",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-salmon",
+        "name": "Salmon",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-salmon-meal-pack",
+        "name": "Salmon Meal Pack",
+        "quantity": 4
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-lobster-lunchbox",
+    "name": "Lobster Lunchbox",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 5100,
+    "yieldQuantity": 4,
+    "xpReward": 325,
+    "branchXpReward": 180,
+    "timeReductionPercent": 8,
+    "materials": [
+      {
+        "id": "cooking-item-lobster",
+        "name": "Lobster",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-lobster-lunchbox",
+        "name": "Lobster Lunchbox",
+        "quantity": 4
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-tuna-supply-crate",
+    "name": "Tuna Supply Crate",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "fire": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 6600,
+    "yieldQuantity": 5,
+    "xpReward": 405,
+    "branchXpReward": 225,
+    "timeReductionPercent": 8,
+    "materials": [
+      {
+        "id": "cooking-item-tuna",
+        "name": "Tuna",
+        "quantity": 3
+      },
+      {
+        "id": "cooking-item-wheat",
+        "name": "Wheat",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-tuna-supply-crate",
+        "name": "Tuna Supply Crate",
+        "quantity": 5
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-shark-protein-meal",
+    "name": "Shark Protein Meal",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 3,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 9300,
+    "yieldQuantity": 4,
+    "xpReward": 545,
+    "branchXpReward": 300,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-shark",
+        "name": "Shark",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-shark-protein-meal",
+        "name": "Shark Protein Meal",
+        "quantity": 4
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-artisan-ration-crate",
+    "name": "Artisan Ration Crate",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 13200,
+    "yieldQuantity": 5,
+    "xpReward": 740,
+    "branchXpReward": 405,
+    "timeReductionPercent": 10,
+    "materials": [
+      {
+        "id": "cooking-item-anglerfish",
+        "name": "Anglerfish",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-artisan-ration-crate",
+        "name": "Artisan Ration Crate",
+        "quantity": 5
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-grand-provision-crate",
+    "name": "Grand Provision Crate",
+    "category": "everyday",
+    "specializationId": "everyday-chef",
+    "branchName": "Everyday Chef",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 1,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 19200,
+    "yieldQuantity": 6,
+    "xpReward": 1005,
+    "branchXpReward": 555,
+    "timeReductionPercent": 11,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-manta-ray",
+        "name": "Manta Ray",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-grand-provision-crate",
+        "name": "Grand Provision Crate",
+        "quantity": 6
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-miner-s-energy-bowl",
+    "name": "Miner's Energy Bowl",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "fire": 1,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 2700,
+    "yieldQuantity": 2,
+    "xpReward": 190,
+    "branchXpReward": 105,
+    "timeReductionPercent": 8,
+    "materials": [
+      {
+        "id": "cooking-item-ironroot-herb",
+        "name": "Ironroot Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-potato",
+        "name": "Potato",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-miner-s-energy-bowl",
+        "name": "Miner's Energy Bowl",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-smith-s-hearty-meal",
+    "name": "Smith's Hearty Meal",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3300,
+    "yieldQuantity": 2,
+    "xpReward": 220,
+    "branchXpReward": 120,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-ironroot-herb",
+        "name": "Ironroot Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-salmon",
+        "name": "Salmon",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-smith-s-hearty-meal",
+        "name": "Smith's Hearty Meal",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-fisher-s-focus-stew",
+    "name": "Fisher's Focus Stew",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 15,
+    "runes": {
+      "water": 2,
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3900,
+    "yieldQuantity": 2,
+    "xpReward": 255,
+    "branchXpReward": 140,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-blueleaf-herb",
+        "name": "Blueleaf Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-trout",
+        "name": "Trout",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-fisher-s-focus-stew",
+        "name": "Fisher's Focus Stew",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-farmer-s-growth-tea",
+    "name": "Farmer's Growth Tea",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 4500,
+    "yieldQuantity": 3,
+    "xpReward": 290,
+    "branchXpReward": 160,
+    "timeReductionPercent": 10,
+    "materials": [
+      {
+        "id": "cooking-item-blueleaf-herb",
+        "name": "Blueleaf Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-common-herb",
+        "name": "Common Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-farmer-s-growth-tea",
+        "name": "Farmer's Growth Tea",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-crafter-s-precision-soup",
+    "name": "Crafter's Precision Soup",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "mind": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 5400,
+    "yieldQuantity": 2,
+    "xpReward": 340,
+    "branchXpReward": 185,
+    "timeReductionPercent": 11,
+    "materials": [
+      {
+        "id": "cooking-item-blueleaf-herb",
+        "name": "Blueleaf Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-lobster",
+        "name": "Lobster",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-crafter-s-precision-soup",
+        "name": "Crafter's Precision Soup",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-gemworker-s-tonic",
+    "name": "Gemworker's Tonic",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 6900,
+    "yieldQuantity": 2,
+    "xpReward": 420,
+    "branchXpReward": 230,
+    "timeReductionPercent": 12,
+    "materials": [
+      {
+        "id": "cooking-item-crystal-mint",
+        "name": "Crystal Mint",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-gemworker-s-tonic",
+        "name": "Gemworker's Tonic",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-enchanter-s-clarity-tea",
+    "name": "Enchanter's Clarity Tea",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 8700,
+    "yieldQuantity": 2,
+    "xpReward": 510,
+    "branchXpReward": 280,
+    "timeReductionPercent": 13,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-crystal-mint",
+        "name": "Crystal Mint",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-enchanter-s-clarity-tea",
+        "name": "Enchanter's Clarity Tea",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-master-miner-feast",
+    "name": "Master Miner Feast",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 11400,
+    "yieldQuantity": 2,
+    "xpReward": 645,
+    "branchXpReward": 355,
+    "timeReductionPercent": 14,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-ironroot-herb",
+        "name": "Ironroot Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-shark",
+        "name": "Shark",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-master-miner-feast",
+        "name": "Master Miner Feast",
+        "quantity": 2
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-master-artisan-banquet",
+    "name": "Master Artisan Banquet",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [],
+    "durationSeconds": 15000,
+    "yieldQuantity": 3,
+    "xpReward": 810,
+    "branchXpReward": 445,
+    "timeReductionPercent": 15,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-anglerfish",
+        "name": "Anglerfish",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-master-artisan-banquet",
+        "name": "Master Artisan Banquet",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-grandmaster-s-meal",
+    "name": "Grandmaster's Meal",
+    "category": "artisan",
+    "specializationId": "artisan-chef",
+    "branchName": "Artisan Chef",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 2,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 22800,
+    "yieldQuantity": 3,
+    "xpReward": 1155,
+    "branchXpReward": 635,
+    "timeReductionPercent": 18,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-sea-serpent",
+        "name": "Ancient Sea Serpent",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-crystal-mint",
+        "name": "Crystal Mint",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-legendary-spice",
+        "name": "Legendary Spice",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-grandmaster-s-meal",
+        "name": "Grandmaster's Meal",
+        "quantity": 3
+      }
+    ],
+    "foodEligibility": "pending-profession",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-golden-seafood-platter",
+    "name": "Golden Seafood Platter",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3600,
+    "yieldQuantity": 1,
+    "xpReward": 225,
+    "branchXpReward": 125,
+    "timeReductionPercent": 9,
+    "materials": [
+      {
+        "id": "cooking-item-golden-carrot",
+        "name": "Golden Carrot",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-salmon",
+        "name": "Salmon",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-golden-seafood-platter",
+        "name": "Golden Seafood Platter",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-pearl-coast-soup",
+    "name": "Pearl Coast Soup",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 4800,
+    "yieldQuantity": 1,
+    "xpReward": 295,
+    "branchXpReward": 160,
+    "timeReductionPercent": 10,
+    "materials": [
+      {
+        "id": "cooking-item-freshwater-pearl",
+        "name": "Freshwater Pearl",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-lobster",
+        "name": "Lobster",
+        "quantity": 2
+      },
+      {
+        "id": "cooking-item-rare-herb",
+        "name": "Rare Herb",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-pearl-coast-soup",
+        "name": "Pearl Coast Soup",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-royal-fisher-s-feast",
+    "name": "Royal Fisher's Feast",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "fire": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 6000,
+    "yieldQuantity": 1,
+    "xpReward": 360,
+    "branchXpReward": 200,
+    "timeReductionPercent": 11,
+    "materials": [
+      {
+        "id": "cooking-item-golden-carrot",
+        "name": "Golden Carrot",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-swordfish",
+        "name": "Swordfish",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-royal-fisher-s-feast",
+        "name": "Royal Fisher's Feast",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-moonlit-herb-tea",
+    "name": "Moonlit Herb Tea",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 7500,
+    "yieldQuantity": 1,
+    "xpReward": 445,
+    "branchXpReward": 245,
+    "timeReductionPercent": 12,
+    "materials": [
+      {
+        "id": "cooking-item-crystal-mint",
+        "name": "Crystal Mint",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-moonbloom",
+        "name": "Moonbloom",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-moonlit-herb-tea",
+        "name": "Moonlit Herb Tea",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-abyssal-seafood-stew",
+    "name": "Abyssal Seafood Stew",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 9300,
+    "yieldQuantity": 1,
+    "xpReward": 540,
+    "branchXpReward": 295,
+    "timeReductionPercent": 13,
+    "materials": [
+      {
+        "id": "cooking-item-abyssal-herb",
+        "name": "Abyssal Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-dark-crab",
+        "name": "Dark Crab",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-abyssal-seafood-stew",
+        "name": "Abyssal Seafood Stew",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-starflower-elixir",
+    "name": "Starflower Elixir",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "blood": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 11400,
+    "yieldQuantity": 1,
+    "xpReward": 645,
+    "branchXpReward": 355,
+    "timeReductionPercent": 14,
+    "materials": [
+      {
+        "id": "cooking-item-crystal-mint",
+        "name": "Crystal Mint",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-starflower",
+        "name": "Starflower",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-starflower-elixir",
+        "name": "Starflower Elixir",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-leviathan-s-supper",
+    "name": "Leviathan's Supper",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [],
+    "durationSeconds": 13800,
+    "yieldQuantity": 1,
+    "xpReward": 755,
+    "branchXpReward": 415,
+    "timeReductionPercent": 16,
+    "materials": [
+      {
+        "id": "cooking-item-ancient-herb",
+        "name": "Ancient Herb",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-leviathan",
+        "name": "Leviathan",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-leviathan-s-supper",
+        "name": "Leviathan's Supper",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-crimson-dragon-banquet",
+    "name": "Crimson Dragon Banquet",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 3,
+      "soul": 1
+    },
+    "equipment": [],
+    "durationSeconds": 16500,
+    "yieldQuantity": 1,
+    "xpReward": 875,
+    "branchXpReward": 480,
+    "timeReductionPercent": 17,
+    "materials": [
+      {
+        "id": "cooking-item-crimson-sea-dragon",
+        "name": "Crimson Sea Dragon",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-starflower",
+        "name": "Starflower",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-crimson-dragon-banquet",
+        "name": "Crimson Dragon Banquet",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-celestial-royal-banquet",
+    "name": "Celestial Royal Banquet",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "soul": 2,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 19800,
+    "yieldQuantity": 1,
+    "xpReward": 1020,
+    "branchXpReward": 560,
+    "timeReductionPercent": 19,
+    "materials": [
+      {
+        "id": "cooking-item-celestial-bloom",
+        "name": "Celestial Bloom",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-legendary-spice",
+        "name": "Legendary Spice",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-manta-ray",
+        "name": "Manta Ray",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-celestial-royal-banquet",
+        "name": "Celestial Royal Banquet",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  },
+  {
+    "id": "cook-mythic-chef-s-table",
+    "name": "Mythic Chef's Table",
+    "category": "master",
+    "specializationId": "master-chef",
+    "branchName": "Master Chef",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 3,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 27000,
+    "yieldQuantity": 1,
+    "xpReward": 1330,
+    "branchXpReward": 730,
+    "timeReductionPercent": 20,
+    "materials": [
+      {
+        "id": "cooking-item-celestial-bloom",
+        "name": "Celestial Bloom",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-legendary-spice",
+        "name": "Legendary Spice",
+        "quantity": 1
+      },
+      {
+        "id": "cooking-item-mythical-ocean-guardian",
+        "name": "Mythical Ocean Guardian",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cooking-item-mythic-chef-s-table",
+        "name": "Mythic Chef's Table",
+        "quantity": 1
+      }
+    ],
+    "foodEligibility": "general-activity",
+    "eligibleSkillId": null
+  }
+]
