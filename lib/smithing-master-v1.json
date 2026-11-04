@@ -1,0 +1,1779 @@
+[
+  {
+    "id": "smith-copper-bar",
+    "name": "Copper Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 720,
+    "yieldQuantity": 1,
+    "xpReward": 40,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-copper-ore",
+        "name": "Copper Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-copper-bar",
+        "name": "Copper Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-bronze-bar",
+    "name": "Bronze Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1,
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 900,
+    "yieldQuantity": 1,
+    "xpReward": 50,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-copper-ore",
+        "name": "Copper Ore",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-tin-ore",
+        "name": "Tin Ore",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-bronze-bar",
+        "name": "Bronze Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-copper-fittings",
+    "name": "Copper Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 8,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1080,
+    "yieldQuantity": 3,
+    "xpReward": 60,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-copper-bar",
+        "name": "Copper Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-copper-fittings",
+        "name": "Copper Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-iron-bar",
+    "name": "Iron Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1200,
+    "yieldQuantity": 1,
+    "xpReward": 70,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-iron-ore",
+        "name": "Iron Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-iron-bar",
+        "name": "Iron Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-iron-fittings",
+    "name": "Iron Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 2
+    },
+    "equipment": [],
+    "durationSeconds": 1500,
+    "yieldQuantity": 3,
+    "xpReward": 85,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-iron-bar",
+        "name": "Iron Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-iron-fittings",
+        "name": "Iron Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-silver-bar",
+    "name": "Silver Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1,
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 105,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-silver-ore",
+        "name": "Silver Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-silver-bar",
+        "name": "Silver Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-steel-bar",
+    "name": "Steel Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 2100,
+    "yieldQuantity": 1,
+    "xpReward": 120,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-coal",
+        "name": "Coal",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-iron-ore",
+        "name": "Iron Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-steel-fittings",
+    "name": "Steel Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 2400,
+    "yieldQuantity": 3,
+    "xpReward": 135,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-steel-fittings",
+        "name": "Steel Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-gold-bar",
+    "name": "Gold Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 2700,
+    "yieldQuantity": 1,
+    "xpReward": 155,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-gold-ore",
+        "name": "Gold Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-mithril-bar",
+    "name": "Mithril Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2,
+      "water": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 180,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-coal",
+        "name": "Coal",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-mithril-ore",
+        "name": "Mithril Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-mithril-bar",
+        "name": "Mithril Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-mithril-fittings",
+    "name": "Mithril Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3
+    },
+    "equipment": [],
+    "durationSeconds": 3600,
+    "yieldQuantity": 3,
+    "xpReward": 200,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-mithril-bar",
+        "name": "Mithril Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-mithril-fittings",
+        "name": "Mithril Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-adamant-bar",
+    "name": "Adamant Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 4500,
+    "yieldQuantity": 1,
+    "xpReward": 235,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-adamantite-ore",
+        "name": "Adamantite Ore",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-coal",
+        "name": "Coal",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-adamant-bar",
+        "name": "Adamant Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-adamant-fittings",
+    "name": "Adamant Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 5100,
+    "yieldQuantity": 3,
+    "xpReward": 260,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-adamant-bar",
+        "name": "Adamant Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-adamant-fittings",
+        "name": "Adamant Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-runite-bar",
+    "name": "Runite Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 5700,
+    "yieldQuantity": 1,
+    "xpReward": 290,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-coal",
+        "name": "Coal",
+        "quantity": 4
+      },
+      {
+        "id": "smithing-item-runite-ore",
+        "name": "Runite Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-runite-bar",
+        "name": "Runite Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-rune-fittings",
+    "name": "Rune Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 3,
+      "death": 2
+    },
+    "equipment": [],
+    "durationSeconds": 6600,
+    "yieldQuantity": 3,
+    "xpReward": 325,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-runite-bar",
+        "name": "Runite Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-rune-fittings",
+        "name": "Rune Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-rare-metal-bar",
+    "name": "Rare Metal Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 70,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 7800,
+    "yieldQuantity": 1,
+    "xpReward": 375,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-coal",
+        "name": "Coal",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-rare-metal-ore",
+        "name": "Rare Metal Ore",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-rare-metal-bar",
+        "name": "Rare Metal Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-masterwork-bar",
+    "name": "Masterwork Bar",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 10200,
+    "yieldQuantity": 1,
+    "xpReward": 465,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-amethyst",
+        "name": "Amethyst",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-rare-metal-bar",
+        "name": "Rare Metal Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-masterwork-bar",
+        "name": "Masterwork Bar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-masterwork-fittings",
+    "name": "Masterwork Fittings",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 85,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 11400,
+    "yieldQuantity": 3,
+    "xpReward": 515,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-masterwork-bar",
+        "name": "Masterwork Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-masterwork-fittings",
+        "name": "Masterwork Fittings",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-starforged-ingot",
+    "name": "Starforged Ingot",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "soul": 1,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 14400,
+    "yieldQuantity": 1,
+    "xpReward": 620,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-ancient-starstone",
+        "name": "Ancient Starstone",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-masterwork-bar",
+        "name": "Masterwork Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-starforged-ingot",
+        "name": "Starforged Ingot",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-eternal-alloy",
+    "name": "Eternal Alloy",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 99,
+    "requiredBranchLevel": null,
+    "runes": {
+      "soul": 2,
+      "blood": 3
+    },
+    "equipment": [],
+    "durationSeconds": 21600,
+    "yieldQuantity": 1,
+    "xpReward": 875,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "smithing-item-eternal-mineral",
+        "name": "Eternal Mineral",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-starforged-ingot",
+        "name": "Starforged Ingot",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-eternal-alloy",
+        "name": "Eternal Alloy",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-bronze-pickaxe",
+    "name": "Bronze Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 110,
+    "branchXpReward": 60,
+    "materials": [
+      {
+        "id": "smithing-item-bronze-bar",
+        "name": "Bronze Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-wood-handle",
+        "name": "Wood Handle",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-bronze-pickaxe",
+        "name": "Bronze Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-iron-pickaxe",
+    "name": "Iron Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 15,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 2400,
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 80,
+    "materials": [
+      {
+        "id": "smithing-item-iron-bar",
+        "name": "Iron Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-wood-handle",
+        "name": "Wood Handle",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-iron-pickaxe",
+        "name": "Iron Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-steel-pickaxe",
+    "name": "Steel Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 25,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 200,
+    "branchXpReward": 110,
+    "materials": [
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-wood-handle",
+        "name": "Wood Handle",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-steel-pickaxe",
+        "name": "Steel Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-fishing-harpoon",
+    "name": "Fishing Harpoon",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "fire": 2,
+      "water": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3900,
+    "yieldQuantity": 1,
+    "xpReward": 240,
+    "branchXpReward": 130,
+    "materials": [
+      {
+        "id": "smithing-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-fishing-harpoon",
+        "name": "Fishing Harpoon",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-mithril-pickaxe",
+    "name": "Mithril Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 3
+    },
+    "equipment": [],
+    "durationSeconds": 4800,
+    "yieldQuantity": 1,
+    "xpReward": 300,
+    "branchXpReward": 165,
+    "materials": [
+      {
+        "id": "smithing-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-mithril-bar",
+        "name": "Mithril Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-mithril-pickaxe",
+        "name": "Mithril Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-adamant-pickaxe",
+    "name": "Adamant Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 55,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 6300,
+    "yieldQuantity": 1,
+    "xpReward": 380,
+    "branchXpReward": 210,
+    "materials": [
+      {
+        "id": "smithing-item-adamant-bar",
+        "name": "Adamant Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-adamant-pickaxe",
+        "name": "Adamant Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-rune-pickaxe",
+    "name": "Rune Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 65,
+    "requiredBranchLevel": 60,
+    "runes": {
+      "death": 2,
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 8100,
+    "yieldQuantity": 1,
+    "xpReward": 470,
+    "branchXpReward": 260,
+    "materials": [
+      {
+        "id": "smithing-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-runite-bar",
+        "name": "Runite Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-rune-pickaxe",
+        "name": "Rune Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-deep-sea-harpoon",
+    "name": "Deep Sea Harpoon",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 70,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 10500,
+    "yieldQuantity": 1,
+    "xpReward": 590,
+    "branchXpReward": 325,
+    "materials": [
+      {
+        "id": "smithing-item-rare-metal-bar",
+        "name": "Rare Metal Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-deep-sea-harpoon",
+        "name": "Deep Sea Harpoon",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-dragon-pickaxe",
+    "name": "Dragon Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 80,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 13200,
+    "yieldQuantity": 1,
+    "xpReward": 720,
+    "branchXpReward": 395,
+    "materials": [
+      {
+        "id": "smithing-item-masterwork-bar",
+        "name": "Masterwork Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-rare-gem",
+        "name": "Rare Gem",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-dragon-pickaxe",
+        "name": "Dragon Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-master-pickaxe",
+    "name": "Master Pickaxe",
+    "category": "toolsmith",
+    "specializationId": "toolsmith",
+    "branchName": "Toolsmith",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 2,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 21600,
+    "yieldQuantity": 1,
+    "xpReward": 1090,
+    "branchXpReward": 600,
+    "materials": [
+      {
+        "id": "smithing-item-ancient-rune-crystal",
+        "name": "Ancient Rune Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-eternal-alloy",
+        "name": "Eternal Alloy",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-master-pickaxe",
+        "name": "Master Pickaxe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-smithing-apron",
+    "name": "Smithing Apron",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 80,
+    "materials": [
+      {
+        "id": "smithing-item-copper-fittings",
+        "name": "Copper Fittings",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-smithing-apron",
+        "name": "Smithing Apron",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-mining-helmet",
+    "name": "Mining Helmet",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [],
+    "durationSeconds": 2700,
+    "yieldQuantity": 1,
+    "xpReward": 190,
+    "branchXpReward": 105,
+    "materials": [
+      {
+        "id": "smithing-item-gemstone",
+        "name": "Gemstone",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-iron-bar",
+        "name": "Iron Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-mining-helmet",
+        "name": "Mining Helmet",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-reinforced-gloves",
+    "name": "Reinforced Gloves",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 225,
+    "branchXpReward": 125,
+    "materials": [
+      {
+        "id": "smithing-item-steel-fittings",
+        "name": "Steel Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-woven-fiber",
+        "name": "Woven Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-reinforced-gloves",
+        "name": "Reinforced Gloves",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-ore-carrier-frame",
+    "name": "Ore Carrier Frame",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "fire": 2,
+      "water": 1
+    },
+    "equipment": [],
+    "durationSeconds": 4200,
+    "yieldQuantity": 1,
+    "xpReward": 270,
+    "branchXpReward": 150,
+    "materials": [
+      {
+        "id": "smithing-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-ore-carrier-frame",
+        "name": "Ore Carrier Frame",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-heatproof-apron",
+    "name": "Heatproof Apron",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 55,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 3,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 5400,
+    "yieldQuantity": 1,
+    "xpReward": 340,
+    "branchXpReward": 185,
+    "materials": [
+      {
+        "id": "smithing-item-mithril-fittings",
+        "name": "Mithril Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-reinforced-fiber",
+        "name": "Reinforced Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-heatproof-apron",
+        "name": "Heatproof Apron",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-prospector-helmet",
+    "name": "Prospector Helmet",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 65,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 7200,
+    "yieldQuantity": 1,
+    "xpReward": 430,
+    "branchXpReward": 235,
+    "materials": [
+      {
+        "id": "smithing-item-adamant-fittings",
+        "name": "Adamant Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-uncut-ruby",
+        "name": "Uncut Ruby",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-prospector-helmet",
+        "name": "Prospector Helmet",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-gemworker-gloves",
+    "name": "Gemworker Gloves",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 75,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "death": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 9300,
+    "yieldQuantity": 1,
+    "xpReward": 540,
+    "branchXpReward": 295,
+    "materials": [
+      {
+        "id": "smithing-item-rune-fittings",
+        "name": "Rune Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-uncut-diamond",
+        "name": "Uncut Diamond",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-gemworker-gloves",
+        "name": "Gemworker Gloves",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-master-smithing-apron",
+    "name": "Master Smithing Apron",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [],
+    "durationSeconds": 11400,
+    "yieldQuantity": 1,
+    "xpReward": 640,
+    "branchXpReward": 350,
+    "materials": [
+      {
+        "id": "smithing-item-masterwork-fittings",
+        "name": "Masterwork Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-reinforced-fiber",
+        "name": "Reinforced Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-master-smithing-apron",
+        "name": "Master Smithing Apron",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-starforged-mining-helmet",
+    "name": "Starforged Mining Helmet",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [],
+    "durationSeconds": 15600,
+    "yieldQuantity": 1,
+    "xpReward": 835,
+    "branchXpReward": 460,
+    "materials": [
+      {
+        "id": "smithing-item-astral-crystal",
+        "name": "Astral Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-starforged-ingot",
+        "name": "Starforged Ingot",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-starforged-mining-helmet",
+        "name": "Starforged Mining Helmet",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-eternal-artisan-outfit",
+    "name": "Eternal Artisan Outfit",
+    "category": "artisan",
+    "specializationId": "artisan-equipment",
+    "branchName": "Artisan Equipment",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": [],
+    "durationSeconds": 23400,
+    "yieldQuantity": 1,
+    "xpReward": 1165,
+    "branchXpReward": 640,
+    "materials": [
+      {
+        "id": "smithing-item-celestial-heart-gem",
+        "name": "Celestial Heart Gem",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-eternal-alloy",
+        "name": "Eternal Alloy",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-eternal-artisan-outfit",
+        "name": "Eternal Artisan Outfit",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-hardened-tool-head",
+    "name": "Hardened Tool Head",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [],
+    "durationSeconds": 3000,
+    "yieldQuantity": 1,
+    "xpReward": 195,
+    "branchXpReward": 105,
+    "materials": [
+      {
+        "id": "smithing-item-copper-fittings",
+        "name": "Copper Fittings",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-steel-bar",
+        "name": "Steel Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-hardened-tool-head",
+        "name": "Hardened Tool Head",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-precision-metal-hook",
+    "name": "Precision Metal Hook",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "water": 2,
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 3900,
+    "yieldQuantity": 3,
+    "xpReward": 250,
+    "branchXpReward": 140,
+    "materials": [
+      {
+        "id": "smithing-item-mithril-fittings",
+        "name": "Mithril Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-uncut-sapphire",
+        "name": "Uncut Sapphire",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-precision-metal-hook",
+        "name": "Precision Metal Hook",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": "smith-gem-setting",
+    "name": "Gem Setting",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 2
+    },
+    "equipment": [],
+    "durationSeconds": 5100,
+    "yieldQuantity": 2,
+    "xpReward": 320,
+    "branchXpReward": 175,
+    "materials": [
+      {
+        "id": "smithing-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-uncut-emerald",
+        "name": "Uncut Emerald",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-gem-setting",
+        "name": "Gem Setting",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": "smith-reinforced-trap-frame",
+    "name": "Reinforced Trap Frame",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 2,
+      "fire": 1
+    },
+    "equipment": [],
+    "durationSeconds": 6300,
+    "yieldQuantity": 1,
+    "xpReward": 385,
+    "branchXpReward": 210,
+    "materials": [
+      {
+        "id": "smithing-item-adamant-fittings",
+        "name": "Adamant Fittings",
+        "quantity": 3
+      },
+      {
+        "id": "smithing-item-hardwood",
+        "name": "Hardwood",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-reinforced-trap-frame",
+        "name": "Reinforced Trap Frame",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-masterwork-harpoon-head",
+    "name": "Masterwork Harpoon Head",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "death": 2,
+      "nature": 1
+    },
+    "equipment": [],
+    "durationSeconds": 8400,
+    "yieldQuantity": 1,
+    "xpReward": 490,
+    "branchXpReward": 270,
+    "materials": [
+      {
+        "id": "smithing-item-rune-fittings",
+        "name": "Rune Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-uncut-ruby",
+        "name": "Uncut Ruby",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-masterwork-harpoon-head",
+        "name": "Masterwork Harpoon Head",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-crystal-tool-housing",
+    "name": "Crystal Tool Housing",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 10800,
+    "yieldQuantity": 1,
+    "xpReward": 610,
+    "branchXpReward": 335,
+    "materials": [
+      {
+        "id": "smithing-item-charged-crystal-fragment",
+        "name": "Charged Crystal Fragment",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-masterwork-fittings",
+        "name": "Masterwork Fittings",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-crystal-tool-housing",
+        "name": "Crystal Tool Housing",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-abyssal-tool-core",
+    "name": "Abyssal Tool Core",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 85,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [],
+    "durationSeconds": 12600,
+    "yieldQuantity": 1,
+    "xpReward": 690,
+    "branchXpReward": 380,
+    "materials": [
+      {
+        "id": "smithing-item-abyssal-mineral",
+        "name": "Abyssal Mineral",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-rare-metal-bar",
+        "name": "Rare Metal Bar",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-abyssal-tool-core",
+        "name": "Abyssal Tool Core",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-astral-instrument-frame",
+    "name": "Astral Instrument Frame",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "soul": 1,
+      "blood": 2
+    },
+    "equipment": [],
+    "durationSeconds": 15600,
+    "yieldQuantity": 1,
+    "xpReward": 825,
+    "branchXpReward": 455,
+    "materials": [
+      {
+        "id": "smithing-item-astral-crystal",
+        "name": "Astral Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-starforged-ingot",
+        "name": "Starforged Ingot",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-astral-instrument-frame",
+        "name": "Astral Instrument Frame",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-ancient-rune-socket",
+    "name": "Ancient Rune Socket",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [],
+    "durationSeconds": 18600,
+    "yieldQuantity": 1,
+    "xpReward": 960,
+    "branchXpReward": 530,
+    "materials": [
+      {
+        "id": "smithing-item-ancient-rune-crystal",
+        "name": "Ancient Rune Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "smithing-item-masterwork-fittings",
+        "name": "Masterwork Fittings",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-ancient-rune-socket",
+        "name": "Ancient Rune Socket",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "smith-eternal-masterwork-kit",
+    "name": "Eternal Masterwork Kit",
+    "category": "masterwork",
+    "specializationId": "masterwork-forging",
+    "branchName": "Masterwork Forging",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 2,
+      "blood": 3
+    },
+    "equipment": [],
+    "durationSeconds": 25200,
+    "yieldQuantity": 1,
+    "xpReward": 1240,
+    "branchXpReward": 680,
+    "materials": [
+      {
+        "id": "smithing-item-eternal-alloy",
+        "name": "Eternal Alloy",
+        "quantity": 2
+      },
+      {
+        "id": "smithing-item-eternal-mineral",
+        "name": "Eternal Mineral",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "smithing-item-eternal-masterwork-kit",
+        "name": "Eternal Masterwork Kit",
+        "quantity": 1
+      }
+    ]
+  }
+]
