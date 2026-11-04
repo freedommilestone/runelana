@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import WalletProfile from './wallet-profile';
 import CharacterProfile from './character-profile';
+import CombatPanel from './combat-panel';
 import {usePlayerProfile} from './use-player-profile';
 import PlayerGuide from './player-guide';
 import RuneProgression from './rune-progression';
@@ -24,7 +25,7 @@ function Sprite({ box, className = '', stretch = false }) {
   return <svg className={`g-sprite ${className}`} viewBox={box} preserveAspectRatio={stretch ? "none" : "xMidYMid slice"} aria-hidden="true"><image href="/assets/play-reference.png" width="1536" height="1024"/></svg>;
 }
 function Frame(){return <GameFrame/>;}
-const navigation=[['Game','19 164 51 54'],['My Profile','19 222 51 54'],['Inventory','19 280 51 54'],['Skill Tree','19 338 51 54'],['Runes','19 396 51 54'],['Collection','19 454 51 54'],['Marketplace','19 512 51 54'],['Bank','19 570 51 54'],['Leaderboard','19 628 51 54'],['Friends','19 686 51 54'],['Settings','19 744 51 54']];
+const navigation=[['Game','19 164 51 54'],['My Profile','19 222 51 54'],['Inventory','19 280 51 54'],['Skill Tree','19 338 51 54'],['Combat','19 164 51 54'],['Runes','19 396 51 54'],['Collection','19 454 51 54'],['Marketplace','19 512 51 54'],['Bank','19 570 51 54'],['Leaderboard','19 628 51 54'],['Friends','19 686 51 54'],['Settings','19 744 51 54']];
 const decisions=[['Use Skill','Use Skill','Choose a skill to gather resources, train, or create items.','1225 157 70 69'],['Rune Production','Rune Production','Allocate your passive hourly rune production.','1225 269 70 76'],['Service','Provide Service','Offer a merchant service and earn game gold.','1223 398 75 65']];
 
 export default function GameDashboard(props){
@@ -62,7 +63,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   function open(value) {
     if(value==='Skill Tree')value='Skills';
     if(value==='How It Works'){setNavOpen(false);guide.current.open();return;}
-    if(value==='My Profile')profile.refresh();
+    if(value==='My Profile'||value==='Combat')profile.refresh();
     setSection(value); setNavOpen(false);
     if(value==='Game'||value==='Skills'||value==='Use Skill') { panel.current?.close(); return; }
     panel.current.showModal();
@@ -91,8 +92,8 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <nav aria-label="Player navigation">{navigation.map(([title,box])=>{const target=title==='Skill Tree'?'Skills':title;return <button key={title} className={section===target?'g-active':''} aria-expanded={target==='Skills'?section==='Skills':undefined} aria-controls={target==='Skills'?'player-skills':undefined} onClick={()=>open(target==='Skills'&&section==='Skills'?'Game':target)}><GameArt box={box}/><span>{title}</span></button>})}</nav>
       <small className="g-save-note">{profile.busy?'Saving profile…':'Progress saved to account'}</small>
     </aside>
-    {section==='Use Skill'&&<UseSkill skills={skillsStatus} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree}/>}
-    {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onClose={()=>open('Game')}/>}
+    {section==='Use Skill'&&<UseSkill skills={skillsStatus} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
+    {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
       <div className="g-chat-paper"><div className="g-chat-lines" aria-live="polite">{tab!=='Notes' && <><p><em>[Game]</em> <b>Guide:</b> Welcome, {name}. Your next decision shapes your legend.</p><p><em>[Game]</em> <b>Guide:</b> Allocate rune production, craft steel bars, or offer a service.</p></>}{notes.filter(n=>tab==='All'||(tab==='Notes'?n.channel==='Notes':n.channel==='Game')).map((n,i)=><p key={i}><em>[{n.channel}]</em> <b>{n.name}:</b> {n.text}</p>)}</div><form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;setNotes(rows=>[...rows.slice(-39),{channel:'Notes',name,text:draft.trim()}]);setDraft('');}}><label htmlFor="game-note">{name}:</label><input id="game-note" value={draft} maxLength={240} onChange={e=>setDraft(e.target.value)} placeholder="Enter a private note…"/><button>Save</button></form></div>
@@ -103,13 +104,14 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <p className="g-notice" role="status">{notice}</p>
     </aside>
     {profile.error&&<div className="g-profile-save-error" role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></div>}
-    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section}</h2>}
+    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section}</h2>}
       {profile.error&&<p role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></p>}
       {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
+      {section==='Combat'&&<CombatPanel combat={profile.data.combat} error={profile.error} onRefresh={profile.refresh}/>}
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <CharacterProfile accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
+      {section==='My Profile' && <CharacterProfile combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
       {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Inventory' && <><p>Steel Bars: {state.steelBars||0}</p><p>Crafting supplies: {Math.floor(state.runes)}</p><button onClick={()=>open('Runes')}>Open Rune Inventory</button><p>Equipment: {state.owned.length} items</p><p>Equipped: {state.equipped}</p></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
