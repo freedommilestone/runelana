@@ -36,6 +36,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const runes = useRunes(user.id);
   const skillsStatus = useSkills(user.id);
   const walletStatus = useWalletBalance(user.id);
+  useEffect(()=>{if(walletStatus.snapshot)profile.refresh();},[walletStatus.snapshot,profile.refresh]);
   const walletBalance = walletStatus.snapshot?.balance;
   const walletAmount = walletBalance ? `${walletBalance.amount} GP` : walletStatus.loading ? 'Loading GP…' : walletStatus.error || walletStatus.snapshot?.wallet ? 'GP unavailable' : 'Verify wallet';
   const walletLabel = walletBalance?.isStale ? 'Last known balance' : 'Wallet GP';
@@ -61,6 +62,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   function open(value) {
     if(value==='Skill Tree')value='Skills';
     if(value==='How It Works'){setNavOpen(false);guide.current.open();return;}
+    if(value==='My Profile')profile.refresh();
     setSection(value); setNavOpen(false);
     if(value==='Game'||value==='Skills'||value==='Use Skill') { panel.current?.close(); return; }
     panel.current.showModal();
@@ -107,7 +109,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <CharacterProfile user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
+      {section==='My Profile' && <CharacterProfile accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
       {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Inventory' && <><p>Steel Bars: {state.steelBars||0}</p><p>Crafting supplies: {Math.floor(state.runes)}</p><button onClick={()=>open('Runes')}>Open Rune Inventory</button><p>Equipment: {state.owned.length} items</p><p>Equipped: {state.equipped}</p></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
