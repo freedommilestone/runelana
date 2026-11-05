@@ -1,0 +1,17 @@
+type,item,quantity,level,account_bound,reusable,notes
+profession_tool,Small Fishing Net,1,Fishing 1,True,True,"Beginner net catches, including Shrimp"
+profession_tool,Wooden Rake,1,Farming 1,True,True,Prepare soil and start basic crops
+profession_tool,Bronze Pickaxe,1,Mining 1,True,True,"Copper, Tin, and beginner deposits"
+profession_tool,Basic Smithing Hammer,1,Smithing 1,True,True,Starter metalworking and basic bars
+profession_tool,Basic Crafting Toolkit,1,Crafting 1,True,True,"Ropes, lines, and simple components"
+profession_tool,Cooking Pot,1,Cooking 1,True,True,Basic meals and ingredient preparation
+profession_tool,Apprentice Enchanting Focus,1,Enchanting 1,True,True,Beginner gear enchantments when materials and runes are available
+combat_equipment,Bronze Sword,1,Attack 1,True,True,Basic melee weapon
+combat_equipment,Wooden Shield,1,Defense 1,True,True,Basic protection
+combat_equipment,Leather Body,1,Defense 1,True,True,Starter torso armor
+combat_equipment,Leather Boots,1,Defense 1,True,True,Starter footwear
+starter_supply,Basic Bait,20,None,True,False,Beginner rod fishing
+starter_supply,Wheat Seeds,10,None,True,False,First farming harvests
+starter_supply,Potato Seeds,10,None,True,False,Additional farming crop
+starter_supply,Beginner Food,5,None,True,False,Shortens one eligible activity; exact meal/effect TBD
+starter_supply,Air Runes,50,None,True,False,Fuel eligible beginner recipes

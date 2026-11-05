@@ -5,6 +5,8 @@ import WalletProfile from './wallet-profile';
 import CharacterProfile from './character-profile';
 import CombatPanel from './combat-panel';
 import PlayerInventory from './player-inventory';
+import StarterItemArt from './starter-item-art';
+import {starterInventory} from '../lib/starter-kit.mjs';
 import {DashboardHeader,DashboardSidebar} from './dashboard-chrome';
 import {usePlayerProfile} from './use-player-profile';
 import PlayerGuide from './player-guide';
@@ -51,6 +53,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const panel = useRef(null);
   const guide = useRef(null);
   const name = user.user_metadata?.display_name || 'Rune Traveler';
+  const starterGear=starterInventory(state).filter(item=>item.equippable);
   const adventureLevel = 1 + Math.floor(state.xp / 60);
   const task = state.activity;
   const recipe = task ? activities[task.type] : null;
@@ -80,7 +83,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
     <div className="g-backdrop"><Image src="/assets/play-harbor.png" alt="" fill sizes="(max-width: 700px) 150vh, (max-width: 1180px) 1650px, 100vw" quality={95} preload/></div>
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
     <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
-    {section==='Inventory'&&<PlayerInventory state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
+    {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
     {section==='Use Skill'&&<UseSkill skills={skillsStatus} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
     {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
@@ -100,10 +103,10 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <CharacterProfile combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
+      {section==='My Profile' && <CharacterProfile onInventory={()=>open('Inventory')} onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
       {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
-      {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} disabled={profile.busy} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
+      {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{section==='Collection'&&starterGear.map(item=><button key={item.id} disabled={profile.busy} aria-pressed={item.equipped} onClick={()=>profile.act(item.equipped?'unequip-starter':'equip-starter',item.id)}><StarterItemArt id={item.id}/><strong>{item.name}</strong><small>{item.equipped?'Unequip':'Equip'} · {item.requirement}</small></button>)}{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} disabled={profile.busy} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&!starterGear.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
       {section==='Leaderboard' && <p>Live player rankings are not available yet. Your adventure level is {adventureLevel}.</p>}
       {section==='Notifications'&&<><h3>A new look for your adventure</h3><p>The header and navigation now use the updated Runelana design. Your GP balance, rune inventory, and saved progress stay connected to your account.</p><button onClick={()=>open('How It Works')}>Open How It Works</button></>}
       {section==='Travel'&&<><p>Travel destinations and journeys are not available yet.</p><button onClick={()=>open('Use Skill')}>Explore skill activities</button></>}

@@ -64,3 +64,9 @@
 .pi-frame>.pi-texture{width:100%;height:100%;min-width:0;min-height:0}.pi-texture{pointer-events:none}
 
 .pi-no-selection>.dc-art{mix-blend-mode:lighten}.pi-trash-icon{width:34px;height:36px;flex:none}
+.pi-storage{position:relative;z-index:4;display:flex;gap:6px;margin:8px 28px;background:#201d17;padding:5px;border:1px solid #6c593d}
+.g-shell .pi-storage button{flex:1;padding:9px 6px;border:1px solid #726046;background:#302b22;font-size:14px}
+.g-shell .pi-storage button[aria-pressed=true]{background:#604919;border-color:#e4ba4b;color:#fff0b4}
+.pi-storage small{opacity:.8;margin-left:5px}
+.pi-detail-icon>.starter-item-art{width:100%;height:100%}
+@media(max-width:600px){.pi-storage{margin:5px 20px;gap:3px}.g-shell .pi-storage button{font-size:12px;padding:9px 3px}}
