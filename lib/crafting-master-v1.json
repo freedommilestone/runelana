@@ -1,0 +1,1927 @@
+[
+  {
+    "id": "craft-plant-fiber-cord",
+    "name": "Plant Fiber Cord",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 1,
+    "requiredBranchLevel": null,
+    "runes": {},
+    "equipment": [
+      "Basic Crafting Kit"
+    ],
+    "durationSeconds": 480,
+    "yieldQuantity": 2,
+    "xpReward": 30,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-plant-fiber-cord",
+        "name": "Plant Fiber Cord",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-fishing-line",
+    "name": "Fishing Line",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 3,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [
+      "Basic Crafting Kit"
+    ],
+    "durationSeconds": 600,
+    "yieldQuantity": 2,
+    "xpReward": 35,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-fishing-line",
+        "name": "Fishing Line",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-wooden-handle",
+    "name": "Wooden Handle",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 5,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 720,
+    "yieldQuantity": 1,
+    "xpReward": 45,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-basic-timber",
+        "name": "Basic Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-wooden-handle",
+        "name": "Wooden Handle",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-binding-rope",
+    "name": "Binding Rope",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 8,
+    "requiredBranchLevel": null,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [
+      "Basic Crafting Kit"
+    ],
+    "durationSeconds": 900,
+    "yieldQuantity": 2,
+    "xpReward": 55,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-binding-rope",
+        "name": "Binding Rope",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-woven-fiber",
+    "name": "Woven Fiber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 10,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [
+      "Weaving Frame"
+    ],
+    "durationSeconds": 1080,
+    "yieldQuantity": 2,
+    "xpReward": 65,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-plant-fiber",
+        "name": "Plant Fiber",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-woven-fiber",
+        "name": "Woven Fiber",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-leather-strips",
+    "name": "Leather Strips",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 15,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [
+      "Cutting Knife"
+    ],
+    "durationSeconds": 1200,
+    "yieldQuantity": 3,
+    "xpReward": 75,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-raw-hide",
+        "name": "Raw Hide",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-leather-strips",
+        "name": "Leather Strips",
+        "quantity": 3
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-treated-timber",
+    "name": "Treated Timber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 20,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 1500,
+    "yieldQuantity": 1,
+    "xpReward": 90,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-fish-oil",
+        "name": "Fish Oil",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-wooden-handle",
+        "name": "Wooden Handle",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-treated-timber",
+        "name": "Treated Timber",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-crushed-shell",
+    "name": "Crushed Shell",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 25,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [
+      "Mortar and Pestle"
+    ],
+    "durationSeconds": 1800,
+    "yieldQuantity": 2,
+    "xpReward": 110,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-common-shell",
+        "name": "Common Shell",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-crushed-shell",
+        "name": "Crushed Shell",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-shell-powder",
+    "name": "Shell Powder",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 30,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 1,
+      "mind": 1
+    },
+    "equipment": [
+      "Mortar and Pestle"
+    ],
+    "durationSeconds": 2100,
+    "yieldQuantity": 2,
+    "xpReward": 125,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-common-shell",
+        "name": "Common Shell",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-shell-powder",
+        "name": "Shell Powder",
+        "quantity": 2
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-reinforced-fiber",
+    "name": "Reinforced Fiber",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 35,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2
+    },
+    "equipment": [
+      "Weaving Frame"
+    ],
+    "durationSeconds": 2400,
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-steel-fittings",
+        "name": "Steel Fittings",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-woven-fiber",
+        "name": "Woven Fiber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-reinforced-fiber",
+        "name": "Reinforced Fiber",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-gemstone-setting",
+    "name": "Gemstone Setting",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 40,
+    "requiredBranchLevel": null,
+    "runes": {
+      "nature": 2
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 1,
+    "xpReward": 160,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-uncut-sapphire",
+        "name": "Uncut Sapphire",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-gemstone-setting",
+        "name": "Gemstone Setting",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-polished-coral",
+    "name": "Polished Coral",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 45,
+    "requiredBranchLevel": null,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 3000,
+    "yieldQuantity": 1,
+    "xpReward": 180,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-ancient-coral",
+        "name": "Ancient Coral",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-polished-coral",
+        "name": "Polished Coral",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-cut-sapphire",
+    "name": "Cut Sapphire",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 50,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Gem Cutting Kit"
+    ],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 195,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-uncut-sapphire",
+        "name": "Uncut Sapphire",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-cut-sapphire",
+        "name": "Cut Sapphire",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-cut-emerald",
+    "name": "Cut Emerald",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 55,
+    "requiredBranchLevel": null,
+    "runes": {
+      "mind": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Gem Cutting Kit"
+    ],
+    "durationSeconds": 3900,
+    "yieldQuantity": 1,
+    "xpReward": 225,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-uncut-emerald",
+        "name": "Uncut Emerald",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-cut-emerald",
+        "name": "Cut Emerald",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-cut-ruby",
+    "name": "Cut Ruby",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 60,
+    "requiredBranchLevel": null,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Gem Cutting Kit"
+    ],
+    "durationSeconds": 4500,
+    "yieldQuantity": 1,
+    "xpReward": 250,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-uncut-ruby",
+        "name": "Uncut Ruby",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-cut-ruby",
+        "name": "Cut Ruby",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-cut-diamond",
+    "name": "Cut Diamond",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 65,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "mind": 1
+    },
+    "equipment": [
+      "Gem Cutting Kit"
+    ],
+    "durationSeconds": 5100,
+    "yieldQuantity": 1,
+    "xpReward": 280,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-uncut-diamond",
+        "name": "Uncut Diamond",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-cut-diamond",
+        "name": "Cut Diamond",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-rare-gem-setting",
+    "name": "Rare Gem Setting",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 75,
+    "requiredBranchLevel": null,
+    "runes": {
+      "death": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 6600,
+    "yieldQuantity": 1,
+    "xpReward": 345,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-rare-gem",
+        "name": "Rare Gem",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-rune-fittings",
+        "name": "Rune Fittings",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-rare-gem-setting",
+        "name": "Rare Gem Setting",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-abyssal-weave",
+    "name": "Abyssal Weave",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 80,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Master Weaving Frame"
+    ],
+    "durationSeconds": 8700,
+    "yieldQuantity": 1,
+    "xpReward": 425,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-abyssal-mineral",
+        "name": "Abyssal Mineral",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-deep-sea-fiber",
+        "name": "Deep-Sea Fiber",
+        "quantity": 3
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-abyssal-weave",
+        "name": "Abyssal Weave",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-masterwork-housing",
+    "name": "Masterwork Housing",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 90,
+    "requiredBranchLevel": null,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 11400,
+    "yieldQuantity": 1,
+    "xpReward": 530,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-masterwork-fittings",
+        "name": "Masterwork Fittings",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-masterwork-housing",
+        "name": "Masterwork Housing",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-eternal-artisan-core",
+    "name": "Eternal Artisan Core",
+    "category": "standard",
+    "specializationId": null,
+    "branchName": null,
+    "requiredLevel": 99,
+    "requiredBranchLevel": null,
+    "runes": {
+      "soul": 2,
+      "blood": 2
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 16800,
+    "yieldQuantity": 1,
+    "xpReward": 735,
+    "branchXpReward": 0,
+    "materials": [
+      {
+        "id": "crafting-item-celestial-heart-gem",
+        "name": "Celestial Heart Gem",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-eternal-alloy",
+        "name": "Eternal Alloy",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-eternal-artisan-core",
+        "name": "Eternal Artisan Core",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-copper-ring",
+    "name": "Copper Ring",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 10,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "air": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 1200,
+    "yieldQuantity": 1,
+    "xpReward": 85,
+    "branchXpReward": 45,
+    "materials": [
+      {
+        "id": "crafting-item-copper-bar",
+        "name": "Copper Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-copper-ring",
+        "name": "Copper Ring",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-silver-necklace",
+    "name": "Silver Necklace",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 20,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "mind": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 130,
+    "branchXpReward": 70,
+    "materials": [
+      {
+        "id": "crafting-item-fishing-line",
+        "name": "Fishing Line",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-silver-bar",
+        "name": "Silver Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-silver-necklace",
+        "name": "Silver Necklace",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-shell-pendant",
+    "name": "Shell Pendant",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 2400,
+    "yieldQuantity": 1,
+    "xpReward": 170,
+    "branchXpReward": 95,
+    "materials": [
+      {
+        "id": "crafting-item-common-shell",
+        "name": "Common Shell",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-silver-bar",
+        "name": "Silver Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-shell-pendant",
+        "name": "Shell Pendant",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-sapphire-ring",
+    "name": "Sapphire Ring",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "mind": 2,
+      "water": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 225,
+    "branchXpReward": 125,
+    "materials": [
+      {
+        "id": "crafting-item-cut-sapphire",
+        "name": "Cut Sapphire",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-sapphire-ring",
+        "name": "Sapphire Ring",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-emerald-amulet",
+    "name": "Emerald Amulet",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "nature": 2
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 4500,
+    "yieldQuantity": 1,
+    "xpReward": 295,
+    "branchXpReward": 160,
+    "materials": [
+      {
+        "id": "crafting-item-cut-emerald",
+        "name": "Cut Emerald",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-emerald-amulet",
+        "name": "Emerald Amulet",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-ruby-brooch",
+    "name": "Ruby Brooch",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 5700,
+    "yieldQuantity": 1,
+    "xpReward": 365,
+    "branchXpReward": 200,
+    "materials": [
+      {
+        "id": "crafting-item-cut-ruby",
+        "name": "Cut Ruby",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-ruby-brooch",
+        "name": "Ruby Brooch",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-diamond-pendant",
+    "name": "Diamond Pendant",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "death": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Jeweler Bench"
+    ],
+    "durationSeconds": 7800,
+    "yieldQuantity": 1,
+    "xpReward": 475,
+    "branchXpReward": 260,
+    "materials": [
+      {
+        "id": "crafting-item-cut-diamond",
+        "name": "Cut Diamond",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-diamond-pendant",
+        "name": "Diamond Pendant",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-black-pearl-necklace",
+    "name": "Black Pearl Necklace",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 2,
+      "water": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 10800,
+    "yieldQuantity": 1,
+    "xpReward": 620,
+    "branchXpReward": 340,
+    "materials": [
+      {
+        "id": "crafting-item-black-pearl",
+        "name": "Black Pearl",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-rare-gem-setting",
+        "name": "Rare Gem Setting",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-black-pearl-necklace",
+        "name": "Black Pearl Necklace",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-astral-crystal-circlet",
+    "name": "Astral Crystal Circlet",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 14400,
+    "yieldQuantity": 1,
+    "xpReward": 795,
+    "branchXpReward": 435,
+    "materials": [
+      {
+        "id": "crafting-item-astral-crystal",
+        "name": "Astral Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-masterwork-housing",
+        "name": "Masterwork Housing",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-astral-crystal-circlet",
+        "name": "Astral Crystal Circlet",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-celestial-heirloom",
+    "name": "Celestial Heirloom",
+    "category": "jewelry",
+    "specializationId": "jeweler",
+    "branchName": "Jewelry Making",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 21600,
+    "yieldQuantity": 1,
+    "xpReward": 1125,
+    "branchXpReward": 620,
+    "materials": [
+      {
+        "id": "crafting-item-celestial-heart-gem",
+        "name": "Celestial Heart Gem",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-eternal-artisan-core",
+        "name": "Eternal Artisan Core",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-celestial-heirloom",
+        "name": "Celestial Heirloom",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-small-fishing-net",
+    "name": "Small Fishing Net",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [
+      "Weaving Frame"
+    ],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 80,
+    "materials": [
+      {
+        "id": "crafting-item-plant-fiber-cord",
+        "name": "Plant Fiber Cord",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-wooden-handle",
+        "name": "Wooden Handle",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-small-fishing-net",
+        "name": "Small Fishing Net",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-basic-fishing-rod",
+    "name": "Basic Fishing Rod",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "air": 1,
+      "mind": 1
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 2400,
+    "yieldQuantity": 1,
+    "xpReward": 180,
+    "branchXpReward": 100,
+    "materials": [
+      {
+        "id": "crafting-item-fishing-line",
+        "name": "Fishing Line",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-treated-timber",
+        "name": "Treated Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-basic-fishing-rod",
+        "name": "Basic Fishing Rod",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-fly-fishing-rod",
+    "name": "Fly Fishing Rod",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 40,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "air": 2
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 3300,
+    "yieldQuantity": 1,
+    "xpReward": 225,
+    "branchXpReward": 125,
+    "materials": [
+      {
+        "id": "crafting-item-feathers",
+        "name": "Feathers",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-fishing-line",
+        "name": "Fishing Line",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-treated-timber",
+        "name": "Treated Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-fly-fishing-rod",
+        "name": "Fly Fishing Rod",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-lobster-pot",
+    "name": "Lobster Pot",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "water": 2,
+      "fire": 1
+    },
+    "equipment": [
+      "Crafting Bench"
+    ],
+    "durationSeconds": 4200,
+    "yieldQuantity": 1,
+    "xpReward": 275,
+    "branchXpReward": 150,
+    "materials": [
+      {
+        "id": "crafting-item-binding-rope",
+        "name": "Binding Rope",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-iron-fittings",
+        "name": "Iron Fittings",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-lobster-pot",
+        "name": "Lobster Pot",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-reinforced-fishing-net",
+    "name": "Reinforced Fishing Net",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 50,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "water": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Weaving Frame"
+    ],
+    "durationSeconds": 5100,
+    "yieldQuantity": 1,
+    "xpReward": 320,
+    "branchXpReward": 175,
+    "materials": [
+      {
+        "id": "crafting-item-reinforced-fiber",
+        "name": "Reinforced Fiber",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-steel-fittings",
+        "name": "Steel Fittings",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-reinforced-fishing-net",
+        "name": "Reinforced Fishing Net",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-pearl-diving-net",
+    "name": "Pearl Diving Net",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "water": 3,
+      "nature": 1
+    },
+    "equipment": [
+      "Master Weaving Frame"
+    ],
+    "durationSeconds": 6600,
+    "yieldQuantity": 1,
+    "xpReward": 405,
+    "branchXpReward": 225,
+    "materials": [
+      {
+        "id": "crafting-item-deep-sea-fiber",
+        "name": "Deep-Sea Fiber",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-polished-coral",
+        "name": "Polished Coral",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-pearl-diving-net",
+        "name": "Pearl Diving Net",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-deep-sea-rod",
+    "name": "Deep Sea Rod",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "nature": 2,
+      "death": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 9000,
+    "yieldQuantity": 1,
+    "xpReward": 525,
+    "branchXpReward": 290,
+    "materials": [
+      {
+        "id": "crafting-item-fishing-line",
+        "name": "Fishing Line",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-rare-gem-setting",
+        "name": "Rare Gem Setting",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-deep-sea-rod",
+        "name": "Deep Sea Rod",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-abyssal-net",
+    "name": "Abyssal Net",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "death": 2,
+      "blood": 1
+    },
+    "equipment": [
+      "Master Weaving Frame"
+    ],
+    "durationSeconds": 12000,
+    "yieldQuantity": 1,
+    "xpReward": 675,
+    "branchXpReward": 370,
+    "materials": [
+      {
+        "id": "crafting-item-abyssal-weave",
+        "name": "Abyssal Weave",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-masterwork-housing",
+        "name": "Masterwork Housing",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-abyssal-net",
+        "name": "Abyssal Net",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-master-salvage-net",
+    "name": "Master Salvage Net",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 1
+    },
+    "equipment": [
+      "Master Weaving Frame"
+    ],
+    "durationSeconds": 15600,
+    "yieldQuantity": 1,
+    "xpReward": 850,
+    "branchXpReward": 470,
+    "materials": [
+      {
+        "id": "crafting-item-abyssal-weave",
+        "name": "Abyssal Weave",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-ancient-rune-socket",
+        "name": "Ancient Rune Socket",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-master-salvage-net",
+        "name": "Master Salvage Net",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-legendary-ocean-tackle",
+    "name": "Legendary Ocean Tackle",
+    "category": "utility",
+    "specializationId": "utility-crafting",
+    "branchName": "Utility Crafting",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "soul": 2,
+      "blood": 3
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 23400,
+    "yieldQuantity": 1,
+    "xpReward": 1205,
+    "branchXpReward": 665,
+    "materials": [
+      {
+        "id": "crafting-item-abyssal-weave",
+        "name": "Abyssal Weave",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-eternal-artisan-core",
+        "name": "Eternal Artisan Core",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-legendary-ocean-tackle",
+        "name": "Legendary Ocean Tackle",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": false
+  },
+  {
+    "id": "craft-shell-ornament",
+    "name": "Shell Ornament",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 30,
+    "requiredBranchLevel": 1,
+    "runes": {
+      "water": 1
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 1800,
+    "yieldQuantity": 1,
+    "xpReward": 145,
+    "branchXpReward": 80,
+    "materials": [
+      {
+        "id": "crafting-item-binding-rope",
+        "name": "Binding Rope",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-common-shell",
+        "name": "Common Shell",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-shell-ornament",
+        "name": "Shell Ornament",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-pearl-display-box",
+    "name": "Pearl Display Box",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 35,
+    "requiredBranchLevel": 10,
+    "runes": {
+      "mind": 1,
+      "water": 1
+    },
+    "equipment": [
+      "Crafting Bench"
+    ],
+    "durationSeconds": 2700,
+    "yieldQuantity": 1,
+    "xpReward": 190,
+    "branchXpReward": 105,
+    "materials": [
+      {
+        "id": "crafting-item-freshwater-pearl",
+        "name": "Freshwater Pearl",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-treated-timber",
+        "name": "Treated Timber",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-pearl-display-box",
+        "name": "Pearl Display Box",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-coral-sculpture",
+    "name": "Coral Sculpture",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 45,
+    "requiredBranchLevel": 20,
+    "runes": {
+      "nature": 2
+    },
+    "equipment": [
+      "Carving Knife"
+    ],
+    "durationSeconds": 3900,
+    "yieldQuantity": 1,
+    "xpReward": 260,
+    "branchXpReward": 145,
+    "materials": [
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-polished-coral",
+        "name": "Polished Coral",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-coral-sculpture",
+        "name": "Coral Sculpture",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-trophy-fish-plaque",
+    "name": "Trophy Fish Plaque",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 55,
+    "requiredBranchLevel": 30,
+    "runes": {
+      "nature": 2,
+      "water": 1
+    },
+    "equipment": [
+      "Crafting Bench"
+    ],
+    "durationSeconds": 5100,
+    "yieldQuantity": 1,
+    "xpReward": 330,
+    "branchXpReward": 180,
+    "materials": [
+      {
+        "id": "crafting-item-treated-timber",
+        "name": "Treated Timber",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-trophy-trout",
+        "name": "Trophy Trout",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-trophy-fish-plaque",
+        "name": "Trophy Fish Plaque",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-golden-carp-display",
+    "name": "Golden Carp Display",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 60,
+    "requiredBranchLevel": 40,
+    "runes": {
+      "fire": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Crafting Bench"
+    ],
+    "durationSeconds": 6600,
+    "yieldQuantity": 1,
+    "xpReward": 405,
+    "branchXpReward": 225,
+    "materials": [
+      {
+        "id": "crafting-item-gold-bar",
+        "name": "Gold Bar",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-golden-carp",
+        "name": "Golden Carp",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-golden-carp-display",
+        "name": "Golden Carp Display",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-sunken-relic-stand",
+    "name": "Sunken Relic Stand",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 70,
+    "requiredBranchLevel": 50,
+    "runes": {
+      "death": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 8700,
+    "yieldQuantity": 1,
+    "xpReward": 515,
+    "branchXpReward": 285,
+    "materials": [
+      {
+        "id": "crafting-item-rare-timber",
+        "name": "Rare Timber",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-sunken-relic",
+        "name": "Sunken Relic",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-sunken-relic-stand",
+        "name": "Sunken Relic Stand",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-ancient-manta-display",
+    "name": "Ancient Manta Display",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 80,
+    "requiredBranchLevel": 65,
+    "runes": {
+      "blood": 2,
+      "nature": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 11400,
+    "yieldQuantity": 1,
+    "xpReward": 650,
+    "branchXpReward": 360,
+    "materials": [
+      {
+        "id": "crafting-item-ancient-manta-ray",
+        "name": "Ancient Manta Ray",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-masterwork-housing",
+        "name": "Masterwork Housing",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-ancient-manta-display",
+        "name": "Ancient Manta Display",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-royal-ocean-diorama",
+    "name": "Royal Ocean Diorama",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 90,
+    "requiredBranchLevel": 75,
+    "runes": {
+      "blood": 2,
+      "death": 1
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 14400,
+    "yieldQuantity": 1,
+    "xpReward": 795,
+    "branchXpReward": 435,
+    "materials": [
+      {
+        "id": "crafting-item-black-pearl",
+        "name": "Black Pearl",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-polished-coral",
+        "name": "Polished Coral",
+        "quantity": 2
+      },
+      {
+        "id": "crafting-item-royal-seafood-crate",
+        "name": "Royal Seafood Crate",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-royal-ocean-diorama",
+        "name": "Royal Ocean Diorama",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-leviathan-trophy-monument",
+    "name": "Leviathan Trophy Monument",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 95,
+    "requiredBranchLevel": 90,
+    "runes": {
+      "blood": 2,
+      "soul": 2
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 19200,
+    "yieldQuantity": 1,
+    "xpReward": 1015,
+    "branchXpReward": 560,
+    "materials": [
+      {
+        "id": "crafting-item-leviathan",
+        "name": "Leviathan",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-starforged-ingot",
+        "name": "Starforged Ingot",
+        "quantity": 2
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-leviathan-trophy-monument",
+        "name": "Leviathan Trophy Monument",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  },
+  {
+    "id": "craft-mythic-ocean-gallery-piece",
+    "name": "Mythic Ocean Gallery Piece",
+    "category": "decorative",
+    "specializationId": "decorative-collectibles",
+    "branchName": "Decorative Collectibles",
+    "requiredLevel": 99,
+    "requiredBranchLevel": 99,
+    "runes": {
+      "blood": 3,
+      "soul": 2
+    },
+    "equipment": [
+      "Master Crafting Bench"
+    ],
+    "durationSeconds": 27000,
+    "yieldQuantity": 1,
+    "xpReward": 1365,
+    "branchXpReward": 750,
+    "materials": [
+      {
+        "id": "crafting-item-eternal-artisan-core",
+        "name": "Eternal Artisan Core",
+        "quantity": 1
+      },
+      {
+        "id": "crafting-item-mythical-ocean-guardian",
+        "name": "Mythical Ocean Guardian",
+        "quantity": 1
+      }
+    ],
+    "outputs": [
+      {
+        "id": "crafting-item-mythic-ocean-gallery-piece",
+        "name": "Mythic Ocean Gallery Piece",
+        "quantity": 1
+      }
+    ],
+    "requiresConsumptionConfirmation": true
+  }
+]
