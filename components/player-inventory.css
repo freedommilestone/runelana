@@ -1,6 +1,6 @@
 /* Inventory reference: 1536 × 1024, 847px item panel + 382px details. */
 .g-shell.g-inventory-open{min-height:100dvh;background:#161512;isolation:isolate;padding-bottom:0}
-.g-shell.g-inventory-open>.g-backdrop,.g-shell.g-inventory-open>.g-chat,.g-shell.g-inventory-open>.g-right{display:none}
+.g-shell.g-inventory-open>.g-chat,.g-shell.g-inventory-open>.g-right{display:none}
 .g-shell .pi-workspace{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,847fr) minmax(0,382fr);gap:6px;margin:10px 5px 0 296px;color:#e9e1d1;font-family:Arial,sans-serif;order:2}
 .pi-main,.pi-details{min-width:0;position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% 40%,#302e27,#24221c);min-height:893px}
 .pi-frame{position:absolute;inset:0;pointer-events:none;z-index:2;display:grid;grid-template-columns:var(--frame-edge) minmax(0,1fr) var(--frame-edge);grid-template-rows:var(--frame-edge) minmax(0,1fr) var(--frame-edge)}

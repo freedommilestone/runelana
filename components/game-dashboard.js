@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import WalletProfile from './wallet-profile';
 import CharacterProfile from './character-profile';
 import CombatPanel from './combat-panel';
@@ -80,7 +79,6 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   async function cancel(){if(await profile.act('cancel'))log('Activity cancelled. Spent crafting supplies refunded.');}
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':section==='Inventory'?'g-inventory-open':''}`}>
-    <div className="g-backdrop"><Image src="/assets/play-harbor.png" alt="" fill sizes="(max-width: 700px) 150vh, (max-width: 1180px) 1650px, 100vw" quality={95} preload/></div>
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
     <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
     {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
