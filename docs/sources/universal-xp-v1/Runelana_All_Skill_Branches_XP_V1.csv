@@ -1,0 +1,3169 @@
+skill,track,level,total_xp,xp_to_next,unlocked_at_parent_level,curve
+Fishing,Overall,1,0,15,1,Profession
+Fishing,Overall,2,15,16,1,Profession
+Fishing,Overall,3,31,17,1,Profession
+Fishing,Overall,4,48,19,1,Profession
+Fishing,Overall,5,67,20,1,Profession
+Fishing,Overall,6,87,22,1,Profession
+Fishing,Overall,7,109,23,1,Profession
+Fishing,Overall,8,132,25,1,Profession
+Fishing,Overall,9,157,27,1,Profession
+Fishing,Overall,10,184,29,1,Profession
+Fishing,Overall,11,213,31,1,Profession
+Fishing,Overall,12,244,33,1,Profession
+Fishing,Overall,13,277,36,1,Profession
+Fishing,Overall,14,313,38,1,Profession
+Fishing,Overall,15,351,41,1,Profession
+Fishing,Overall,16,392,44,1,Profession
+Fishing,Overall,17,436,48,1,Profession
+Fishing,Overall,18,484,51,1,Profession
+Fishing,Overall,19,535,55,1,Profession
+Fishing,Overall,20,590,59,1,Profession
+Fishing,Overall,21,649,64,1,Profession
+Fishing,Overall,22,713,68,1,Profession
+Fishing,Overall,23,781,74,1,Profession
+Fishing,Overall,24,855,79,1,Profession
+Fishing,Overall,25,934,85,1,Profession
+Fishing,Overall,26,1019,91,1,Profession
+Fishing,Overall,27,1110,98,1,Profession
+Fishing,Overall,28,1208,106,1,Profession
+Fishing,Overall,29,1314,114,1,Profession
+Fishing,Overall,30,1428,122,1,Profession
+Fishing,Overall,31,1550,131,1,Profession
+Fishing,Overall,32,1681,141,1,Profession
+Fishing,Overall,33,1822,152,1,Profession
+Fishing,Overall,34,1974,163,1,Profession
+Fishing,Overall,35,2137,175,1,Profession
+Fishing,Overall,36,2312,189,1,Profession
+Fishing,Overall,37,2501,203,1,Profession
+Fishing,Overall,38,2704,218,1,Profession
+Fishing,Overall,39,2922,234,1,Profession
+Fishing,Overall,40,3156,252,1,Profession
+Fishing,Overall,41,3408,271,1,Profession
+Fishing,Overall,42,3679,291,1,Profession
+Fishing,Overall,43,3970,313,1,Profession
+Fishing,Overall,44,4283,336,1,Profession
+Fishing,Overall,45,4619,361,1,Profession
+Fishing,Overall,46,4980,389,1,Profession
+Fishing,Overall,47,5369,418,1,Profession
+Fishing,Overall,48,5787,449,1,Profession
+Fishing,Overall,49,6236,483,1,Profession
+Fishing,Overall,50,6719,519,1,Profession
+Fishing,Overall,51,7238,558,1,Profession
+Fishing,Overall,52,7796,600,1,Profession
+Fishing,Overall,53,8396,645,1,Profession
+Fishing,Overall,54,9041,693,1,Profession
+Fishing,Overall,55,9734,745,1,Profession
+Fishing,Overall,56,10479,801,1,Profession
+Fishing,Overall,57,11280,861,1,Profession
+Fishing,Overall,58,12141,925,1,Profession
+Fishing,Overall,59,13066,995,1,Profession
+Fishing,Overall,60,14061,1070,1,Profession
+Fishing,Overall,61,15131,1150,1,Profession
+Fishing,Overall,62,16281,1236,1,Profession
+Fishing,Overall,63,17517,1329,1,Profession
+Fishing,Overall,64,18846,1428,1,Profession
+Fishing,Overall,65,20274,1535,1,Profession
+Fishing,Overall,66,21809,1651,1,Profession
+Fishing,Overall,67,23460,1774,1,Profession
+Fishing,Overall,68,25234,1907,1,Profession
+Fishing,Overall,69,27141,2051,1,Profession
+Fishing,Overall,70,29192,2204,1,Profession
+Fishing,Overall,71,31396,2370,1,Profession
+Fishing,Overall,72,33766,2547,1,Profession
+Fishing,Overall,73,36313,2738,1,Profession
+Fishing,Overall,74,39051,2944,1,Profession
+Fishing,Overall,75,41995,3165,1,Profession
+Fishing,Overall,76,45160,3402,1,Profession
+Fishing,Overall,77,48562,3657,1,Profession
+Fishing,Overall,78,52219,3931,1,Profession
+Fishing,Overall,79,56150,4226,1,Profession
+Fishing,Overall,80,60376,4543,1,Profession
+Fishing,Overall,81,64919,4884,1,Profession
+Fishing,Overall,82,69803,5250,1,Profession
+Fishing,Overall,83,75053,5644,1,Profession
+Fishing,Overall,84,80697,6067,1,Profession
+Fishing,Overall,85,86764,6522,1,Profession
+Fishing,Overall,86,93286,7011,1,Profession
+Fishing,Overall,87,100297,7537,1,Profession
+Fishing,Overall,88,107834,8103,1,Profession
+Fishing,Overall,89,115937,8710,1,Profession
+Fishing,Overall,90,124647,9364,1,Profession
+Fishing,Overall,91,134011,10066,1,Profession
+Fishing,Overall,92,144077,10821,1,Profession
+Fishing,Overall,93,154898,11632,1,Profession
+Fishing,Overall,94,166530,12505,1,Profession
+Fishing,Overall,95,179035,13443,1,Profession
+Fishing,Overall,96,192478,14451,1,Profession
+Fishing,Overall,97,206929,15535,1,Profession
+Fishing,Overall,98,222464,16700,1,Profession
+Fishing,Overall,99,239164,,1,Profession
+Fishing,Commercial Fisher,1,0,4,10,Specialization
+Fishing,Commercial Fisher,2,4,5,10,Specialization
+Fishing,Commercial Fisher,3,9,6,10,Specialization
+Fishing,Commercial Fisher,4,15,7,10,Specialization
+Fishing,Commercial Fisher,5,22,10,10,Specialization
+Fishing,Commercial Fisher,6,32,12,10,Specialization
+Fishing,Commercial Fisher,7,44,15,10,Specialization
+Fishing,Commercial Fisher,8,59,18,10,Specialization
+Fishing,Commercial Fisher,9,77,23,10,Specialization
+Fishing,Commercial Fisher,10,100,9,10,Specialization
+Fishing,Commercial Fisher,11,109,10,10,Specialization
+Fishing,Commercial Fisher,12,119,12,10,Specialization
+Fishing,Commercial Fisher,13,131,13,10,Specialization
+Fishing,Commercial Fisher,14,144,15,10,Specialization
+Fishing,Commercial Fisher,15,159,18,10,Specialization
+Fishing,Commercial Fisher,16,177,20,10,Specialization
+Fishing,Commercial Fisher,17,197,22,10,Specialization
+Fishing,Commercial Fisher,18,219,26,10,Specialization
+Fishing,Commercial Fisher,19,245,30,10,Specialization
+Fishing,Commercial Fisher,20,275,34,10,Specialization
+Fishing,Commercial Fisher,21,309,38,10,Specialization
+Fishing,Commercial Fisher,22,347,45,10,Specialization
+Fishing,Commercial Fisher,23,392,50,10,Specialization
+Fishing,Commercial Fisher,24,442,58,10,Specialization
+Fishing,Commercial Fisher,25,500,39,10,Specialization
+Fishing,Commercial Fisher,26,539,42,10,Specialization
+Fishing,Commercial Fisher,27,581,46,10,Specialization
+Fishing,Commercial Fisher,28,627,50,10,Specialization
+Fishing,Commercial Fisher,29,677,54,10,Specialization
+Fishing,Commercial Fisher,30,731,58,10,Specialization
+Fishing,Commercial Fisher,31,789,63,10,Specialization
+Fishing,Commercial Fisher,32,852,69,10,Specialization
+Fishing,Commercial Fisher,33,921,74,10,Specialization
+Fishing,Commercial Fisher,34,995,80,10,Specialization
+Fishing,Commercial Fisher,35,1075,87,10,Specialization
+Fishing,Commercial Fisher,36,1162,95,10,Specialization
+Fishing,Commercial Fisher,37,1257,102,10,Specialization
+Fishing,Commercial Fisher,38,1359,111,10,Specialization
+Fishing,Commercial Fisher,39,1470,119,10,Specialization
+Fishing,Commercial Fisher,40,1589,130,10,Specialization
+Fishing,Commercial Fisher,41,1719,141,10,Specialization
+Fishing,Commercial Fisher,42,1860,152,10,Specialization
+Fishing,Commercial Fisher,43,2012,165,10,Specialization
+Fishing,Commercial Fisher,44,2177,179,10,Specialization
+Fishing,Commercial Fisher,45,2356,194,10,Specialization
+Fishing,Commercial Fisher,46,2550,210,10,Specialization
+Fishing,Commercial Fisher,47,2760,227,10,Specialization
+Fishing,Commercial Fisher,48,2987,246,10,Specialization
+Fishing,Commercial Fisher,49,3233,267,10,Specialization
+Fishing,Commercial Fisher,50,3500,241,10,Specialization
+Fishing,Commercial Fisher,51,3741,261,10,Specialization
+Fishing,Commercial Fisher,52,4002,283,10,Specialization
+Fishing,Commercial Fisher,53,4285,307,10,Specialization
+Fishing,Commercial Fisher,54,4592,332,10,Specialization
+Fishing,Commercial Fisher,55,4924,360,10,Specialization
+Fishing,Commercial Fisher,56,5284,390,10,Specialization
+Fishing,Commercial Fisher,57,5674,422,10,Specialization
+Fishing,Commercial Fisher,58,6096,457,10,Specialization
+Fishing,Commercial Fisher,59,6553,496,10,Specialization
+Fishing,Commercial Fisher,60,7049,536,10,Specialization
+Fishing,Commercial Fisher,61,7585,582,10,Specialization
+Fishing,Commercial Fisher,62,8167,630,10,Specialization
+Fishing,Commercial Fisher,63,8797,682,10,Specialization
+Fishing,Commercial Fisher,64,9479,739,10,Specialization
+Fishing,Commercial Fisher,65,10218,801,10,Specialization
+Fishing,Commercial Fisher,66,11019,867,10,Specialization
+Fishing,Commercial Fisher,67,11886,940,10,Specialization
+Fishing,Commercial Fisher,68,12826,1018,10,Specialization
+Fishing,Commercial Fisher,69,13844,1102,10,Specialization
+Fishing,Commercial Fisher,70,14946,1195,10,Specialization
+Fishing,Commercial Fisher,71,16141,1294,10,Specialization
+Fishing,Commercial Fisher,72,17435,1402,10,Specialization
+Fishing,Commercial Fisher,73,18837,1518,10,Specialization
+Fishing,Commercial Fisher,74,20355,1645,10,Specialization
+Fishing,Commercial Fisher,75,22000,960,10,Specialization
+Fishing,Commercial Fisher,76,22960,1097,10,Specialization
+Fishing,Commercial Fisher,77,24057,1253,10,Specialization
+Fishing,Commercial Fisher,78,25310,1432,10,Specialization
+Fishing,Commercial Fisher,79,26742,1636,10,Specialization
+Fishing,Commercial Fisher,80,28378,1870,10,Specialization
+Fishing,Commercial Fisher,81,30248,2137,10,Specialization
+Fishing,Commercial Fisher,82,32385,2441,10,Specialization
+Fishing,Commercial Fisher,83,34826,2789,10,Specialization
+Fishing,Commercial Fisher,84,37615,3187,10,Specialization
+Fishing,Commercial Fisher,85,40802,3642,10,Specialization
+Fishing,Commercial Fisher,86,44444,4161,10,Specialization
+Fishing,Commercial Fisher,87,48605,4755,10,Specialization
+Fishing,Commercial Fisher,88,53360,5432,10,Specialization
+Fishing,Commercial Fisher,89,58792,6208,10,Specialization
+Fishing,Commercial Fisher,90,65000,2337,10,Specialization
+Fishing,Commercial Fisher,91,67337,2918,10,Specialization
+Fishing,Commercial Fisher,92,70255,3645,10,Specialization
+Fishing,Commercial Fisher,93,73900,4552,10,Specialization
+Fishing,Commercial Fisher,94,78452,5684,10,Specialization
+Fishing,Commercial Fisher,95,84136,7099,10,Specialization
+Fishing,Commercial Fisher,96,91235,8866,10,Specialization
+Fishing,Commercial Fisher,97,100101,11072,10,Specialization
+Fishing,Commercial Fisher,98,111173,13827,10,Specialization
+Fishing,Commercial Fisher,99,125000,,10,Specialization
+Fishing,Treasure Fisher,1,0,4,30,Specialization
+Fishing,Treasure Fisher,2,4,5,30,Specialization
+Fishing,Treasure Fisher,3,9,6,30,Specialization
+Fishing,Treasure Fisher,4,15,7,30,Specialization
+Fishing,Treasure Fisher,5,22,10,30,Specialization
+Fishing,Treasure Fisher,6,32,12,30,Specialization
+Fishing,Treasure Fisher,7,44,15,30,Specialization
+Fishing,Treasure Fisher,8,59,18,30,Specialization
+Fishing,Treasure Fisher,9,77,23,30,Specialization
+Fishing,Treasure Fisher,10,100,9,30,Specialization
+Fishing,Treasure Fisher,11,109,10,30,Specialization
+Fishing,Treasure Fisher,12,119,12,30,Specialization
+Fishing,Treasure Fisher,13,131,13,30,Specialization
+Fishing,Treasure Fisher,14,144,15,30,Specialization
+Fishing,Treasure Fisher,15,159,18,30,Specialization
+Fishing,Treasure Fisher,16,177,20,30,Specialization
+Fishing,Treasure Fisher,17,197,22,30,Specialization
+Fishing,Treasure Fisher,18,219,26,30,Specialization
+Fishing,Treasure Fisher,19,245,30,30,Specialization
+Fishing,Treasure Fisher,20,275,34,30,Specialization
+Fishing,Treasure Fisher,21,309,38,30,Specialization
+Fishing,Treasure Fisher,22,347,45,30,Specialization
+Fishing,Treasure Fisher,23,392,50,30,Specialization
+Fishing,Treasure Fisher,24,442,58,30,Specialization
+Fishing,Treasure Fisher,25,500,39,30,Specialization
+Fishing,Treasure Fisher,26,539,42,30,Specialization
+Fishing,Treasure Fisher,27,581,46,30,Specialization
+Fishing,Treasure Fisher,28,627,50,30,Specialization
+Fishing,Treasure Fisher,29,677,54,30,Specialization
+Fishing,Treasure Fisher,30,731,58,30,Specialization
+Fishing,Treasure Fisher,31,789,63,30,Specialization
+Fishing,Treasure Fisher,32,852,69,30,Specialization
+Fishing,Treasure Fisher,33,921,74,30,Specialization
+Fishing,Treasure Fisher,34,995,80,30,Specialization
+Fishing,Treasure Fisher,35,1075,87,30,Specialization
+Fishing,Treasure Fisher,36,1162,95,30,Specialization
+Fishing,Treasure Fisher,37,1257,102,30,Specialization
+Fishing,Treasure Fisher,38,1359,111,30,Specialization
+Fishing,Treasure Fisher,39,1470,119,30,Specialization
+Fishing,Treasure Fisher,40,1589,130,30,Specialization
+Fishing,Treasure Fisher,41,1719,141,30,Specialization
+Fishing,Treasure Fisher,42,1860,152,30,Specialization
+Fishing,Treasure Fisher,43,2012,165,30,Specialization
+Fishing,Treasure Fisher,44,2177,179,30,Specialization
+Fishing,Treasure Fisher,45,2356,194,30,Specialization
+Fishing,Treasure Fisher,46,2550,210,30,Specialization
+Fishing,Treasure Fisher,47,2760,227,30,Specialization
+Fishing,Treasure Fisher,48,2987,246,30,Specialization
+Fishing,Treasure Fisher,49,3233,267,30,Specialization
+Fishing,Treasure Fisher,50,3500,241,30,Specialization
+Fishing,Treasure Fisher,51,3741,261,30,Specialization
+Fishing,Treasure Fisher,52,4002,283,30,Specialization
+Fishing,Treasure Fisher,53,4285,307,30,Specialization
+Fishing,Treasure Fisher,54,4592,332,30,Specialization
+Fishing,Treasure Fisher,55,4924,360,30,Specialization
+Fishing,Treasure Fisher,56,5284,390,30,Specialization
+Fishing,Treasure Fisher,57,5674,422,30,Specialization
+Fishing,Treasure Fisher,58,6096,457,30,Specialization
+Fishing,Treasure Fisher,59,6553,496,30,Specialization
+Fishing,Treasure Fisher,60,7049,536,30,Specialization
+Fishing,Treasure Fisher,61,7585,582,30,Specialization
+Fishing,Treasure Fisher,62,8167,630,30,Specialization
+Fishing,Treasure Fisher,63,8797,682,30,Specialization
+Fishing,Treasure Fisher,64,9479,739,30,Specialization
+Fishing,Treasure Fisher,65,10218,801,30,Specialization
+Fishing,Treasure Fisher,66,11019,867,30,Specialization
+Fishing,Treasure Fisher,67,11886,940,30,Specialization
+Fishing,Treasure Fisher,68,12826,1018,30,Specialization
+Fishing,Treasure Fisher,69,13844,1102,30,Specialization
+Fishing,Treasure Fisher,70,14946,1195,30,Specialization
+Fishing,Treasure Fisher,71,16141,1294,30,Specialization
+Fishing,Treasure Fisher,72,17435,1402,30,Specialization
+Fishing,Treasure Fisher,73,18837,1518,30,Specialization
+Fishing,Treasure Fisher,74,20355,1645,30,Specialization
+Fishing,Treasure Fisher,75,22000,960,30,Specialization
+Fishing,Treasure Fisher,76,22960,1097,30,Specialization
+Fishing,Treasure Fisher,77,24057,1253,30,Specialization
+Fishing,Treasure Fisher,78,25310,1432,30,Specialization
+Fishing,Treasure Fisher,79,26742,1636,30,Specialization
+Fishing,Treasure Fisher,80,28378,1870,30,Specialization
+Fishing,Treasure Fisher,81,30248,2137,30,Specialization
+Fishing,Treasure Fisher,82,32385,2441,30,Specialization
+Fishing,Treasure Fisher,83,34826,2789,30,Specialization
+Fishing,Treasure Fisher,84,37615,3187,30,Specialization
+Fishing,Treasure Fisher,85,40802,3642,30,Specialization
+Fishing,Treasure Fisher,86,44444,4161,30,Specialization
+Fishing,Treasure Fisher,87,48605,4755,30,Specialization
+Fishing,Treasure Fisher,88,53360,5432,30,Specialization
+Fishing,Treasure Fisher,89,58792,6208,30,Specialization
+Fishing,Treasure Fisher,90,65000,2337,30,Specialization
+Fishing,Treasure Fisher,91,67337,2918,30,Specialization
+Fishing,Treasure Fisher,92,70255,3645,30,Specialization
+Fishing,Treasure Fisher,93,73900,4552,30,Specialization
+Fishing,Treasure Fisher,94,78452,5684,30,Specialization
+Fishing,Treasure Fisher,95,84136,7099,30,Specialization
+Fishing,Treasure Fisher,96,91235,8866,30,Specialization
+Fishing,Treasure Fisher,97,100101,11072,30,Specialization
+Fishing,Treasure Fisher,98,111173,13827,30,Specialization
+Fishing,Treasure Fisher,99,125000,,30,Specialization
+Fishing,Trophy Fisher,1,0,4,30,Specialization
+Fishing,Trophy Fisher,2,4,5,30,Specialization
+Fishing,Trophy Fisher,3,9,6,30,Specialization
+Fishing,Trophy Fisher,4,15,7,30,Specialization
+Fishing,Trophy Fisher,5,22,10,30,Specialization
+Fishing,Trophy Fisher,6,32,12,30,Specialization
+Fishing,Trophy Fisher,7,44,15,30,Specialization
+Fishing,Trophy Fisher,8,59,18,30,Specialization
+Fishing,Trophy Fisher,9,77,23,30,Specialization
+Fishing,Trophy Fisher,10,100,9,30,Specialization
+Fishing,Trophy Fisher,11,109,10,30,Specialization
+Fishing,Trophy Fisher,12,119,12,30,Specialization
+Fishing,Trophy Fisher,13,131,13,30,Specialization
+Fishing,Trophy Fisher,14,144,15,30,Specialization
+Fishing,Trophy Fisher,15,159,18,30,Specialization
+Fishing,Trophy Fisher,16,177,20,30,Specialization
+Fishing,Trophy Fisher,17,197,22,30,Specialization
+Fishing,Trophy Fisher,18,219,26,30,Specialization
+Fishing,Trophy Fisher,19,245,30,30,Specialization
+Fishing,Trophy Fisher,20,275,34,30,Specialization
+Fishing,Trophy Fisher,21,309,38,30,Specialization
+Fishing,Trophy Fisher,22,347,45,30,Specialization
+Fishing,Trophy Fisher,23,392,50,30,Specialization
+Fishing,Trophy Fisher,24,442,58,30,Specialization
+Fishing,Trophy Fisher,25,500,39,30,Specialization
+Fishing,Trophy Fisher,26,539,42,30,Specialization
+Fishing,Trophy Fisher,27,581,46,30,Specialization
+Fishing,Trophy Fisher,28,627,50,30,Specialization
+Fishing,Trophy Fisher,29,677,54,30,Specialization
+Fishing,Trophy Fisher,30,731,58,30,Specialization
+Fishing,Trophy Fisher,31,789,63,30,Specialization
+Fishing,Trophy Fisher,32,852,69,30,Specialization
+Fishing,Trophy Fisher,33,921,74,30,Specialization
+Fishing,Trophy Fisher,34,995,80,30,Specialization
+Fishing,Trophy Fisher,35,1075,87,30,Specialization
+Fishing,Trophy Fisher,36,1162,95,30,Specialization
+Fishing,Trophy Fisher,37,1257,102,30,Specialization
+Fishing,Trophy Fisher,38,1359,111,30,Specialization
+Fishing,Trophy Fisher,39,1470,119,30,Specialization
+Fishing,Trophy Fisher,40,1589,130,30,Specialization
+Fishing,Trophy Fisher,41,1719,141,30,Specialization
+Fishing,Trophy Fisher,42,1860,152,30,Specialization
+Fishing,Trophy Fisher,43,2012,165,30,Specialization
+Fishing,Trophy Fisher,44,2177,179,30,Specialization
+Fishing,Trophy Fisher,45,2356,194,30,Specialization
+Fishing,Trophy Fisher,46,2550,210,30,Specialization
+Fishing,Trophy Fisher,47,2760,227,30,Specialization
+Fishing,Trophy Fisher,48,2987,246,30,Specialization
+Fishing,Trophy Fisher,49,3233,267,30,Specialization
+Fishing,Trophy Fisher,50,3500,241,30,Specialization
+Fishing,Trophy Fisher,51,3741,261,30,Specialization
+Fishing,Trophy Fisher,52,4002,283,30,Specialization
+Fishing,Trophy Fisher,53,4285,307,30,Specialization
+Fishing,Trophy Fisher,54,4592,332,30,Specialization
+Fishing,Trophy Fisher,55,4924,360,30,Specialization
+Fishing,Trophy Fisher,56,5284,390,30,Specialization
+Fishing,Trophy Fisher,57,5674,422,30,Specialization
+Fishing,Trophy Fisher,58,6096,457,30,Specialization
+Fishing,Trophy Fisher,59,6553,496,30,Specialization
+Fishing,Trophy Fisher,60,7049,536,30,Specialization
+Fishing,Trophy Fisher,61,7585,582,30,Specialization
+Fishing,Trophy Fisher,62,8167,630,30,Specialization
+Fishing,Trophy Fisher,63,8797,682,30,Specialization
+Fishing,Trophy Fisher,64,9479,739,30,Specialization
+Fishing,Trophy Fisher,65,10218,801,30,Specialization
+Fishing,Trophy Fisher,66,11019,867,30,Specialization
+Fishing,Trophy Fisher,67,11886,940,30,Specialization
+Fishing,Trophy Fisher,68,12826,1018,30,Specialization
+Fishing,Trophy Fisher,69,13844,1102,30,Specialization
+Fishing,Trophy Fisher,70,14946,1195,30,Specialization
+Fishing,Trophy Fisher,71,16141,1294,30,Specialization
+Fishing,Trophy Fisher,72,17435,1402,30,Specialization
+Fishing,Trophy Fisher,73,18837,1518,30,Specialization
+Fishing,Trophy Fisher,74,20355,1645,30,Specialization
+Fishing,Trophy Fisher,75,22000,960,30,Specialization
+Fishing,Trophy Fisher,76,22960,1097,30,Specialization
+Fishing,Trophy Fisher,77,24057,1253,30,Specialization
+Fishing,Trophy Fisher,78,25310,1432,30,Specialization
+Fishing,Trophy Fisher,79,26742,1636,30,Specialization
+Fishing,Trophy Fisher,80,28378,1870,30,Specialization
+Fishing,Trophy Fisher,81,30248,2137,30,Specialization
+Fishing,Trophy Fisher,82,32385,2441,30,Specialization
+Fishing,Trophy Fisher,83,34826,2789,30,Specialization
+Fishing,Trophy Fisher,84,37615,3187,30,Specialization
+Fishing,Trophy Fisher,85,40802,3642,30,Specialization
+Fishing,Trophy Fisher,86,44444,4161,30,Specialization
+Fishing,Trophy Fisher,87,48605,4755,30,Specialization
+Fishing,Trophy Fisher,88,53360,5432,30,Specialization
+Fishing,Trophy Fisher,89,58792,6208,30,Specialization
+Fishing,Trophy Fisher,90,65000,2337,30,Specialization
+Fishing,Trophy Fisher,91,67337,2918,30,Specialization
+Fishing,Trophy Fisher,92,70255,3645,30,Specialization
+Fishing,Trophy Fisher,93,73900,4552,30,Specialization
+Fishing,Trophy Fisher,94,78452,5684,30,Specialization
+Fishing,Trophy Fisher,95,84136,7099,30,Specialization
+Fishing,Trophy Fisher,96,91235,8866,30,Specialization
+Fishing,Trophy Fisher,97,100101,11072,30,Specialization
+Fishing,Trophy Fisher,98,111173,13827,30,Specialization
+Fishing,Trophy Fisher,99,125000,,30,Specialization
+Farming,Overall,1,0,15,1,Profession
+Farming,Overall,2,15,16,1,Profession
+Farming,Overall,3,31,17,1,Profession
+Farming,Overall,4,48,19,1,Profession
+Farming,Overall,5,67,20,1,Profession
+Farming,Overall,6,87,22,1,Profession
+Farming,Overall,7,109,23,1,Profession
+Farming,Overall,8,132,25,1,Profession
+Farming,Overall,9,157,27,1,Profession
+Farming,Overall,10,184,29,1,Profession
+Farming,Overall,11,213,31,1,Profession
+Farming,Overall,12,244,33,1,Profession
+Farming,Overall,13,277,36,1,Profession
+Farming,Overall,14,313,38,1,Profession
+Farming,Overall,15,351,41,1,Profession
+Farming,Overall,16,392,44,1,Profession
+Farming,Overall,17,436,48,1,Profession
+Farming,Overall,18,484,51,1,Profession
+Farming,Overall,19,535,55,1,Profession
+Farming,Overall,20,590,59,1,Profession
+Farming,Overall,21,649,64,1,Profession
+Farming,Overall,22,713,68,1,Profession
+Farming,Overall,23,781,74,1,Profession
+Farming,Overall,24,855,79,1,Profession
+Farming,Overall,25,934,85,1,Profession
+Farming,Overall,26,1019,91,1,Profession
+Farming,Overall,27,1110,98,1,Profession
+Farming,Overall,28,1208,106,1,Profession
+Farming,Overall,29,1314,114,1,Profession
+Farming,Overall,30,1428,122,1,Profession
+Farming,Overall,31,1550,131,1,Profession
+Farming,Overall,32,1681,141,1,Profession
+Farming,Overall,33,1822,152,1,Profession
+Farming,Overall,34,1974,163,1,Profession
+Farming,Overall,35,2137,175,1,Profession
+Farming,Overall,36,2312,189,1,Profession
+Farming,Overall,37,2501,203,1,Profession
+Farming,Overall,38,2704,218,1,Profession
+Farming,Overall,39,2922,234,1,Profession
+Farming,Overall,40,3156,252,1,Profession
+Farming,Overall,41,3408,271,1,Profession
+Farming,Overall,42,3679,291,1,Profession
+Farming,Overall,43,3970,313,1,Profession
+Farming,Overall,44,4283,336,1,Profession
+Farming,Overall,45,4619,361,1,Profession
+Farming,Overall,46,4980,389,1,Profession
+Farming,Overall,47,5369,418,1,Profession
+Farming,Overall,48,5787,449,1,Profession
+Farming,Overall,49,6236,483,1,Profession
+Farming,Overall,50,6719,519,1,Profession
+Farming,Overall,51,7238,558,1,Profession
+Farming,Overall,52,7796,600,1,Profession
+Farming,Overall,53,8396,645,1,Profession
+Farming,Overall,54,9041,693,1,Profession
+Farming,Overall,55,9734,745,1,Profession
+Farming,Overall,56,10479,801,1,Profession
+Farming,Overall,57,11280,861,1,Profession
+Farming,Overall,58,12141,925,1,Profession
+Farming,Overall,59,13066,995,1,Profession
+Farming,Overall,60,14061,1070,1,Profession
+Farming,Overall,61,15131,1150,1,Profession
+Farming,Overall,62,16281,1236,1,Profession
+Farming,Overall,63,17517,1329,1,Profession
+Farming,Overall,64,18846,1428,1,Profession
+Farming,Overall,65,20274,1535,1,Profession
+Farming,Overall,66,21809,1651,1,Profession
+Farming,Overall,67,23460,1774,1,Profession
+Farming,Overall,68,25234,1907,1,Profession
+Farming,Overall,69,27141,2051,1,Profession
+Farming,Overall,70,29192,2204,1,Profession
+Farming,Overall,71,31396,2370,1,Profession
+Farming,Overall,72,33766,2547,1,Profession
+Farming,Overall,73,36313,2738,1,Profession
+Farming,Overall,74,39051,2944,1,Profession
+Farming,Overall,75,41995,3165,1,Profession
+Farming,Overall,76,45160,3402,1,Profession
+Farming,Overall,77,48562,3657,1,Profession
+Farming,Overall,78,52219,3931,1,Profession
+Farming,Overall,79,56150,4226,1,Profession
+Farming,Overall,80,60376,4543,1,Profession
+Farming,Overall,81,64919,4884,1,Profession
+Farming,Overall,82,69803,5250,1,Profession
+Farming,Overall,83,75053,5644,1,Profession
+Farming,Overall,84,80697,6067,1,Profession
+Farming,Overall,85,86764,6522,1,Profession
+Farming,Overall,86,93286,7011,1,Profession
+Farming,Overall,87,100297,7537,1,Profession
+Farming,Overall,88,107834,8103,1,Profession
+Farming,Overall,89,115937,8710,1,Profession
+Farming,Overall,90,124647,9364,1,Profession
+Farming,Overall,91,134011,10066,1,Profession
+Farming,Overall,92,144077,10821,1,Profession
+Farming,Overall,93,154898,11632,1,Profession
+Farming,Overall,94,166530,12505,1,Profession
+Farming,Overall,95,179035,13443,1,Profession
+Farming,Overall,96,192478,14451,1,Profession
+Farming,Overall,97,206929,15535,1,Profession
+Farming,Overall,98,222464,16700,1,Profession
+Farming,Overall,99,239164,,1,Profession
+Farming,Crop Farming,1,0,4,10,Specialization
+Farming,Crop Farming,2,4,5,10,Specialization
+Farming,Crop Farming,3,9,6,10,Specialization
+Farming,Crop Farming,4,15,7,10,Specialization
+Farming,Crop Farming,5,22,10,10,Specialization
+Farming,Crop Farming,6,32,12,10,Specialization
+Farming,Crop Farming,7,44,15,10,Specialization
+Farming,Crop Farming,8,59,18,10,Specialization
+Farming,Crop Farming,9,77,23,10,Specialization
+Farming,Crop Farming,10,100,9,10,Specialization
+Farming,Crop Farming,11,109,10,10,Specialization
+Farming,Crop Farming,12,119,12,10,Specialization
+Farming,Crop Farming,13,131,13,10,Specialization
+Farming,Crop Farming,14,144,15,10,Specialization
+Farming,Crop Farming,15,159,18,10,Specialization
+Farming,Crop Farming,16,177,20,10,Specialization
+Farming,Crop Farming,17,197,22,10,Specialization
+Farming,Crop Farming,18,219,26,10,Specialization
+Farming,Crop Farming,19,245,30,10,Specialization
+Farming,Crop Farming,20,275,34,10,Specialization
+Farming,Crop Farming,21,309,38,10,Specialization
+Farming,Crop Farming,22,347,45,10,Specialization
+Farming,Crop Farming,23,392,50,10,Specialization
+Farming,Crop Farming,24,442,58,10,Specialization
+Farming,Crop Farming,25,500,39,10,Specialization
+Farming,Crop Farming,26,539,42,10,Specialization
+Farming,Crop Farming,27,581,46,10,Specialization
+Farming,Crop Farming,28,627,50,10,Specialization
+Farming,Crop Farming,29,677,54,10,Specialization
+Farming,Crop Farming,30,731,58,10,Specialization
+Farming,Crop Farming,31,789,63,10,Specialization
+Farming,Crop Farming,32,852,69,10,Specialization
+Farming,Crop Farming,33,921,74,10,Specialization
+Farming,Crop Farming,34,995,80,10,Specialization
+Farming,Crop Farming,35,1075,87,10,Specialization
+Farming,Crop Farming,36,1162,95,10,Specialization
+Farming,Crop Farming,37,1257,102,10,Specialization
+Farming,Crop Farming,38,1359,111,10,Specialization
+Farming,Crop Farming,39,1470,119,10,Specialization
+Farming,Crop Farming,40,1589,130,10,Specialization
+Farming,Crop Farming,41,1719,141,10,Specialization
+Farming,Crop Farming,42,1860,152,10,Specialization
+Farming,Crop Farming,43,2012,165,10,Specialization
+Farming,Crop Farming,44,2177,179,10,Specialization
+Farming,Crop Farming,45,2356,194,10,Specialization
+Farming,Crop Farming,46,2550,210,10,Specialization
+Farming,Crop Farming,47,2760,227,10,Specialization
+Farming,Crop Farming,48,2987,246,10,Specialization
+Farming,Crop Farming,49,3233,267,10,Specialization
+Farming,Crop Farming,50,3500,241,10,Specialization
+Farming,Crop Farming,51,3741,261,10,Specialization
+Farming,Crop Farming,52,4002,283,10,Specialization
+Farming,Crop Farming,53,4285,307,10,Specialization
+Farming,Crop Farming,54,4592,332,10,Specialization
+Farming,Crop Farming,55,4924,360,10,Specialization
+Farming,Crop Farming,56,5284,390,10,Specialization
+Farming,Crop Farming,57,5674,422,10,Specialization
+Farming,Crop Farming,58,6096,457,10,Specialization
+Farming,Crop Farming,59,6553,496,10,Specialization
+Farming,Crop Farming,60,7049,536,10,Specialization
+Farming,Crop Farming,61,7585,582,10,Specialization
+Farming,Crop Farming,62,8167,630,10,Specialization
+Farming,Crop Farming,63,8797,682,10,Specialization
+Farming,Crop Farming,64,9479,739,10,Specialization
+Farming,Crop Farming,65,10218,801,10,Specialization
+Farming,Crop Farming,66,11019,867,10,Specialization
+Farming,Crop Farming,67,11886,940,10,Specialization
+Farming,Crop Farming,68,12826,1018,10,Specialization
+Farming,Crop Farming,69,13844,1102,10,Specialization
+Farming,Crop Farming,70,14946,1195,10,Specialization
+Farming,Crop Farming,71,16141,1294,10,Specialization
+Farming,Crop Farming,72,17435,1402,10,Specialization
+Farming,Crop Farming,73,18837,1518,10,Specialization
+Farming,Crop Farming,74,20355,1645,10,Specialization
+Farming,Crop Farming,75,22000,960,10,Specialization
+Farming,Crop Farming,76,22960,1097,10,Specialization
+Farming,Crop Farming,77,24057,1253,10,Specialization
+Farming,Crop Farming,78,25310,1432,10,Specialization
+Farming,Crop Farming,79,26742,1636,10,Specialization
+Farming,Crop Farming,80,28378,1870,10,Specialization
+Farming,Crop Farming,81,30248,2137,10,Specialization
+Farming,Crop Farming,82,32385,2441,10,Specialization
+Farming,Crop Farming,83,34826,2789,10,Specialization
+Farming,Crop Farming,84,37615,3187,10,Specialization
+Farming,Crop Farming,85,40802,3642,10,Specialization
+Farming,Crop Farming,86,44444,4161,10,Specialization
+Farming,Crop Farming,87,48605,4755,10,Specialization
+Farming,Crop Farming,88,53360,5432,10,Specialization
+Farming,Crop Farming,89,58792,6208,10,Specialization
+Farming,Crop Farming,90,65000,2337,10,Specialization
+Farming,Crop Farming,91,67337,2918,10,Specialization
+Farming,Crop Farming,92,70255,3645,10,Specialization
+Farming,Crop Farming,93,73900,4552,10,Specialization
+Farming,Crop Farming,94,78452,5684,10,Specialization
+Farming,Crop Farming,95,84136,7099,10,Specialization
+Farming,Crop Farming,96,91235,8866,10,Specialization
+Farming,Crop Farming,97,100101,11072,10,Specialization
+Farming,Crop Farming,98,111173,13827,10,Specialization
+Farming,Crop Farming,99,125000,,10,Specialization
+Farming,Herbalism,1,0,4,30,Specialization
+Farming,Herbalism,2,4,5,30,Specialization
+Farming,Herbalism,3,9,6,30,Specialization
+Farming,Herbalism,4,15,7,30,Specialization
+Farming,Herbalism,5,22,10,30,Specialization
+Farming,Herbalism,6,32,12,30,Specialization
+Farming,Herbalism,7,44,15,30,Specialization
+Farming,Herbalism,8,59,18,30,Specialization
+Farming,Herbalism,9,77,23,30,Specialization
+Farming,Herbalism,10,100,9,30,Specialization
+Farming,Herbalism,11,109,10,30,Specialization
+Farming,Herbalism,12,119,12,30,Specialization
+Farming,Herbalism,13,131,13,30,Specialization
+Farming,Herbalism,14,144,15,30,Specialization
+Farming,Herbalism,15,159,18,30,Specialization
+Farming,Herbalism,16,177,20,30,Specialization
+Farming,Herbalism,17,197,22,30,Specialization
+Farming,Herbalism,18,219,26,30,Specialization
+Farming,Herbalism,19,245,30,30,Specialization
+Farming,Herbalism,20,275,34,30,Specialization
+Farming,Herbalism,21,309,38,30,Specialization
+Farming,Herbalism,22,347,45,30,Specialization
+Farming,Herbalism,23,392,50,30,Specialization
+Farming,Herbalism,24,442,58,30,Specialization
+Farming,Herbalism,25,500,39,30,Specialization
+Farming,Herbalism,26,539,42,30,Specialization
+Farming,Herbalism,27,581,46,30,Specialization
+Farming,Herbalism,28,627,50,30,Specialization
+Farming,Herbalism,29,677,54,30,Specialization
+Farming,Herbalism,30,731,58,30,Specialization
+Farming,Herbalism,31,789,63,30,Specialization
+Farming,Herbalism,32,852,69,30,Specialization
+Farming,Herbalism,33,921,74,30,Specialization
+Farming,Herbalism,34,995,80,30,Specialization
+Farming,Herbalism,35,1075,87,30,Specialization
+Farming,Herbalism,36,1162,95,30,Specialization
+Farming,Herbalism,37,1257,102,30,Specialization
+Farming,Herbalism,38,1359,111,30,Specialization
+Farming,Herbalism,39,1470,119,30,Specialization
+Farming,Herbalism,40,1589,130,30,Specialization
+Farming,Herbalism,41,1719,141,30,Specialization
+Farming,Herbalism,42,1860,152,30,Specialization
+Farming,Herbalism,43,2012,165,30,Specialization
+Farming,Herbalism,44,2177,179,30,Specialization
+Farming,Herbalism,45,2356,194,30,Specialization
+Farming,Herbalism,46,2550,210,30,Specialization
+Farming,Herbalism,47,2760,227,30,Specialization
+Farming,Herbalism,48,2987,246,30,Specialization
+Farming,Herbalism,49,3233,267,30,Specialization
+Farming,Herbalism,50,3500,241,30,Specialization
+Farming,Herbalism,51,3741,261,30,Specialization
+Farming,Herbalism,52,4002,283,30,Specialization
+Farming,Herbalism,53,4285,307,30,Specialization
+Farming,Herbalism,54,4592,332,30,Specialization
+Farming,Herbalism,55,4924,360,30,Specialization
+Farming,Herbalism,56,5284,390,30,Specialization
+Farming,Herbalism,57,5674,422,30,Specialization
+Farming,Herbalism,58,6096,457,30,Specialization
+Farming,Herbalism,59,6553,496,30,Specialization
+Farming,Herbalism,60,7049,536,30,Specialization
+Farming,Herbalism,61,7585,582,30,Specialization
+Farming,Herbalism,62,8167,630,30,Specialization
+Farming,Herbalism,63,8797,682,30,Specialization
+Farming,Herbalism,64,9479,739,30,Specialization
+Farming,Herbalism,65,10218,801,30,Specialization
+Farming,Herbalism,66,11019,867,30,Specialization
+Farming,Herbalism,67,11886,940,30,Specialization
+Farming,Herbalism,68,12826,1018,30,Specialization
+Farming,Herbalism,69,13844,1102,30,Specialization
+Farming,Herbalism,70,14946,1195,30,Specialization
+Farming,Herbalism,71,16141,1294,30,Specialization
+Farming,Herbalism,72,17435,1402,30,Specialization
+Farming,Herbalism,73,18837,1518,30,Specialization
+Farming,Herbalism,74,20355,1645,30,Specialization
+Farming,Herbalism,75,22000,960,30,Specialization
+Farming,Herbalism,76,22960,1097,30,Specialization
+Farming,Herbalism,77,24057,1253,30,Specialization
+Farming,Herbalism,78,25310,1432,30,Specialization
+Farming,Herbalism,79,26742,1636,30,Specialization
+Farming,Herbalism,80,28378,1870,30,Specialization
+Farming,Herbalism,81,30248,2137,30,Specialization
+Farming,Herbalism,82,32385,2441,30,Specialization
+Farming,Herbalism,83,34826,2789,30,Specialization
+Farming,Herbalism,84,37615,3187,30,Specialization
+Farming,Herbalism,85,40802,3642,30,Specialization
+Farming,Herbalism,86,44444,4161,30,Specialization
+Farming,Herbalism,87,48605,4755,30,Specialization
+Farming,Herbalism,88,53360,5432,30,Specialization
+Farming,Herbalism,89,58792,6208,30,Specialization
+Farming,Herbalism,90,65000,2337,30,Specialization
+Farming,Herbalism,91,67337,2918,30,Specialization
+Farming,Herbalism,92,70255,3645,30,Specialization
+Farming,Herbalism,93,73900,4552,30,Specialization
+Farming,Herbalism,94,78452,5684,30,Specialization
+Farming,Herbalism,95,84136,7099,30,Specialization
+Farming,Herbalism,96,91235,8866,30,Specialization
+Farming,Herbalism,97,100101,11072,30,Specialization
+Farming,Herbalism,98,111173,13827,30,Specialization
+Farming,Herbalism,99,125000,,30,Specialization
+Farming,Rare Plant Cultivation,1,0,4,30,Specialization
+Farming,Rare Plant Cultivation,2,4,5,30,Specialization
+Farming,Rare Plant Cultivation,3,9,6,30,Specialization
+Farming,Rare Plant Cultivation,4,15,7,30,Specialization
+Farming,Rare Plant Cultivation,5,22,10,30,Specialization
+Farming,Rare Plant Cultivation,6,32,12,30,Specialization
+Farming,Rare Plant Cultivation,7,44,15,30,Specialization
+Farming,Rare Plant Cultivation,8,59,18,30,Specialization
+Farming,Rare Plant Cultivation,9,77,23,30,Specialization
+Farming,Rare Plant Cultivation,10,100,9,30,Specialization
+Farming,Rare Plant Cultivation,11,109,10,30,Specialization
+Farming,Rare Plant Cultivation,12,119,12,30,Specialization
+Farming,Rare Plant Cultivation,13,131,13,30,Specialization
+Farming,Rare Plant Cultivation,14,144,15,30,Specialization
+Farming,Rare Plant Cultivation,15,159,18,30,Specialization
+Farming,Rare Plant Cultivation,16,177,20,30,Specialization
+Farming,Rare Plant Cultivation,17,197,22,30,Specialization
+Farming,Rare Plant Cultivation,18,219,26,30,Specialization
+Farming,Rare Plant Cultivation,19,245,30,30,Specialization
+Farming,Rare Plant Cultivation,20,275,34,30,Specialization
+Farming,Rare Plant Cultivation,21,309,38,30,Specialization
+Farming,Rare Plant Cultivation,22,347,45,30,Specialization
+Farming,Rare Plant Cultivation,23,392,50,30,Specialization
+Farming,Rare Plant Cultivation,24,442,58,30,Specialization
+Farming,Rare Plant Cultivation,25,500,39,30,Specialization
+Farming,Rare Plant Cultivation,26,539,42,30,Specialization
+Farming,Rare Plant Cultivation,27,581,46,30,Specialization
+Farming,Rare Plant Cultivation,28,627,50,30,Specialization
+Farming,Rare Plant Cultivation,29,677,54,30,Specialization
+Farming,Rare Plant Cultivation,30,731,58,30,Specialization
+Farming,Rare Plant Cultivation,31,789,63,30,Specialization
+Farming,Rare Plant Cultivation,32,852,69,30,Specialization
+Farming,Rare Plant Cultivation,33,921,74,30,Specialization
+Farming,Rare Plant Cultivation,34,995,80,30,Specialization
+Farming,Rare Plant Cultivation,35,1075,87,30,Specialization
+Farming,Rare Plant Cultivation,36,1162,95,30,Specialization
+Farming,Rare Plant Cultivation,37,1257,102,30,Specialization
+Farming,Rare Plant Cultivation,38,1359,111,30,Specialization
+Farming,Rare Plant Cultivation,39,1470,119,30,Specialization
+Farming,Rare Plant Cultivation,40,1589,130,30,Specialization
+Farming,Rare Plant Cultivation,41,1719,141,30,Specialization
+Farming,Rare Plant Cultivation,42,1860,152,30,Specialization
+Farming,Rare Plant Cultivation,43,2012,165,30,Specialization
+Farming,Rare Plant Cultivation,44,2177,179,30,Specialization
+Farming,Rare Plant Cultivation,45,2356,194,30,Specialization
+Farming,Rare Plant Cultivation,46,2550,210,30,Specialization
+Farming,Rare Plant Cultivation,47,2760,227,30,Specialization
+Farming,Rare Plant Cultivation,48,2987,246,30,Specialization
+Farming,Rare Plant Cultivation,49,3233,267,30,Specialization
+Farming,Rare Plant Cultivation,50,3500,241,30,Specialization
+Farming,Rare Plant Cultivation,51,3741,261,30,Specialization
+Farming,Rare Plant Cultivation,52,4002,283,30,Specialization
+Farming,Rare Plant Cultivation,53,4285,307,30,Specialization
+Farming,Rare Plant Cultivation,54,4592,332,30,Specialization
+Farming,Rare Plant Cultivation,55,4924,360,30,Specialization
+Farming,Rare Plant Cultivation,56,5284,390,30,Specialization
+Farming,Rare Plant Cultivation,57,5674,422,30,Specialization
+Farming,Rare Plant Cultivation,58,6096,457,30,Specialization
+Farming,Rare Plant Cultivation,59,6553,496,30,Specialization
+Farming,Rare Plant Cultivation,60,7049,536,30,Specialization
+Farming,Rare Plant Cultivation,61,7585,582,30,Specialization
+Farming,Rare Plant Cultivation,62,8167,630,30,Specialization
+Farming,Rare Plant Cultivation,63,8797,682,30,Specialization
+Farming,Rare Plant Cultivation,64,9479,739,30,Specialization
+Farming,Rare Plant Cultivation,65,10218,801,30,Specialization
+Farming,Rare Plant Cultivation,66,11019,867,30,Specialization
+Farming,Rare Plant Cultivation,67,11886,940,30,Specialization
+Farming,Rare Plant Cultivation,68,12826,1018,30,Specialization
+Farming,Rare Plant Cultivation,69,13844,1102,30,Specialization
+Farming,Rare Plant Cultivation,70,14946,1195,30,Specialization
+Farming,Rare Plant Cultivation,71,16141,1294,30,Specialization
+Farming,Rare Plant Cultivation,72,17435,1402,30,Specialization
+Farming,Rare Plant Cultivation,73,18837,1518,30,Specialization
+Farming,Rare Plant Cultivation,74,20355,1645,30,Specialization
+Farming,Rare Plant Cultivation,75,22000,960,30,Specialization
+Farming,Rare Plant Cultivation,76,22960,1097,30,Specialization
+Farming,Rare Plant Cultivation,77,24057,1253,30,Specialization
+Farming,Rare Plant Cultivation,78,25310,1432,30,Specialization
+Farming,Rare Plant Cultivation,79,26742,1636,30,Specialization
+Farming,Rare Plant Cultivation,80,28378,1870,30,Specialization
+Farming,Rare Plant Cultivation,81,30248,2137,30,Specialization
+Farming,Rare Plant Cultivation,82,32385,2441,30,Specialization
+Farming,Rare Plant Cultivation,83,34826,2789,30,Specialization
+Farming,Rare Plant Cultivation,84,37615,3187,30,Specialization
+Farming,Rare Plant Cultivation,85,40802,3642,30,Specialization
+Farming,Rare Plant Cultivation,86,44444,4161,30,Specialization
+Farming,Rare Plant Cultivation,87,48605,4755,30,Specialization
+Farming,Rare Plant Cultivation,88,53360,5432,30,Specialization
+Farming,Rare Plant Cultivation,89,58792,6208,30,Specialization
+Farming,Rare Plant Cultivation,90,65000,2337,30,Specialization
+Farming,Rare Plant Cultivation,91,67337,2918,30,Specialization
+Farming,Rare Plant Cultivation,92,70255,3645,30,Specialization
+Farming,Rare Plant Cultivation,93,73900,4552,30,Specialization
+Farming,Rare Plant Cultivation,94,78452,5684,30,Specialization
+Farming,Rare Plant Cultivation,95,84136,7099,30,Specialization
+Farming,Rare Plant Cultivation,96,91235,8866,30,Specialization
+Farming,Rare Plant Cultivation,97,100101,11072,30,Specialization
+Farming,Rare Plant Cultivation,98,111173,13827,30,Specialization
+Farming,Rare Plant Cultivation,99,125000,,30,Specialization
+Mining,Overall,1,0,15,1,Profession
+Mining,Overall,2,15,16,1,Profession
+Mining,Overall,3,31,17,1,Profession
+Mining,Overall,4,48,19,1,Profession
+Mining,Overall,5,67,20,1,Profession
+Mining,Overall,6,87,22,1,Profession
+Mining,Overall,7,109,23,1,Profession
+Mining,Overall,8,132,25,1,Profession
+Mining,Overall,9,157,27,1,Profession
+Mining,Overall,10,184,29,1,Profession
+Mining,Overall,11,213,31,1,Profession
+Mining,Overall,12,244,33,1,Profession
+Mining,Overall,13,277,36,1,Profession
+Mining,Overall,14,313,38,1,Profession
+Mining,Overall,15,351,41,1,Profession
+Mining,Overall,16,392,44,1,Profession
+Mining,Overall,17,436,48,1,Profession
+Mining,Overall,18,484,51,1,Profession
+Mining,Overall,19,535,55,1,Profession
+Mining,Overall,20,590,59,1,Profession
+Mining,Overall,21,649,64,1,Profession
+Mining,Overall,22,713,68,1,Profession
+Mining,Overall,23,781,74,1,Profession
+Mining,Overall,24,855,79,1,Profession
+Mining,Overall,25,934,85,1,Profession
+Mining,Overall,26,1019,91,1,Profession
+Mining,Overall,27,1110,98,1,Profession
+Mining,Overall,28,1208,106,1,Profession
+Mining,Overall,29,1314,114,1,Profession
+Mining,Overall,30,1428,122,1,Profession
+Mining,Overall,31,1550,131,1,Profession
+Mining,Overall,32,1681,141,1,Profession
+Mining,Overall,33,1822,152,1,Profession
+Mining,Overall,34,1974,163,1,Profession
+Mining,Overall,35,2137,175,1,Profession
+Mining,Overall,36,2312,189,1,Profession
+Mining,Overall,37,2501,203,1,Profession
+Mining,Overall,38,2704,218,1,Profession
+Mining,Overall,39,2922,234,1,Profession
+Mining,Overall,40,3156,252,1,Profession
+Mining,Overall,41,3408,271,1,Profession
+Mining,Overall,42,3679,291,1,Profession
+Mining,Overall,43,3970,313,1,Profession
+Mining,Overall,44,4283,336,1,Profession
+Mining,Overall,45,4619,361,1,Profession
+Mining,Overall,46,4980,389,1,Profession
+Mining,Overall,47,5369,418,1,Profession
+Mining,Overall,48,5787,449,1,Profession
+Mining,Overall,49,6236,483,1,Profession
+Mining,Overall,50,6719,519,1,Profession
+Mining,Overall,51,7238,558,1,Profession
+Mining,Overall,52,7796,600,1,Profession
+Mining,Overall,53,8396,645,1,Profession
+Mining,Overall,54,9041,693,1,Profession
+Mining,Overall,55,9734,745,1,Profession
+Mining,Overall,56,10479,801,1,Profession
+Mining,Overall,57,11280,861,1,Profession
+Mining,Overall,58,12141,925,1,Profession
+Mining,Overall,59,13066,995,1,Profession
+Mining,Overall,60,14061,1070,1,Profession
+Mining,Overall,61,15131,1150,1,Profession
+Mining,Overall,62,16281,1236,1,Profession
+Mining,Overall,63,17517,1329,1,Profession
+Mining,Overall,64,18846,1428,1,Profession
+Mining,Overall,65,20274,1535,1,Profession
+Mining,Overall,66,21809,1651,1,Profession
+Mining,Overall,67,23460,1774,1,Profession
+Mining,Overall,68,25234,1907,1,Profession
+Mining,Overall,69,27141,2051,1,Profession
+Mining,Overall,70,29192,2204,1,Profession
+Mining,Overall,71,31396,2370,1,Profession
+Mining,Overall,72,33766,2547,1,Profession
+Mining,Overall,73,36313,2738,1,Profession
+Mining,Overall,74,39051,2944,1,Profession
+Mining,Overall,75,41995,3165,1,Profession
+Mining,Overall,76,45160,3402,1,Profession
+Mining,Overall,77,48562,3657,1,Profession
+Mining,Overall,78,52219,3931,1,Profession
+Mining,Overall,79,56150,4226,1,Profession
+Mining,Overall,80,60376,4543,1,Profession
+Mining,Overall,81,64919,4884,1,Profession
+Mining,Overall,82,69803,5250,1,Profession
+Mining,Overall,83,75053,5644,1,Profession
+Mining,Overall,84,80697,6067,1,Profession
+Mining,Overall,85,86764,6522,1,Profession
+Mining,Overall,86,93286,7011,1,Profession
+Mining,Overall,87,100297,7537,1,Profession
+Mining,Overall,88,107834,8103,1,Profession
+Mining,Overall,89,115937,8710,1,Profession
+Mining,Overall,90,124647,9364,1,Profession
+Mining,Overall,91,134011,10066,1,Profession
+Mining,Overall,92,144077,10821,1,Profession
+Mining,Overall,93,154898,11632,1,Profession
+Mining,Overall,94,166530,12505,1,Profession
+Mining,Overall,95,179035,13443,1,Profession
+Mining,Overall,96,192478,14451,1,Profession
+Mining,Overall,97,206929,15535,1,Profession
+Mining,Overall,98,222464,16700,1,Profession
+Mining,Overall,99,239164,,1,Profession
+Mining,Ore Miner,1,0,4,10,Specialization
+Mining,Ore Miner,2,4,5,10,Specialization
+Mining,Ore Miner,3,9,6,10,Specialization
+Mining,Ore Miner,4,15,7,10,Specialization
+Mining,Ore Miner,5,22,10,10,Specialization
+Mining,Ore Miner,6,32,12,10,Specialization
+Mining,Ore Miner,7,44,15,10,Specialization
+Mining,Ore Miner,8,59,18,10,Specialization
+Mining,Ore Miner,9,77,23,10,Specialization
+Mining,Ore Miner,10,100,9,10,Specialization
+Mining,Ore Miner,11,109,10,10,Specialization
+Mining,Ore Miner,12,119,12,10,Specialization
+Mining,Ore Miner,13,131,13,10,Specialization
+Mining,Ore Miner,14,144,15,10,Specialization
+Mining,Ore Miner,15,159,18,10,Specialization
+Mining,Ore Miner,16,177,20,10,Specialization
+Mining,Ore Miner,17,197,22,10,Specialization
+Mining,Ore Miner,18,219,26,10,Specialization
+Mining,Ore Miner,19,245,30,10,Specialization
+Mining,Ore Miner,20,275,34,10,Specialization
+Mining,Ore Miner,21,309,38,10,Specialization
+Mining,Ore Miner,22,347,45,10,Specialization
+Mining,Ore Miner,23,392,50,10,Specialization
+Mining,Ore Miner,24,442,58,10,Specialization
+Mining,Ore Miner,25,500,39,10,Specialization
+Mining,Ore Miner,26,539,42,10,Specialization
+Mining,Ore Miner,27,581,46,10,Specialization
+Mining,Ore Miner,28,627,50,10,Specialization
+Mining,Ore Miner,29,677,54,10,Specialization
+Mining,Ore Miner,30,731,58,10,Specialization
+Mining,Ore Miner,31,789,63,10,Specialization
+Mining,Ore Miner,32,852,69,10,Specialization
+Mining,Ore Miner,33,921,74,10,Specialization
+Mining,Ore Miner,34,995,80,10,Specialization
+Mining,Ore Miner,35,1075,87,10,Specialization
+Mining,Ore Miner,36,1162,95,10,Specialization
+Mining,Ore Miner,37,1257,102,10,Specialization
+Mining,Ore Miner,38,1359,111,10,Specialization
+Mining,Ore Miner,39,1470,119,10,Specialization
+Mining,Ore Miner,40,1589,130,10,Specialization
+Mining,Ore Miner,41,1719,141,10,Specialization
+Mining,Ore Miner,42,1860,152,10,Specialization
+Mining,Ore Miner,43,2012,165,10,Specialization
+Mining,Ore Miner,44,2177,179,10,Specialization
+Mining,Ore Miner,45,2356,194,10,Specialization
+Mining,Ore Miner,46,2550,210,10,Specialization
+Mining,Ore Miner,47,2760,227,10,Specialization
+Mining,Ore Miner,48,2987,246,10,Specialization
+Mining,Ore Miner,49,3233,267,10,Specialization
+Mining,Ore Miner,50,3500,241,10,Specialization
+Mining,Ore Miner,51,3741,261,10,Specialization
+Mining,Ore Miner,52,4002,283,10,Specialization
+Mining,Ore Miner,53,4285,307,10,Specialization
+Mining,Ore Miner,54,4592,332,10,Specialization
+Mining,Ore Miner,55,4924,360,10,Specialization
+Mining,Ore Miner,56,5284,390,10,Specialization
+Mining,Ore Miner,57,5674,422,10,Specialization
+Mining,Ore Miner,58,6096,457,10,Specialization
+Mining,Ore Miner,59,6553,496,10,Specialization
+Mining,Ore Miner,60,7049,536,10,Specialization
+Mining,Ore Miner,61,7585,582,10,Specialization
+Mining,Ore Miner,62,8167,630,10,Specialization
+Mining,Ore Miner,63,8797,682,10,Specialization
+Mining,Ore Miner,64,9479,739,10,Specialization
+Mining,Ore Miner,65,10218,801,10,Specialization
+Mining,Ore Miner,66,11019,867,10,Specialization
+Mining,Ore Miner,67,11886,940,10,Specialization
+Mining,Ore Miner,68,12826,1018,10,Specialization
+Mining,Ore Miner,69,13844,1102,10,Specialization
+Mining,Ore Miner,70,14946,1195,10,Specialization
+Mining,Ore Miner,71,16141,1294,10,Specialization
+Mining,Ore Miner,72,17435,1402,10,Specialization
+Mining,Ore Miner,73,18837,1518,10,Specialization
+Mining,Ore Miner,74,20355,1645,10,Specialization
+Mining,Ore Miner,75,22000,960,10,Specialization
+Mining,Ore Miner,76,22960,1097,10,Specialization
+Mining,Ore Miner,77,24057,1253,10,Specialization
+Mining,Ore Miner,78,25310,1432,10,Specialization
+Mining,Ore Miner,79,26742,1636,10,Specialization
+Mining,Ore Miner,80,28378,1870,10,Specialization
+Mining,Ore Miner,81,30248,2137,10,Specialization
+Mining,Ore Miner,82,32385,2441,10,Specialization
+Mining,Ore Miner,83,34826,2789,10,Specialization
+Mining,Ore Miner,84,37615,3187,10,Specialization
+Mining,Ore Miner,85,40802,3642,10,Specialization
+Mining,Ore Miner,86,44444,4161,10,Specialization
+Mining,Ore Miner,87,48605,4755,10,Specialization
+Mining,Ore Miner,88,53360,5432,10,Specialization
+Mining,Ore Miner,89,58792,6208,10,Specialization
+Mining,Ore Miner,90,65000,2337,10,Specialization
+Mining,Ore Miner,91,67337,2918,10,Specialization
+Mining,Ore Miner,92,70255,3645,10,Specialization
+Mining,Ore Miner,93,73900,4552,10,Specialization
+Mining,Ore Miner,94,78452,5684,10,Specialization
+Mining,Ore Miner,95,84136,7099,10,Specialization
+Mining,Ore Miner,96,91235,8866,10,Specialization
+Mining,Ore Miner,97,100101,11072,10,Specialization
+Mining,Ore Miner,98,111173,13827,10,Specialization
+Mining,Ore Miner,99,125000,,10,Specialization
+Mining,Gem Prospector,1,0,4,30,Specialization
+Mining,Gem Prospector,2,4,5,30,Specialization
+Mining,Gem Prospector,3,9,6,30,Specialization
+Mining,Gem Prospector,4,15,7,30,Specialization
+Mining,Gem Prospector,5,22,10,30,Specialization
+Mining,Gem Prospector,6,32,12,30,Specialization
+Mining,Gem Prospector,7,44,15,30,Specialization
+Mining,Gem Prospector,8,59,18,30,Specialization
+Mining,Gem Prospector,9,77,23,30,Specialization
+Mining,Gem Prospector,10,100,9,30,Specialization
+Mining,Gem Prospector,11,109,10,30,Specialization
+Mining,Gem Prospector,12,119,12,30,Specialization
+Mining,Gem Prospector,13,131,13,30,Specialization
+Mining,Gem Prospector,14,144,15,30,Specialization
+Mining,Gem Prospector,15,159,18,30,Specialization
+Mining,Gem Prospector,16,177,20,30,Specialization
+Mining,Gem Prospector,17,197,22,30,Specialization
+Mining,Gem Prospector,18,219,26,30,Specialization
+Mining,Gem Prospector,19,245,30,30,Specialization
+Mining,Gem Prospector,20,275,34,30,Specialization
+Mining,Gem Prospector,21,309,38,30,Specialization
+Mining,Gem Prospector,22,347,45,30,Specialization
+Mining,Gem Prospector,23,392,50,30,Specialization
+Mining,Gem Prospector,24,442,58,30,Specialization
+Mining,Gem Prospector,25,500,39,30,Specialization
+Mining,Gem Prospector,26,539,42,30,Specialization
+Mining,Gem Prospector,27,581,46,30,Specialization
+Mining,Gem Prospector,28,627,50,30,Specialization
+Mining,Gem Prospector,29,677,54,30,Specialization
+Mining,Gem Prospector,30,731,58,30,Specialization
+Mining,Gem Prospector,31,789,63,30,Specialization
+Mining,Gem Prospector,32,852,69,30,Specialization
+Mining,Gem Prospector,33,921,74,30,Specialization
+Mining,Gem Prospector,34,995,80,30,Specialization
+Mining,Gem Prospector,35,1075,87,30,Specialization
+Mining,Gem Prospector,36,1162,95,30,Specialization
+Mining,Gem Prospector,37,1257,102,30,Specialization
+Mining,Gem Prospector,38,1359,111,30,Specialization
+Mining,Gem Prospector,39,1470,119,30,Specialization
+Mining,Gem Prospector,40,1589,130,30,Specialization
+Mining,Gem Prospector,41,1719,141,30,Specialization
+Mining,Gem Prospector,42,1860,152,30,Specialization
+Mining,Gem Prospector,43,2012,165,30,Specialization
+Mining,Gem Prospector,44,2177,179,30,Specialization
+Mining,Gem Prospector,45,2356,194,30,Specialization
+Mining,Gem Prospector,46,2550,210,30,Specialization
+Mining,Gem Prospector,47,2760,227,30,Specialization
+Mining,Gem Prospector,48,2987,246,30,Specialization
+Mining,Gem Prospector,49,3233,267,30,Specialization
+Mining,Gem Prospector,50,3500,241,30,Specialization
+Mining,Gem Prospector,51,3741,261,30,Specialization
+Mining,Gem Prospector,52,4002,283,30,Specialization
+Mining,Gem Prospector,53,4285,307,30,Specialization
+Mining,Gem Prospector,54,4592,332,30,Specialization
+Mining,Gem Prospector,55,4924,360,30,Specialization
+Mining,Gem Prospector,56,5284,390,30,Specialization
+Mining,Gem Prospector,57,5674,422,30,Specialization
+Mining,Gem Prospector,58,6096,457,30,Specialization
+Mining,Gem Prospector,59,6553,496,30,Specialization
+Mining,Gem Prospector,60,7049,536,30,Specialization
+Mining,Gem Prospector,61,7585,582,30,Specialization
+Mining,Gem Prospector,62,8167,630,30,Specialization
+Mining,Gem Prospector,63,8797,682,30,Specialization
+Mining,Gem Prospector,64,9479,739,30,Specialization
+Mining,Gem Prospector,65,10218,801,30,Specialization
+Mining,Gem Prospector,66,11019,867,30,Specialization
+Mining,Gem Prospector,67,11886,940,30,Specialization
+Mining,Gem Prospector,68,12826,1018,30,Specialization
+Mining,Gem Prospector,69,13844,1102,30,Specialization
+Mining,Gem Prospector,70,14946,1195,30,Specialization
+Mining,Gem Prospector,71,16141,1294,30,Specialization
+Mining,Gem Prospector,72,17435,1402,30,Specialization
+Mining,Gem Prospector,73,18837,1518,30,Specialization
+Mining,Gem Prospector,74,20355,1645,30,Specialization
+Mining,Gem Prospector,75,22000,960,30,Specialization
+Mining,Gem Prospector,76,22960,1097,30,Specialization
+Mining,Gem Prospector,77,24057,1253,30,Specialization
+Mining,Gem Prospector,78,25310,1432,30,Specialization
+Mining,Gem Prospector,79,26742,1636,30,Specialization
+Mining,Gem Prospector,80,28378,1870,30,Specialization
+Mining,Gem Prospector,81,30248,2137,30,Specialization
+Mining,Gem Prospector,82,32385,2441,30,Specialization
+Mining,Gem Prospector,83,34826,2789,30,Specialization
+Mining,Gem Prospector,84,37615,3187,30,Specialization
+Mining,Gem Prospector,85,40802,3642,30,Specialization
+Mining,Gem Prospector,86,44444,4161,30,Specialization
+Mining,Gem Prospector,87,48605,4755,30,Specialization
+Mining,Gem Prospector,88,53360,5432,30,Specialization
+Mining,Gem Prospector,89,58792,6208,30,Specialization
+Mining,Gem Prospector,90,65000,2337,30,Specialization
+Mining,Gem Prospector,91,67337,2918,30,Specialization
+Mining,Gem Prospector,92,70255,3645,30,Specialization
+Mining,Gem Prospector,93,73900,4552,30,Specialization
+Mining,Gem Prospector,94,78452,5684,30,Specialization
+Mining,Gem Prospector,95,84136,7099,30,Specialization
+Mining,Gem Prospector,96,91235,8866,30,Specialization
+Mining,Gem Prospector,97,100101,11072,30,Specialization
+Mining,Gem Prospector,98,111173,13827,30,Specialization
+Mining,Gem Prospector,99,125000,,30,Specialization
+Mining,Rare Mineral Extractor,1,0,4,30,Specialization
+Mining,Rare Mineral Extractor,2,4,5,30,Specialization
+Mining,Rare Mineral Extractor,3,9,6,30,Specialization
+Mining,Rare Mineral Extractor,4,15,7,30,Specialization
+Mining,Rare Mineral Extractor,5,22,10,30,Specialization
+Mining,Rare Mineral Extractor,6,32,12,30,Specialization
+Mining,Rare Mineral Extractor,7,44,15,30,Specialization
+Mining,Rare Mineral Extractor,8,59,18,30,Specialization
+Mining,Rare Mineral Extractor,9,77,23,30,Specialization
+Mining,Rare Mineral Extractor,10,100,9,30,Specialization
+Mining,Rare Mineral Extractor,11,109,10,30,Specialization
+Mining,Rare Mineral Extractor,12,119,12,30,Specialization
+Mining,Rare Mineral Extractor,13,131,13,30,Specialization
+Mining,Rare Mineral Extractor,14,144,15,30,Specialization
+Mining,Rare Mineral Extractor,15,159,18,30,Specialization
+Mining,Rare Mineral Extractor,16,177,20,30,Specialization
+Mining,Rare Mineral Extractor,17,197,22,30,Specialization
+Mining,Rare Mineral Extractor,18,219,26,30,Specialization
+Mining,Rare Mineral Extractor,19,245,30,30,Specialization
+Mining,Rare Mineral Extractor,20,275,34,30,Specialization
+Mining,Rare Mineral Extractor,21,309,38,30,Specialization
+Mining,Rare Mineral Extractor,22,347,45,30,Specialization
+Mining,Rare Mineral Extractor,23,392,50,30,Specialization
+Mining,Rare Mineral Extractor,24,442,58,30,Specialization
+Mining,Rare Mineral Extractor,25,500,39,30,Specialization
+Mining,Rare Mineral Extractor,26,539,42,30,Specialization
+Mining,Rare Mineral Extractor,27,581,46,30,Specialization
+Mining,Rare Mineral Extractor,28,627,50,30,Specialization
+Mining,Rare Mineral Extractor,29,677,54,30,Specialization
+Mining,Rare Mineral Extractor,30,731,58,30,Specialization
+Mining,Rare Mineral Extractor,31,789,63,30,Specialization
+Mining,Rare Mineral Extractor,32,852,69,30,Specialization
+Mining,Rare Mineral Extractor,33,921,74,30,Specialization
+Mining,Rare Mineral Extractor,34,995,80,30,Specialization
+Mining,Rare Mineral Extractor,35,1075,87,30,Specialization
+Mining,Rare Mineral Extractor,36,1162,95,30,Specialization
+Mining,Rare Mineral Extractor,37,1257,102,30,Specialization
+Mining,Rare Mineral Extractor,38,1359,111,30,Specialization
+Mining,Rare Mineral Extractor,39,1470,119,30,Specialization
+Mining,Rare Mineral Extractor,40,1589,130,30,Specialization
+Mining,Rare Mineral Extractor,41,1719,141,30,Specialization
+Mining,Rare Mineral Extractor,42,1860,152,30,Specialization
+Mining,Rare Mineral Extractor,43,2012,165,30,Specialization
+Mining,Rare Mineral Extractor,44,2177,179,30,Specialization
+Mining,Rare Mineral Extractor,45,2356,194,30,Specialization
+Mining,Rare Mineral Extractor,46,2550,210,30,Specialization
+Mining,Rare Mineral Extractor,47,2760,227,30,Specialization
+Mining,Rare Mineral Extractor,48,2987,246,30,Specialization
+Mining,Rare Mineral Extractor,49,3233,267,30,Specialization
+Mining,Rare Mineral Extractor,50,3500,241,30,Specialization
+Mining,Rare Mineral Extractor,51,3741,261,30,Specialization
+Mining,Rare Mineral Extractor,52,4002,283,30,Specialization
+Mining,Rare Mineral Extractor,53,4285,307,30,Specialization
+Mining,Rare Mineral Extractor,54,4592,332,30,Specialization
+Mining,Rare Mineral Extractor,55,4924,360,30,Specialization
+Mining,Rare Mineral Extractor,56,5284,390,30,Specialization
+Mining,Rare Mineral Extractor,57,5674,422,30,Specialization
+Mining,Rare Mineral Extractor,58,6096,457,30,Specialization
+Mining,Rare Mineral Extractor,59,6553,496,30,Specialization
+Mining,Rare Mineral Extractor,60,7049,536,30,Specialization
+Mining,Rare Mineral Extractor,61,7585,582,30,Specialization
+Mining,Rare Mineral Extractor,62,8167,630,30,Specialization
+Mining,Rare Mineral Extractor,63,8797,682,30,Specialization
+Mining,Rare Mineral Extractor,64,9479,739,30,Specialization
+Mining,Rare Mineral Extractor,65,10218,801,30,Specialization
+Mining,Rare Mineral Extractor,66,11019,867,30,Specialization
+Mining,Rare Mineral Extractor,67,11886,940,30,Specialization
+Mining,Rare Mineral Extractor,68,12826,1018,30,Specialization
+Mining,Rare Mineral Extractor,69,13844,1102,30,Specialization
+Mining,Rare Mineral Extractor,70,14946,1195,30,Specialization
+Mining,Rare Mineral Extractor,71,16141,1294,30,Specialization
+Mining,Rare Mineral Extractor,72,17435,1402,30,Specialization
+Mining,Rare Mineral Extractor,73,18837,1518,30,Specialization
+Mining,Rare Mineral Extractor,74,20355,1645,30,Specialization
+Mining,Rare Mineral Extractor,75,22000,960,30,Specialization
+Mining,Rare Mineral Extractor,76,22960,1097,30,Specialization
+Mining,Rare Mineral Extractor,77,24057,1253,30,Specialization
+Mining,Rare Mineral Extractor,78,25310,1432,30,Specialization
+Mining,Rare Mineral Extractor,79,26742,1636,30,Specialization
+Mining,Rare Mineral Extractor,80,28378,1870,30,Specialization
+Mining,Rare Mineral Extractor,81,30248,2137,30,Specialization
+Mining,Rare Mineral Extractor,82,32385,2441,30,Specialization
+Mining,Rare Mineral Extractor,83,34826,2789,30,Specialization
+Mining,Rare Mineral Extractor,84,37615,3187,30,Specialization
+Mining,Rare Mineral Extractor,85,40802,3642,30,Specialization
+Mining,Rare Mineral Extractor,86,44444,4161,30,Specialization
+Mining,Rare Mineral Extractor,87,48605,4755,30,Specialization
+Mining,Rare Mineral Extractor,88,53360,5432,30,Specialization
+Mining,Rare Mineral Extractor,89,58792,6208,30,Specialization
+Mining,Rare Mineral Extractor,90,65000,2337,30,Specialization
+Mining,Rare Mineral Extractor,91,67337,2918,30,Specialization
+Mining,Rare Mineral Extractor,92,70255,3645,30,Specialization
+Mining,Rare Mineral Extractor,93,73900,4552,30,Specialization
+Mining,Rare Mineral Extractor,94,78452,5684,30,Specialization
+Mining,Rare Mineral Extractor,95,84136,7099,30,Specialization
+Mining,Rare Mineral Extractor,96,91235,8866,30,Specialization
+Mining,Rare Mineral Extractor,97,100101,11072,30,Specialization
+Mining,Rare Mineral Extractor,98,111173,13827,30,Specialization
+Mining,Rare Mineral Extractor,99,125000,,30,Specialization
+Smithing,Overall,1,0,15,1,Profession
+Smithing,Overall,2,15,16,1,Profession
+Smithing,Overall,3,31,17,1,Profession
+Smithing,Overall,4,48,19,1,Profession
+Smithing,Overall,5,67,20,1,Profession
+Smithing,Overall,6,87,22,1,Profession
+Smithing,Overall,7,109,23,1,Profession
+Smithing,Overall,8,132,25,1,Profession
+Smithing,Overall,9,157,27,1,Profession
+Smithing,Overall,10,184,29,1,Profession
+Smithing,Overall,11,213,31,1,Profession
+Smithing,Overall,12,244,33,1,Profession
+Smithing,Overall,13,277,36,1,Profession
+Smithing,Overall,14,313,38,1,Profession
+Smithing,Overall,15,351,41,1,Profession
+Smithing,Overall,16,392,44,1,Profession
+Smithing,Overall,17,436,48,1,Profession
+Smithing,Overall,18,484,51,1,Profession
+Smithing,Overall,19,535,55,1,Profession
+Smithing,Overall,20,590,59,1,Profession
+Smithing,Overall,21,649,64,1,Profession
+Smithing,Overall,22,713,68,1,Profession
+Smithing,Overall,23,781,74,1,Profession
+Smithing,Overall,24,855,79,1,Profession
+Smithing,Overall,25,934,85,1,Profession
+Smithing,Overall,26,1019,91,1,Profession
+Smithing,Overall,27,1110,98,1,Profession
+Smithing,Overall,28,1208,106,1,Profession
+Smithing,Overall,29,1314,114,1,Profession
+Smithing,Overall,30,1428,122,1,Profession
+Smithing,Overall,31,1550,131,1,Profession
+Smithing,Overall,32,1681,141,1,Profession
+Smithing,Overall,33,1822,152,1,Profession
+Smithing,Overall,34,1974,163,1,Profession
+Smithing,Overall,35,2137,175,1,Profession
+Smithing,Overall,36,2312,189,1,Profession
+Smithing,Overall,37,2501,203,1,Profession
+Smithing,Overall,38,2704,218,1,Profession
+Smithing,Overall,39,2922,234,1,Profession
+Smithing,Overall,40,3156,252,1,Profession
+Smithing,Overall,41,3408,271,1,Profession
+Smithing,Overall,42,3679,291,1,Profession
+Smithing,Overall,43,3970,313,1,Profession
+Smithing,Overall,44,4283,336,1,Profession
+Smithing,Overall,45,4619,361,1,Profession
+Smithing,Overall,46,4980,389,1,Profession
+Smithing,Overall,47,5369,418,1,Profession
+Smithing,Overall,48,5787,449,1,Profession
+Smithing,Overall,49,6236,483,1,Profession
+Smithing,Overall,50,6719,519,1,Profession
+Smithing,Overall,51,7238,558,1,Profession
+Smithing,Overall,52,7796,600,1,Profession
+Smithing,Overall,53,8396,645,1,Profession
+Smithing,Overall,54,9041,693,1,Profession
+Smithing,Overall,55,9734,745,1,Profession
+Smithing,Overall,56,10479,801,1,Profession
+Smithing,Overall,57,11280,861,1,Profession
+Smithing,Overall,58,12141,925,1,Profession
+Smithing,Overall,59,13066,995,1,Profession
+Smithing,Overall,60,14061,1070,1,Profession
+Smithing,Overall,61,15131,1150,1,Profession
+Smithing,Overall,62,16281,1236,1,Profession
+Smithing,Overall,63,17517,1329,1,Profession
+Smithing,Overall,64,18846,1428,1,Profession
+Smithing,Overall,65,20274,1535,1,Profession
+Smithing,Overall,66,21809,1651,1,Profession
+Smithing,Overall,67,23460,1774,1,Profession
+Smithing,Overall,68,25234,1907,1,Profession
+Smithing,Overall,69,27141,2051,1,Profession
+Smithing,Overall,70,29192,2204,1,Profession
+Smithing,Overall,71,31396,2370,1,Profession
+Smithing,Overall,72,33766,2547,1,Profession
+Smithing,Overall,73,36313,2738,1,Profession
+Smithing,Overall,74,39051,2944,1,Profession
+Smithing,Overall,75,41995,3165,1,Profession
+Smithing,Overall,76,45160,3402,1,Profession
+Smithing,Overall,77,48562,3657,1,Profession
+Smithing,Overall,78,52219,3931,1,Profession
+Smithing,Overall,79,56150,4226,1,Profession
+Smithing,Overall,80,60376,4543,1,Profession
+Smithing,Overall,81,64919,4884,1,Profession
+Smithing,Overall,82,69803,5250,1,Profession
+Smithing,Overall,83,75053,5644,1,Profession
+Smithing,Overall,84,80697,6067,1,Profession
+Smithing,Overall,85,86764,6522,1,Profession
+Smithing,Overall,86,93286,7011,1,Profession
+Smithing,Overall,87,100297,7537,1,Profession
+Smithing,Overall,88,107834,8103,1,Profession
+Smithing,Overall,89,115937,8710,1,Profession
+Smithing,Overall,90,124647,9364,1,Profession
+Smithing,Overall,91,134011,10066,1,Profession
+Smithing,Overall,92,144077,10821,1,Profession
+Smithing,Overall,93,154898,11632,1,Profession
+Smithing,Overall,94,166530,12505,1,Profession
+Smithing,Overall,95,179035,13443,1,Profession
+Smithing,Overall,96,192478,14451,1,Profession
+Smithing,Overall,97,206929,15535,1,Profession
+Smithing,Overall,98,222464,16700,1,Profession
+Smithing,Overall,99,239164,,1,Profession
+Smithing,Toolsmith,1,0,4,10,Specialization
+Smithing,Toolsmith,2,4,5,10,Specialization
+Smithing,Toolsmith,3,9,6,10,Specialization
+Smithing,Toolsmith,4,15,7,10,Specialization
+Smithing,Toolsmith,5,22,10,10,Specialization
+Smithing,Toolsmith,6,32,12,10,Specialization
+Smithing,Toolsmith,7,44,15,10,Specialization
+Smithing,Toolsmith,8,59,18,10,Specialization
+Smithing,Toolsmith,9,77,23,10,Specialization
+Smithing,Toolsmith,10,100,9,10,Specialization
+Smithing,Toolsmith,11,109,10,10,Specialization
+Smithing,Toolsmith,12,119,12,10,Specialization
+Smithing,Toolsmith,13,131,13,10,Specialization
+Smithing,Toolsmith,14,144,15,10,Specialization
+Smithing,Toolsmith,15,159,18,10,Specialization
+Smithing,Toolsmith,16,177,20,10,Specialization
+Smithing,Toolsmith,17,197,22,10,Specialization
+Smithing,Toolsmith,18,219,26,10,Specialization
+Smithing,Toolsmith,19,245,30,10,Specialization
+Smithing,Toolsmith,20,275,34,10,Specialization
+Smithing,Toolsmith,21,309,38,10,Specialization
+Smithing,Toolsmith,22,347,45,10,Specialization
+Smithing,Toolsmith,23,392,50,10,Specialization
+Smithing,Toolsmith,24,442,58,10,Specialization
+Smithing,Toolsmith,25,500,39,10,Specialization
+Smithing,Toolsmith,26,539,42,10,Specialization
+Smithing,Toolsmith,27,581,46,10,Specialization
+Smithing,Toolsmith,28,627,50,10,Specialization
+Smithing,Toolsmith,29,677,54,10,Specialization
+Smithing,Toolsmith,30,731,58,10,Specialization
+Smithing,Toolsmith,31,789,63,10,Specialization
+Smithing,Toolsmith,32,852,69,10,Specialization
+Smithing,Toolsmith,33,921,74,10,Specialization
+Smithing,Toolsmith,34,995,80,10,Specialization
+Smithing,Toolsmith,35,1075,87,10,Specialization
+Smithing,Toolsmith,36,1162,95,10,Specialization
+Smithing,Toolsmith,37,1257,102,10,Specialization
+Smithing,Toolsmith,38,1359,111,10,Specialization
+Smithing,Toolsmith,39,1470,119,10,Specialization
+Smithing,Toolsmith,40,1589,130,10,Specialization
+Smithing,Toolsmith,41,1719,141,10,Specialization
+Smithing,Toolsmith,42,1860,152,10,Specialization
+Smithing,Toolsmith,43,2012,165,10,Specialization
+Smithing,Toolsmith,44,2177,179,10,Specialization
+Smithing,Toolsmith,45,2356,194,10,Specialization
+Smithing,Toolsmith,46,2550,210,10,Specialization
+Smithing,Toolsmith,47,2760,227,10,Specialization
+Smithing,Toolsmith,48,2987,246,10,Specialization
+Smithing,Toolsmith,49,3233,267,10,Specialization
+Smithing,Toolsmith,50,3500,241,10,Specialization
+Smithing,Toolsmith,51,3741,261,10,Specialization
+Smithing,Toolsmith,52,4002,283,10,Specialization
+Smithing,Toolsmith,53,4285,307,10,Specialization
+Smithing,Toolsmith,54,4592,332,10,Specialization
+Smithing,Toolsmith,55,4924,360,10,Specialization
+Smithing,Toolsmith,56,5284,390,10,Specialization
+Smithing,Toolsmith,57,5674,422,10,Specialization
+Smithing,Toolsmith,58,6096,457,10,Specialization
+Smithing,Toolsmith,59,6553,496,10,Specialization
+Smithing,Toolsmith,60,7049,536,10,Specialization
+Smithing,Toolsmith,61,7585,582,10,Specialization
+Smithing,Toolsmith,62,8167,630,10,Specialization
+Smithing,Toolsmith,63,8797,682,10,Specialization
+Smithing,Toolsmith,64,9479,739,10,Specialization
+Smithing,Toolsmith,65,10218,801,10,Specialization
+Smithing,Toolsmith,66,11019,867,10,Specialization
+Smithing,Toolsmith,67,11886,940,10,Specialization
+Smithing,Toolsmith,68,12826,1018,10,Specialization
+Smithing,Toolsmith,69,13844,1102,10,Specialization
+Smithing,Toolsmith,70,14946,1195,10,Specialization
+Smithing,Toolsmith,71,16141,1294,10,Specialization
+Smithing,Toolsmith,72,17435,1402,10,Specialization
+Smithing,Toolsmith,73,18837,1518,10,Specialization
+Smithing,Toolsmith,74,20355,1645,10,Specialization
+Smithing,Toolsmith,75,22000,960,10,Specialization
+Smithing,Toolsmith,76,22960,1097,10,Specialization
+Smithing,Toolsmith,77,24057,1253,10,Specialization
+Smithing,Toolsmith,78,25310,1432,10,Specialization
+Smithing,Toolsmith,79,26742,1636,10,Specialization
+Smithing,Toolsmith,80,28378,1870,10,Specialization
+Smithing,Toolsmith,81,30248,2137,10,Specialization
+Smithing,Toolsmith,82,32385,2441,10,Specialization
+Smithing,Toolsmith,83,34826,2789,10,Specialization
+Smithing,Toolsmith,84,37615,3187,10,Specialization
+Smithing,Toolsmith,85,40802,3642,10,Specialization
+Smithing,Toolsmith,86,44444,4161,10,Specialization
+Smithing,Toolsmith,87,48605,4755,10,Specialization
+Smithing,Toolsmith,88,53360,5432,10,Specialization
+Smithing,Toolsmith,89,58792,6208,10,Specialization
+Smithing,Toolsmith,90,65000,2337,10,Specialization
+Smithing,Toolsmith,91,67337,2918,10,Specialization
+Smithing,Toolsmith,92,70255,3645,10,Specialization
+Smithing,Toolsmith,93,73900,4552,10,Specialization
+Smithing,Toolsmith,94,78452,5684,10,Specialization
+Smithing,Toolsmith,95,84136,7099,10,Specialization
+Smithing,Toolsmith,96,91235,8866,10,Specialization
+Smithing,Toolsmith,97,100101,11072,10,Specialization
+Smithing,Toolsmith,98,111173,13827,10,Specialization
+Smithing,Toolsmith,99,125000,,10,Specialization
+Smithing,Artisan Equipment,1,0,4,30,Specialization
+Smithing,Artisan Equipment,2,4,5,30,Specialization
+Smithing,Artisan Equipment,3,9,6,30,Specialization
+Smithing,Artisan Equipment,4,15,7,30,Specialization
+Smithing,Artisan Equipment,5,22,10,30,Specialization
+Smithing,Artisan Equipment,6,32,12,30,Specialization
+Smithing,Artisan Equipment,7,44,15,30,Specialization
+Smithing,Artisan Equipment,8,59,18,30,Specialization
+Smithing,Artisan Equipment,9,77,23,30,Specialization
+Smithing,Artisan Equipment,10,100,9,30,Specialization
+Smithing,Artisan Equipment,11,109,10,30,Specialization
+Smithing,Artisan Equipment,12,119,12,30,Specialization
+Smithing,Artisan Equipment,13,131,13,30,Specialization
+Smithing,Artisan Equipment,14,144,15,30,Specialization
+Smithing,Artisan Equipment,15,159,18,30,Specialization
+Smithing,Artisan Equipment,16,177,20,30,Specialization
+Smithing,Artisan Equipment,17,197,22,30,Specialization
+Smithing,Artisan Equipment,18,219,26,30,Specialization
+Smithing,Artisan Equipment,19,245,30,30,Specialization
+Smithing,Artisan Equipment,20,275,34,30,Specialization
+Smithing,Artisan Equipment,21,309,38,30,Specialization
+Smithing,Artisan Equipment,22,347,45,30,Specialization
+Smithing,Artisan Equipment,23,392,50,30,Specialization
+Smithing,Artisan Equipment,24,442,58,30,Specialization
+Smithing,Artisan Equipment,25,500,39,30,Specialization
+Smithing,Artisan Equipment,26,539,42,30,Specialization
+Smithing,Artisan Equipment,27,581,46,30,Specialization
+Smithing,Artisan Equipment,28,627,50,30,Specialization
+Smithing,Artisan Equipment,29,677,54,30,Specialization
+Smithing,Artisan Equipment,30,731,58,30,Specialization
+Smithing,Artisan Equipment,31,789,63,30,Specialization
+Smithing,Artisan Equipment,32,852,69,30,Specialization
+Smithing,Artisan Equipment,33,921,74,30,Specialization
+Smithing,Artisan Equipment,34,995,80,30,Specialization
+Smithing,Artisan Equipment,35,1075,87,30,Specialization
+Smithing,Artisan Equipment,36,1162,95,30,Specialization
+Smithing,Artisan Equipment,37,1257,102,30,Specialization
+Smithing,Artisan Equipment,38,1359,111,30,Specialization
+Smithing,Artisan Equipment,39,1470,119,30,Specialization
+Smithing,Artisan Equipment,40,1589,130,30,Specialization
+Smithing,Artisan Equipment,41,1719,141,30,Specialization
+Smithing,Artisan Equipment,42,1860,152,30,Specialization
+Smithing,Artisan Equipment,43,2012,165,30,Specialization
+Smithing,Artisan Equipment,44,2177,179,30,Specialization
+Smithing,Artisan Equipment,45,2356,194,30,Specialization
+Smithing,Artisan Equipment,46,2550,210,30,Specialization
+Smithing,Artisan Equipment,47,2760,227,30,Specialization
+Smithing,Artisan Equipment,48,2987,246,30,Specialization
+Smithing,Artisan Equipment,49,3233,267,30,Specialization
+Smithing,Artisan Equipment,50,3500,241,30,Specialization
+Smithing,Artisan Equipment,51,3741,261,30,Specialization
+Smithing,Artisan Equipment,52,4002,283,30,Specialization
+Smithing,Artisan Equipment,53,4285,307,30,Specialization
+Smithing,Artisan Equipment,54,4592,332,30,Specialization
+Smithing,Artisan Equipment,55,4924,360,30,Specialization
+Smithing,Artisan Equipment,56,5284,390,30,Specialization
+Smithing,Artisan Equipment,57,5674,422,30,Specialization
+Smithing,Artisan Equipment,58,6096,457,30,Specialization
+Smithing,Artisan Equipment,59,6553,496,30,Specialization
+Smithing,Artisan Equipment,60,7049,536,30,Specialization
+Smithing,Artisan Equipment,61,7585,582,30,Specialization
+Smithing,Artisan Equipment,62,8167,630,30,Specialization
+Smithing,Artisan Equipment,63,8797,682,30,Specialization
+Smithing,Artisan Equipment,64,9479,739,30,Specialization
+Smithing,Artisan Equipment,65,10218,801,30,Specialization
+Smithing,Artisan Equipment,66,11019,867,30,Specialization
+Smithing,Artisan Equipment,67,11886,940,30,Specialization
+Smithing,Artisan Equipment,68,12826,1018,30,Specialization
+Smithing,Artisan Equipment,69,13844,1102,30,Specialization
+Smithing,Artisan Equipment,70,14946,1195,30,Specialization
+Smithing,Artisan Equipment,71,16141,1294,30,Specialization
+Smithing,Artisan Equipment,72,17435,1402,30,Specialization
+Smithing,Artisan Equipment,73,18837,1518,30,Specialization
+Smithing,Artisan Equipment,74,20355,1645,30,Specialization
+Smithing,Artisan Equipment,75,22000,960,30,Specialization
+Smithing,Artisan Equipment,76,22960,1097,30,Specialization
+Smithing,Artisan Equipment,77,24057,1253,30,Specialization
+Smithing,Artisan Equipment,78,25310,1432,30,Specialization
+Smithing,Artisan Equipment,79,26742,1636,30,Specialization
+Smithing,Artisan Equipment,80,28378,1870,30,Specialization
+Smithing,Artisan Equipment,81,30248,2137,30,Specialization
+Smithing,Artisan Equipment,82,32385,2441,30,Specialization
+Smithing,Artisan Equipment,83,34826,2789,30,Specialization
+Smithing,Artisan Equipment,84,37615,3187,30,Specialization
+Smithing,Artisan Equipment,85,40802,3642,30,Specialization
+Smithing,Artisan Equipment,86,44444,4161,30,Specialization
+Smithing,Artisan Equipment,87,48605,4755,30,Specialization
+Smithing,Artisan Equipment,88,53360,5432,30,Specialization
+Smithing,Artisan Equipment,89,58792,6208,30,Specialization
+Smithing,Artisan Equipment,90,65000,2337,30,Specialization
+Smithing,Artisan Equipment,91,67337,2918,30,Specialization
+Smithing,Artisan Equipment,92,70255,3645,30,Specialization
+Smithing,Artisan Equipment,93,73900,4552,30,Specialization
+Smithing,Artisan Equipment,94,78452,5684,30,Specialization
+Smithing,Artisan Equipment,95,84136,7099,30,Specialization
+Smithing,Artisan Equipment,96,91235,8866,30,Specialization
+Smithing,Artisan Equipment,97,100101,11072,30,Specialization
+Smithing,Artisan Equipment,98,111173,13827,30,Specialization
+Smithing,Artisan Equipment,99,125000,,30,Specialization
+Smithing,Masterwork Forging,1,0,4,30,Specialization
+Smithing,Masterwork Forging,2,4,5,30,Specialization
+Smithing,Masterwork Forging,3,9,6,30,Specialization
+Smithing,Masterwork Forging,4,15,7,30,Specialization
+Smithing,Masterwork Forging,5,22,10,30,Specialization
+Smithing,Masterwork Forging,6,32,12,30,Specialization
+Smithing,Masterwork Forging,7,44,15,30,Specialization
+Smithing,Masterwork Forging,8,59,18,30,Specialization
+Smithing,Masterwork Forging,9,77,23,30,Specialization
+Smithing,Masterwork Forging,10,100,9,30,Specialization
+Smithing,Masterwork Forging,11,109,10,30,Specialization
+Smithing,Masterwork Forging,12,119,12,30,Specialization
+Smithing,Masterwork Forging,13,131,13,30,Specialization
+Smithing,Masterwork Forging,14,144,15,30,Specialization
+Smithing,Masterwork Forging,15,159,18,30,Specialization
+Smithing,Masterwork Forging,16,177,20,30,Specialization
+Smithing,Masterwork Forging,17,197,22,30,Specialization
+Smithing,Masterwork Forging,18,219,26,30,Specialization
+Smithing,Masterwork Forging,19,245,30,30,Specialization
+Smithing,Masterwork Forging,20,275,34,30,Specialization
+Smithing,Masterwork Forging,21,309,38,30,Specialization
+Smithing,Masterwork Forging,22,347,45,30,Specialization
+Smithing,Masterwork Forging,23,392,50,30,Specialization
+Smithing,Masterwork Forging,24,442,58,30,Specialization
+Smithing,Masterwork Forging,25,500,39,30,Specialization
+Smithing,Masterwork Forging,26,539,42,30,Specialization
+Smithing,Masterwork Forging,27,581,46,30,Specialization
+Smithing,Masterwork Forging,28,627,50,30,Specialization
+Smithing,Masterwork Forging,29,677,54,30,Specialization
+Smithing,Masterwork Forging,30,731,58,30,Specialization
+Smithing,Masterwork Forging,31,789,63,30,Specialization
+Smithing,Masterwork Forging,32,852,69,30,Specialization
+Smithing,Masterwork Forging,33,921,74,30,Specialization
+Smithing,Masterwork Forging,34,995,80,30,Specialization
+Smithing,Masterwork Forging,35,1075,87,30,Specialization
+Smithing,Masterwork Forging,36,1162,95,30,Specialization
+Smithing,Masterwork Forging,37,1257,102,30,Specialization
+Smithing,Masterwork Forging,38,1359,111,30,Specialization
+Smithing,Masterwork Forging,39,1470,119,30,Specialization
+Smithing,Masterwork Forging,40,1589,130,30,Specialization
+Smithing,Masterwork Forging,41,1719,141,30,Specialization
+Smithing,Masterwork Forging,42,1860,152,30,Specialization
+Smithing,Masterwork Forging,43,2012,165,30,Specialization
+Smithing,Masterwork Forging,44,2177,179,30,Specialization
+Smithing,Masterwork Forging,45,2356,194,30,Specialization
+Smithing,Masterwork Forging,46,2550,210,30,Specialization
+Smithing,Masterwork Forging,47,2760,227,30,Specialization
+Smithing,Masterwork Forging,48,2987,246,30,Specialization
+Smithing,Masterwork Forging,49,3233,267,30,Specialization
+Smithing,Masterwork Forging,50,3500,241,30,Specialization
+Smithing,Masterwork Forging,51,3741,261,30,Specialization
+Smithing,Masterwork Forging,52,4002,283,30,Specialization
+Smithing,Masterwork Forging,53,4285,307,30,Specialization
+Smithing,Masterwork Forging,54,4592,332,30,Specialization
+Smithing,Masterwork Forging,55,4924,360,30,Specialization
+Smithing,Masterwork Forging,56,5284,390,30,Specialization
+Smithing,Masterwork Forging,57,5674,422,30,Specialization
+Smithing,Masterwork Forging,58,6096,457,30,Specialization
+Smithing,Masterwork Forging,59,6553,496,30,Specialization
+Smithing,Masterwork Forging,60,7049,536,30,Specialization
+Smithing,Masterwork Forging,61,7585,582,30,Specialization
+Smithing,Masterwork Forging,62,8167,630,30,Specialization
+Smithing,Masterwork Forging,63,8797,682,30,Specialization
+Smithing,Masterwork Forging,64,9479,739,30,Specialization
+Smithing,Masterwork Forging,65,10218,801,30,Specialization
+Smithing,Masterwork Forging,66,11019,867,30,Specialization
+Smithing,Masterwork Forging,67,11886,940,30,Specialization
+Smithing,Masterwork Forging,68,12826,1018,30,Specialization
+Smithing,Masterwork Forging,69,13844,1102,30,Specialization
+Smithing,Masterwork Forging,70,14946,1195,30,Specialization
+Smithing,Masterwork Forging,71,16141,1294,30,Specialization
+Smithing,Masterwork Forging,72,17435,1402,30,Specialization
+Smithing,Masterwork Forging,73,18837,1518,30,Specialization
+Smithing,Masterwork Forging,74,20355,1645,30,Specialization
+Smithing,Masterwork Forging,75,22000,960,30,Specialization
+Smithing,Masterwork Forging,76,22960,1097,30,Specialization
+Smithing,Masterwork Forging,77,24057,1253,30,Specialization
+Smithing,Masterwork Forging,78,25310,1432,30,Specialization
+Smithing,Masterwork Forging,79,26742,1636,30,Specialization
+Smithing,Masterwork Forging,80,28378,1870,30,Specialization
+Smithing,Masterwork Forging,81,30248,2137,30,Specialization
+Smithing,Masterwork Forging,82,32385,2441,30,Specialization
+Smithing,Masterwork Forging,83,34826,2789,30,Specialization
+Smithing,Masterwork Forging,84,37615,3187,30,Specialization
+Smithing,Masterwork Forging,85,40802,3642,30,Specialization
+Smithing,Masterwork Forging,86,44444,4161,30,Specialization
+Smithing,Masterwork Forging,87,48605,4755,30,Specialization
+Smithing,Masterwork Forging,88,53360,5432,30,Specialization
+Smithing,Masterwork Forging,89,58792,6208,30,Specialization
+Smithing,Masterwork Forging,90,65000,2337,30,Specialization
+Smithing,Masterwork Forging,91,67337,2918,30,Specialization
+Smithing,Masterwork Forging,92,70255,3645,30,Specialization
+Smithing,Masterwork Forging,93,73900,4552,30,Specialization
+Smithing,Masterwork Forging,94,78452,5684,30,Specialization
+Smithing,Masterwork Forging,95,84136,7099,30,Specialization
+Smithing,Masterwork Forging,96,91235,8866,30,Specialization
+Smithing,Masterwork Forging,97,100101,11072,30,Specialization
+Smithing,Masterwork Forging,98,111173,13827,30,Specialization
+Smithing,Masterwork Forging,99,125000,,30,Specialization
+Crafting,Overall,1,0,15,1,Profession
+Crafting,Overall,2,15,16,1,Profession
+Crafting,Overall,3,31,17,1,Profession
+Crafting,Overall,4,48,19,1,Profession
+Crafting,Overall,5,67,20,1,Profession
+Crafting,Overall,6,87,22,1,Profession
+Crafting,Overall,7,109,23,1,Profession
+Crafting,Overall,8,132,25,1,Profession
+Crafting,Overall,9,157,27,1,Profession
+Crafting,Overall,10,184,29,1,Profession
+Crafting,Overall,11,213,31,1,Profession
+Crafting,Overall,12,244,33,1,Profession
+Crafting,Overall,13,277,36,1,Profession
+Crafting,Overall,14,313,38,1,Profession
+Crafting,Overall,15,351,41,1,Profession
+Crafting,Overall,16,392,44,1,Profession
+Crafting,Overall,17,436,48,1,Profession
+Crafting,Overall,18,484,51,1,Profession
+Crafting,Overall,19,535,55,1,Profession
+Crafting,Overall,20,590,59,1,Profession
+Crafting,Overall,21,649,64,1,Profession
+Crafting,Overall,22,713,68,1,Profession
+Crafting,Overall,23,781,74,1,Profession
+Crafting,Overall,24,855,79,1,Profession
+Crafting,Overall,25,934,85,1,Profession
+Crafting,Overall,26,1019,91,1,Profession
+Crafting,Overall,27,1110,98,1,Profession
+Crafting,Overall,28,1208,106,1,Profession
+Crafting,Overall,29,1314,114,1,Profession
+Crafting,Overall,30,1428,122,1,Profession
+Crafting,Overall,31,1550,131,1,Profession
+Crafting,Overall,32,1681,141,1,Profession
+Crafting,Overall,33,1822,152,1,Profession
+Crafting,Overall,34,1974,163,1,Profession
+Crafting,Overall,35,2137,175,1,Profession
+Crafting,Overall,36,2312,189,1,Profession
+Crafting,Overall,37,2501,203,1,Profession
+Crafting,Overall,38,2704,218,1,Profession
+Crafting,Overall,39,2922,234,1,Profession
+Crafting,Overall,40,3156,252,1,Profession
+Crafting,Overall,41,3408,271,1,Profession
+Crafting,Overall,42,3679,291,1,Profession
+Crafting,Overall,43,3970,313,1,Profession
+Crafting,Overall,44,4283,336,1,Profession
+Crafting,Overall,45,4619,361,1,Profession
+Crafting,Overall,46,4980,389,1,Profession
+Crafting,Overall,47,5369,418,1,Profession
+Crafting,Overall,48,5787,449,1,Profession
+Crafting,Overall,49,6236,483,1,Profession
+Crafting,Overall,50,6719,519,1,Profession
+Crafting,Overall,51,7238,558,1,Profession
+Crafting,Overall,52,7796,600,1,Profession
+Crafting,Overall,53,8396,645,1,Profession
+Crafting,Overall,54,9041,693,1,Profession
+Crafting,Overall,55,9734,745,1,Profession
+Crafting,Overall,56,10479,801,1,Profession
+Crafting,Overall,57,11280,861,1,Profession
+Crafting,Overall,58,12141,925,1,Profession
+Crafting,Overall,59,13066,995,1,Profession
+Crafting,Overall,60,14061,1070,1,Profession
+Crafting,Overall,61,15131,1150,1,Profession
+Crafting,Overall,62,16281,1236,1,Profession
+Crafting,Overall,63,17517,1329,1,Profession
+Crafting,Overall,64,18846,1428,1,Profession
+Crafting,Overall,65,20274,1535,1,Profession
+Crafting,Overall,66,21809,1651,1,Profession
+Crafting,Overall,67,23460,1774,1,Profession
+Crafting,Overall,68,25234,1907,1,Profession
+Crafting,Overall,69,27141,2051,1,Profession
+Crafting,Overall,70,29192,2204,1,Profession
+Crafting,Overall,71,31396,2370,1,Profession
+Crafting,Overall,72,33766,2547,1,Profession
+Crafting,Overall,73,36313,2738,1,Profession
+Crafting,Overall,74,39051,2944,1,Profession
+Crafting,Overall,75,41995,3165,1,Profession
+Crafting,Overall,76,45160,3402,1,Profession
+Crafting,Overall,77,48562,3657,1,Profession
+Crafting,Overall,78,52219,3931,1,Profession
+Crafting,Overall,79,56150,4226,1,Profession
+Crafting,Overall,80,60376,4543,1,Profession
+Crafting,Overall,81,64919,4884,1,Profession
+Crafting,Overall,82,69803,5250,1,Profession
+Crafting,Overall,83,75053,5644,1,Profession
+Crafting,Overall,84,80697,6067,1,Profession
+Crafting,Overall,85,86764,6522,1,Profession
+Crafting,Overall,86,93286,7011,1,Profession
+Crafting,Overall,87,100297,7537,1,Profession
+Crafting,Overall,88,107834,8103,1,Profession
+Crafting,Overall,89,115937,8710,1,Profession
+Crafting,Overall,90,124647,9364,1,Profession
+Crafting,Overall,91,134011,10066,1,Profession
+Crafting,Overall,92,144077,10821,1,Profession
+Crafting,Overall,93,154898,11632,1,Profession
+Crafting,Overall,94,166530,12505,1,Profession
+Crafting,Overall,95,179035,13443,1,Profession
+Crafting,Overall,96,192478,14451,1,Profession
+Crafting,Overall,97,206929,15535,1,Profession
+Crafting,Overall,98,222464,16700,1,Profession
+Crafting,Overall,99,239164,,1,Profession
+Crafting,Jewelry Making,1,0,4,10,Specialization
+Crafting,Jewelry Making,2,4,5,10,Specialization
+Crafting,Jewelry Making,3,9,6,10,Specialization
+Crafting,Jewelry Making,4,15,7,10,Specialization
+Crafting,Jewelry Making,5,22,10,10,Specialization
+Crafting,Jewelry Making,6,32,12,10,Specialization
+Crafting,Jewelry Making,7,44,15,10,Specialization
+Crafting,Jewelry Making,8,59,18,10,Specialization
+Crafting,Jewelry Making,9,77,23,10,Specialization
+Crafting,Jewelry Making,10,100,9,10,Specialization
+Crafting,Jewelry Making,11,109,10,10,Specialization
+Crafting,Jewelry Making,12,119,12,10,Specialization
+Crafting,Jewelry Making,13,131,13,10,Specialization
+Crafting,Jewelry Making,14,144,15,10,Specialization
+Crafting,Jewelry Making,15,159,18,10,Specialization
+Crafting,Jewelry Making,16,177,20,10,Specialization
+Crafting,Jewelry Making,17,197,22,10,Specialization
+Crafting,Jewelry Making,18,219,26,10,Specialization
+Crafting,Jewelry Making,19,245,30,10,Specialization
+Crafting,Jewelry Making,20,275,34,10,Specialization
+Crafting,Jewelry Making,21,309,38,10,Specialization
+Crafting,Jewelry Making,22,347,45,10,Specialization
+Crafting,Jewelry Making,23,392,50,10,Specialization
+Crafting,Jewelry Making,24,442,58,10,Specialization
+Crafting,Jewelry Making,25,500,39,10,Specialization
+Crafting,Jewelry Making,26,539,42,10,Specialization
+Crafting,Jewelry Making,27,581,46,10,Specialization
+Crafting,Jewelry Making,28,627,50,10,Specialization
+Crafting,Jewelry Making,29,677,54,10,Specialization
+Crafting,Jewelry Making,30,731,58,10,Specialization
+Crafting,Jewelry Making,31,789,63,10,Specialization
+Crafting,Jewelry Making,32,852,69,10,Specialization
+Crafting,Jewelry Making,33,921,74,10,Specialization
+Crafting,Jewelry Making,34,995,80,10,Specialization
+Crafting,Jewelry Making,35,1075,87,10,Specialization
+Crafting,Jewelry Making,36,1162,95,10,Specialization
+Crafting,Jewelry Making,37,1257,102,10,Specialization
+Crafting,Jewelry Making,38,1359,111,10,Specialization
+Crafting,Jewelry Making,39,1470,119,10,Specialization
+Crafting,Jewelry Making,40,1589,130,10,Specialization
+Crafting,Jewelry Making,41,1719,141,10,Specialization
+Crafting,Jewelry Making,42,1860,152,10,Specialization
+Crafting,Jewelry Making,43,2012,165,10,Specialization
+Crafting,Jewelry Making,44,2177,179,10,Specialization
+Crafting,Jewelry Making,45,2356,194,10,Specialization
+Crafting,Jewelry Making,46,2550,210,10,Specialization
+Crafting,Jewelry Making,47,2760,227,10,Specialization
+Crafting,Jewelry Making,48,2987,246,10,Specialization
+Crafting,Jewelry Making,49,3233,267,10,Specialization
+Crafting,Jewelry Making,50,3500,241,10,Specialization
+Crafting,Jewelry Making,51,3741,261,10,Specialization
+Crafting,Jewelry Making,52,4002,283,10,Specialization
+Crafting,Jewelry Making,53,4285,307,10,Specialization
+Crafting,Jewelry Making,54,4592,332,10,Specialization
+Crafting,Jewelry Making,55,4924,360,10,Specialization
+Crafting,Jewelry Making,56,5284,390,10,Specialization
+Crafting,Jewelry Making,57,5674,422,10,Specialization
+Crafting,Jewelry Making,58,6096,457,10,Specialization
+Crafting,Jewelry Making,59,6553,496,10,Specialization
+Crafting,Jewelry Making,60,7049,536,10,Specialization
+Crafting,Jewelry Making,61,7585,582,10,Specialization
+Crafting,Jewelry Making,62,8167,630,10,Specialization
+Crafting,Jewelry Making,63,8797,682,10,Specialization
+Crafting,Jewelry Making,64,9479,739,10,Specialization
+Crafting,Jewelry Making,65,10218,801,10,Specialization
+Crafting,Jewelry Making,66,11019,867,10,Specialization
+Crafting,Jewelry Making,67,11886,940,10,Specialization
+Crafting,Jewelry Making,68,12826,1018,10,Specialization
+Crafting,Jewelry Making,69,13844,1102,10,Specialization
+Crafting,Jewelry Making,70,14946,1195,10,Specialization
+Crafting,Jewelry Making,71,16141,1294,10,Specialization
+Crafting,Jewelry Making,72,17435,1402,10,Specialization
+Crafting,Jewelry Making,73,18837,1518,10,Specialization
+Crafting,Jewelry Making,74,20355,1645,10,Specialization
+Crafting,Jewelry Making,75,22000,960,10,Specialization
+Crafting,Jewelry Making,76,22960,1097,10,Specialization
+Crafting,Jewelry Making,77,24057,1253,10,Specialization
+Crafting,Jewelry Making,78,25310,1432,10,Specialization
+Crafting,Jewelry Making,79,26742,1636,10,Specialization
+Crafting,Jewelry Making,80,28378,1870,10,Specialization
+Crafting,Jewelry Making,81,30248,2137,10,Specialization
+Crafting,Jewelry Making,82,32385,2441,10,Specialization
+Crafting,Jewelry Making,83,34826,2789,10,Specialization
+Crafting,Jewelry Making,84,37615,3187,10,Specialization
+Crafting,Jewelry Making,85,40802,3642,10,Specialization
+Crafting,Jewelry Making,86,44444,4161,10,Specialization
+Crafting,Jewelry Making,87,48605,4755,10,Specialization
+Crafting,Jewelry Making,88,53360,5432,10,Specialization
+Crafting,Jewelry Making,89,58792,6208,10,Specialization
+Crafting,Jewelry Making,90,65000,2337,10,Specialization
+Crafting,Jewelry Making,91,67337,2918,10,Specialization
+Crafting,Jewelry Making,92,70255,3645,10,Specialization
+Crafting,Jewelry Making,93,73900,4552,10,Specialization
+Crafting,Jewelry Making,94,78452,5684,10,Specialization
+Crafting,Jewelry Making,95,84136,7099,10,Specialization
+Crafting,Jewelry Making,96,91235,8866,10,Specialization
+Crafting,Jewelry Making,97,100101,11072,10,Specialization
+Crafting,Jewelry Making,98,111173,13827,10,Specialization
+Crafting,Jewelry Making,99,125000,,10,Specialization
+Crafting,Utility Crafting,1,0,4,30,Specialization
+Crafting,Utility Crafting,2,4,5,30,Specialization
+Crafting,Utility Crafting,3,9,6,30,Specialization
+Crafting,Utility Crafting,4,15,7,30,Specialization
+Crafting,Utility Crafting,5,22,10,30,Specialization
+Crafting,Utility Crafting,6,32,12,30,Specialization
+Crafting,Utility Crafting,7,44,15,30,Specialization
+Crafting,Utility Crafting,8,59,18,30,Specialization
+Crafting,Utility Crafting,9,77,23,30,Specialization
+Crafting,Utility Crafting,10,100,9,30,Specialization
+Crafting,Utility Crafting,11,109,10,30,Specialization
+Crafting,Utility Crafting,12,119,12,30,Specialization
+Crafting,Utility Crafting,13,131,13,30,Specialization
+Crafting,Utility Crafting,14,144,15,30,Specialization
+Crafting,Utility Crafting,15,159,18,30,Specialization
+Crafting,Utility Crafting,16,177,20,30,Specialization
+Crafting,Utility Crafting,17,197,22,30,Specialization
+Crafting,Utility Crafting,18,219,26,30,Specialization
+Crafting,Utility Crafting,19,245,30,30,Specialization
+Crafting,Utility Crafting,20,275,34,30,Specialization
+Crafting,Utility Crafting,21,309,38,30,Specialization
+Crafting,Utility Crafting,22,347,45,30,Specialization
+Crafting,Utility Crafting,23,392,50,30,Specialization
+Crafting,Utility Crafting,24,442,58,30,Specialization
+Crafting,Utility Crafting,25,500,39,30,Specialization
+Crafting,Utility Crafting,26,539,42,30,Specialization
+Crafting,Utility Crafting,27,581,46,30,Specialization
+Crafting,Utility Crafting,28,627,50,30,Specialization
+Crafting,Utility Crafting,29,677,54,30,Specialization
+Crafting,Utility Crafting,30,731,58,30,Specialization
+Crafting,Utility Crafting,31,789,63,30,Specialization
+Crafting,Utility Crafting,32,852,69,30,Specialization
+Crafting,Utility Crafting,33,921,74,30,Specialization
+Crafting,Utility Crafting,34,995,80,30,Specialization
+Crafting,Utility Crafting,35,1075,87,30,Specialization
+Crafting,Utility Crafting,36,1162,95,30,Specialization
+Crafting,Utility Crafting,37,1257,102,30,Specialization
+Crafting,Utility Crafting,38,1359,111,30,Specialization
+Crafting,Utility Crafting,39,1470,119,30,Specialization
+Crafting,Utility Crafting,40,1589,130,30,Specialization
+Crafting,Utility Crafting,41,1719,141,30,Specialization
+Crafting,Utility Crafting,42,1860,152,30,Specialization
+Crafting,Utility Crafting,43,2012,165,30,Specialization
+Crafting,Utility Crafting,44,2177,179,30,Specialization
+Crafting,Utility Crafting,45,2356,194,30,Specialization
+Crafting,Utility Crafting,46,2550,210,30,Specialization
+Crafting,Utility Crafting,47,2760,227,30,Specialization
+Crafting,Utility Crafting,48,2987,246,30,Specialization
+Crafting,Utility Crafting,49,3233,267,30,Specialization
+Crafting,Utility Crafting,50,3500,241,30,Specialization
+Crafting,Utility Crafting,51,3741,261,30,Specialization
+Crafting,Utility Crafting,52,4002,283,30,Specialization
+Crafting,Utility Crafting,53,4285,307,30,Specialization
+Crafting,Utility Crafting,54,4592,332,30,Specialization
+Crafting,Utility Crafting,55,4924,360,30,Specialization
+Crafting,Utility Crafting,56,5284,390,30,Specialization
+Crafting,Utility Crafting,57,5674,422,30,Specialization
+Crafting,Utility Crafting,58,6096,457,30,Specialization
+Crafting,Utility Crafting,59,6553,496,30,Specialization
+Crafting,Utility Crafting,60,7049,536,30,Specialization
+Crafting,Utility Crafting,61,7585,582,30,Specialization
+Crafting,Utility Crafting,62,8167,630,30,Specialization
+Crafting,Utility Crafting,63,8797,682,30,Specialization
+Crafting,Utility Crafting,64,9479,739,30,Specialization
+Crafting,Utility Crafting,65,10218,801,30,Specialization
+Crafting,Utility Crafting,66,11019,867,30,Specialization
+Crafting,Utility Crafting,67,11886,940,30,Specialization
+Crafting,Utility Crafting,68,12826,1018,30,Specialization
+Crafting,Utility Crafting,69,13844,1102,30,Specialization
+Crafting,Utility Crafting,70,14946,1195,30,Specialization
+Crafting,Utility Crafting,71,16141,1294,30,Specialization
+Crafting,Utility Crafting,72,17435,1402,30,Specialization
+Crafting,Utility Crafting,73,18837,1518,30,Specialization
+Crafting,Utility Crafting,74,20355,1645,30,Specialization
+Crafting,Utility Crafting,75,22000,960,30,Specialization
+Crafting,Utility Crafting,76,22960,1097,30,Specialization
+Crafting,Utility Crafting,77,24057,1253,30,Specialization
+Crafting,Utility Crafting,78,25310,1432,30,Specialization
+Crafting,Utility Crafting,79,26742,1636,30,Specialization
+Crafting,Utility Crafting,80,28378,1870,30,Specialization
+Crafting,Utility Crafting,81,30248,2137,30,Specialization
+Crafting,Utility Crafting,82,32385,2441,30,Specialization
+Crafting,Utility Crafting,83,34826,2789,30,Specialization
+Crafting,Utility Crafting,84,37615,3187,30,Specialization
+Crafting,Utility Crafting,85,40802,3642,30,Specialization
+Crafting,Utility Crafting,86,44444,4161,30,Specialization
+Crafting,Utility Crafting,87,48605,4755,30,Specialization
+Crafting,Utility Crafting,88,53360,5432,30,Specialization
+Crafting,Utility Crafting,89,58792,6208,30,Specialization
+Crafting,Utility Crafting,90,65000,2337,30,Specialization
+Crafting,Utility Crafting,91,67337,2918,30,Specialization
+Crafting,Utility Crafting,92,70255,3645,30,Specialization
+Crafting,Utility Crafting,93,73900,4552,30,Specialization
+Crafting,Utility Crafting,94,78452,5684,30,Specialization
+Crafting,Utility Crafting,95,84136,7099,30,Specialization
+Crafting,Utility Crafting,96,91235,8866,30,Specialization
+Crafting,Utility Crafting,97,100101,11072,30,Specialization
+Crafting,Utility Crafting,98,111173,13827,30,Specialization
+Crafting,Utility Crafting,99,125000,,30,Specialization
+Crafting,Decorative Collectibles,1,0,4,30,Specialization
+Crafting,Decorative Collectibles,2,4,5,30,Specialization
+Crafting,Decorative Collectibles,3,9,6,30,Specialization
+Crafting,Decorative Collectibles,4,15,7,30,Specialization
+Crafting,Decorative Collectibles,5,22,10,30,Specialization
+Crafting,Decorative Collectibles,6,32,12,30,Specialization
+Crafting,Decorative Collectibles,7,44,15,30,Specialization
+Crafting,Decorative Collectibles,8,59,18,30,Specialization
+Crafting,Decorative Collectibles,9,77,23,30,Specialization
+Crafting,Decorative Collectibles,10,100,9,30,Specialization
+Crafting,Decorative Collectibles,11,109,10,30,Specialization
+Crafting,Decorative Collectibles,12,119,12,30,Specialization
+Crafting,Decorative Collectibles,13,131,13,30,Specialization
+Crafting,Decorative Collectibles,14,144,15,30,Specialization
+Crafting,Decorative Collectibles,15,159,18,30,Specialization
+Crafting,Decorative Collectibles,16,177,20,30,Specialization
+Crafting,Decorative Collectibles,17,197,22,30,Specialization
+Crafting,Decorative Collectibles,18,219,26,30,Specialization
+Crafting,Decorative Collectibles,19,245,30,30,Specialization
+Crafting,Decorative Collectibles,20,275,34,30,Specialization
+Crafting,Decorative Collectibles,21,309,38,30,Specialization
+Crafting,Decorative Collectibles,22,347,45,30,Specialization
+Crafting,Decorative Collectibles,23,392,50,30,Specialization
+Crafting,Decorative Collectibles,24,442,58,30,Specialization
+Crafting,Decorative Collectibles,25,500,39,30,Specialization
+Crafting,Decorative Collectibles,26,539,42,30,Specialization
+Crafting,Decorative Collectibles,27,581,46,30,Specialization
+Crafting,Decorative Collectibles,28,627,50,30,Specialization
+Crafting,Decorative Collectibles,29,677,54,30,Specialization
+Crafting,Decorative Collectibles,30,731,58,30,Specialization
+Crafting,Decorative Collectibles,31,789,63,30,Specialization
+Crafting,Decorative Collectibles,32,852,69,30,Specialization
+Crafting,Decorative Collectibles,33,921,74,30,Specialization
+Crafting,Decorative Collectibles,34,995,80,30,Specialization
+Crafting,Decorative Collectibles,35,1075,87,30,Specialization
+Crafting,Decorative Collectibles,36,1162,95,30,Specialization
+Crafting,Decorative Collectibles,37,1257,102,30,Specialization
+Crafting,Decorative Collectibles,38,1359,111,30,Specialization
+Crafting,Decorative Collectibles,39,1470,119,30,Specialization
+Crafting,Decorative Collectibles,40,1589,130,30,Specialization
+Crafting,Decorative Collectibles,41,1719,141,30,Specialization
+Crafting,Decorative Collectibles,42,1860,152,30,Specialization
+Crafting,Decorative Collectibles,43,2012,165,30,Specialization
+Crafting,Decorative Collectibles,44,2177,179,30,Specialization
+Crafting,Decorative Collectibles,45,2356,194,30,Specialization
+Crafting,Decorative Collectibles,46,2550,210,30,Specialization
+Crafting,Decorative Collectibles,47,2760,227,30,Specialization
+Crafting,Decorative Collectibles,48,2987,246,30,Specialization
+Crafting,Decorative Collectibles,49,3233,267,30,Specialization
+Crafting,Decorative Collectibles,50,3500,241,30,Specialization
+Crafting,Decorative Collectibles,51,3741,261,30,Specialization
+Crafting,Decorative Collectibles,52,4002,283,30,Specialization
+Crafting,Decorative Collectibles,53,4285,307,30,Specialization
+Crafting,Decorative Collectibles,54,4592,332,30,Specialization
+Crafting,Decorative Collectibles,55,4924,360,30,Specialization
+Crafting,Decorative Collectibles,56,5284,390,30,Specialization
+Crafting,Decorative Collectibles,57,5674,422,30,Specialization
+Crafting,Decorative Collectibles,58,6096,457,30,Specialization
+Crafting,Decorative Collectibles,59,6553,496,30,Specialization
+Crafting,Decorative Collectibles,60,7049,536,30,Specialization
+Crafting,Decorative Collectibles,61,7585,582,30,Specialization
+Crafting,Decorative Collectibles,62,8167,630,30,Specialization
+Crafting,Decorative Collectibles,63,8797,682,30,Specialization
+Crafting,Decorative Collectibles,64,9479,739,30,Specialization
+Crafting,Decorative Collectibles,65,10218,801,30,Specialization
+Crafting,Decorative Collectibles,66,11019,867,30,Specialization
+Crafting,Decorative Collectibles,67,11886,940,30,Specialization
+Crafting,Decorative Collectibles,68,12826,1018,30,Specialization
+Crafting,Decorative Collectibles,69,13844,1102,30,Specialization
+Crafting,Decorative Collectibles,70,14946,1195,30,Specialization
+Crafting,Decorative Collectibles,71,16141,1294,30,Specialization
+Crafting,Decorative Collectibles,72,17435,1402,30,Specialization
+Crafting,Decorative Collectibles,73,18837,1518,30,Specialization
+Crafting,Decorative Collectibles,74,20355,1645,30,Specialization
+Crafting,Decorative Collectibles,75,22000,960,30,Specialization
+Crafting,Decorative Collectibles,76,22960,1097,30,Specialization
+Crafting,Decorative Collectibles,77,24057,1253,30,Specialization
+Crafting,Decorative Collectibles,78,25310,1432,30,Specialization
+Crafting,Decorative Collectibles,79,26742,1636,30,Specialization
+Crafting,Decorative Collectibles,80,28378,1870,30,Specialization
+Crafting,Decorative Collectibles,81,30248,2137,30,Specialization
+Crafting,Decorative Collectibles,82,32385,2441,30,Specialization
+Crafting,Decorative Collectibles,83,34826,2789,30,Specialization
+Crafting,Decorative Collectibles,84,37615,3187,30,Specialization
+Crafting,Decorative Collectibles,85,40802,3642,30,Specialization
+Crafting,Decorative Collectibles,86,44444,4161,30,Specialization
+Crafting,Decorative Collectibles,87,48605,4755,30,Specialization
+Crafting,Decorative Collectibles,88,53360,5432,30,Specialization
+Crafting,Decorative Collectibles,89,58792,6208,30,Specialization
+Crafting,Decorative Collectibles,90,65000,2337,30,Specialization
+Crafting,Decorative Collectibles,91,67337,2918,30,Specialization
+Crafting,Decorative Collectibles,92,70255,3645,30,Specialization
+Crafting,Decorative Collectibles,93,73900,4552,30,Specialization
+Crafting,Decorative Collectibles,94,78452,5684,30,Specialization
+Crafting,Decorative Collectibles,95,84136,7099,30,Specialization
+Crafting,Decorative Collectibles,96,91235,8866,30,Specialization
+Crafting,Decorative Collectibles,97,100101,11072,30,Specialization
+Crafting,Decorative Collectibles,98,111173,13827,30,Specialization
+Crafting,Decorative Collectibles,99,125000,,30,Specialization
+Cooking,Overall,1,0,15,1,Profession
+Cooking,Overall,2,15,16,1,Profession
+Cooking,Overall,3,31,17,1,Profession
+Cooking,Overall,4,48,19,1,Profession
+Cooking,Overall,5,67,20,1,Profession
+Cooking,Overall,6,87,22,1,Profession
+Cooking,Overall,7,109,23,1,Profession
+Cooking,Overall,8,132,25,1,Profession
+Cooking,Overall,9,157,27,1,Profession
+Cooking,Overall,10,184,29,1,Profession
+Cooking,Overall,11,213,31,1,Profession
+Cooking,Overall,12,244,33,1,Profession
+Cooking,Overall,13,277,36,1,Profession
+Cooking,Overall,14,313,38,1,Profession
+Cooking,Overall,15,351,41,1,Profession
+Cooking,Overall,16,392,44,1,Profession
+Cooking,Overall,17,436,48,1,Profession
+Cooking,Overall,18,484,51,1,Profession
+Cooking,Overall,19,535,55,1,Profession
+Cooking,Overall,20,590,59,1,Profession
+Cooking,Overall,21,649,64,1,Profession
+Cooking,Overall,22,713,68,1,Profession
+Cooking,Overall,23,781,74,1,Profession
+Cooking,Overall,24,855,79,1,Profession
+Cooking,Overall,25,934,85,1,Profession
+Cooking,Overall,26,1019,91,1,Profession
+Cooking,Overall,27,1110,98,1,Profession
+Cooking,Overall,28,1208,106,1,Profession
+Cooking,Overall,29,1314,114,1,Profession
+Cooking,Overall,30,1428,122,1,Profession
+Cooking,Overall,31,1550,131,1,Profession
+Cooking,Overall,32,1681,141,1,Profession
+Cooking,Overall,33,1822,152,1,Profession
+Cooking,Overall,34,1974,163,1,Profession
+Cooking,Overall,35,2137,175,1,Profession
+Cooking,Overall,36,2312,189,1,Profession
+Cooking,Overall,37,2501,203,1,Profession
+Cooking,Overall,38,2704,218,1,Profession
+Cooking,Overall,39,2922,234,1,Profession
+Cooking,Overall,40,3156,252,1,Profession
+Cooking,Overall,41,3408,271,1,Profession
+Cooking,Overall,42,3679,291,1,Profession
+Cooking,Overall,43,3970,313,1,Profession
+Cooking,Overall,44,4283,336,1,Profession
+Cooking,Overall,45,4619,361,1,Profession
+Cooking,Overall,46,4980,389,1,Profession
+Cooking,Overall,47,5369,418,1,Profession
+Cooking,Overall,48,5787,449,1,Profession
+Cooking,Overall,49,6236,483,1,Profession
+Cooking,Overall,50,6719,519,1,Profession
+Cooking,Overall,51,7238,558,1,Profession
+Cooking,Overall,52,7796,600,1,Profession
+Cooking,Overall,53,8396,645,1,Profession
+Cooking,Overall,54,9041,693,1,Profession
+Cooking,Overall,55,9734,745,1,Profession
+Cooking,Overall,56,10479,801,1,Profession
+Cooking,Overall,57,11280,861,1,Profession
+Cooking,Overall,58,12141,925,1,Profession
+Cooking,Overall,59,13066,995,1,Profession
+Cooking,Overall,60,14061,1070,1,Profession
+Cooking,Overall,61,15131,1150,1,Profession
+Cooking,Overall,62,16281,1236,1,Profession
+Cooking,Overall,63,17517,1329,1,Profession
+Cooking,Overall,64,18846,1428,1,Profession
+Cooking,Overall,65,20274,1535,1,Profession
+Cooking,Overall,66,21809,1651,1,Profession
+Cooking,Overall,67,23460,1774,1,Profession
+Cooking,Overall,68,25234,1907,1,Profession
+Cooking,Overall,69,27141,2051,1,Profession
+Cooking,Overall,70,29192,2204,1,Profession
+Cooking,Overall,71,31396,2370,1,Profession
+Cooking,Overall,72,33766,2547,1,Profession
+Cooking,Overall,73,36313,2738,1,Profession
+Cooking,Overall,74,39051,2944,1,Profession
+Cooking,Overall,75,41995,3165,1,Profession
+Cooking,Overall,76,45160,3402,1,Profession
+Cooking,Overall,77,48562,3657,1,Profession
+Cooking,Overall,78,52219,3931,1,Profession
+Cooking,Overall,79,56150,4226,1,Profession
+Cooking,Overall,80,60376,4543,1,Profession
+Cooking,Overall,81,64919,4884,1,Profession
+Cooking,Overall,82,69803,5250,1,Profession
+Cooking,Overall,83,75053,5644,1,Profession
+Cooking,Overall,84,80697,6067,1,Profession
+Cooking,Overall,85,86764,6522,1,Profession
+Cooking,Overall,86,93286,7011,1,Profession
+Cooking,Overall,87,100297,7537,1,Profession
+Cooking,Overall,88,107834,8103,1,Profession
+Cooking,Overall,89,115937,8710,1,Profession
+Cooking,Overall,90,124647,9364,1,Profession
+Cooking,Overall,91,134011,10066,1,Profession
+Cooking,Overall,92,144077,10821,1,Profession
+Cooking,Overall,93,154898,11632,1,Profession
+Cooking,Overall,94,166530,12505,1,Profession
+Cooking,Overall,95,179035,13443,1,Profession
+Cooking,Overall,96,192478,14451,1,Profession
+Cooking,Overall,97,206929,15535,1,Profession
+Cooking,Overall,98,222464,16700,1,Profession
+Cooking,Overall,99,239164,,1,Profession
+Cooking,Everyday Chef,1,0,4,10,Specialization
+Cooking,Everyday Chef,2,4,5,10,Specialization
+Cooking,Everyday Chef,3,9,6,10,Specialization
+Cooking,Everyday Chef,4,15,7,10,Specialization
+Cooking,Everyday Chef,5,22,10,10,Specialization
+Cooking,Everyday Chef,6,32,12,10,Specialization
+Cooking,Everyday Chef,7,44,15,10,Specialization
+Cooking,Everyday Chef,8,59,18,10,Specialization
+Cooking,Everyday Chef,9,77,23,10,Specialization
+Cooking,Everyday Chef,10,100,9,10,Specialization
+Cooking,Everyday Chef,11,109,10,10,Specialization
+Cooking,Everyday Chef,12,119,12,10,Specialization
+Cooking,Everyday Chef,13,131,13,10,Specialization
+Cooking,Everyday Chef,14,144,15,10,Specialization
+Cooking,Everyday Chef,15,159,18,10,Specialization
+Cooking,Everyday Chef,16,177,20,10,Specialization
+Cooking,Everyday Chef,17,197,22,10,Specialization
+Cooking,Everyday Chef,18,219,26,10,Specialization
+Cooking,Everyday Chef,19,245,30,10,Specialization
+Cooking,Everyday Chef,20,275,34,10,Specialization
+Cooking,Everyday Chef,21,309,38,10,Specialization
+Cooking,Everyday Chef,22,347,45,10,Specialization
+Cooking,Everyday Chef,23,392,50,10,Specialization
+Cooking,Everyday Chef,24,442,58,10,Specialization
+Cooking,Everyday Chef,25,500,39,10,Specialization
+Cooking,Everyday Chef,26,539,42,10,Specialization
+Cooking,Everyday Chef,27,581,46,10,Specialization
+Cooking,Everyday Chef,28,627,50,10,Specialization
+Cooking,Everyday Chef,29,677,54,10,Specialization
+Cooking,Everyday Chef,30,731,58,10,Specialization
+Cooking,Everyday Chef,31,789,63,10,Specialization
+Cooking,Everyday Chef,32,852,69,10,Specialization
+Cooking,Everyday Chef,33,921,74,10,Specialization
+Cooking,Everyday Chef,34,995,80,10,Specialization
+Cooking,Everyday Chef,35,1075,87,10,Specialization
+Cooking,Everyday Chef,36,1162,95,10,Specialization
+Cooking,Everyday Chef,37,1257,102,10,Specialization
+Cooking,Everyday Chef,38,1359,111,10,Specialization
+Cooking,Everyday Chef,39,1470,119,10,Specialization
+Cooking,Everyday Chef,40,1589,130,10,Specialization
+Cooking,Everyday Chef,41,1719,141,10,Specialization
+Cooking,Everyday Chef,42,1860,152,10,Specialization
+Cooking,Everyday Chef,43,2012,165,10,Specialization
+Cooking,Everyday Chef,44,2177,179,10,Specialization
+Cooking,Everyday Chef,45,2356,194,10,Specialization
+Cooking,Everyday Chef,46,2550,210,10,Specialization
+Cooking,Everyday Chef,47,2760,227,10,Specialization
+Cooking,Everyday Chef,48,2987,246,10,Specialization
+Cooking,Everyday Chef,49,3233,267,10,Specialization
+Cooking,Everyday Chef,50,3500,241,10,Specialization
+Cooking,Everyday Chef,51,3741,261,10,Specialization
+Cooking,Everyday Chef,52,4002,283,10,Specialization
+Cooking,Everyday Chef,53,4285,307,10,Specialization
+Cooking,Everyday Chef,54,4592,332,10,Specialization
+Cooking,Everyday Chef,55,4924,360,10,Specialization
+Cooking,Everyday Chef,56,5284,390,10,Specialization
+Cooking,Everyday Chef,57,5674,422,10,Specialization
+Cooking,Everyday Chef,58,6096,457,10,Specialization
+Cooking,Everyday Chef,59,6553,496,10,Specialization
+Cooking,Everyday Chef,60,7049,536,10,Specialization
+Cooking,Everyday Chef,61,7585,582,10,Specialization
+Cooking,Everyday Chef,62,8167,630,10,Specialization
+Cooking,Everyday Chef,63,8797,682,10,Specialization
+Cooking,Everyday Chef,64,9479,739,10,Specialization
+Cooking,Everyday Chef,65,10218,801,10,Specialization
+Cooking,Everyday Chef,66,11019,867,10,Specialization
+Cooking,Everyday Chef,67,11886,940,10,Specialization
+Cooking,Everyday Chef,68,12826,1018,10,Specialization
+Cooking,Everyday Chef,69,13844,1102,10,Specialization
+Cooking,Everyday Chef,70,14946,1195,10,Specialization
+Cooking,Everyday Chef,71,16141,1294,10,Specialization
+Cooking,Everyday Chef,72,17435,1402,10,Specialization
+Cooking,Everyday Chef,73,18837,1518,10,Specialization
+Cooking,Everyday Chef,74,20355,1645,10,Specialization
+Cooking,Everyday Chef,75,22000,960,10,Specialization
+Cooking,Everyday Chef,76,22960,1097,10,Specialization
+Cooking,Everyday Chef,77,24057,1253,10,Specialization
+Cooking,Everyday Chef,78,25310,1432,10,Specialization
+Cooking,Everyday Chef,79,26742,1636,10,Specialization
+Cooking,Everyday Chef,80,28378,1870,10,Specialization
+Cooking,Everyday Chef,81,30248,2137,10,Specialization
+Cooking,Everyday Chef,82,32385,2441,10,Specialization
+Cooking,Everyday Chef,83,34826,2789,10,Specialization
+Cooking,Everyday Chef,84,37615,3187,10,Specialization
+Cooking,Everyday Chef,85,40802,3642,10,Specialization
+Cooking,Everyday Chef,86,44444,4161,10,Specialization
+Cooking,Everyday Chef,87,48605,4755,10,Specialization
+Cooking,Everyday Chef,88,53360,5432,10,Specialization
+Cooking,Everyday Chef,89,58792,6208,10,Specialization
+Cooking,Everyday Chef,90,65000,2337,10,Specialization
+Cooking,Everyday Chef,91,67337,2918,10,Specialization
+Cooking,Everyday Chef,92,70255,3645,10,Specialization
+Cooking,Everyday Chef,93,73900,4552,10,Specialization
+Cooking,Everyday Chef,94,78452,5684,10,Specialization
+Cooking,Everyday Chef,95,84136,7099,10,Specialization
+Cooking,Everyday Chef,96,91235,8866,10,Specialization
+Cooking,Everyday Chef,97,100101,11072,10,Specialization
+Cooking,Everyday Chef,98,111173,13827,10,Specialization
+Cooking,Everyday Chef,99,125000,,10,Specialization
+Cooking,Artisan Chef,1,0,4,30,Specialization
+Cooking,Artisan Chef,2,4,5,30,Specialization
+Cooking,Artisan Chef,3,9,6,30,Specialization
+Cooking,Artisan Chef,4,15,7,30,Specialization
+Cooking,Artisan Chef,5,22,10,30,Specialization
+Cooking,Artisan Chef,6,32,12,30,Specialization
+Cooking,Artisan Chef,7,44,15,30,Specialization
+Cooking,Artisan Chef,8,59,18,30,Specialization
+Cooking,Artisan Chef,9,77,23,30,Specialization
+Cooking,Artisan Chef,10,100,9,30,Specialization
+Cooking,Artisan Chef,11,109,10,30,Specialization
+Cooking,Artisan Chef,12,119,12,30,Specialization
+Cooking,Artisan Chef,13,131,13,30,Specialization
+Cooking,Artisan Chef,14,144,15,30,Specialization
+Cooking,Artisan Chef,15,159,18,30,Specialization
+Cooking,Artisan Chef,16,177,20,30,Specialization
+Cooking,Artisan Chef,17,197,22,30,Specialization
+Cooking,Artisan Chef,18,219,26,30,Specialization
+Cooking,Artisan Chef,19,245,30,30,Specialization
+Cooking,Artisan Chef,20,275,34,30,Specialization
+Cooking,Artisan Chef,21,309,38,30,Specialization
+Cooking,Artisan Chef,22,347,45,30,Specialization
+Cooking,Artisan Chef,23,392,50,30,Specialization
+Cooking,Artisan Chef,24,442,58,30,Specialization
+Cooking,Artisan Chef,25,500,39,30,Specialization
+Cooking,Artisan Chef,26,539,42,30,Specialization
+Cooking,Artisan Chef,27,581,46,30,Specialization
+Cooking,Artisan Chef,28,627,50,30,Specialization
+Cooking,Artisan Chef,29,677,54,30,Specialization
+Cooking,Artisan Chef,30,731,58,30,Specialization
+Cooking,Artisan Chef,31,789,63,30,Specialization
+Cooking,Artisan Chef,32,852,69,30,Specialization
+Cooking,Artisan Chef,33,921,74,30,Specialization
+Cooking,Artisan Chef,34,995,80,30,Specialization
+Cooking,Artisan Chef,35,1075,87,30,Specialization
+Cooking,Artisan Chef,36,1162,95,30,Specialization
+Cooking,Artisan Chef,37,1257,102,30,Specialization
+Cooking,Artisan Chef,38,1359,111,30,Specialization
+Cooking,Artisan Chef,39,1470,119,30,Specialization
+Cooking,Artisan Chef,40,1589,130,30,Specialization
+Cooking,Artisan Chef,41,1719,141,30,Specialization
+Cooking,Artisan Chef,42,1860,152,30,Specialization
+Cooking,Artisan Chef,43,2012,165,30,Specialization
+Cooking,Artisan Chef,44,2177,179,30,Specialization
+Cooking,Artisan Chef,45,2356,194,30,Specialization
+Cooking,Artisan Chef,46,2550,210,30,Specialization
+Cooking,Artisan Chef,47,2760,227,30,Specialization
+Cooking,Artisan Chef,48,2987,246,30,Specialization
+Cooking,Artisan Chef,49,3233,267,30,Specialization
+Cooking,Artisan Chef,50,3500,241,30,Specialization
+Cooking,Artisan Chef,51,3741,261,30,Specialization
+Cooking,Artisan Chef,52,4002,283,30,Specialization
+Cooking,Artisan Chef,53,4285,307,30,Specialization
+Cooking,Artisan Chef,54,4592,332,30,Specialization
+Cooking,Artisan Chef,55,4924,360,30,Specialization
+Cooking,Artisan Chef,56,5284,390,30,Specialization
+Cooking,Artisan Chef,57,5674,422,30,Specialization
+Cooking,Artisan Chef,58,6096,457,30,Specialization
+Cooking,Artisan Chef,59,6553,496,30,Specialization
+Cooking,Artisan Chef,60,7049,536,30,Specialization
+Cooking,Artisan Chef,61,7585,582,30,Specialization
+Cooking,Artisan Chef,62,8167,630,30,Specialization
+Cooking,Artisan Chef,63,8797,682,30,Specialization
+Cooking,Artisan Chef,64,9479,739,30,Specialization
+Cooking,Artisan Chef,65,10218,801,30,Specialization
+Cooking,Artisan Chef,66,11019,867,30,Specialization
+Cooking,Artisan Chef,67,11886,940,30,Specialization
+Cooking,Artisan Chef,68,12826,1018,30,Specialization
+Cooking,Artisan Chef,69,13844,1102,30,Specialization
+Cooking,Artisan Chef,70,14946,1195,30,Specialization
+Cooking,Artisan Chef,71,16141,1294,30,Specialization
+Cooking,Artisan Chef,72,17435,1402,30,Specialization
+Cooking,Artisan Chef,73,18837,1518,30,Specialization
+Cooking,Artisan Chef,74,20355,1645,30,Specialization
+Cooking,Artisan Chef,75,22000,960,30,Specialization
+Cooking,Artisan Chef,76,22960,1097,30,Specialization
+Cooking,Artisan Chef,77,24057,1253,30,Specialization
+Cooking,Artisan Chef,78,25310,1432,30,Specialization
+Cooking,Artisan Chef,79,26742,1636,30,Specialization
+Cooking,Artisan Chef,80,28378,1870,30,Specialization
+Cooking,Artisan Chef,81,30248,2137,30,Specialization
+Cooking,Artisan Chef,82,32385,2441,30,Specialization
+Cooking,Artisan Chef,83,34826,2789,30,Specialization
+Cooking,Artisan Chef,84,37615,3187,30,Specialization
+Cooking,Artisan Chef,85,40802,3642,30,Specialization
+Cooking,Artisan Chef,86,44444,4161,30,Specialization
+Cooking,Artisan Chef,87,48605,4755,30,Specialization
+Cooking,Artisan Chef,88,53360,5432,30,Specialization
+Cooking,Artisan Chef,89,58792,6208,30,Specialization
+Cooking,Artisan Chef,90,65000,2337,30,Specialization
+Cooking,Artisan Chef,91,67337,2918,30,Specialization
+Cooking,Artisan Chef,92,70255,3645,30,Specialization
+Cooking,Artisan Chef,93,73900,4552,30,Specialization
+Cooking,Artisan Chef,94,78452,5684,30,Specialization
+Cooking,Artisan Chef,95,84136,7099,30,Specialization
+Cooking,Artisan Chef,96,91235,8866,30,Specialization
+Cooking,Artisan Chef,97,100101,11072,30,Specialization
+Cooking,Artisan Chef,98,111173,13827,30,Specialization
+Cooking,Artisan Chef,99,125000,,30,Specialization
+Cooking,Master Chef,1,0,4,30,Specialization
+Cooking,Master Chef,2,4,5,30,Specialization
+Cooking,Master Chef,3,9,6,30,Specialization
+Cooking,Master Chef,4,15,7,30,Specialization
+Cooking,Master Chef,5,22,10,30,Specialization
+Cooking,Master Chef,6,32,12,30,Specialization
+Cooking,Master Chef,7,44,15,30,Specialization
+Cooking,Master Chef,8,59,18,30,Specialization
+Cooking,Master Chef,9,77,23,30,Specialization
+Cooking,Master Chef,10,100,9,30,Specialization
+Cooking,Master Chef,11,109,10,30,Specialization
+Cooking,Master Chef,12,119,12,30,Specialization
+Cooking,Master Chef,13,131,13,30,Specialization
+Cooking,Master Chef,14,144,15,30,Specialization
+Cooking,Master Chef,15,159,18,30,Specialization
+Cooking,Master Chef,16,177,20,30,Specialization
+Cooking,Master Chef,17,197,22,30,Specialization
+Cooking,Master Chef,18,219,26,30,Specialization
+Cooking,Master Chef,19,245,30,30,Specialization
+Cooking,Master Chef,20,275,34,30,Specialization
+Cooking,Master Chef,21,309,38,30,Specialization
+Cooking,Master Chef,22,347,45,30,Specialization
+Cooking,Master Chef,23,392,50,30,Specialization
+Cooking,Master Chef,24,442,58,30,Specialization
+Cooking,Master Chef,25,500,39,30,Specialization
+Cooking,Master Chef,26,539,42,30,Specialization
+Cooking,Master Chef,27,581,46,30,Specialization
+Cooking,Master Chef,28,627,50,30,Specialization
+Cooking,Master Chef,29,677,54,30,Specialization
+Cooking,Master Chef,30,731,58,30,Specialization
+Cooking,Master Chef,31,789,63,30,Specialization
+Cooking,Master Chef,32,852,69,30,Specialization
+Cooking,Master Chef,33,921,74,30,Specialization
+Cooking,Master Chef,34,995,80,30,Specialization
+Cooking,Master Chef,35,1075,87,30,Specialization
+Cooking,Master Chef,36,1162,95,30,Specialization
+Cooking,Master Chef,37,1257,102,30,Specialization
+Cooking,Master Chef,38,1359,111,30,Specialization
+Cooking,Master Chef,39,1470,119,30,Specialization
+Cooking,Master Chef,40,1589,130,30,Specialization
+Cooking,Master Chef,41,1719,141,30,Specialization
+Cooking,Master Chef,42,1860,152,30,Specialization
+Cooking,Master Chef,43,2012,165,30,Specialization
+Cooking,Master Chef,44,2177,179,30,Specialization
+Cooking,Master Chef,45,2356,194,30,Specialization
+Cooking,Master Chef,46,2550,210,30,Specialization
+Cooking,Master Chef,47,2760,227,30,Specialization
+Cooking,Master Chef,48,2987,246,30,Specialization
+Cooking,Master Chef,49,3233,267,30,Specialization
+Cooking,Master Chef,50,3500,241,30,Specialization
+Cooking,Master Chef,51,3741,261,30,Specialization
+Cooking,Master Chef,52,4002,283,30,Specialization
+Cooking,Master Chef,53,4285,307,30,Specialization
+Cooking,Master Chef,54,4592,332,30,Specialization
+Cooking,Master Chef,55,4924,360,30,Specialization
+Cooking,Master Chef,56,5284,390,30,Specialization
+Cooking,Master Chef,57,5674,422,30,Specialization
+Cooking,Master Chef,58,6096,457,30,Specialization
+Cooking,Master Chef,59,6553,496,30,Specialization
+Cooking,Master Chef,60,7049,536,30,Specialization
+Cooking,Master Chef,61,7585,582,30,Specialization
+Cooking,Master Chef,62,8167,630,30,Specialization
+Cooking,Master Chef,63,8797,682,30,Specialization
+Cooking,Master Chef,64,9479,739,30,Specialization
+Cooking,Master Chef,65,10218,801,30,Specialization
+Cooking,Master Chef,66,11019,867,30,Specialization
+Cooking,Master Chef,67,11886,940,30,Specialization
+Cooking,Master Chef,68,12826,1018,30,Specialization
+Cooking,Master Chef,69,13844,1102,30,Specialization
+Cooking,Master Chef,70,14946,1195,30,Specialization
+Cooking,Master Chef,71,16141,1294,30,Specialization
+Cooking,Master Chef,72,17435,1402,30,Specialization
+Cooking,Master Chef,73,18837,1518,30,Specialization
+Cooking,Master Chef,74,20355,1645,30,Specialization
+Cooking,Master Chef,75,22000,960,30,Specialization
+Cooking,Master Chef,76,22960,1097,30,Specialization
+Cooking,Master Chef,77,24057,1253,30,Specialization
+Cooking,Master Chef,78,25310,1432,30,Specialization
+Cooking,Master Chef,79,26742,1636,30,Specialization
+Cooking,Master Chef,80,28378,1870,30,Specialization
+Cooking,Master Chef,81,30248,2137,30,Specialization
+Cooking,Master Chef,82,32385,2441,30,Specialization
+Cooking,Master Chef,83,34826,2789,30,Specialization
+Cooking,Master Chef,84,37615,3187,30,Specialization
+Cooking,Master Chef,85,40802,3642,30,Specialization
+Cooking,Master Chef,86,44444,4161,30,Specialization
+Cooking,Master Chef,87,48605,4755,30,Specialization
+Cooking,Master Chef,88,53360,5432,30,Specialization
+Cooking,Master Chef,89,58792,6208,30,Specialization
+Cooking,Master Chef,90,65000,2337,30,Specialization
+Cooking,Master Chef,91,67337,2918,30,Specialization
+Cooking,Master Chef,92,70255,3645,30,Specialization
+Cooking,Master Chef,93,73900,4552,30,Specialization
+Cooking,Master Chef,94,78452,5684,30,Specialization
+Cooking,Master Chef,95,84136,7099,30,Specialization
+Cooking,Master Chef,96,91235,8866,30,Specialization
+Cooking,Master Chef,97,100101,11072,30,Specialization
+Cooking,Master Chef,98,111173,13827,30,Specialization
+Cooking,Master Chef,99,125000,,30,Specialization
+Enchanting,Overall,1,0,15,1,Profession
+Enchanting,Overall,2,15,16,1,Profession
+Enchanting,Overall,3,31,17,1,Profession
+Enchanting,Overall,4,48,19,1,Profession
+Enchanting,Overall,5,67,20,1,Profession
+Enchanting,Overall,6,87,22,1,Profession
+Enchanting,Overall,7,109,23,1,Profession
+Enchanting,Overall,8,132,25,1,Profession
+Enchanting,Overall,9,157,27,1,Profession
+Enchanting,Overall,10,184,29,1,Profession
+Enchanting,Overall,11,213,31,1,Profession
+Enchanting,Overall,12,244,33,1,Profession
+Enchanting,Overall,13,277,36,1,Profession
+Enchanting,Overall,14,313,38,1,Profession
+Enchanting,Overall,15,351,41,1,Profession
+Enchanting,Overall,16,392,44,1,Profession
+Enchanting,Overall,17,436,48,1,Profession
+Enchanting,Overall,18,484,51,1,Profession
+Enchanting,Overall,19,535,55,1,Profession
+Enchanting,Overall,20,590,59,1,Profession
+Enchanting,Overall,21,649,64,1,Profession
+Enchanting,Overall,22,713,68,1,Profession
+Enchanting,Overall,23,781,74,1,Profession
+Enchanting,Overall,24,855,79,1,Profession
+Enchanting,Overall,25,934,85,1,Profession
+Enchanting,Overall,26,1019,91,1,Profession
+Enchanting,Overall,27,1110,98,1,Profession
+Enchanting,Overall,28,1208,106,1,Profession
+Enchanting,Overall,29,1314,114,1,Profession
+Enchanting,Overall,30,1428,122,1,Profession
+Enchanting,Overall,31,1550,131,1,Profession
+Enchanting,Overall,32,1681,141,1,Profession
+Enchanting,Overall,33,1822,152,1,Profession
+Enchanting,Overall,34,1974,163,1,Profession
+Enchanting,Overall,35,2137,175,1,Profession
+Enchanting,Overall,36,2312,189,1,Profession
+Enchanting,Overall,37,2501,203,1,Profession
+Enchanting,Overall,38,2704,218,1,Profession
+Enchanting,Overall,39,2922,234,1,Profession
+Enchanting,Overall,40,3156,252,1,Profession
+Enchanting,Overall,41,3408,271,1,Profession
+Enchanting,Overall,42,3679,291,1,Profession
+Enchanting,Overall,43,3970,313,1,Profession
+Enchanting,Overall,44,4283,336,1,Profession
+Enchanting,Overall,45,4619,361,1,Profession
+Enchanting,Overall,46,4980,389,1,Profession
+Enchanting,Overall,47,5369,418,1,Profession
+Enchanting,Overall,48,5787,449,1,Profession
+Enchanting,Overall,49,6236,483,1,Profession
+Enchanting,Overall,50,6719,519,1,Profession
+Enchanting,Overall,51,7238,558,1,Profession
+Enchanting,Overall,52,7796,600,1,Profession
+Enchanting,Overall,53,8396,645,1,Profession
+Enchanting,Overall,54,9041,693,1,Profession
+Enchanting,Overall,55,9734,745,1,Profession
+Enchanting,Overall,56,10479,801,1,Profession
+Enchanting,Overall,57,11280,861,1,Profession
+Enchanting,Overall,58,12141,925,1,Profession
+Enchanting,Overall,59,13066,995,1,Profession
+Enchanting,Overall,60,14061,1070,1,Profession
+Enchanting,Overall,61,15131,1150,1,Profession
+Enchanting,Overall,62,16281,1236,1,Profession
+Enchanting,Overall,63,17517,1329,1,Profession
+Enchanting,Overall,64,18846,1428,1,Profession
+Enchanting,Overall,65,20274,1535,1,Profession
+Enchanting,Overall,66,21809,1651,1,Profession
+Enchanting,Overall,67,23460,1774,1,Profession
+Enchanting,Overall,68,25234,1907,1,Profession
+Enchanting,Overall,69,27141,2051,1,Profession
+Enchanting,Overall,70,29192,2204,1,Profession
+Enchanting,Overall,71,31396,2370,1,Profession
+Enchanting,Overall,72,33766,2547,1,Profession
+Enchanting,Overall,73,36313,2738,1,Profession
+Enchanting,Overall,74,39051,2944,1,Profession
+Enchanting,Overall,75,41995,3165,1,Profession
+Enchanting,Overall,76,45160,3402,1,Profession
+Enchanting,Overall,77,48562,3657,1,Profession
+Enchanting,Overall,78,52219,3931,1,Profession
+Enchanting,Overall,79,56150,4226,1,Profession
+Enchanting,Overall,80,60376,4543,1,Profession
+Enchanting,Overall,81,64919,4884,1,Profession
+Enchanting,Overall,82,69803,5250,1,Profession
+Enchanting,Overall,83,75053,5644,1,Profession
+Enchanting,Overall,84,80697,6067,1,Profession
+Enchanting,Overall,85,86764,6522,1,Profession
+Enchanting,Overall,86,93286,7011,1,Profession
+Enchanting,Overall,87,100297,7537,1,Profession
+Enchanting,Overall,88,107834,8103,1,Profession
+Enchanting,Overall,89,115937,8710,1,Profession
+Enchanting,Overall,90,124647,9364,1,Profession
+Enchanting,Overall,91,134011,10066,1,Profession
+Enchanting,Overall,92,144077,10821,1,Profession
+Enchanting,Overall,93,154898,11632,1,Profession
+Enchanting,Overall,94,166530,12505,1,Profession
+Enchanting,Overall,95,179035,13443,1,Profession
+Enchanting,Overall,96,192478,14451,1,Profession
+Enchanting,Overall,97,206929,15535,1,Profession
+Enchanting,Overall,98,222464,16700,1,Profession
+Enchanting,Overall,99,239164,,1,Profession
+Enchanting,Elemental Enchanting,1,0,4,10,Specialization
+Enchanting,Elemental Enchanting,2,4,5,10,Specialization
+Enchanting,Elemental Enchanting,3,9,6,10,Specialization
+Enchanting,Elemental Enchanting,4,15,7,10,Specialization
+Enchanting,Elemental Enchanting,5,22,10,10,Specialization
+Enchanting,Elemental Enchanting,6,32,12,10,Specialization
+Enchanting,Elemental Enchanting,7,44,15,10,Specialization
+Enchanting,Elemental Enchanting,8,59,18,10,Specialization
+Enchanting,Elemental Enchanting,9,77,23,10,Specialization
+Enchanting,Elemental Enchanting,10,100,9,10,Specialization
+Enchanting,Elemental Enchanting,11,109,10,10,Specialization
+Enchanting,Elemental Enchanting,12,119,12,10,Specialization
+Enchanting,Elemental Enchanting,13,131,13,10,Specialization
+Enchanting,Elemental Enchanting,14,144,15,10,Specialization
+Enchanting,Elemental Enchanting,15,159,18,10,Specialization
+Enchanting,Elemental Enchanting,16,177,20,10,Specialization
+Enchanting,Elemental Enchanting,17,197,22,10,Specialization
+Enchanting,Elemental Enchanting,18,219,26,10,Specialization
+Enchanting,Elemental Enchanting,19,245,30,10,Specialization
+Enchanting,Elemental Enchanting,20,275,34,10,Specialization
+Enchanting,Elemental Enchanting,21,309,38,10,Specialization
+Enchanting,Elemental Enchanting,22,347,45,10,Specialization
+Enchanting,Elemental Enchanting,23,392,50,10,Specialization
+Enchanting,Elemental Enchanting,24,442,58,10,Specialization
+Enchanting,Elemental Enchanting,25,500,39,10,Specialization
+Enchanting,Elemental Enchanting,26,539,42,10,Specialization
+Enchanting,Elemental Enchanting,27,581,46,10,Specialization
+Enchanting,Elemental Enchanting,28,627,50,10,Specialization
+Enchanting,Elemental Enchanting,29,677,54,10,Specialization
+Enchanting,Elemental Enchanting,30,731,58,10,Specialization
+Enchanting,Elemental Enchanting,31,789,63,10,Specialization
+Enchanting,Elemental Enchanting,32,852,69,10,Specialization
+Enchanting,Elemental Enchanting,33,921,74,10,Specialization
+Enchanting,Elemental Enchanting,34,995,80,10,Specialization
+Enchanting,Elemental Enchanting,35,1075,87,10,Specialization
+Enchanting,Elemental Enchanting,36,1162,95,10,Specialization
+Enchanting,Elemental Enchanting,37,1257,102,10,Specialization
+Enchanting,Elemental Enchanting,38,1359,111,10,Specialization
+Enchanting,Elemental Enchanting,39,1470,119,10,Specialization
+Enchanting,Elemental Enchanting,40,1589,130,10,Specialization
+Enchanting,Elemental Enchanting,41,1719,141,10,Specialization
+Enchanting,Elemental Enchanting,42,1860,152,10,Specialization
+Enchanting,Elemental Enchanting,43,2012,165,10,Specialization
+Enchanting,Elemental Enchanting,44,2177,179,10,Specialization
+Enchanting,Elemental Enchanting,45,2356,194,10,Specialization
+Enchanting,Elemental Enchanting,46,2550,210,10,Specialization
+Enchanting,Elemental Enchanting,47,2760,227,10,Specialization
+Enchanting,Elemental Enchanting,48,2987,246,10,Specialization
+Enchanting,Elemental Enchanting,49,3233,267,10,Specialization
+Enchanting,Elemental Enchanting,50,3500,241,10,Specialization
+Enchanting,Elemental Enchanting,51,3741,261,10,Specialization
+Enchanting,Elemental Enchanting,52,4002,283,10,Specialization
+Enchanting,Elemental Enchanting,53,4285,307,10,Specialization
+Enchanting,Elemental Enchanting,54,4592,332,10,Specialization
+Enchanting,Elemental Enchanting,55,4924,360,10,Specialization
+Enchanting,Elemental Enchanting,56,5284,390,10,Specialization
+Enchanting,Elemental Enchanting,57,5674,422,10,Specialization
+Enchanting,Elemental Enchanting,58,6096,457,10,Specialization
+Enchanting,Elemental Enchanting,59,6553,496,10,Specialization
+Enchanting,Elemental Enchanting,60,7049,536,10,Specialization
+Enchanting,Elemental Enchanting,61,7585,582,10,Specialization
+Enchanting,Elemental Enchanting,62,8167,630,10,Specialization
+Enchanting,Elemental Enchanting,63,8797,682,10,Specialization
+Enchanting,Elemental Enchanting,64,9479,739,10,Specialization
+Enchanting,Elemental Enchanting,65,10218,801,10,Specialization
+Enchanting,Elemental Enchanting,66,11019,867,10,Specialization
+Enchanting,Elemental Enchanting,67,11886,940,10,Specialization
+Enchanting,Elemental Enchanting,68,12826,1018,10,Specialization
+Enchanting,Elemental Enchanting,69,13844,1102,10,Specialization
+Enchanting,Elemental Enchanting,70,14946,1195,10,Specialization
+Enchanting,Elemental Enchanting,71,16141,1294,10,Specialization
+Enchanting,Elemental Enchanting,72,17435,1402,10,Specialization
+Enchanting,Elemental Enchanting,73,18837,1518,10,Specialization
+Enchanting,Elemental Enchanting,74,20355,1645,10,Specialization
+Enchanting,Elemental Enchanting,75,22000,960,10,Specialization
+Enchanting,Elemental Enchanting,76,22960,1097,10,Specialization
+Enchanting,Elemental Enchanting,77,24057,1253,10,Specialization
+Enchanting,Elemental Enchanting,78,25310,1432,10,Specialization
+Enchanting,Elemental Enchanting,79,26742,1636,10,Specialization
+Enchanting,Elemental Enchanting,80,28378,1870,10,Specialization
+Enchanting,Elemental Enchanting,81,30248,2137,10,Specialization
+Enchanting,Elemental Enchanting,82,32385,2441,10,Specialization
+Enchanting,Elemental Enchanting,83,34826,2789,10,Specialization
+Enchanting,Elemental Enchanting,84,37615,3187,10,Specialization
+Enchanting,Elemental Enchanting,85,40802,3642,10,Specialization
+Enchanting,Elemental Enchanting,86,44444,4161,10,Specialization
+Enchanting,Elemental Enchanting,87,48605,4755,10,Specialization
+Enchanting,Elemental Enchanting,88,53360,5432,10,Specialization
+Enchanting,Elemental Enchanting,89,58792,6208,10,Specialization
+Enchanting,Elemental Enchanting,90,65000,2337,10,Specialization
+Enchanting,Elemental Enchanting,91,67337,2918,10,Specialization
+Enchanting,Elemental Enchanting,92,70255,3645,10,Specialization
+Enchanting,Elemental Enchanting,93,73900,4552,10,Specialization
+Enchanting,Elemental Enchanting,94,78452,5684,10,Specialization
+Enchanting,Elemental Enchanting,95,84136,7099,10,Specialization
+Enchanting,Elemental Enchanting,96,91235,8866,10,Specialization
+Enchanting,Elemental Enchanting,97,100101,11072,10,Specialization
+Enchanting,Elemental Enchanting,98,111173,13827,10,Specialization
+Enchanting,Elemental Enchanting,99,125000,,10,Specialization
+Enchanting,Advanced Enchanting,1,0,4,30,Specialization
+Enchanting,Advanced Enchanting,2,4,5,30,Specialization
+Enchanting,Advanced Enchanting,3,9,6,30,Specialization
+Enchanting,Advanced Enchanting,4,15,7,30,Specialization
+Enchanting,Advanced Enchanting,5,22,10,30,Specialization
+Enchanting,Advanced Enchanting,6,32,12,30,Specialization
+Enchanting,Advanced Enchanting,7,44,15,30,Specialization
+Enchanting,Advanced Enchanting,8,59,18,30,Specialization
+Enchanting,Advanced Enchanting,9,77,23,30,Specialization
+Enchanting,Advanced Enchanting,10,100,9,30,Specialization
+Enchanting,Advanced Enchanting,11,109,10,30,Specialization
+Enchanting,Advanced Enchanting,12,119,12,30,Specialization
+Enchanting,Advanced Enchanting,13,131,13,30,Specialization
+Enchanting,Advanced Enchanting,14,144,15,30,Specialization
+Enchanting,Advanced Enchanting,15,159,18,30,Specialization
+Enchanting,Advanced Enchanting,16,177,20,30,Specialization
+Enchanting,Advanced Enchanting,17,197,22,30,Specialization
+Enchanting,Advanced Enchanting,18,219,26,30,Specialization
+Enchanting,Advanced Enchanting,19,245,30,30,Specialization
+Enchanting,Advanced Enchanting,20,275,34,30,Specialization
+Enchanting,Advanced Enchanting,21,309,38,30,Specialization
+Enchanting,Advanced Enchanting,22,347,45,30,Specialization
+Enchanting,Advanced Enchanting,23,392,50,30,Specialization
+Enchanting,Advanced Enchanting,24,442,58,30,Specialization
+Enchanting,Advanced Enchanting,25,500,39,30,Specialization
+Enchanting,Advanced Enchanting,26,539,42,30,Specialization
+Enchanting,Advanced Enchanting,27,581,46,30,Specialization
+Enchanting,Advanced Enchanting,28,627,50,30,Specialization
+Enchanting,Advanced Enchanting,29,677,54,30,Specialization
+Enchanting,Advanced Enchanting,30,731,58,30,Specialization
+Enchanting,Advanced Enchanting,31,789,63,30,Specialization
+Enchanting,Advanced Enchanting,32,852,69,30,Specialization
+Enchanting,Advanced Enchanting,33,921,74,30,Specialization
+Enchanting,Advanced Enchanting,34,995,80,30,Specialization
+Enchanting,Advanced Enchanting,35,1075,87,30,Specialization
+Enchanting,Advanced Enchanting,36,1162,95,30,Specialization
+Enchanting,Advanced Enchanting,37,1257,102,30,Specialization
+Enchanting,Advanced Enchanting,38,1359,111,30,Specialization
+Enchanting,Advanced Enchanting,39,1470,119,30,Specialization
+Enchanting,Advanced Enchanting,40,1589,130,30,Specialization
+Enchanting,Advanced Enchanting,41,1719,141,30,Specialization
+Enchanting,Advanced Enchanting,42,1860,152,30,Specialization
+Enchanting,Advanced Enchanting,43,2012,165,30,Specialization
+Enchanting,Advanced Enchanting,44,2177,179,30,Specialization
+Enchanting,Advanced Enchanting,45,2356,194,30,Specialization
+Enchanting,Advanced Enchanting,46,2550,210,30,Specialization
+Enchanting,Advanced Enchanting,47,2760,227,30,Specialization
+Enchanting,Advanced Enchanting,48,2987,246,30,Specialization
+Enchanting,Advanced Enchanting,49,3233,267,30,Specialization
+Enchanting,Advanced Enchanting,50,3500,241,30,Specialization
+Enchanting,Advanced Enchanting,51,3741,261,30,Specialization
+Enchanting,Advanced Enchanting,52,4002,283,30,Specialization
+Enchanting,Advanced Enchanting,53,4285,307,30,Specialization
+Enchanting,Advanced Enchanting,54,4592,332,30,Specialization
+Enchanting,Advanced Enchanting,55,4924,360,30,Specialization
+Enchanting,Advanced Enchanting,56,5284,390,30,Specialization
+Enchanting,Advanced Enchanting,57,5674,422,30,Specialization
+Enchanting,Advanced Enchanting,58,6096,457,30,Specialization
+Enchanting,Advanced Enchanting,59,6553,496,30,Specialization
+Enchanting,Advanced Enchanting,60,7049,536,30,Specialization
+Enchanting,Advanced Enchanting,61,7585,582,30,Specialization
+Enchanting,Advanced Enchanting,62,8167,630,30,Specialization
+Enchanting,Advanced Enchanting,63,8797,682,30,Specialization
+Enchanting,Advanced Enchanting,64,9479,739,30,Specialization
+Enchanting,Advanced Enchanting,65,10218,801,30,Specialization
+Enchanting,Advanced Enchanting,66,11019,867,30,Specialization
+Enchanting,Advanced Enchanting,67,11886,940,30,Specialization
+Enchanting,Advanced Enchanting,68,12826,1018,30,Specialization
+Enchanting,Advanced Enchanting,69,13844,1102,30,Specialization
+Enchanting,Advanced Enchanting,70,14946,1195,30,Specialization
+Enchanting,Advanced Enchanting,71,16141,1294,30,Specialization
+Enchanting,Advanced Enchanting,72,17435,1402,30,Specialization
+Enchanting,Advanced Enchanting,73,18837,1518,30,Specialization
+Enchanting,Advanced Enchanting,74,20355,1645,30,Specialization
+Enchanting,Advanced Enchanting,75,22000,960,30,Specialization
+Enchanting,Advanced Enchanting,76,22960,1097,30,Specialization
+Enchanting,Advanced Enchanting,77,24057,1253,30,Specialization
+Enchanting,Advanced Enchanting,78,25310,1432,30,Specialization
+Enchanting,Advanced Enchanting,79,26742,1636,30,Specialization
+Enchanting,Advanced Enchanting,80,28378,1870,30,Specialization
+Enchanting,Advanced Enchanting,81,30248,2137,30,Specialization
+Enchanting,Advanced Enchanting,82,32385,2441,30,Specialization
+Enchanting,Advanced Enchanting,83,34826,2789,30,Specialization
+Enchanting,Advanced Enchanting,84,37615,3187,30,Specialization
+Enchanting,Advanced Enchanting,85,40802,3642,30,Specialization
+Enchanting,Advanced Enchanting,86,44444,4161,30,Specialization
+Enchanting,Advanced Enchanting,87,48605,4755,30,Specialization
+Enchanting,Advanced Enchanting,88,53360,5432,30,Specialization
+Enchanting,Advanced Enchanting,89,58792,6208,30,Specialization
+Enchanting,Advanced Enchanting,90,65000,2337,30,Specialization
+Enchanting,Advanced Enchanting,91,67337,2918,30,Specialization
+Enchanting,Advanced Enchanting,92,70255,3645,30,Specialization
+Enchanting,Advanced Enchanting,93,73900,4552,30,Specialization
+Enchanting,Advanced Enchanting,94,78452,5684,30,Specialization
+Enchanting,Advanced Enchanting,95,84136,7099,30,Specialization
+Enchanting,Advanced Enchanting,96,91235,8866,30,Specialization
+Enchanting,Advanced Enchanting,97,100101,11072,30,Specialization
+Enchanting,Advanced Enchanting,98,111173,13827,30,Specialization
+Enchanting,Advanced Enchanting,99,125000,,30,Specialization
+Enchanting,Seasonal Enchanting,1,0,4,30,Specialization
+Enchanting,Seasonal Enchanting,2,4,5,30,Specialization
+Enchanting,Seasonal Enchanting,3,9,6,30,Specialization
+Enchanting,Seasonal Enchanting,4,15,7,30,Specialization
+Enchanting,Seasonal Enchanting,5,22,10,30,Specialization
+Enchanting,Seasonal Enchanting,6,32,12,30,Specialization
+Enchanting,Seasonal Enchanting,7,44,15,30,Specialization
+Enchanting,Seasonal Enchanting,8,59,18,30,Specialization
+Enchanting,Seasonal Enchanting,9,77,23,30,Specialization
+Enchanting,Seasonal Enchanting,10,100,9,30,Specialization
+Enchanting,Seasonal Enchanting,11,109,10,30,Specialization
+Enchanting,Seasonal Enchanting,12,119,12,30,Specialization
+Enchanting,Seasonal Enchanting,13,131,13,30,Specialization
+Enchanting,Seasonal Enchanting,14,144,15,30,Specialization
+Enchanting,Seasonal Enchanting,15,159,18,30,Specialization
+Enchanting,Seasonal Enchanting,16,177,20,30,Specialization
+Enchanting,Seasonal Enchanting,17,197,22,30,Specialization
+Enchanting,Seasonal Enchanting,18,219,26,30,Specialization
+Enchanting,Seasonal Enchanting,19,245,30,30,Specialization
+Enchanting,Seasonal Enchanting,20,275,34,30,Specialization
+Enchanting,Seasonal Enchanting,21,309,38,30,Specialization
+Enchanting,Seasonal Enchanting,22,347,45,30,Specialization
+Enchanting,Seasonal Enchanting,23,392,50,30,Specialization
+Enchanting,Seasonal Enchanting,24,442,58,30,Specialization
+Enchanting,Seasonal Enchanting,25,500,39,30,Specialization
+Enchanting,Seasonal Enchanting,26,539,42,30,Specialization
+Enchanting,Seasonal Enchanting,27,581,46,30,Specialization
+Enchanting,Seasonal Enchanting,28,627,50,30,Specialization
+Enchanting,Seasonal Enchanting,29,677,54,30,Specialization
+Enchanting,Seasonal Enchanting,30,731,58,30,Specialization
+Enchanting,Seasonal Enchanting,31,789,63,30,Specialization
+Enchanting,Seasonal Enchanting,32,852,69,30,Specialization
+Enchanting,Seasonal Enchanting,33,921,74,30,Specialization
+Enchanting,Seasonal Enchanting,34,995,80,30,Specialization
+Enchanting,Seasonal Enchanting,35,1075,87,30,Specialization
+Enchanting,Seasonal Enchanting,36,1162,95,30,Specialization
+Enchanting,Seasonal Enchanting,37,1257,102,30,Specialization
+Enchanting,Seasonal Enchanting,38,1359,111,30,Specialization
+Enchanting,Seasonal Enchanting,39,1470,119,30,Specialization
+Enchanting,Seasonal Enchanting,40,1589,130,30,Specialization
+Enchanting,Seasonal Enchanting,41,1719,141,30,Specialization
+Enchanting,Seasonal Enchanting,42,1860,152,30,Specialization
+Enchanting,Seasonal Enchanting,43,2012,165,30,Specialization
+Enchanting,Seasonal Enchanting,44,2177,179,30,Specialization
+Enchanting,Seasonal Enchanting,45,2356,194,30,Specialization
+Enchanting,Seasonal Enchanting,46,2550,210,30,Specialization
+Enchanting,Seasonal Enchanting,47,2760,227,30,Specialization
+Enchanting,Seasonal Enchanting,48,2987,246,30,Specialization
+Enchanting,Seasonal Enchanting,49,3233,267,30,Specialization
+Enchanting,Seasonal Enchanting,50,3500,241,30,Specialization
+Enchanting,Seasonal Enchanting,51,3741,261,30,Specialization
+Enchanting,Seasonal Enchanting,52,4002,283,30,Specialization
+Enchanting,Seasonal Enchanting,53,4285,307,30,Specialization
+Enchanting,Seasonal Enchanting,54,4592,332,30,Specialization
+Enchanting,Seasonal Enchanting,55,4924,360,30,Specialization
+Enchanting,Seasonal Enchanting,56,5284,390,30,Specialization
+Enchanting,Seasonal Enchanting,57,5674,422,30,Specialization
+Enchanting,Seasonal Enchanting,58,6096,457,30,Specialization
+Enchanting,Seasonal Enchanting,59,6553,496,30,Specialization
+Enchanting,Seasonal Enchanting,60,7049,536,30,Specialization
+Enchanting,Seasonal Enchanting,61,7585,582,30,Specialization
+Enchanting,Seasonal Enchanting,62,8167,630,30,Specialization
+Enchanting,Seasonal Enchanting,63,8797,682,30,Specialization
+Enchanting,Seasonal Enchanting,64,9479,739,30,Specialization
+Enchanting,Seasonal Enchanting,65,10218,801,30,Specialization
+Enchanting,Seasonal Enchanting,66,11019,867,30,Specialization
+Enchanting,Seasonal Enchanting,67,11886,940,30,Specialization
+Enchanting,Seasonal Enchanting,68,12826,1018,30,Specialization
+Enchanting,Seasonal Enchanting,69,13844,1102,30,Specialization
+Enchanting,Seasonal Enchanting,70,14946,1195,30,Specialization
+Enchanting,Seasonal Enchanting,71,16141,1294,30,Specialization
+Enchanting,Seasonal Enchanting,72,17435,1402,30,Specialization
+Enchanting,Seasonal Enchanting,73,18837,1518,30,Specialization
+Enchanting,Seasonal Enchanting,74,20355,1645,30,Specialization
+Enchanting,Seasonal Enchanting,75,22000,960,30,Specialization
+Enchanting,Seasonal Enchanting,76,22960,1097,30,Specialization
+Enchanting,Seasonal Enchanting,77,24057,1253,30,Specialization
+Enchanting,Seasonal Enchanting,78,25310,1432,30,Specialization
+Enchanting,Seasonal Enchanting,79,26742,1636,30,Specialization
+Enchanting,Seasonal Enchanting,80,28378,1870,30,Specialization
+Enchanting,Seasonal Enchanting,81,30248,2137,30,Specialization
+Enchanting,Seasonal Enchanting,82,32385,2441,30,Specialization
+Enchanting,Seasonal Enchanting,83,34826,2789,30,Specialization
+Enchanting,Seasonal Enchanting,84,37615,3187,30,Specialization
+Enchanting,Seasonal Enchanting,85,40802,3642,30,Specialization
+Enchanting,Seasonal Enchanting,86,44444,4161,30,Specialization
+Enchanting,Seasonal Enchanting,87,48605,4755,30,Specialization
+Enchanting,Seasonal Enchanting,88,53360,5432,30,Specialization
+Enchanting,Seasonal Enchanting,89,58792,6208,30,Specialization
+Enchanting,Seasonal Enchanting,90,65000,2337,30,Specialization
+Enchanting,Seasonal Enchanting,91,67337,2918,30,Specialization
+Enchanting,Seasonal Enchanting,92,70255,3645,30,Specialization
+Enchanting,Seasonal Enchanting,93,73900,4552,30,Specialization
+Enchanting,Seasonal Enchanting,94,78452,5684,30,Specialization
+Enchanting,Seasonal Enchanting,95,84136,7099,30,Specialization
+Enchanting,Seasonal Enchanting,96,91235,8866,30,Specialization
+Enchanting,Seasonal Enchanting,97,100101,11072,30,Specialization
+Enchanting,Seasonal Enchanting,98,111173,13827,30,Specialization
+Enchanting,Seasonal Enchanting,99,125000,,30,Specialization
+Attack,Combat,1,0,20,1,Combat
+Attack,Combat,2,20,22,1,Combat
+Attack,Combat,3,42,23,1,Combat
+Attack,Combat,4,65,25,1,Combat
+Attack,Combat,5,90,27,1,Combat
+Attack,Combat,6,117,29,1,Combat
+Attack,Combat,7,146,31,1,Combat
+Attack,Combat,8,177,33,1,Combat
+Attack,Combat,9,210,36,1,Combat
+Attack,Combat,10,246,38,1,Combat
+Attack,Combat,11,284,41,1,Combat
+Attack,Combat,12,325,44,1,Combat
+Attack,Combat,13,369,48,1,Combat
+Attack,Combat,14,417,51,1,Combat
+Attack,Combat,15,468,55,1,Combat
+Attack,Combat,16,523,59,1,Combat
+Attack,Combat,17,582,64,1,Combat
+Attack,Combat,18,646,68,1,Combat
+Attack,Combat,19,714,74,1,Combat
+Attack,Combat,20,788,79,1,Combat
+Attack,Combat,21,867,85,1,Combat
+Attack,Combat,22,952,91,1,Combat
+Attack,Combat,23,1043,98,1,Combat
+Attack,Combat,24,1141,106,1,Combat
+Attack,Combat,25,1247,113,1,Combat
+Attack,Combat,26,1360,122,1,Combat
+Attack,Combat,27,1482,131,1,Combat
+Attack,Combat,28,1613,141,1,Combat
+Attack,Combat,29,1754,152,1,Combat
+Attack,Combat,30,1906,163,1,Combat
+Attack,Combat,31,2069,175,1,Combat
+Attack,Combat,32,2244,188,1,Combat
+Attack,Combat,33,2432,202,1,Combat
+Attack,Combat,34,2634,218,1,Combat
+Attack,Combat,35,2852,234,1,Combat
+Attack,Combat,36,3086,251,1,Combat
+Attack,Combat,37,3337,270,1,Combat
+Attack,Combat,38,3607,290,1,Combat
+Attack,Combat,39,3897,312,1,Combat
+Attack,Combat,40,4209,336,1,Combat
+Attack,Combat,41,4545,361,1,Combat
+Attack,Combat,42,4906,388,1,Combat
+Attack,Combat,43,5294,417,1,Combat
+Attack,Combat,44,5711,448,1,Combat
+Attack,Combat,45,6159,482,1,Combat
+Attack,Combat,46,6641,518,1,Combat
+Attack,Combat,47,7159,557,1,Combat
+Attack,Combat,48,7716,599,1,Combat
+Attack,Combat,49,8315,644,1,Combat
+Attack,Combat,50,8959,692,1,Combat
+Attack,Combat,51,9651,744,1,Combat
+Attack,Combat,52,10395,800,1,Combat
+Attack,Combat,53,11195,860,1,Combat
+Attack,Combat,54,12055,924,1,Combat
+Attack,Combat,55,12979,993,1,Combat
+Attack,Combat,56,13972,1068,1,Combat
+Attack,Combat,57,15040,1148,1,Combat
+Attack,Combat,58,16188,1234,1,Combat
+Attack,Combat,59,17422,1327,1,Combat
+Attack,Combat,60,18749,1426,1,Combat
+Attack,Combat,61,20175,1533,1,Combat
+Attack,Combat,62,21708,1648,1,Combat
+Attack,Combat,63,23356,1772,1,Combat
+Attack,Combat,64,25128,1904,1,Combat
+Attack,Combat,65,27032,2047,1,Combat
+Attack,Combat,66,29079,2201,1,Combat
+Attack,Combat,67,31280,2366,1,Combat
+Attack,Combat,68,33646,2543,1,Combat
+Attack,Combat,69,36189,2734,1,Combat
+Attack,Combat,70,38923,2939,1,Combat
+Attack,Combat,71,41862,3160,1,Combat
+Attack,Combat,72,45022,3396,1,Combat
+Attack,Combat,73,48418,3651,1,Combat
+Attack,Combat,74,52069,3925,1,Combat
+Attack,Combat,75,55994,4219,1,Combat
+Attack,Combat,76,60213,4536,1,Combat
+Attack,Combat,77,64749,4876,1,Combat
+Attack,Combat,78,69625,5242,1,Combat
+Attack,Combat,79,74867,5635,1,Combat
+Attack,Combat,80,80502,6058,1,Combat
+Attack,Combat,81,86560,6512,1,Combat
+Attack,Combat,82,93072,7000,1,Combat
+Attack,Combat,83,100072,7525,1,Combat
+Attack,Combat,84,107597,8090,1,Combat
+Attack,Combat,85,115687,8696,1,Combat
+Attack,Combat,86,124383,9349,1,Combat
+Attack,Combat,87,133732,10050,1,Combat
+Attack,Combat,88,143782,10804,1,Combat
+Attack,Combat,89,154586,11614,1,Combat
+Attack,Combat,90,166200,12485,1,Combat
+Attack,Combat,91,178685,13421,1,Combat
+Attack,Combat,92,192106,14428,1,Combat
+Attack,Combat,93,206534,15510,1,Combat
+Attack,Combat,94,222044,16673,1,Combat
+Attack,Combat,95,238717,17924,1,Combat
+Attack,Combat,96,256641,19268,1,Combat
+Attack,Combat,97,275909,20713,1,Combat
+Attack,Combat,98,296622,22266,1,Combat
+Attack,Combat,99,318888,0,1,Combat
+Strength,Combat,1,0,20,1,Combat
+Strength,Combat,2,20,22,1,Combat
+Strength,Combat,3,42,23,1,Combat
+Strength,Combat,4,65,25,1,Combat
+Strength,Combat,5,90,27,1,Combat
+Strength,Combat,6,117,29,1,Combat
+Strength,Combat,7,146,31,1,Combat
+Strength,Combat,8,177,33,1,Combat
+Strength,Combat,9,210,36,1,Combat
+Strength,Combat,10,246,38,1,Combat
+Strength,Combat,11,284,41,1,Combat
+Strength,Combat,12,325,44,1,Combat
+Strength,Combat,13,369,48,1,Combat
+Strength,Combat,14,417,51,1,Combat
+Strength,Combat,15,468,55,1,Combat
+Strength,Combat,16,523,59,1,Combat
+Strength,Combat,17,582,64,1,Combat
+Strength,Combat,18,646,68,1,Combat
+Strength,Combat,19,714,74,1,Combat
+Strength,Combat,20,788,79,1,Combat
+Strength,Combat,21,867,85,1,Combat
+Strength,Combat,22,952,91,1,Combat
+Strength,Combat,23,1043,98,1,Combat
+Strength,Combat,24,1141,106,1,Combat
+Strength,Combat,25,1247,113,1,Combat
+Strength,Combat,26,1360,122,1,Combat
+Strength,Combat,27,1482,131,1,Combat
+Strength,Combat,28,1613,141,1,Combat
+Strength,Combat,29,1754,152,1,Combat
+Strength,Combat,30,1906,163,1,Combat
+Strength,Combat,31,2069,175,1,Combat
+Strength,Combat,32,2244,188,1,Combat
+Strength,Combat,33,2432,202,1,Combat
+Strength,Combat,34,2634,218,1,Combat
+Strength,Combat,35,2852,234,1,Combat
+Strength,Combat,36,3086,251,1,Combat
+Strength,Combat,37,3337,270,1,Combat
+Strength,Combat,38,3607,290,1,Combat
+Strength,Combat,39,3897,312,1,Combat
+Strength,Combat,40,4209,336,1,Combat
+Strength,Combat,41,4545,361,1,Combat
+Strength,Combat,42,4906,388,1,Combat
+Strength,Combat,43,5294,417,1,Combat
+Strength,Combat,44,5711,448,1,Combat
+Strength,Combat,45,6159,482,1,Combat
+Strength,Combat,46,6641,518,1,Combat
+Strength,Combat,47,7159,557,1,Combat
+Strength,Combat,48,7716,599,1,Combat
+Strength,Combat,49,8315,644,1,Combat
+Strength,Combat,50,8959,692,1,Combat
+Strength,Combat,51,9651,744,1,Combat
+Strength,Combat,52,10395,800,1,Combat
+Strength,Combat,53,11195,860,1,Combat
+Strength,Combat,54,12055,924,1,Combat
+Strength,Combat,55,12979,993,1,Combat
+Strength,Combat,56,13972,1068,1,Combat
+Strength,Combat,57,15040,1148,1,Combat
+Strength,Combat,58,16188,1234,1,Combat
+Strength,Combat,59,17422,1327,1,Combat
+Strength,Combat,60,18749,1426,1,Combat
+Strength,Combat,61,20175,1533,1,Combat
+Strength,Combat,62,21708,1648,1,Combat
+Strength,Combat,63,23356,1772,1,Combat
+Strength,Combat,64,25128,1904,1,Combat
+Strength,Combat,65,27032,2047,1,Combat
+Strength,Combat,66,29079,2201,1,Combat
+Strength,Combat,67,31280,2366,1,Combat
+Strength,Combat,68,33646,2543,1,Combat
+Strength,Combat,69,36189,2734,1,Combat
+Strength,Combat,70,38923,2939,1,Combat
+Strength,Combat,71,41862,3160,1,Combat
+Strength,Combat,72,45022,3396,1,Combat
+Strength,Combat,73,48418,3651,1,Combat
+Strength,Combat,74,52069,3925,1,Combat
+Strength,Combat,75,55994,4219,1,Combat
+Strength,Combat,76,60213,4536,1,Combat
+Strength,Combat,77,64749,4876,1,Combat
+Strength,Combat,78,69625,5242,1,Combat
+Strength,Combat,79,74867,5635,1,Combat
+Strength,Combat,80,80502,6058,1,Combat
+Strength,Combat,81,86560,6512,1,Combat
+Strength,Combat,82,93072,7000,1,Combat
+Strength,Combat,83,100072,7525,1,Combat
+Strength,Combat,84,107597,8090,1,Combat
+Strength,Combat,85,115687,8696,1,Combat
+Strength,Combat,86,124383,9349,1,Combat
+Strength,Combat,87,133732,10050,1,Combat
+Strength,Combat,88,143782,10804,1,Combat
+Strength,Combat,89,154586,11614,1,Combat
+Strength,Combat,90,166200,12485,1,Combat
+Strength,Combat,91,178685,13421,1,Combat
+Strength,Combat,92,192106,14428,1,Combat
+Strength,Combat,93,206534,15510,1,Combat
+Strength,Combat,94,222044,16673,1,Combat
+Strength,Combat,95,238717,17924,1,Combat
+Strength,Combat,96,256641,19268,1,Combat
+Strength,Combat,97,275909,20713,1,Combat
+Strength,Combat,98,296622,22266,1,Combat
+Strength,Combat,99,318888,0,1,Combat
+Defense,Combat,1,0,20,1,Combat
+Defense,Combat,2,20,22,1,Combat
+Defense,Combat,3,42,23,1,Combat
+Defense,Combat,4,65,25,1,Combat
+Defense,Combat,5,90,27,1,Combat
+Defense,Combat,6,117,29,1,Combat
+Defense,Combat,7,146,31,1,Combat
+Defense,Combat,8,177,33,1,Combat
+Defense,Combat,9,210,36,1,Combat
+Defense,Combat,10,246,38,1,Combat
+Defense,Combat,11,284,41,1,Combat
+Defense,Combat,12,325,44,1,Combat
+Defense,Combat,13,369,48,1,Combat
+Defense,Combat,14,417,51,1,Combat
+Defense,Combat,15,468,55,1,Combat
+Defense,Combat,16,523,59,1,Combat
+Defense,Combat,17,582,64,1,Combat
+Defense,Combat,18,646,68,1,Combat
+Defense,Combat,19,714,74,1,Combat
+Defense,Combat,20,788,79,1,Combat
+Defense,Combat,21,867,85,1,Combat
+Defense,Combat,22,952,91,1,Combat
+Defense,Combat,23,1043,98,1,Combat
+Defense,Combat,24,1141,106,1,Combat
+Defense,Combat,25,1247,113,1,Combat
+Defense,Combat,26,1360,122,1,Combat
+Defense,Combat,27,1482,131,1,Combat
+Defense,Combat,28,1613,141,1,Combat
+Defense,Combat,29,1754,152,1,Combat
+Defense,Combat,30,1906,163,1,Combat
+Defense,Combat,31,2069,175,1,Combat
+Defense,Combat,32,2244,188,1,Combat
+Defense,Combat,33,2432,202,1,Combat
+Defense,Combat,34,2634,218,1,Combat
+Defense,Combat,35,2852,234,1,Combat
+Defense,Combat,36,3086,251,1,Combat
+Defense,Combat,37,3337,270,1,Combat
+Defense,Combat,38,3607,290,1,Combat
+Defense,Combat,39,3897,312,1,Combat
+Defense,Combat,40,4209,336,1,Combat
+Defense,Combat,41,4545,361,1,Combat
+Defense,Combat,42,4906,388,1,Combat
+Defense,Combat,43,5294,417,1,Combat
+Defense,Combat,44,5711,448,1,Combat
+Defense,Combat,45,6159,482,1,Combat
+Defense,Combat,46,6641,518,1,Combat
+Defense,Combat,47,7159,557,1,Combat
+Defense,Combat,48,7716,599,1,Combat
+Defense,Combat,49,8315,644,1,Combat
+Defense,Combat,50,8959,692,1,Combat
+Defense,Combat,51,9651,744,1,Combat
+Defense,Combat,52,10395,800,1,Combat
+Defense,Combat,53,11195,860,1,Combat
+Defense,Combat,54,12055,924,1,Combat
+Defense,Combat,55,12979,993,1,Combat
+Defense,Combat,56,13972,1068,1,Combat
+Defense,Combat,57,15040,1148,1,Combat
+Defense,Combat,58,16188,1234,1,Combat
+Defense,Combat,59,17422,1327,1,Combat
+Defense,Combat,60,18749,1426,1,Combat
+Defense,Combat,61,20175,1533,1,Combat
+Defense,Combat,62,21708,1648,1,Combat
+Defense,Combat,63,23356,1772,1,Combat
+Defense,Combat,64,25128,1904,1,Combat
+Defense,Combat,65,27032,2047,1,Combat
+Defense,Combat,66,29079,2201,1,Combat
+Defense,Combat,67,31280,2366,1,Combat
+Defense,Combat,68,33646,2543,1,Combat
+Defense,Combat,69,36189,2734,1,Combat
+Defense,Combat,70,38923,2939,1,Combat
+Defense,Combat,71,41862,3160,1,Combat
+Defense,Combat,72,45022,3396,1,Combat
+Defense,Combat,73,48418,3651,1,Combat
+Defense,Combat,74,52069,3925,1,Combat
+Defense,Combat,75,55994,4219,1,Combat
+Defense,Combat,76,60213,4536,1,Combat
+Defense,Combat,77,64749,4876,1,Combat
+Defense,Combat,78,69625,5242,1,Combat
+Defense,Combat,79,74867,5635,1,Combat
+Defense,Combat,80,80502,6058,1,Combat
+Defense,Combat,81,86560,6512,1,Combat
+Defense,Combat,82,93072,7000,1,Combat
+Defense,Combat,83,100072,7525,1,Combat
+Defense,Combat,84,107597,8090,1,Combat
+Defense,Combat,85,115687,8696,1,Combat
+Defense,Combat,86,124383,9349,1,Combat
+Defense,Combat,87,133732,10050,1,Combat
+Defense,Combat,88,143782,10804,1,Combat
+Defense,Combat,89,154586,11614,1,Combat
+Defense,Combat,90,166200,12485,1,Combat
+Defense,Combat,91,178685,13421,1,Combat
+Defense,Combat,92,192106,14428,1,Combat
+Defense,Combat,93,206534,15510,1,Combat
+Defense,Combat,94,222044,16673,1,Combat
+Defense,Combat,95,238717,17924,1,Combat
+Defense,Combat,96,256641,19268,1,Combat
+Defense,Combat,97,275909,20713,1,Combat
+Defense,Combat,98,296622,22266,1,Combat
+Defense,Combat,99,318888,0,1,Combat
+Endurance,Combat,1,0,20,1,Combat
+Endurance,Combat,2,20,22,1,Combat
+Endurance,Combat,3,42,23,1,Combat
+Endurance,Combat,4,65,25,1,Combat
+Endurance,Combat,5,90,27,1,Combat
+Endurance,Combat,6,117,29,1,Combat
+Endurance,Combat,7,146,31,1,Combat
+Endurance,Combat,8,177,33,1,Combat
+Endurance,Combat,9,210,36,1,Combat
+Endurance,Combat,10,246,38,1,Combat
+Endurance,Combat,11,284,41,1,Combat
+Endurance,Combat,12,325,44,1,Combat
+Endurance,Combat,13,369,48,1,Combat
+Endurance,Combat,14,417,51,1,Combat
+Endurance,Combat,15,468,55,1,Combat
+Endurance,Combat,16,523,59,1,Combat
+Endurance,Combat,17,582,64,1,Combat
+Endurance,Combat,18,646,68,1,Combat
+Endurance,Combat,19,714,74,1,Combat
+Endurance,Combat,20,788,79,1,Combat
+Endurance,Combat,21,867,85,1,Combat
+Endurance,Combat,22,952,91,1,Combat
+Endurance,Combat,23,1043,98,1,Combat
+Endurance,Combat,24,1141,106,1,Combat
+Endurance,Combat,25,1247,113,1,Combat
+Endurance,Combat,26,1360,122,1,Combat
+Endurance,Combat,27,1482,131,1,Combat
+Endurance,Combat,28,1613,141,1,Combat
+Endurance,Combat,29,1754,152,1,Combat
+Endurance,Combat,30,1906,163,1,Combat
+Endurance,Combat,31,2069,175,1,Combat
+Endurance,Combat,32,2244,188,1,Combat
+Endurance,Combat,33,2432,202,1,Combat
+Endurance,Combat,34,2634,218,1,Combat
+Endurance,Combat,35,2852,234,1,Combat
+Endurance,Combat,36,3086,251,1,Combat
+Endurance,Combat,37,3337,270,1,Combat
+Endurance,Combat,38,3607,290,1,Combat
+Endurance,Combat,39,3897,312,1,Combat
+Endurance,Combat,40,4209,336,1,Combat
+Endurance,Combat,41,4545,361,1,Combat
+Endurance,Combat,42,4906,388,1,Combat
+Endurance,Combat,43,5294,417,1,Combat
+Endurance,Combat,44,5711,448,1,Combat
+Endurance,Combat,45,6159,482,1,Combat
+Endurance,Combat,46,6641,518,1,Combat
+Endurance,Combat,47,7159,557,1,Combat
+Endurance,Combat,48,7716,599,1,Combat
+Endurance,Combat,49,8315,644,1,Combat
+Endurance,Combat,50,8959,692,1,Combat
+Endurance,Combat,51,9651,744,1,Combat
+Endurance,Combat,52,10395,800,1,Combat
+Endurance,Combat,53,11195,860,1,Combat
+Endurance,Combat,54,12055,924,1,Combat
+Endurance,Combat,55,12979,993,1,Combat
+Endurance,Combat,56,13972,1068,1,Combat
+Endurance,Combat,57,15040,1148,1,Combat
+Endurance,Combat,58,16188,1234,1,Combat
+Endurance,Combat,59,17422,1327,1,Combat
+Endurance,Combat,60,18749,1426,1,Combat
+Endurance,Combat,61,20175,1533,1,Combat
+Endurance,Combat,62,21708,1648,1,Combat
+Endurance,Combat,63,23356,1772,1,Combat
+Endurance,Combat,64,25128,1904,1,Combat
+Endurance,Combat,65,27032,2047,1,Combat
+Endurance,Combat,66,29079,2201,1,Combat
+Endurance,Combat,67,31280,2366,1,Combat
+Endurance,Combat,68,33646,2543,1,Combat
+Endurance,Combat,69,36189,2734,1,Combat
+Endurance,Combat,70,38923,2939,1,Combat
+Endurance,Combat,71,41862,3160,1,Combat
+Endurance,Combat,72,45022,3396,1,Combat
+Endurance,Combat,73,48418,3651,1,Combat
+Endurance,Combat,74,52069,3925,1,Combat
+Endurance,Combat,75,55994,4219,1,Combat
+Endurance,Combat,76,60213,4536,1,Combat
+Endurance,Combat,77,64749,4876,1,Combat
+Endurance,Combat,78,69625,5242,1,Combat
+Endurance,Combat,79,74867,5635,1,Combat
+Endurance,Combat,80,80502,6058,1,Combat
+Endurance,Combat,81,86560,6512,1,Combat
+Endurance,Combat,82,93072,7000,1,Combat
+Endurance,Combat,83,100072,7525,1,Combat
+Endurance,Combat,84,107597,8090,1,Combat
+Endurance,Combat,85,115687,8696,1,Combat
+Endurance,Combat,86,124383,9349,1,Combat
+Endurance,Combat,87,133732,10050,1,Combat
+Endurance,Combat,88,143782,10804,1,Combat
+Endurance,Combat,89,154586,11614,1,Combat
+Endurance,Combat,90,166200,12485,1,Combat
+Endurance,Combat,91,178685,13421,1,Combat
+Endurance,Combat,92,192106,14428,1,Combat
+Endurance,Combat,93,206534,15510,1,Combat
+Endurance,Combat,94,222044,16673,1,Combat
+Endurance,Combat,95,238717,17924,1,Combat
+Endurance,Combat,96,256641,19268,1,Combat
+Endurance,Combat,97,275909,20713,1,Combat
+Endurance,Combat,98,296622,22266,1,Combat
+Endurance,Combat,99,318888,0,1,Combat

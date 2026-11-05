@@ -1,0 +1,22 @@
+parent_skill,specialization,parent_level_required,branch_start_level,branch_max_level
+Fishing,Commercial Fisher,10,1,99
+Fishing,Treasure Fisher,30,1,99
+Fishing,Trophy Fisher,30,1,99
+Farming,Crop Farming,10,1,99
+Farming,Herbalism,30,1,99
+Farming,Rare Plant Cultivation,30,1,99
+Mining,Ore Miner,10,1,99
+Mining,Gem Prospector,30,1,99
+Mining,Rare Mineral Extractor,30,1,99
+Smithing,Toolsmith,10,1,99
+Smithing,Artisan Equipment,30,1,99
+Smithing,Masterwork Forging,30,1,99
+Crafting,Jewelry Making,10,1,99
+Crafting,Utility Crafting,30,1,99
+Crafting,Decorative Collectibles,30,1,99
+Cooking,Everyday Chef,10,1,99
+Cooking,Artisan Chef,30,1,99
+Cooking,Master Chef,30,1,99
+Enchanting,Elemental Enchanting,10,1,99
+Enchanting,Advanced Enchanting,30,1,99
+Enchanting,Seasonal Enchanting,30,1,99

@@ -1,0 +1,149 @@
+[
+  {
+    "skillId": "fishing",
+    "skill": "Fishing",
+    "id": "commercial-fishing",
+    "name": "Commercial Fisher",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "fishing",
+    "skill": "Fishing",
+    "id": "treasure-fishing",
+    "name": "Treasure Fisher",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "fishing",
+    "skill": "Fishing",
+    "id": "trophy-fishing",
+    "name": "Trophy Fisher",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "farming",
+    "skill": "Farming",
+    "id": "crop-farming",
+    "name": "Crop Farming",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "farming",
+    "skill": "Farming",
+    "id": "herbalism",
+    "name": "Herbalism",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "farming",
+    "skill": "Farming",
+    "id": "rare-plant-cultivation",
+    "name": "Rare Plant Cultivation",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "mining",
+    "skill": "Mining",
+    "id": "ore-miner",
+    "name": "Ore Miner",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "mining",
+    "skill": "Mining",
+    "id": "gem-prospector",
+    "name": "Gem Prospector",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "mining",
+    "skill": "Mining",
+    "id": "rare-mineral-extractor",
+    "name": "Rare Mineral Extractor",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "smithing",
+    "skill": "Smithing",
+    "id": "toolsmith",
+    "name": "Toolsmith",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "smithing",
+    "skill": "Smithing",
+    "id": "artisan-equipment",
+    "name": "Artisan Equipment",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "smithing",
+    "skill": "Smithing",
+    "id": "masterwork-forging",
+    "name": "Masterwork Forging",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "crafting",
+    "skill": "Crafting",
+    "id": "jeweler",
+    "name": "Jewelry Making",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "crafting",
+    "skill": "Crafting",
+    "id": "utility-crafting",
+    "name": "Utility Crafting",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "crafting",
+    "skill": "Crafting",
+    "id": "decorative-collectibles",
+    "name": "Decorative Collectibles",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "cooking",
+    "skill": "Cooking",
+    "id": "everyday-chef",
+    "name": "Everyday Chef",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "cooking",
+    "skill": "Cooking",
+    "id": "artisan-chef",
+    "name": "Artisan Chef",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "cooking",
+    "skill": "Cooking",
+    "id": "master-chef",
+    "name": "Master Chef",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "enchanting",
+    "skill": "Enchanting",
+    "id": "elemental-enchanting",
+    "name": "Elemental Enchanting",
+    "requiredLevel": 10
+  },
+  {
+    "skillId": "enchanting",
+    "skill": "Enchanting",
+    "id": "advanced-enchanting",
+    "name": "Advanced Enchanting",
+    "requiredLevel": 30
+  },
+  {
+    "skillId": "enchanting",
+    "skill": "Enchanting",
+    "id": "seasonal-enchanting",
+    "name": "Seasonal Enchanting",
+    "requiredLevel": 30
+  }
+]
