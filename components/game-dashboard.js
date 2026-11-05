@@ -4,6 +4,7 @@ import Image from 'next/image';
 import WalletProfile from './wallet-profile';
 import CharacterProfile from './character-profile';
 import CombatPanel from './combat-panel';
+import {DashboardHeader,DashboardSidebar} from './dashboard-chrome';
 import {usePlayerProfile} from './use-player-profile';
 import PlayerGuide from './player-guide';
 import RuneProgression from './rune-progression';
@@ -25,7 +26,6 @@ function Sprite({ box, className = '', stretch = false }) {
   return <svg className={`g-sprite ${className}`} viewBox={box} preserveAspectRatio={stretch ? "none" : "xMidYMid slice"} aria-hidden="true"><image href="/assets/play-reference.png" width="1536" height="1024"/></svg>;
 }
 function Frame(){return <GameFrame/>;}
-const navigation=[['Game','19 164 51 54'],['My Profile','19 222 51 54'],['Inventory','19 280 51 54'],['Skill Tree','19 338 51 54'],['Combat','19 164 51 54'],['Runes','19 396 51 54'],['Collection','19 454 51 54'],['Marketplace','19 512 51 54'],['Bank','19 570 51 54'],['Leaderboard','19 628 51 54'],['Friends','19 686 51 54'],['Settings','19 744 51 54']];
 const decisions=[['Use Skill','Use Skill','Choose a skill to gather resources, train, or create items.','1225 157 70 69'],['Rune Production','Rune Production','Allocate your passive hourly rune production.','1225 269 70 76'],['Service','Provide Service','Offer a merchant service and earn game gold.','1223 398 75 65']];
 
 export default function GameDashboard(props){
@@ -38,9 +38,6 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const skillsStatus = useSkills(user.id);
   const walletStatus = useWalletBalance(user.id);
   useEffect(()=>{if(walletStatus.snapshot)profile.refresh();},[walletStatus.snapshot,profile.refresh]);
-  const walletBalance = walletStatus.snapshot?.balance;
-  const walletAmount = walletBalance ? `${walletBalance.amount} GP` : walletStatus.loading ? 'Loading GP…' : walletStatus.error || walletStatus.snapshot?.wallet ? 'GP unavailable' : 'Verify wallet';
-  const walletLabel = walletBalance?.isStale ? 'Last known balance' : 'Wallet GP';
   const [now,setNow] = useState(0);
   const [section,setSection] = useState('Game');
   const [treeSkill,setTreeSkill] = useState('Cooking');
@@ -80,18 +77,8 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':''}`}>
     <div className="g-backdrop"><Image src="/assets/play-harbor.png" alt="" fill sizes="(max-width: 700px) 150vh, (max-width: 1180px) 1650px, 100vw" quality={95} preload/></div>
-    <header className="g-topbar">
-      <button className="g-logo" onClick={onHome} aria-label="Runelana home"><GameArt box="13 0 283 70"/></button>
-      <nav aria-label="Game navigation"><button onClick={onHome}>Home</button><button className="g-active" onClick={()=>open('Game')}>Play</button><button onClick={()=>open('Marketplace')}>Marketplace</button><button onClick={()=>open('Leaderboard')}>Leaderboard</button><button onClick={()=>open('How It Works')}>How It Works</button></nav>
-      <button className="g-balance g-wallet-header" title={`${walletAmount} · ${walletLabel}${walletBalance?.checkedAt ? ` · Checked ${new Date(walletBalance.checkedAt).toLocaleString()}` : ''}`} onClick={()=>open('My Profile')} aria-label={`${walletAmount} · ${walletLabel}. Open My Profile`}><Sprite box="1000 9 66 50"/><span><span className="g-wallet-amount">{walletAmount}</span><small className="g-bank-label">{walletLabel}</small></span></button>
-      <div className="g-shortcuts"><button aria-label="Friends" onClick={()=>open('Friends')}><GameArt box="1324 16 43 43"/></button><button aria-label="Inventory" onClick={()=>open('Inventory')}><GameArt box="1379 16 43 43"/></button><button aria-label="My Profile" onClick={()=>open('My Profile')}><GameArt box="1435 16 43 43"/></button><button aria-label="Account settings" onClick={()=>open('Settings')}><GameArt box="1488 16 43 43"/></button></div>
-      <button className="g-menu-toggle" onClick={()=>setNavOpen(!navOpen)} aria-expanded={navOpen}>☰ Menu</button>
-    </header>
-    <aside className={`g-left g-frame ${navOpen?'g-nav-open':''}`}>
-      <Frame/><div className="g-player"><GameArt box="16 88 59 63"/><div><strong>{name}</strong><span>♛ Character Lv. {runes.data?.characterLevel || '—'}</span></div></div>
-      <nav aria-label="Player navigation">{navigation.map(([title,box])=>{const target=title==='Skill Tree'?'Skills':title;return <button key={title} className={section===target?'g-active':''} aria-expanded={target==='Skills'?section==='Skills':undefined} aria-controls={target==='Skills'?'player-skills':undefined} onClick={()=>open(target==='Skills'&&section==='Skills'?'Game':target)}><GameArt box={box}/><span>{title}</span></button>})}</nav>
-      <small className="g-save-note">{profile.busy?'Saving profile…':'Progress saved to account'}</small>
-    </aside>
+    <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
+    <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
     {section==='Use Skill'&&<UseSkill skills={skillsStatus} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
     {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
@@ -104,7 +91,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <p className="g-notice" role="status">{notice}</p>
     </aside>
     {profile.error&&<div className="g-profile-save-error" role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></div>}
-    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section}</h2>}
+    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section==='Collection'?'Equipment':section}</h2>}
       {profile.error&&<p role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></p>}
       {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
       {section==='Combat'&&<CombatPanel combat={profile.data.combat} error={profile.error} onRefresh={profile.refresh}/>}
@@ -117,6 +104,10 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} disabled={profile.busy} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
       {section==='Leaderboard' && <p>Live player rankings are not available yet. Your adventure level is {adventureLevel}.</p>}
+      {section==='Notifications'&&<><h3>A new look for your adventure</h3><p>The header and navigation now use the updated Runelana design. Your GP balance, rune inventory, and saved progress stay connected to your account.</p><button onClick={()=>open('How It Works')}>Open How It Works</button></>}
+      {section==='Travel'&&<><p>Travel destinations and journeys are not available yet.</p><button onClick={()=>open('Use Skill')}>Explore skill activities</button></>}
+      {section==='Quests'&&<><p>Quests are not available yet. Explore the guide for current progression and activities.</p><button onClick={()=>open('How It Works')}>Open How It Works</button></>}
+      {section==='Mail'&&<><p>Player mail is not connected yet. Your private notes remain available in the local game log.</p><button onClick={()=>open('Friends')}>Friends</button></>}
       {section==='Friends' && <p>Friends and multiplayer messaging are not connected yet. Your local game log and notes are available below.</p>}
 
     </dialog>
