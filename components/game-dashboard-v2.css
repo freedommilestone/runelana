@@ -10,3 +10,8 @@
 @media(max-width:650px){.g-shell .g-logo{width:155px;height:46px}.g-shell .g-wallet-header{max-width:calc(100% - 170px);font-size:14px!important}.g-shell .g-topbar .g-menu-toggle{margin-left:auto}.g-shell .g-right{grid-template-columns:1fr}.g-shell .g-left nav{grid-template-columns:1fr 1fr}.g-shell .g-decision{min-height:100px}.g-shell .g-chat-tabs{flex-wrap:wrap}.g-shell .g-chat-tabs button{padding:6px 14px}.g-shell .g-chat-tabs>span{max-width:145px}.g-shell .g-player strong{max-width:none}.g-shell .g-right h2{font-size:23px}.g-shell .g-passive-content{max-width:100%} }
 .g-shell .us-mode>.ga-art{width:40px;height:35px}.g-shell .us-footer{background:#0b0d09;padding:5px 10px;border-top:1px solid #604e2a;font-size:16px}.g-shell .us-banner-art>.ga-art{height:100%;width:100%}.g-shell .us-banner:not(.us-banner-fishing) .us-banner-art>.ga-art{width:130px}.g-shell .g-player span{white-space:nowrap;font-size:14px}.g-shell .g-player strong{font-weight:400}.g-shell .us-table .rune-icon{width:25px;height:25px}.g-shell .g-topbar{background:#14130e}.g-shell .g-topbar nav button{background:linear-gradient(#27251c,#0a0c09)}
 @media(min-width:1001px){.g-shell:not(.g-skills-open) .g-chat{top:834px;bottom:auto}.g-shell:not(.g-skills-open){min-height:max(100dvh,1060px)}}
+.g-shell .g-passive-content+.g-passive-content{margin-top:7px}
+.g-shell .g-passive-only .g-passive{border-top:0;margin-top:0;padding-top:4px}
+.g-passive-empty{font-size:13px;line-height:1.5;color:#beb493;margin:8px 0}
+
+@media(min-width:1001px){.g-shell:not(.g-inventory-open):not(.g-skills-open){min-height:max(100dvh,1060px,var(--right-sidebar-bottom,0px))}}

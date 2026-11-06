@@ -1,4 +1,5 @@
 'use client';
+import {displayWholeGP} from '../lib/gp-token.mjs';
 import { useEffect, useRef, useState } from 'react';
 import { walletRequest } from '../lib/wallet-client';
 import { GP_MINT } from '../lib/gp-token.mjs';
@@ -144,7 +145,7 @@ export default function WalletProfile({ userId, onSnapshot }) {
     <header><h3 id="wallet-heading">Your crypto wallet</h3><span className={wallet ? 'g-wallet-verified' : 'g-wallet-pending'}>{wallet ? '✓ Ownership verified' : 'Not verified'}</span></header>
     <p className="g-wallet-network">Solana mainnet · RuneScape Gold (GP)</p>
     {wallet && <><dl><dt>Verified wallet</dt><dd><a href={`https://solscan.io/account/${wallet.address}`} target="_blank" rel="noreferrer">{wallet.address}</a></dd><dt>Verified on</dt><dd>{new Date(wallet.verifiedAt).toLocaleString()}</dd></dl>
-      <div className="g-wallet-balance"><span>{balance?.isStale ? 'Last known GP balance' : 'GP in your verified wallet'}</span><strong>{balance ? `${balance.amount} GP` : 'Balance unavailable'}</strong><small>{balance ? balance.hasGP ? (balance.isStale ? 'GP was present at the last successful scan.' : 'This wallet holds GP.') : (balance.isStale ? 'The last successful scan found no GP.' : 'No GP found in this wallet.') : 'Refresh to check the latest balance.'}</small>{balance && <time dateTime={balance.checkedAt}>Checked {new Date(balance.checkedAt).toLocaleTimeString()} · confirmed on Solana</time>}</div>
+      <div className="g-wallet-balance"><span>{balance?.isStale ? 'Last known GP balance' : 'GP in your verified wallet'}</span><strong>{balance ? `${displayWholeGP(balance.amount)} GP` : 'Balance unavailable'}</strong><small>{balance ? balance.hasGP ? (balance.isStale ? 'GP was present at the last successful scan.' : 'This wallet holds GP.') : (balance.isStale ? 'The last successful scan found no GP.' : 'No GP found in this wallet.') : 'Refresh to check the latest balance.'}</small>{balance && <time dateTime={balance.checkedAt}>Checked {new Date(balance.checkedAt).toLocaleTimeString()} · confirmed on Solana</time>}</div>
       <div className="g-wallet-actions"><button disabled={!!busy || !canRefresh} onClick={refresh}>Refresh GP balance</button><button disabled={!!busy} onClick={unlink}>Unlink wallet</button></div>
     </>}
     {wallet && <HoldingHistory history={snapshot?.holdingHistory}/>}
@@ -156,7 +157,7 @@ export default function WalletProfile({ userId, onSnapshot }) {
       {snapshot.tracking.status === 'stale' && <p>Waiting for a successful scan; the displayed period is not increasing.</p>}
       {snapshot.tracking.dailyScannedOn && <small>Last successful daily scan: {snapshot.tracking.dailyScannedOn} (UTC)</small>}
     </div>}
-    {!!snapshot?.history?.length && <details className="g-wallet-history"><summary>Recent GP scans</summary><ul>{snapshot.history.map((scan,index) => <li key={`${scan.checkedAt}-${index}`}><time dateTime={scan.checkedAt}>{new Date(scan.checkedAt).toLocaleString()}</time><strong>{scan.amount} GP</strong><small>{scan.source === 'daily' ? 'Daily scan' : 'Profile check'} · {scan.address.slice(0,4)}…{scan.address.slice(-4)}</small></li>)}</ul></details>}
+    {!!snapshot?.history?.length && <details className="g-wallet-history"><summary>Recent GP scans</summary><ul>{snapshot.history.map((scan,index) => <li key={`${scan.checkedAt}-${index}`}><time dateTime={scan.checkedAt}>{new Date(scan.checkedAt).toLocaleString()}</time><strong>{displayWholeGP(scan.amount)} GP</strong><small>{scan.source === 'daily' ? 'Daily scan' : 'Profile check'} · {scan.address.slice(0,4)}…{scan.address.slice(-4)}</small></li>)}</ul></details>}
     {connected && connected !== wallet?.address && <p className="g-wallet-selected">Selected wallet: <code>{connected}</code><br/>Not yet verified for this profile.</p>}
     <p>Verify ownership by signing a message. No transaction, token transfer, or network fee is requested.</p>
     {available.length ? <div className="g-wallet-connect"><label htmlFor="wallet-provider">Wallet<select id="wallet-provider" value={selected} disabled={!!busy} onChange={e => setSelected(e.target.value)}>{available.map(w => <option key={w.name}>{w.name}</option>)}</select></label><button className="g-green" disabled={!!busy} onClick={connectAndVerify}>{wallet ? 'Verify / change wallet' : 'Connect & verify wallet'}</button></div> : <div className="g-wallet-install"><p>Use Phantom or Solflare on desktop. On mobile, open this site inside your wallet’s browser and sign in to your Runelana account.</p><a href={phantomLink}>Open in Phantom ↗</a><a href="https://phantom.com/download" target="_blank" rel="noreferrer">Get Phantom ↗</a><button disabled={!!busy} onClick={detectWallets}>Check for wallet</button></div>}

@@ -1,4 +1,5 @@
 'use client';
+import {displayWholeGP} from '../lib/gp-token.mjs';
 import {useState,useRef,useEffect,useId} from 'react';
 import {useInventoryTicks} from './rune-production';
 import {runeProgression} from '../lib/rune-progression.mjs';
@@ -15,7 +16,7 @@ export function DashboardHeader({walletStatus,runes,onOpen,onHome,navOpen,onTogg
  const [menu,setMenu]=useState(false),[unread,setUnread]=useState(true),menuRef=useRef(null);
  const inventory=useInventoryTicks(runes.data,runes.error),total=Object.values(inventory).reduce((n,t)=>n+t/3600000000n,0n);
  const balance=walletStatus.snapshot?.balance;
- const gp=balance?`${balance.amount} $GP`:walletStatus.loading?'Loading GP…':walletStatus.error||walletStatus.snapshot?.wallet?'GP unavailable':'Verify wallet';
+ const gp=balance?`${displayWholeGP(balance.amount)} $GP`:walletStatus.loading?'Loading GP…':walletStatus.error||walletStatus.snapshot?.wallet?'GP unavailable':'Verify wallet';
  const runeText=runes.data?`${total.toLocaleString('en-US')} Runes`:runes.error?'Runes unavailable':'Loading runes…';
  useEffect(()=>{if(!menu)return;function dismiss(e){if(!menuRef.current?.contains(e.target))setMenu(false)}function escape(e){if(e.key==='Escape'){setMenu(false);menuRef.current?.querySelector('button')?.focus()}}document.addEventListener('pointerdown',dismiss);document.addEventListener('keydown',escape);return()=>{document.removeEventListener('pointerdown',dismiss);document.removeEventListener('keydown',escape)}},[menu]);
  const open=target=>{setMenu(false);onOpen(target)};

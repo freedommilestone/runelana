@@ -50,6 +50,13 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const [notice,setNotice] = useState('Welcome to the Grand Exchange. Choose a decision to begin.');
   const [navOpen,setNavOpen] = useState(false);
   const panel = useRef(null);
+  const rightSidebar = useRef(null);
+  useEffect(()=>{
+    const sidebar=rightSidebar.current;if(!sidebar)return;
+    const resize=()=>sidebar.closest('.g-shell')?.style.setProperty('--right-sidebar-bottom',`${sidebar.offsetTop+sidebar.offsetHeight+16}px`);
+    const observer=new ResizeObserver(resize);observer.observe(sidebar);window.addEventListener('resize',resize);resize();
+    return()=>{observer.disconnect();window.removeEventListener('resize',resize)};
+  },[]);
   const guide = useRef(null);
   const name = user.user_metadata?.display_name || 'Rune Traveler';
   const starterGear=starterInventory(state).filter(item=>item.equippable);
@@ -88,8 +95,8 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
       <div className="g-chat-paper"><div className="g-chat-lines" aria-live="polite">{tab!=='Notes' && <><p><em>[Game]</em> <b>Guide:</b> Welcome, {name}. Your next decision shapes your legend.</p><p><em>[Game]</em> <b>Guide:</b> Allocate rune production, craft steel bars, or offer a service.</p></>}{notes.filter(n=>tab==='All'||(tab==='Notes'?n.channel==='Notes':n.channel==='Game')).map((n,i)=><p key={i}><em>[{n.channel}]</em> <b>{n.name}:</b> {n.text}</p>)}</div><form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;setNotes(rows=>[...rows.slice(-39),{channel:'Notes',name,text:draft.trim()}]);setDraft('');}}><label htmlFor="game-note">{name}:</label><input id="game-note" value={draft} maxLength={240} onChange={e=>setDraft(e.target.value)} placeholder="Enter a private note…"/><button>Save</button></form></div>
     </section>
-    <aside className="g-right">
-      <section className="g-activity g-frame"><Frame/><h2>Current Activities</h2><p className="g-active-label">Active Skill ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div><PassiveProduction runes={runes}/></section>
+    <aside className="g-right" ref={rightSidebar}>
+      <section className={`g-activity g-frame ${task?'':'g-passive-only'}`}><Frame/>{task&&<><h2>Current Activities</h2><p className="g-active-label">Active Skill ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div></>}<PassiveProduction runes={runes}/></section>
       <section className="g-decisions g-frame"><Frame/><h2>What would you like to do?</h2>{decisions.map(([key,title,description,box])=><button className={`g-decision ${section===key?'g-active':''}`} key={key} ref={key==='Use Skill'?useSkillTrigger:undefined} onClick={()=>open(key)}><GameArt box={box}/><span className="g-decision-copy"><strong>{title}</strong><small>{description}</small></span></button>)}</section>
       <p className="g-notice" role="status">{notice}</p>
     </aside>
