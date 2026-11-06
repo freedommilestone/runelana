@@ -80,7 +80,8 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   function openSkillTree(name){setTreeSkill(name);open('Skills');}
   function log(text) { setNotice(text); setNotes(rows=>[...rows.slice(-39),{channel:'Game',name:'System',text}]); }
   async function begin(type) {
-    if(await profile.act('start',type)){setNow(Date.now());panel.current.close();log(`${activities[type].name} started.`);}
+    if(await profile.act('start',type)){setNow(Date.now());panel.current.close();log(`${activities[type].name} started.`);return true;}
+    return false;
   }
   async function collect(){if(await profile.act('collect'))log('Activity complete. Rewards saved to your account.');}
   async function cancel(){if(await profile.act('cancel'))log('Activity cancelled. Spent crafting supplies refunded.');}
@@ -89,7 +90,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
     <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
     {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
-    {section==='Use Skill'&&<UseSkill skills={skillsStatus} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
+    {section==='Use Skill'&&<UseSkill skills={skillsStatus} runes={runes} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
     {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
