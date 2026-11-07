@@ -7,6 +7,7 @@ import CombatPanel from './combat-panel';
 import PlayerInventory from './player-inventory';
 import StarterItemArt from './starter-item-art';
 import {starterInventory} from '../lib/starter-kit.mjs';
+import {PlayerNotifications} from './player-notifications';
 import {DashboardHeader,DashboardSidebar} from './dashboard-chrome';
 import {usePlayerProfile} from './use-player-profile';
 import PlayerGuide from './player-guide';
@@ -130,7 +131,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   async function reorderQueued(order){if(await profile.act('reorder-skill',undefined,{order}))log('Task order saved.');}
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':section==='Inventory'?'g-inventory-open':''}`}>
-    <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
+    <DashboardHeader notificationUnread={profile.data?.notificationUnread??0} walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
     <DashboardSidebar name={name} runes={runes} section={section} onOpen={toggleSidebar} navOpen={navOpen} saving={profile.busy}/>
     {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
     {section==='Use Skill'&&<UseSkill skills={skillsStatus} runes={runes} state={state} busy={profile.busy} error={profile.error} onStartSkill={beginSkill} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
@@ -147,7 +148,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <p className="g-notice" role="status">{notice}</p>
     </aside>
     {profile.error&&<div className="g-profile-save-error" role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></div>}
-    <dialog ref={panel} {...panelDismiss} onCancel={event=>{event.preventDefault();closePanel();}} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={closePanel}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section==='Collection'?'Equipment':section}</h2>}
+    <dialog ref={panel} {...panelDismiss} onCancel={event=>{event.preventDefault();closePanel();}} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':section==='Notifications'?'g-notifications-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={closePanel}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section==='Collection'?'Equipment':section}</h2>}
       {profile.error&&<p role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></p>}
       {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
       {section==='Combat'&&<CombatPanel combat={profile.data.combat} error={profile.error} onRefresh={profile.refresh}/>}
@@ -158,7 +159,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{section==='Collection'&&starterGear.map(item=><button key={item.id} disabled={profile.busy} aria-pressed={item.equipped} onClick={()=>profile.act(item.equipped?'unequip-starter':'equip-starter',item.id)}><StarterItemArt id={item.id}/><strong>{item.name}</strong><small>{item.equipped?'Unequip':'Equip'} · {item.requirement}</small></button>)}{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} disabled={profile.busy} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&!starterGear.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}
       {section==='Leaderboard' && <p>Live player rankings are not available yet. Your adventure level is {adventureLevel}.</p>}
-      {section==='Notifications'&&<><h3>A new look for your adventure</h3><p>The header and navigation now use the updated Runelana design. Your GP balance, rune inventory, and saved progress stay connected to your account.</p><button onClick={()=>open('How It Works')}>Open How It Works</button></>}
+      {section==='Notifications'&&<PlayerNotifications userId={user.id} onRead={profile.refresh}/>}
       {section==='Travel'&&<><p>Travel destinations and journeys are not available yet.</p><button onClick={()=>open('Use Skill')}>Explore skill activities</button></>}
       {section==='Quests'&&<><p>Quests are not available yet. Explore the guide for current progression and activities.</p><button onClick={()=>open('How It Works')}>Open How It Works</button></>}
       {section==='Mail'&&<><p>Player mail is not connected yet. Your private notes remain available in the local game log.</p><button onClick={()=>open('Friends')}>Friends</button></>}
