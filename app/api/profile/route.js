@@ -2,6 +2,7 @@ import {NextResponse} from 'next/server';
 import {authenticatedPlayer,requireSameOrigin,WalletError} from '../../../lib/wallet-server.mjs';
 import {rpc} from '../../../lib/wallet-database.mjs';
 import {profileAction} from '../../../lib/player-profile.mjs';
+import {skillJobAction} from '../../../lib/skill-job.mjs';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 const json=(body,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'private, no-store',Vary:'Authorization, Cookie'}});
@@ -12,7 +13,7 @@ export async function POST(request){
   requireSameOrigin(request);
   const {user}=await authenticatedPlayer(request);
   const text=await request.text();if(text.length>16000)return json({error:'Profile request is too large.'},413);
-  let args;try{args=profileAction(JSON.parse(text),user);}catch(error){return json({error:error.message},400);}
-  const result=await rpc('update_player_profile',args);return json(result,result.status||200);
+  let args,skillAction;try{const body=JSON.parse(text);skillAction=['start-skill','collect-skill','cancel-skill'].includes(body?.action);args=skillAction?skillJobAction(body,user):profileAction(body,user);}catch(error){return json({error:error.message},400);}
+  const result=await rpc(skillAction?'execute_player_skill_job':'update_player_profile',args);return json(result,result.status||200);
  }catch(error){return failure(error);}
 }

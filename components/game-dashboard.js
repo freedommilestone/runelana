@@ -15,7 +15,7 @@ import {useRunes} from './use-runes';
 import RuneProduction, {RuneInventory} from './rune-production';
 import SkillsPanel from './skills-panel';
 import UseSkill from './use-skill';
-import {GameArt,GameFrame} from './game-art';
+import {GameArt,GameFrame,activitySkills} from './game-art';
 import PassiveProduction from './passive-production';
 import {useSkills} from './use-skills';
 import SkillProgress from './skill-progress';
@@ -62,9 +62,10 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const starterGear=starterInventory(state).filter(item=>item.equippable);
   const adventureLevel = 1 + Math.floor(state.xp / 60);
   const task = state.activity;
-  const recipe = task ? activities[task.type] : null;
-  const seconds = task ? Math.max(0,Math.ceil((task.endsAt-now)/1000)) : 0;
-  const progress = task ? Math.min(100,Math.max(0,(now-task.startedAt)/(task.endsAt-task.startedAt)*100)) : 0;
+  const recipe = task?.type==='skill'?{name:`${task.skillId[0].toUpperCase()+task.skillId.slice(1)} · ${task.name}`,description:`${task.quantity} production ${task.quantity===1?'batch':'batches'}`} : task ? activities[task.type] : null;
+  const serverNow=now+(Number.isFinite(profile.data.serverNow)&&Number.isFinite(profile.data.receivedAt)?profile.data.serverNow-profile.data.receivedAt:0);
+  const seconds = task ? Math.max(0,Math.ceil((task.endsAt-serverNow)/1000)) : 0;
+  const progress = task ? Math.min(100,Math.max(0,(serverNow-task.startedAt)/(task.endsAt-task.startedAt)*100)) : 0;
   useEffect(()=>{setNow(Date.now());const timer=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(timer);},[]);
   useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close, .cp-close')?.focus({preventScroll:true});}},[section]);
   function open(value) {
@@ -83,21 +84,22 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
     if(await profile.act('start',type)){setNow(Date.now());panel.current.close();log(`${activities[type].name} started.`);return true;}
     return false;
   }
-  async function collect(){if(await profile.act('collect'))log('Activity complete. Rewards saved to your account.');}
-  async function cancel(){if(await profile.act('cancel'))log('Activity cancelled. Spent crafting supplies refunded.');}
+  async function beginSkill(item,options){const saved=await profile.act('start-skill',item,options);runes.refresh();skillsStatus.refresh();if(saved){setNow(Date.now());log('Skill activity started. Resources reserved and progress saved.');return true;}return false;}
+  async function collect(){if(await profile.act(task?.type==='skill'?'collect-skill':'collect')){runes.refresh();skillsStatus.refresh();log('Activity complete. Items and XP saved to your account.');}}
+  async function cancel(){if(await profile.act(task?.type==='skill'?'cancel-skill':'cancel')){runes.refresh();skillsStatus.refresh();log('Activity cancelled. Reserved resources refunded.');}}
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':section==='Inventory'?'g-inventory-open':''}`}>
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
     <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
     {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
-    {section==='Use Skill'&&<UseSkill skills={skillsStatus} runes={runes} state={state} busy={profile.busy} onStart={begin} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
+    {section==='Use Skill'&&<UseSkill skills={skillsStatus} runes={runes} state={state} busy={profile.busy} error={profile.error} onStart={begin} onStartSkill={beginSkill} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
     {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
     <section className="g-chat g-frame" aria-label="Local game log">
       <Frame/><div className="g-chat-tabs">{['All','Game','Notes'].map(t=><button className={tab===t?'g-active':''} key={t} onClick={()=>setTab(t)}>{t}</button>)}<span>Local log · multiplayer chat coming later</span></div>
       <div className="g-chat-paper"><div className="g-chat-lines" aria-live="polite">{tab!=='Notes' && <><p><em>[Game]</em> <b>Guide:</b> Welcome, {name}. Your next decision shapes your legend.</p><p><em>[Game]</em> <b>Guide:</b> Allocate rune production, craft steel bars, or offer a service.</p></>}{notes.filter(n=>tab==='All'||(tab==='Notes'?n.channel==='Notes':n.channel==='Game')).map((n,i)=><p key={i}><em>[{n.channel}]</em> <b>{n.name}:</b> {n.text}</p>)}</div><form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;setNotes(rows=>[...rows.slice(-39),{channel:'Notes',name,text:draft.trim()}]);setDraft('');}}><label htmlFor="game-note">{name}:</label><input id="game-note" value={draft} maxLength={240} onChange={e=>setDraft(e.target.value)} placeholder="Enter a private note…"/><button>Save</button></form></div>
     </section>
     <aside className="g-right" ref={rightSidebar}>
-      <section className={`g-activity g-frame ${task?'':'g-passive-only'}`}><Frame/>{task&&<><h2>Current Activities</h2><p className="g-active-label">Active Skill ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div></>}<PassiveProduction runes={runes}/></section>
+      <section className={`g-activity g-frame ${task?'':'g-passive-only'}`}><Frame/>{task&&<><h2>Current Activities</h2><p className="g-active-label">Active Skill ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='skill'?activitySkills.find(s=>s.id===task.skillId)?.icon||'252 438 66 62':task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(task.type==='skill'?`Produces: ${task.outputs.map(o=>`${o.name} ×${o.quantity*task.quantity}`).join(', ')} · ${task.xpReward} XP`:recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div></>}<PassiveProduction runes={runes}/></section>
       <section className="g-decisions g-frame"><Frame/><h2>What would you like to do?</h2>{decisions.map(([key,title,description,box])=><button className={`g-decision ${section===key?'g-active':''}`} key={key} ref={key==='Use Skill'?useSkillTrigger:undefined} onClick={()=>open(key)}><GameArt box={box}/><span className="g-decision-copy"><strong>{title}</strong><small>{description}</small></span></button>)}</section>
       <p className="g-notice" role="status">{notice}</p>
     </aside>

@@ -12,7 +12,7 @@ export function usePlayerProfile(userId){
   const response=await fetch('/api/profile',{method:body?'POST':'GET',cache:'no-store',headers:{Authorization:`Bearer ${auth.session.access_token}`,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
   let result;try{result=await response.json();}catch{throw Error('Unable to reach your profile. Please retry.');}
   if(!response.ok){const e=Error(result.error||'Unable to save your profile.');e.snapshot=result.state?result:null;throw e;}
-  return result;
+  return {...result,receivedAt:Date.now()};
  },[userId]);
  const accept=useCallback(result=>{snapshot.current=result;setData(result);setError('');},[]);
  const refresh=useCallback(async()=>{
@@ -34,11 +34,11 @@ export function usePlayerProfile(userId){
   const timer=setInterval(visible,15000);window.addEventListener('focus',visible);document.addEventListener('visibilitychange',visible);
   return()=>{alive.current=false;++generation.current;clearInterval(timer);window.removeEventListener('focus',visible);document.removeEventListener('visibilitychange',visible);};
  },[refresh]);
- const act=async(action,item)=>{
+ const act=async(action,item,options={})=>{
   if(mutating.current||!snapshot.current)return false;
   mutating.current=true;setBusy(true);++generation.current;
   try{
-   const result=await request({action,item,revision:snapshot.current.revision});
+   const result=await request({...options,action,item,revision:snapshot.current.revision});
    if(alive.current){accept(result);return true;}return false;
   }catch(e){
    if(alive.current){if(e.snapshot)accept(e.snapshot);setError(e.message);}

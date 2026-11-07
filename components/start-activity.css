@@ -3,6 +3,7 @@ html:has(.sa-dialog[open]){overflow:hidden}
 .sa-dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
 .sa-dialog>.g-frame-art{inset:0;overflow:hidden}
 .sa-dialog .sa-item-art{overflow:hidden}
+.sa-consent{display:flex;gap:10px;align-items:center;text-align:left;padding:10px;border:1px solid #9e7b36}.g-shell .sa-consent input{min-height:24px;width:24px;flex:none;accent-color:#c8a745}
 .g-shell .sa-heading>.ga-art{width:72px;height:64px;flex:none}
 .g-shell .sa-overview>.ga-art{width:100%;height:150px}
 .g-shell .sa-resource>.ga-art{width:70px;height:70px;flex:none}
