@@ -27,3 +27,5 @@
  .g-shell:not(.g-skills-open)>.g-chat.g-chat-collapsed{left:10px;right:10px;width:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
  .g-shell:has(>.g-chat-collapsed):not(.g-skills-open):not(.g-inventory-open){padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
 }
+
+.g-shell .g-task .g-task-timer{margin:7px 0 0;color:#fff3cc;font:600 15px/1.4 Arial,sans-serif;font-variant-numeric:tabular-nums}
