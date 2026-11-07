@@ -13,7 +13,7 @@ export async function POST(request){
   requireSameOrigin(request);
   const {user}=await authenticatedPlayer(request);
   const text=await request.text();if(text.length>16000)return json({error:'Profile request is too large.'},413);
-  let args,skillAction;try{const body=JSON.parse(text);skillAction=['start-skill','collect-skill','cancel-skill'].includes(body?.action);args=skillAction?skillJobAction(body,user):profileAction(body,user);}catch(error){return json({error:error.message},400);}
+  let args,skillAction;try{const body=JSON.parse(text);skillAction=['start-skill','collect-skill','cancel-skill','reorder-skill'].includes(body?.action);args=skillAction?skillJobAction(body,user):profileAction(body,user);}catch(error){return json({error:error.message},400);}
   const result=await rpc(skillAction?'execute_player_skill_job':'update_player_profile',args);return json(result,result.status||200);
  }catch(error){return failure(error);}
 }

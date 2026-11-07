@@ -17,6 +17,7 @@ import RuneProduction, {RuneInventory} from './rune-production';
 import SkillsPanel from './skills-panel';
 import UseSkill from './use-skill';
 import {GameArt,GameFrame,activitySkills} from './game-art';
+import ActivityQueue from './activity-queue';
 import PassiveProduction from './passive-production';
 import {useSkills} from './use-skills';
 import SkillProgress from './skill-progress';
@@ -64,7 +65,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const starterGear=starterInventory(state).filter(item=>item.equippable);
   const adventureLevel = 1 + Math.floor(state.xp / 60);
   const task = state.activity;
-  const recipe = task?.type==='skill'?{name:`${task.skillId[0].toUpperCase()+task.skillId.slice(1)} · ${task.name}`,description:`${task.quantity} production ${task.quantity===1?'batch':'batches'}`} : task ? activities[task.type] : null;
+  const recipe = task?.type==='skill'?{name:`${task.skillId?task.skillId[0].toUpperCase()+task.skillId.slice(1):'Service'} · ${task.name}`,description:`${task.quantity} production ${task.quantity===1?'batch':'batches'}`} : task ? activities[task.type] : null;
   const serverNow=now+(Number.isFinite(profile.data.serverNow)&&Number.isFinite(profile.data.receivedAt)?profile.data.serverNow-profile.data.receivedAt:0);
   const seconds = task ? Math.max(0,Math.ceil((task.endsAt-serverNow)/1000)) : 0;
   const progress = task ? Math.min(100,Math.max(0,(serverNow-task.startedAt)/(task.endsAt-task.startedAt)*100)) : 0;
@@ -107,13 +108,26 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   function closeUseSkill(){open('Game');requestAnimationFrame(()=>useSkillTrigger.current?.focus());}
   function openSkillTree(name){setTreeSkill(name);open('Skills');}
   function log(text) { setNotice(text); setNotes(rows=>[...rows.slice(-39),{channel:'Game',name:'System',text}]); }
+  const completionRefresh=useRef(null),lastCompletion=useRef(undefined);
+  useEffect(()=>{
+    if(now&&task?.type==='skill'&&seconds===0&&completionRefresh.current!==task.id){completionRefresh.current=task.id;profile.refresh();}
+  },[now,seconds,task?.id,task?.type,profile.refresh]);
+  useEffect(()=>{
+    const latest=state.recentActivities?.[0];
+    if(lastCompletion.current!==undefined&&latest?.id&&latest.id!==lastCompletion.current){
+      skillsStatus.refresh();runes.refresh();setNotice('Activity complete. Rewards saved automatically; your queue continues in order.');
+    }
+    lastCompletion.current=latest?.id||null;
+  },[state.recentActivities?.[0]?.id,skillsStatus.refresh,runes.refresh]);
   async function begin(type) {
-    if(await profile.act('start',type)){setNow(Date.now());if(panel.current?.open)closePanel();log(`${activities[type].name} started.`);return true;}
+    if(await profile.act('start',type)){setNow(Date.now());if(panel.current?.open)closePanel();log(`${activities[type].name} added to your activity queue.`);return true;}
     return false;
   }
-  async function beginSkill(item,options){const saved=await profile.act('start-skill',item,options);runes.refresh();skillsStatus.refresh();if(saved){setNow(Date.now());log('Skill activity started. Resources reserved and progress saved.');return true;}return false;}
+  async function beginSkill(item,options){const saved=await profile.act('start-skill',item,options);runes.refresh();skillsStatus.refresh();if(saved){setNow(Date.now());log('Activity saved to your queue. Resources reserved; tasks run automatically in order.');return true;}return false;}
   async function collect(){if(await profile.act(task?.type==='skill'?'collect-skill':'collect')){runes.refresh();skillsStatus.refresh();log('Activity complete. Items and XP saved to your account.');}}
-  async function cancel(){if(await profile.act(task?.type==='skill'?'cancel-skill':'cancel')){runes.refresh();skillsStatus.refresh();log('Activity cancelled. Reserved resources refunded.');}}
+  async function cancel(){if(await profile.act(task?.type==='skill'?'cancel-skill':'cancel',undefined,task?.type==='skill'?{jobId:task.id}:{})){runes.refresh();skillsStatus.refresh();log('Activity cancelled. Reserved resources refunded.');}}
+  async function removeQueued(jobId){if(await profile.act('cancel-skill',undefined,{jobId})){runes.refresh();log('Queued task removed. Reserved resources refunded.');}}
+  async function reorderQueued(order){if(await profile.act('reorder-skill',undefined,{order}))log('Task order saved.');}
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':section==='Inventory'?'g-inventory-open':''}`}>
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
@@ -128,7 +142,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       </div>
     </section>
     <aside className="g-right" ref={rightSidebar}>
-      <section className={`g-activity g-frame ${task?'':'g-passive-only'}`}><Frame/>{task&&<><h2>Current Activities</h2><p className="g-active-label">Active Skill ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='skill'?activitySkills.find(s=>s.id===task.skillId)?.icon||'252 438 66 62':task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(task.type==='skill'?`Produces: ${task.outputs.map(o=>`${o.name} ×${o.quantity*task.quantity}`).join(', ')} · ${task.xpReward} XP`:recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div></>}<PassiveProduction runes={runes}/></section>
+      <section className={`g-activity g-frame ${task?'':'g-passive-only'}`}><Frame/>{task&&<><h2>Current Activities</h2><p className="g-active-label">Active Task ({task?1:0}/1)</p><div className="g-task"><GameArt box={task?.type==='skill'?activitySkills.find(s=>s.id===task.skillId)?.icon||'252 438 66 62':task?.type==='service'?'1223 398 75 65':'252 438 66 62'}/><div><h3>{recipe?.name || 'Ready for adventure'}</h3><p>{recipe?.description || 'Choose a decision below to begin.'}</p><div className="g-progress"><span style={{width:`${progress}%`}}/><b>{task?(seconds?`${Math.floor(seconds/60)}m ${seconds%60}s remaining`:task.type==='skill'?'Saving rewards…':'Ready to collect'):'No activity running'}</b></div></div></div><div className="g-task-bottom"><span>{task?(task.type==='skill'?`${task.outputs.length?`Produces: ${task.outputs.map(o=>`${o.name} ×${o.quantity*task.quantity}`).join(', ')} · `:'Rewards: '}${task.xpReward} XP${task.gameGold?` + ${task.gameGold} game GP`:''}`:recipe.bars?'Produces: Steel Bar ×10':'Reward: 40 GP + 5 XP'):'One activity at a time'}</span>{task && (seconds===0&&task.type==='skill'?<span role="status">Advancing queue…</span>:seconds===0?<button className="g-green" disabled={profile.busy} onClick={collect}>Collect</button>:<button className="g-red" onClick={cancel} disabled={profile.busy}>Cancel</button>)}</div></>}<ActivityQueue tasks={state.activityQueue||[]} active={task} busy={profile.busy} onReorder={reorderQueued} onRemove={removeQueued}/><PassiveProduction runes={runes}/></section>
       <section className="g-decisions g-frame"><Frame/><h2>What would you like to do?</h2>{decisions.map(([key,title,description,box])=><button className={`g-decision ${section===key?'g-active':''}`} key={key} ref={key==='Use Skill'?useSkillTrigger:undefined} onClick={()=>open(key)}><GameArt box={box}/><span className="g-decision-copy"><strong>{title}</strong><small>{description}</small></span></button>)}</section>
       <p className="g-notice" role="status">{notice}</p>
     </aside>
@@ -138,8 +152,8 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
       {section==='Combat'&&<CombatPanel combat={profile.data.combat} error={profile.error} onRefresh={profile.refresh}/>}
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
-      {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
+      {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||state.runes<20||(state.activityQueue?.length||0)+(task?1:0)>=20} onClick={()=>begin('smith')}>{task?'Queue Smithing':'Start Smithing'}</button></>}
+      {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||(state.activityQueue?.length||0)+(task?1:0)>=20} onClick={()=>begin('service')}>{task?'Queue Service':'Offer Service'}</button></>}
       {section==='My Profile' && <CharacterProfile onInventory={()=>open('Inventory')} onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={closePanel}/>}
       {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
