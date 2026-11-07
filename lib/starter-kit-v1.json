@@ -24,6 +24,18 @@
     "storage": "tools"
   },
   {
+    "id": "basic-hoe",
+    "name": "Basic Hoe",
+    "kind": "profession_tool",
+    "quantity": 1,
+    "requirement": "Farming 1",
+    "accountBound": true,
+    "reusable": true,
+    "notes": "Prepare soil for beginner Farming activities, including Wheat",
+    "slot": null,
+    "storage": "tools"
+  },
+  {
     "id": "bronze-pickaxe",
     "name": "Bronze Pickaxe",
     "kind": "profession_tool",

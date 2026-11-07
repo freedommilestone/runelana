@@ -6,6 +6,7 @@ export default function StarterItemArt({id,className=''}){
  switch(id){
  case 'small-fishing-net':art=<>{shaft}<ellipse cx="65" cy="28" rx="25" ry="15" fill="#bec7ba" fillOpacity=".12" stroke="#bc9c61" strokeWidth="5"/><path d="m41 29 12 32 24 0 12-32M48 31l15 29m-4-29 12 30m8-30-15 29m-12-8h27m-32-10h37" fill="none" stroke="#c6c4a4" strokeWidth="2"/></>;break;
  case 'wooden-rake':art=<>{shaft}<path d="m48 15 40 27m-40-27-9 13m22-4-10 14m24-5-10 15m23-6-10 14" stroke="#a77c42" strokeWidth="7"/></>;break;
+ case 'basic-hoe':art=<>{shaft}<path d="m55 15 34 13-11 28-20-8 8-18-15-6Z" fill="#8e9393" stroke="#343735" strokeWidth="4"/><path d="m64 46 12 5 7-19" fill="none" stroke="#c4c9bd" strokeWidth="3"/></>;break;
  case 'bronze-pickaxe':art=<>{shaft}<path d="M35 28Q66-2 91 49L63 29Z" fill="#b68045" stroke="#4b3321" strokeWidth="3"/></>;break;
  case 'basic-smithing-hammer':art=<>{shaft}<path d="m44 12 20-6 27 25-16 18-33-23Z" fill="#929393" stroke="#343536" strokeWidth="4"/></>;break;
  case 'basic-crafting-toolkit':art=<><path d="M19 41h65l5 43H14Z" fill="#925d2f" stroke="#412b1d" strokeWidth="4"/><path d="M33 42V26q19-18 37 0v16M16 58h72" fill="none" stroke="#c8a15e" strokeWidth="6"/><path d="M46 51h12v20H46Z" fill="#e1bc64"/></>;break;
