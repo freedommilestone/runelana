@@ -15,3 +15,9 @@
 .g-passive-empty{font-size:13px;line-height:1.5;color:#beb493;margin:8px 0}
 
 @media(min-width:1001px){.g-shell:not(.g-inventory-open):not(.g-skills-open){min-height:max(100dvh,1060px,var(--right-sidebar-bottom,0px))}}
+
+.g-shell .g-chat-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:38px;padding:5px 10px;text-align:left;color:#ead18c;border:0;border-bottom:2px ridge #665636;border-radius:0;background:linear-gradient(#302d22,#161711);font-size:15px;position:relative}
+.g-shell .g-chat-toggle>span:last-child{font-size:24px;line-height:1}
+.g-shell .g-chat-body{display:flex;flex-direction:column;min-width:0}
+.g-shell .g-chat-body[hidden]{display:none}
+.g-shell .g-chat-collapsed .g-chat-toggle{border-bottom:0}
