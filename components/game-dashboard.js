@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import {useDialogDismiss} from './use-dialog-dismiss';
 import WalletProfile from './wallet-profile';
 import CharacterProfile from './character-profile';
 import CombatPanel from './combat-panel';
@@ -68,6 +69,31 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   const progress = task ? Math.min(100,Math.max(0,(serverNow-task.startedAt)/(task.endsAt-task.startedAt)*100)) : 0;
   useEffect(()=>{setNow(Date.now());const timer=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(timer);},[]);
   useEffect(()=>{if(panel.current?.open){panel.current.scrollTop=0;panel.current.querySelector('.g-close, .cp-close')?.focus({preventScroll:true});}},[section]);
+  function closePanel(){panel.current?.close();setSection('Game');}
+  const panelDismiss=useDialogDismiss(closePanel);
+  function toggleSidebar(value){
+    const target=value==='Skill Tree'?'Skills':value;
+    if(section===target||(target==='Skills'&&section==='Use Skill'))open('Game');
+    else open(target);
+  }
+  useEffect(()=>{
+    const selector={Inventory:'.pi-workspace',Skills:'.sk-workspace','Use Skill':'.us-window'}[section];
+    if(!selector)return;
+    let beganOutside=false;
+    function outside(event){
+      if(document.querySelector('dialog[open]'))return false;
+      const target=event.target;
+      // Navigation handles its own toggle or destination change.
+      return target instanceof Element&&!target.closest(`${selector}, .dc-nav-button, .dc-player, .dc-header button, .dc-account nav, .g-decision`);
+    }
+    function down(event){beganOutside=event.button===0&&outside(event);}
+    function click(event){if(beganOutside&&outside(event))setSection('Game');beganOutside=false;}
+    function cancel(){beganOutside=false;}
+    document.addEventListener('pointerdown',down,true);
+    document.addEventListener('pointercancel',cancel,true);
+    document.addEventListener('click',click,true);
+    return()=>{document.removeEventListener('pointerdown',down,true);document.removeEventListener('pointercancel',cancel,true);document.removeEventListener('click',click,true);};
+  },[section]);
   function open(value) {
     if(value==='Skill Tree')value='Skills';
     if(value==='How It Works'){setNavOpen(false);guide.current.open();return;}
@@ -81,7 +107,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   function openSkillTree(name){setTreeSkill(name);open('Skills');}
   function log(text) { setNotice(text); setNotes(rows=>[...rows.slice(-39),{channel:'Game',name:'System',text}]); }
   async function begin(type) {
-    if(await profile.act('start',type)){setNow(Date.now());panel.current.close();log(`${activities[type].name} started.`);return true;}
+    if(await profile.act('start',type)){setNow(Date.now());if(panel.current?.open)closePanel();log(`${activities[type].name} started.`);return true;}
     return false;
   }
   async function beginSkill(item,options){const saved=await profile.act('start-skill',item,options);runes.refresh();skillsStatus.refresh();if(saved){setNow(Date.now());log('Skill activity started. Resources reserved and progress saved.');return true;}return false;}
@@ -90,7 +116,7 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
   async function buy(item){if(await profile.act(state.owned.includes(item.id)?'equip':'buy',item.id))log(`${item.name} equipped and saved.`);}
   return <div className={`g-shell ${section==='Skills'?'g-skills-open':section==='Use Skill'?'g-use-skill-open':section==='Inventory'?'g-inventory-open':''}`}>
     <DashboardHeader walletStatus={walletStatus} runes={runes} onOpen={open} onHome={onHome} navOpen={navOpen} onToggleNav={()=>setNavOpen(!navOpen)}/>
-    <DashboardSidebar name={name} runes={runes} section={section} onOpen={open} navOpen={navOpen} saving={profile.busy}/>
+    <DashboardSidebar name={name} runes={runes} section={section} onOpen={toggleSidebar} navOpen={navOpen} saving={profile.busy}/>
     {section==='Inventory'&&<PlayerInventory onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} state={state} busy={profile.busy} error={profile.error} onRefresh={profile.refresh} onEquip={id=>profile.act('equip',id)} onRunes={()=>open('Runes')} onClose={()=>{open('Game');requestAnimationFrame(()=>document.querySelector('.dc-nav-button[data-target="Inventory"]')?.focus())}}/>}
     {section==='Use Skill'&&<UseSkill skills={skillsStatus} runes={runes} state={state} busy={profile.busy} error={profile.error} onStart={begin} onStartSkill={beginSkill} onClose={closeUseSkill} onSkillTree={openSkillTree} onCombat={()=>open('Combat')}/>}
     {section==='Skills'&&<SkillsPanel key={treeSkill} initialSkill={treeSkill} skills={skillsStatus} onSmithing={()=>open('Produce')} onCombat={()=>open('Combat')} onClose={()=>open('Game')}/>}
@@ -104,14 +130,14 @@ function SavedGameDashboard({user,state,profile,onHome,onAccount}) {
       <p className="g-notice" role="status">{notice}</p>
     </aside>
     {profile.error&&<div className="g-profile-save-error" role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></div>}
-    <dialog ref={panel} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={()=>panel.current.close()}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section==='Collection'?'Equipment':section}</h2>}
+    <dialog ref={panel} {...panelDismiss} onCancel={event=>{event.preventDefault();closePanel();}} aria-labelledby={section==='Rune Production'?'rune-production-title':section==='My Profile'?'character-profile-title':'game-panel-title'} className={`g-dialog ${section==='Rune Production'?'g-production-dialog':section==='My Profile'?'g-profile-dialog':section==='Combat'?'g-combat-dialog':''}`}>{section!=='My Profile'&&<button className="g-close" aria-label="Close panel" onClick={closePanel}>×</button>}{!['Rune Production','My Profile'].includes(section)&&<h2 id="game-panel-title">{section==='Runes'?'Rune Inventory':section==='Collection'?'Equipment':section}</h2>}
       {profile.error&&<p role="alert">{profile.error} <button onClick={profile.refresh} disabled={profile.busy}>Refresh profile</button></p>}
       {section==='Rune Production' && <RuneProduction runes={runes} onInventory={()=>open('Runes')} onSettings={()=>open('Settings')}/>}
       {section==='Combat'&&<CombatPanel combat={profile.data.combat} error={profile.error} onRefresh={profile.refresh}/>}
       {section==='Runes' && <RuneInventory runes={runes} onProduction={()=>open('Rune Production')}/>}
       {section==='Produce' && <><Sprite className="g-modal-art" box="1182 551 290 87"/><h3>Smith Steel Bars ×10</h3><p>Costs 20 crafting supplies. Takes 2 minutes. Earn 10 XP.</p><button disabled={profile.busy||!!task||state.runes<20} onClick={()=>begin('smith')}>Start Smithing</button>{task && <p>Finish or cancel your active task first.</p>}</>}
       {section==='Service' && <><Sprite className="g-modal-art" box="1182 730 290 93"/><h3>Marketplace delivery</h3><p>Help the merchants move supplies. Takes 90 seconds. Earn 40 GP and 5 XP.</p><button disabled={profile.busy||!!task} onClick={()=>begin('service')}>Offer Service</button>{task && <p>Finish or cancel your active task first.</p>}</>}
-      {section==='My Profile' && <CharacterProfile onInventory={()=>open('Inventory')} onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={()=>panel.current.close()}/>}
+      {section==='My Profile' && <CharacterProfile onInventory={()=>open('Inventory')} onStarterEquip={(id,unequip)=>profile.act(unequip?'unequip-starter':'equip-starter',id)} combat={profile.data.combat} onCombat={()=>open('Combat')} accountStats={profile.data.accountStats} statsError={profile.error} onRefreshStats={profile.refresh} user={user} state={state} walletStatus={walletStatus} runes={runes} skills={skillsStatus} onSettings={()=>open('Settings')} onSkills={()=>open('Skills')} onMarketplace={()=>open('Marketplace')} onEquip={buy} saving={profile.busy} onClose={closePanel}/>}
       {section==='Settings' && <><p><strong>{name}</strong> · Adventure level {adventureLevel}</p><p>Holding-based character level: {runes.data?.characterLevel || 'Awaiting first unlock'}</p><p>{Math.floor(state.xp)} total XP · Equipped: {state.equipped}</p><button onClick={onAccount}>Manage account</button><WalletProfile key={user.id} userId={user.id} onSnapshot={walletStatus.update}/><RuneProgression/><SkillProgress skills={skillsStatus} onOpen={()=>open('Skills')}/></>}
       {section==='Bank' && <><h3>{Math.floor(state.gp||0).toLocaleString('en-US')} GP</h3><p>Earn game gold by completing marketplace services. This is in-game currency with no real-money value.</p></>}
       {(section==='Marketplace'||section==='Collection') && <div className="g-gear">{section==='Collection'&&starterGear.map(item=><button key={item.id} disabled={profile.busy} aria-pressed={item.equipped} onClick={()=>profile.act(item.equipped?'unequip-starter':'equip-starter',item.id)}><StarterItemArt id={item.id}/><strong>{item.name}</strong><small>{item.equipped?'Unequip':'Equip'} · {item.requirement}</small></button>)}{gear.filter(g=>section==='Marketplace'||state.owned.includes(g.id)).map(g=><button key={g.id} disabled={profile.busy} onClick={()=>buy(g)}><span>{g.icon}</span><strong>{g.name}</strong><small>{state.equipped===g.name?'Equipped':state.owned.includes(g.id)?'Equip':`${g.cost} supplies`}</small></button>)}{section==='Collection'&&!state.owned.length&&!starterGear.length&&<p>Your collection is empty. Visit the marketplace to collect equipment.</p>}</div>}

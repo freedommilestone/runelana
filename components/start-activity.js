@@ -1,4 +1,5 @@
 'use client';
+import {useDialogDismiss} from './use-dialog-dismiss';
 import {useEffect,useRef,useState} from 'react';
 import {GameArt} from './game-art';
 import RuneIcon from './rune-icon';
@@ -33,12 +34,13 @@ export default function StartActivity({activity,skill,record,state,runes,busy,er
   return()=>{observer.disconnect();window.removeEventListener('resize',resize);window.visualViewport?.removeEventListener('resize',resize);el.close();};
  },[]);
  function close(){dialog.current.close();onClose();}
+ const dismiss=useDialogDismiss(close);
  function changeQuantity(n){setQuantity(Math.max(0,Math.min(plan.maximum,Math.floor(Number(n)||0))));}
  function showHelp(){setHelp(!help);setTab('overview');}
  const ready=(activity.live||activity.executable)&&plan.batches>0&&!busy&&(!activity.requiresConsumptionConfirmation||confirmed);
  const problems=[...(error?[error]:[]),...(runes?.error?[runes.error]:[]),...plan.issues,...(!activity.live&&!activity.executable?['Production is not available for this recipe yet.']:[]),...(!plan.issues.length&&plan.timeMaximum===0?[`Choose a longer time limit to complete one ${unit}.`]:[])];
  async function start(){if(!ready)return;const success=activity.live?await onStart('smith'):await onStartSkill(activity.id,{quantity:plan.batches,timeLimit,selections,confirmed});if(success)close();}
- return <dialog ref={dialog} className={`sa-dialog ${compact?'sa-compact':''}`} aria-labelledby="start-activity-title" onCancel={e=>{e.preventDefault();close();}} onKeyDown={e=>e.stopPropagation()}>
+ return <dialog ref={dialog} {...dismiss} className={`sa-dialog ${compact?'sa-compact':''}`} aria-labelledby="start-activity-title" onCancel={e=>{e.preventDefault();close();}} onKeyDown={e=>e.stopPropagation()}>
   <header className="sa-heading"><ActivityArt activity={activity} skill={skill}/><h2 id="start-activity-title">Start Activity <span>– {skill.name} {activity.name}</span></h2><button className="sa-close" aria-label="Close activity setup" onClick={close}>×</button></header>
   {compact&&<nav className="sa-tabs" aria-label="Activity setup sections">{[['overview','Activity'],['resources','Resources'],['production','Production']].map(([id,label])=><button key={id} aria-pressed={tab===id} onClick={()=>{setTab(id);setHelp(false);}}>{label}</button>)}</nav>}
   <div className="sa-content">

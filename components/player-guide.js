@@ -1,4 +1,5 @@
 'use client';
+import {useDialogDismiss} from './use-dialog-dismiss';
 import {forwardRef,useImperativeHandle,useRef,useState} from 'react';
 import {allGuideEntries,guideCategories,searchGuide} from '../lib/player-guide.mjs';
 import './player-guide.css';
@@ -9,6 +10,7 @@ export default forwardRef(function PlayerGuide({onNavigate},ref){
  const entries=searchGuide(query,category);
  function reset(){setQuery('');setCategory('start');setExpanded(new Set(['start']));if(results.current)results.current.scrollTop=0;}
  useImperativeHandle(ref,()=>({open(){reset();if(!dialog.current.open)dialog.current.showModal();search.current?.focus({preventScroll:true});}}));
+ const dismiss=useDialogDismiss(()=>dialog.current.close());
  function choose(value){setCategory(value);setExpanded(new Set());results.current.scrollTop=0;}
  function toggle(id){setExpanded(previous=>{const next=new Set(previous);if(next.has(id))next.delete(id);else next.add(id);return next;});}
  function navigate(destination){dialog.current.close();onNavigate?.(destination);}
@@ -20,7 +22,7 @@ export default forwardRef(function PlayerGuide({onNavigate},ref){
   if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
   else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
  }
- return <dialog ref={dialog} className="pg-dialog" aria-labelledby="player-guide-title" onKeyDown={keepFocus}>
+ return <dialog ref={dialog} {...dismiss} className="pg-dialog" aria-labelledby="player-guide-title" onKeyDown={keepFocus}>
   <div className="pg-shell">
    <header className="pg-header"><div><span className="pg-eyebrow">THE ADVENTURER’S HANDBOOK</span><h2 id="player-guide-title">How It Works</h2><p>Find your next step. Learn the rules. Plan your legend.</p></div><button type="button" className="pg-close" aria-label="Close player guide" onClick={()=>dialog.current.close()}>×</button></header>
    <div className="pg-search"><label htmlFor="player-guide-search">Search the guide</label><div><span aria-hidden="true">⌕</span><input ref={search} id="player-guide-search" type="search" placeholder="Try “holding streak”, “Soul”, or “missing GP”…" value={query} maxLength={160} onChange={e=>{setQuery(e.target.value);setCategory('all');setExpanded(new Set());results.current.scrollTop=0;}} aria-controls="player-guide-results" autoComplete="off"/>{query&&<button type="button" onClick={()=>{setQuery('');search.current.focus();}} aria-label="Clear guide search">Clear</button>}</div></div>
