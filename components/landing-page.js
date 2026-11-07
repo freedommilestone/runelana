@@ -31,15 +31,13 @@ const features=[
   {title:'Collect & Explore',text:'Discover equipment, build your collection and level up.',box:'1403 505 94 82'}
 ];
 export default function LandingPage({onPlay,onAccount,user,ready}) {
-  const explore=useRef(null);
   const details=useRef(null);
   const guide=useRef(null);
-  function jump(id){if(explore.current)explore.current.open=false;document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
   return <div className="l-page" id="home">
     <svg className="l-stone" aria-hidden="true"><defs><pattern id="landing-stone" width="220" height="62" patternUnits="userSpaceOnUse"><svg viewBox="0 0 220 62" width="220" height="62"><image href="/assets/landing-reference.png" width="1774" height="887"/></svg></pattern></defs><rect width="100%" height="100%" fill="url(#landing-stone)"/></svg>
     <header className="l-header"><div className="l-header-inner">
       <a className="l-brand" href="#home" aria-label="Runelana home"><Art box="287 2 271 82" label="Runelana"/></a>
-      <nav aria-label="Main navigation"><a className="l-active" href="#home" aria-current="page">Home</a><a href="#how-it-works" aria-haspopup="dialog" onClick={e=>{e.preventDefault();guide.current.open();}}>How It Works</a><a href="#adventurers">Leaderboard</a><details ref={explore} className="l-explore"><summary>Explore <span aria-hidden="true">⌄</span></summary><div><button onClick={()=>{explore.current.open=false;guide.current.open();}}>Runes & Skills</button><button onClick={()=>jump('world')}>Discover the World</button><button onClick={onPlay}>Enter the Game</button>{user&&<button onClick={onAccount}>My Account</button>}</div></details></nav>
+      <nav aria-label="Main navigation"><a className="l-active" href="#home" aria-current="page">Home</a><a href="#how-it-works" aria-haspopup="dialog" onClick={e=>{e.preventDefault();guide.current.open();}}>How It Works</a><a href="#adventurers">Leaderboard</a></nav>
       <GoldButton className="l-header-play" onClick={onPlay} disabled={!ready}/>
     </div></header>
     <main>
